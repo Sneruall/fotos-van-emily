@@ -7,7 +7,13 @@ module.exports = {
       fontFamily: {
         sans: ["Montserrat", "Helvetica", "Arial", "sans-serif"],
         display: [
-          "Diranista-Regular"
+          "Diranista-Regular",
+          "ui-serif",
+          "Georgia",
+          "Cambria",
+          "Times New Roman",
+          "Times",
+          "serif",
         ],
       },
     },
