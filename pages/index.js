@@ -9,6 +9,9 @@ export default function Home() {
       </Head>
 
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
+        <p className="font-semibold">Dit is montserrat</p>
+        <p className="font-display text-4xl">Dit is Quick</p>
+
         <h1 className="text-6xl font-bold">
           Welcome to{' '}
           <a className="text-blue-600" href="https://nextjs.org">

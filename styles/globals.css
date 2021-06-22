@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+
+/* @font-face {
+    font-family: 'Diranista-Regular';
+    src: local('Diranista-Regular'), url(./fonts/Diranista-Regular.ttf), format('ttf');
+  } */
+
+  @font-face {
+    font-family: "Diranista-Regular";
+    src: url("./fonts//Diranista-Regular.woff");
+  }
+
+@tailwind utilities;
