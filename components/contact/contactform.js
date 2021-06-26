@@ -42,7 +42,7 @@ function ContactForm() {
             rows="4"
             onChange={(e) => setMessage(e.target.value)}
           />
-          <button type="submit">Send</button>
+          <button type="submit">Versturen</button>
         </form>
       </main>
     </div>
