@@ -1,17 +1,34 @@
-import Head from 'next/head'
-import { Fragment } from 'react'
+import Head from "next/head";
+import Image from "next/image";
+import { Fragment } from "react";
 
 export default function Home() {
   return (
     <Fragment>
-            <Head>
+      <Head>
         <title>De Foto's van Emily</title>
         {/* description meta */}
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
-      <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
+      <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-red-50">
+        <p className="font-semibold">Hier komt de begin "slide"</p>
+      </div>
+
+      <div className="grid bg-yellow-100">
+        <div className="grid grid-cols-1 md:grid-cols-2 my-40 gap-4 justify-items-center">
+          <p className="font-semibold">Hee, welkom op mijn site!</p>
+          <div>
+            <Image
+              src="/images/Laurensvanroomen.jpg"
+              alt="Laurens"
+              width={1200}
+              height={800}
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
         <p className="font-semibold">Dit is montserrat</p>
         <p className="font-display text-6xl">Dit is Quick</p>
 
@@ -70,7 +87,7 @@ export default function Home() {
             </p>
           </a>
         </div>
-      </main>
+      </main> */}
 
       <footer className="flex items-center justify-center w-full h-24 border-t">
         <a
@@ -79,11 +96,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
         </a>
       </footer>
-    </div>
     </Fragment>
-  )
+  );
 }
