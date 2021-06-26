@@ -23,7 +23,7 @@ function ContactForm() {
     <div>
       <main>
         <form onSubmit={handleSubmit}>
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name">Naam:</label>
           <input
             id="name"
             type="text"
