@@ -29,7 +29,7 @@ function ContactForm() {
             type="text"
             onChange={(e) => setName(e.target.value)}
           />
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email">Email adres:</label>
           <input
             id="email"
             type="email"
