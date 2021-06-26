@@ -1,9 +1,12 @@
 @tailwind base;
 @tailwind components;
 
+@layer base{
   @font-face {
     font-family: "Diranista-Regular";
-    src: url("./fonts//Diranista-Regular.woff");
+    src: url("./fonts//Diranista-Regular.woff") format("woff");
   }
+
+}
 
 @tailwind utilities;
