@@ -16,7 +16,19 @@ module.exports = {
           "serif",
         ],
       },
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        pink: {
+          lightest: '#f9fafc',
+          light: '#ff7ce5',
+          DEFAULT: '#dccfc6',
+          dark: '#ff16d1',
+          darkest: '#b36747',
+        },
+      }
     },
+
   },
   variants: {
     extend: {},

@@ -11,22 +11,59 @@ export default function Home() {
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-red-50">
-        <p className="font-semibold">Hier komt de begin "slide"</p>
+        <p className="font-semibold text-pink-darkest">
+          Hier komt de begin "slide"
+        </p>
       </div>
 
-      <div className="grid bg-yellow-100">
-        <div className="grid grid-cols-1 md:grid-cols-2 my-40 gap-4 justify-items-center">
-          <p className="font-semibold">Hee, welkom op mijn site!</p>
-          <div>
+        <div className="grid grid-rows-1 md:grid-cols-2 md:gap-6 justify-items-center bg-pink py-40 md:px-20 lg:p-40">
+          <p className="font-display text-white text-center text-5xl mx-5 md:hidden">
+            Hee, welkom op mijn site!
+          </p>
+
+          <div className="order-2 md:order-1">
+            <p className="font-display text-pink-darkest text-center text-5xl mx-5 hidden md:block">
+              Hee, welkom op mijn site!
+            </p>
+            <p className="font-display text-pink-darkest text-center text-3xl">
+              Mijn naam is
+            </p>
+            <p className="font-display text-white text-center text-5xl uppercase">
+              Emily van Roomen
+            </p>
+            <p className="font-display text-pink-darkest text-center text-3xl">
+              en ik ben fotograaf actief in omgeving Zeist en Utrecht
+            </p>
+            <p className="text-center text-lg mx-6">
+              Ik woon in Zeist maar ben in heel Nederland actief, met mijn tiny
+              house opwielen kom ik overal naar toe! Je kunt bij mij terecht
+              voor een professionele fotoshoot voor allerlei gelegenheden; van
+              bruiloften tot hondenshoots. Met veel aandacht en enthousiasme
+              zorg ik voor prachtige foto’s waar jij voor altijd van kan blijven
+              genieten. Kijk rond op mijn site en aarzel niet om contact met mij
+              op te nemen!
+            </p>
+          </div>
+
+          <div className="order-1 hidden md:block">
             <Image
-              src="/images/Laurensvanroomen.jpg"
-              alt="Laurens"
-              width={1200}
-              height={800}
+              src="/images/emily.png"
+              alt="Emily"
+              width={370}
+              height={553}
+            />
+          </div>
+
+          <div className="order-1 md:hidden">
+            <Image
+              src="/images/emily.png"
+              alt="Emily"
+              width={230}
+              height={343}
             />
           </div>
         </div>
-      </div>
+
 
       {/* <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
         <p className="font-semibold">Dit is montserrat</p>
