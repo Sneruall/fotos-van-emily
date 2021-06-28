@@ -34,7 +34,7 @@ export default function Home() {
             <p className="font-display text-pink-darkest text-center text-3xl">
               en ik ben fotograaf actief in omgeving Zeist en Utrecht
             </p>
-            <p className="text-center text-lg mx-6">
+            <p className="text-center text-lg mx-6 my-6">
               Ik woon in Zeist maar ben in heel Nederland actief, met mijn tiny
               house opwielen kom ik overal naar toe! Je kunt bij mij terecht
               voor een professionele fotoshoot voor allerlei gelegenheden; van
@@ -45,23 +45,26 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="order-1 hidden md:block">
+          <div className="order-1 w-3/5 md:w-auto relative my-5">
             <Image
               src="/images/emily.png"
               alt="Emily"
               width={370}
               height={553}
             />
-          </div>
 
-          <div className="order-1 md:hidden">
+
+
+            <div className="absolute top-0 right-0 md:left-0 transform translate-x-14 md:-translate-x-10 2xl:-translate-x-20 -translate-y-5">
             <Image
-              src="/images/emily.png"
-              alt="Emily"
-              width={230}
-              height={343}
+              src="/images/stars1.png"
+              alt="Stars"
+              width={81}
+              height={93}
             />
-          </div>
+            </div>
+            </div>
+          
         </div>
 
 
