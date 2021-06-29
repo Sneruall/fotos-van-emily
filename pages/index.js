@@ -14,10 +14,9 @@ export default function Home() {
         <p className="font-semibold text-pink-darkest">
           Hier komt de begin "slide"
         </p>
-        
       </div>
 
-      <div className="grid grid-rows-1 md:grid-cols-2 md:gap-6 justify-items-center bg-pink py-40 md:px-20 lg:p-40 relative">
+      <div className="grid grid-rows-1 md:grid-cols-2 md:gap-6 justify-items-center bg-pink pt-40 md:px-20 lg:p-40 relative">
         <p className="font-display text-white text-center text-5xl mx-5 md:hidden">
           Hee, welkom op mijn site!
         </p>
@@ -26,32 +25,37 @@ export default function Home() {
           <p className="font-display text-pink-darkest text-center text-5xl mx-5 hidden md:block">
             Hee, welkom op mijn site!
           </p>
-          <p className="font-display text-pink-darkest text-center text-3xl uppercase mb-4 relative">
-            Mijn naam is
 
-          </p>
-          <div className="absolute">
+          {/* hier een svg halve cirkel ding half achter de afbeelding*/}
+
+          <div className="bg-white py-20">
+            <p className="font-display text-pink-darkest text-center text-3xl uppercase mb-4">
+              Mijn naam is
+              {/* <div className="absolute -bottom-20 md:bottom-0 left-1/2 transform -translate-x-1/2">
               <Image
                 src="/images/whitecircle-big.png"
-                alt="Emily"
+                alt="circle"
                 width={838}
                 height={838}
                 layout="fixed"
               />
-            </div>
-          <p className="font-display text-grey-darkest text-center text-5xl uppercase relative">
-            Emily van Roomen
-          </p>
+            </div> */}
+            </p>
 
-          <p className="font-sans normal-case text-black text-center text-lg mx-6 mt-7 relative ">
-            Ik woon in Zeist maar ben in heel Nederland actief, met mijn tiny
-            house opwielen kom ik overal naar toe! Je kunt bij mij terecht voor
-            een professionele fotoshoot voor allerlei gelegenheden; van
-            bruiloften tot hondenshoots. Met veel aandacht en enthousiasme zorg
-            ik voor prachtige foto’s waar jij voor altijd van kan blijven
-            genieten. Kijk rond op mijn site en aarzel niet om contact met mij
-            op te nemen!
-          </p>
+            <p className="font-display text-grey-darkest text-center text-5xl uppercase">
+              Emily van Roomen
+            </p>
+
+            <p className="font-sans normal-case text-black text-center text-lg mx-6 mt-7">
+              Ik woon in Zeist maar ben in heel Nederland actief, met mijn tiny
+              house opwielen kom ik overal naar toe! Je kunt bij mij terecht
+              voor een professionele fotoshoot voor allerlei gelegenheden; van
+              bruiloften tot hondenshoots. Met veel aandacht en enthousiasme
+              zorg ik voor prachtige foto’s waar jij voor altijd van kan blijven
+              genieten. Kijk rond op mijn site en aarzel niet om contact met mij
+              op te nemen!
+            </p>
+          </div>
         </div>
 
         <div className="order-1 w-3/5 md:w-auto relative my-5">
@@ -66,11 +70,7 @@ export default function Home() {
             />
           </div>
         </div>
-        {/* <div className="bg-repeat bg-bottom" style={{backgroundImage: `url("/images/whitecircle-big.png")`}}></div> */}
-
       </div>
-
-
 
       {/* <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
         <p className="font-semibold">Dit is montserrat</p>
