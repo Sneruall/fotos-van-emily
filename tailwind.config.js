@@ -17,18 +17,20 @@ module.exports = {
         ],
       },
       colors: {
-        transparent: 'transparent',
-        current: 'currentColor',
+        transparent: "transparent",
+        current: "currentColor",
         pink: {
-          lightest: '#f9fafc',
-          light: '#ff7ce5',
-          DEFAULT: '#dccfc6',
-          dark: '#ff16d1',
-          darkest: '#b36747',
+          lightest: "#f9fafc",
+          light: "#ff7ce5",
+          DEFAULT: "#dccfc6",
+          dark: "#ff16d1",
+          darkest: "#b36747",
         },
-      }
+        grey: {
+          darkest: "#404342",
+        },
+      },
     },
-
   },
   variants: {
     extend: {},
