@@ -30,6 +30,9 @@ module.exports = {
           darkest: "#404342",
         },
       },
+      width: {
+        "18/12": "150%",
+      },
     },
   },
   variants: {
