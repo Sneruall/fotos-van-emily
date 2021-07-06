@@ -19,13 +19,14 @@ export default function Home() {
 
       <Welcome />
 
+      {/* Onderstaande sectie tot een diensten component maken, met daarin weer losse components voor de inhoudelijke afzonderlijke diensten (portret etc) */}
       <div className="bg-pink-light text-center">
         <p className="my-3 text-5xl font-display uppercase text-pink-darkest leading-snug">
           Fotografie diensten
         </p>
 
-        <div className="grid grid-rows-1 md:grid-cols-2 md:gap-6 justify-items-center mx-10">
-          <div>
+        <div className="grid grid-rows-1 md:grid-cols-3 md:gap-6 justify-items-center mx-10">
+          <div className="w-4/5">
             <div className="my-3">
               <Image
                 src="/images/diensten1.png"
@@ -35,8 +36,12 @@ export default function Home() {
               />
             </div>
             <p className="text-3xl uppercase text-pink-darkest">Portret</p>
-            <hr className="border-1 border-pink-darkest w-4/5" />
-            <div>Loveshoot</div>
+            <hr className="border-1 border-pink-darkest" />
+            <p className="hidden md:block">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero.
+            </p>
           </div>
         </div>
       </div>
