@@ -20,15 +20,16 @@ module.exports = {
         transparent: "transparent",
         current: "currentColor",
         pink: {
-          lightest: "#f9fafc",
-          light: "#ff7ce5",
+          lightest: "#fff",
+          light: "#efe9e0",
           DEFAULT: "#dccfc6",
-          dark: "#ff16d1",
+          dark: "#fff",
           darkest: "#b36747",
         },
         grey: {
           darkest: "#404342",
         },
+        
       },
       width: {
         "18/12": "150%",

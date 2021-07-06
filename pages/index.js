@@ -17,7 +17,29 @@ export default function Home() {
         </p>
       </div>
 
-      <Welcome/>
+      <Welcome />
+
+      <div className="bg-pink-light text-center">
+        <p className="my-3 text-5xl font-display uppercase text-pink-darkest leading-snug">
+          Fotografie diensten
+        </p>
+
+        <div className="grid grid-rows-1 md:grid-cols-2 md:gap-6 justify-items-center mx-10">
+          <div>
+            <div className="my-3">
+              <Image
+                src="/images/diensten1.png"
+                width={421}
+                height={509}
+                alt="Portret fotografie"
+              />
+            </div>
+            <p className="text-3xl uppercase text-pink-darkest">Portret</p>
+            <hr className="border-1 border-pink-darkest w-4/5" />
+            <div>Loveshoot</div>
+          </div>
+        </div>
+      </div>
 
       {/* <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
         <p className="font-semibold">Dit is montserrat</p>
