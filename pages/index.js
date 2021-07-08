@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Fragment } from "react";
 import Welcome from "../components/sections/welcome";
 import Diensten from "../components/sections/diensten";
+import Werkwijze from "../components/sections/werkwijze";
 
 export default function Home() {
   return (
@@ -19,9 +20,8 @@ export default function Home() {
       </div>
 
       <Welcome />
-
-      {/* Onderstaande sectie tot een diensten component maken, met daarin weer losse components voor de inhoudelijke afzonderlijke diensten (portret etc) */}
      <Diensten/>
+     <Werkwijze/>
 
       {/* <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
         <p className="font-semibold">Dit is montserrat</p>
