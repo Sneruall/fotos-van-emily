@@ -8,7 +8,7 @@ export default function Dienst(props) {
           src={props.img}
           width={421}
           height={434}
-          alt="Portret fotografie"
+          alt={props.alt}
         />
       </div>
       <p className="text-3xl uppercase text-pink-darkest">{props.title}</p>

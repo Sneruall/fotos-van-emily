@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export default function Welcome(){
     return(
-<div className="grid grid-rows-1 md:grid-cols-2 md:gap-6 justify-items-center bg-pink pt-40 md:px-20 lg:p-40 relative">
+      <div className=" bg-pink pt-40 md:px-20 lg:p-40">
+  <div className="container">
+  <div className="grid grid-rows-1 md:grid-cols-2 md:gap-6 justify-items-center relative">
+
         <p className="font-display text-white text-center text-5xl mx-5 md:hidden">
           Hee, welkom op mijn site!
         </p>
@@ -68,6 +71,8 @@ export default function Welcome(){
             />
           </div>
         </div>
+      </div>
+      </div>
       </div>
     )
 }
