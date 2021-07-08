@@ -1,6 +1,6 @@
 function section(props) {
     return (
-        <div className={"py-40" + (props.bg ? ` ` + props.bg : "") }>{props.children}</div>
+        <div className={"container mx-auto py-40" + (props.bg ? ` ` + props.bg : "") }>{props.children}</div>
     )
 }
 
