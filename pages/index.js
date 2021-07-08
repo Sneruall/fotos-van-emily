@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Fragment } from "react";
 import Welcome from "../components/sections/welcome";
+import Diensten from "../components/sections/diensten";
 
 export default function Home() {
   return (
@@ -20,31 +21,7 @@ export default function Home() {
       <Welcome />
 
       {/* Onderstaande sectie tot een diensten component maken, met daarin weer losse components voor de inhoudelijke afzonderlijke diensten (portret etc) */}
-      <div className="bg-pink-light text-center">
-        <p className="my-3 text-5xl font-display uppercase text-pink-darkest leading-snug">
-          Fotografie diensten
-        </p>
-
-        <div className="grid grid-rows-1 md:grid-cols-3 md:gap-6 justify-items-center mx-10">
-          <div className="w-4/5">
-            <div className="my-3">
-              <Image
-                src="/images/diensten1.png"
-                width={421}
-                height={509}
-                alt="Portret fotografie"
-              />
-            </div>
-            <p className="text-3xl uppercase text-pink-darkest">Portret</p>
-            <hr className="border-1 border-pink-darkest" />
-            <p className="hidden md:block">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero.
-            </p>
-          </div>
-        </div>
-      </div>
+     <Diensten/>
 
       {/* <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
         <p className="font-semibold">Dit is montserrat</p>
