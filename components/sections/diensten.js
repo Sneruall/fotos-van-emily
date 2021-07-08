@@ -1,4 +1,5 @@
 import Dienst from "./elements/dienst";
+import Fotobewerking from "./elements/fotobewerking";
 
 export default function Diensten() {
   return (
@@ -37,6 +38,9 @@ export default function Diensten() {
           img={"/images/diensten/honden.png"}
         />
       </div>
+
+      <Fotobewerking/>
+
     </div>
   );
 }
