@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Fragment } from "react";
+import Header from "../components/layout/header";
 import Welcome from "../components/sections/welcome";
 import Diensten from "../components/sections/diensten";
 import Werkwijze from "../components/sections/werkwijze";
@@ -13,6 +14,7 @@ export default function Home() {
         {/* description meta */}
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
+      <Header/>
       <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-red-50">
         <p className="font-semibold text-pink-darkest">
           Hier komt de begin "slide"
