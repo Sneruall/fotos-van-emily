@@ -15,11 +15,6 @@ export default function Home() {
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <Header/>
-      <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-red-50">
-        <p className="font-semibold text-pink-darkest">
-          Hier komt de begin "slide"
-        </p>
-      </div>
 
       <Welcome />
      <Diensten/>
