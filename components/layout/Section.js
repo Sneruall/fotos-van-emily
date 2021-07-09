@@ -1,4 +1,4 @@
-function section(props) {
+function Section(props) {
   return (
     <div className={"py-40" + (props.bg ? ` ` + props.bg : "")}>
       <div className="container mx-auto">{props.children}</div>
@@ -6,4 +6,4 @@ function section(props) {
   );
 }
 
-export default section;
+export default Section;

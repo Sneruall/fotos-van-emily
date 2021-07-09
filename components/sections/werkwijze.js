@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Section from "../layout/Section";
+import Section from "../layout/section";
 
 
 export default function Werkwijze() {
