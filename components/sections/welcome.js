@@ -11,7 +11,7 @@ export default function Welcome() {
           Hee, welkom op mijn site!
         </p>
         <div className="w-3/5 self-start mx-auto md:w-auto relative my-5 md:my-0">
-          <Image src="/images/emily.png" alt="Emily" width={370} height={553} />
+          <Image src="/images/emily.png" alt="Emily" width={370} height={553} priority />
 
           <p className="w-full text-center hidden md:block font-display text-white text-5xl uppercase absolute">
               De fotograaf
