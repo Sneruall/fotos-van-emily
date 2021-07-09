@@ -5,7 +5,7 @@ import Section from "../layout/Section";
 export default function Diensten() {
   return (
     <Section bg={"bg-pink-light md:bg-pink"}>
-      <div className="md:bg-pink-light md:p-10 md:mx-auto md:max-w-6xl">
+      <div className="md:bg-pink-light md:p-10 md:mx-auto md:max-w-6xl -mt-40">
       <p className="my-3 text-6xl text-center font-display uppercase text-pink-darkest leading-snug">
         Fotografie diensten
       </p>

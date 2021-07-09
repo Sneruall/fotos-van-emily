@@ -28,17 +28,17 @@ export default function Welcome() {
             Hee, welkom op mijn site!
           </p>
 
-          <div className="md:hidden">
+          {/* <div className="md:hidden">
             <Image
               src="/images/ellipse-1.svg"
               alt="circle"
               width={768}
               height={100}
             />
-          </div>
+          </div> */}
 
-          <div className="bg-white md:bg-opacity-0 py-20 md:py-0">
-            <p className="font-display text-pink-darkest text-center md:text-left text-3xl uppercase mb-4">
+          <div className="bg-white md:bg-opacity-0 py-20 md:py-0 md:m-0 rounded-t-full -mt-60 -mb-40 -mx-5">
+            <p className="font-display text-pink-darkest text-center md:text-left text-3xl uppercase mb-4 mt-40 md:mt-0">
               Mijn naam is
             </p>
 
