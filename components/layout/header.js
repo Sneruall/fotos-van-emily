@@ -3,7 +3,13 @@ import NavItem from "./navItem";
 
 function Header() {
   return (
-    <header className="flex flex-col my-10">
+    <header className="flex flex-col my-10 h-screen">
+      <Image
+        src="/images/header/hero.png"
+        alt="Hero image"
+        layout="fill"
+        objectFit="cover"
+      />
       <Image
         className="object-contain"
         src="/images/header/fotosvanemily-logo.png"
@@ -12,12 +18,12 @@ function Header() {
         alt="Foto's van Emily logo"
       />
       <nav>
-        <ul className="flex flex-col md:flex-row container mx-auto m-5 justify-evenly max-w-3xl items-center">
-            <NavItem text={"Home"} />
-            <NavItem text={"Diensten"} />
-            <NavItem text={"Portfolio"} />
-            <NavItem text={"Over mij"} />
-            <NavItem text={"Contact"} />
+        <ul className="flex flex-col md:flex-row container mx-auto m-5 justify-evenly max-w-3xl items-center relative">
+          <NavItem text={"Home"} />
+          <NavItem text={"Diensten"} />
+          <NavItem text={"Portfolio"} />
+          <NavItem text={"Over mij"} />
+          <NavItem text={"Contact"} />
         </ul>
       </nav>
     </header>
