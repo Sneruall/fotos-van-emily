@@ -1,6 +1,7 @@
+import Section from "../layout/Section";
 import Dienst from "./elements/dienst";
 import Fotobewerking from "./elements/fotobewerking";
-import Section from "../layout/section";
+
 
 export default function Diensten() {
   return (
