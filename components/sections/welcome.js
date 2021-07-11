@@ -1,9 +1,9 @@
 import Image from "next/image";
-// import Section from "../layout/Section";
+import Section from "../layout/Section";
 
 export default function Welcome() {
   return (
-    // <Section bg={"bg-pink"}>
+    <Section bg={"bg-pink"}>
       <div className="flex md:items-stretch mx-auto flex-col md:flex-row relative md:gap-10 md:max-w-5xl">
 
         <div className="flex-auto">
@@ -50,6 +50,6 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy e
           </div>
         </div>
       </div>
-    // </Section>
+    </Section>
   );
 }
