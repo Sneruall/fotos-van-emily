@@ -14,6 +14,9 @@ module.exports = {
       },
     },
     extend: {
+      screens: {
+        "3xl": "2000px",
+      },
       fontFamily: {
         sans: ["Montserrat", "Helvetica", "Arial", "sans-serif"],
         display: [

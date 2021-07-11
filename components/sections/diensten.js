@@ -6,14 +6,14 @@ import Fotobewerking from "./elements/fotobewerking";
 export default function Diensten() {
   return (
     <Section bg={"bg-pink-light md:bg-pink"}>
-      <div className="md:bg-pink-light md:p-10 md:mx-auto md:max-w-6xl xl:max-w-full -mt-40">
+      <div className="md:bg-pink-light md:p-10 md:mx-auto md:max-w-6xl 3xl:max-w-full -mt-40">
         <h2 className="my-3 text-6xl text-center font-display uppercase text-pink-darkest leading-snug">
           Fotografie diensten
         </h2>
 
-        <div className="grid grid-rows-1 md:grid-cols-2 md:gap-10 2xl:grid-cols-4 justify-items-center mx-10 text-center">
+        <div className="grid grid-rows-1 md:grid-cols-2 md:gap-10 3xl:grid-cols-4 justify-items-center mx-10 text-center">
           <Dienst
-            title={"Portrets"}
+            title={"Portret"}
             description={
               "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero."
             }

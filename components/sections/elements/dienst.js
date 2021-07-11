@@ -11,7 +11,7 @@ export default function Dienst(props) {
           alt={props.alt}
         />
       </div>
-      <h2 className="text-xl md:text-2xl lg:text-3xl uppercase text-pink-darkest transition-all duration-100 ease-in-out group-hover:font-bold">{props.title}</h2>
+      <h2 className="text-xl md:text-2xl uppercase text-pink-darkest transition-all duration-100 ease-in-out group-hover:font-bold">{props.title}</h2>
       <hr className="border-1 border-pink-darkest" />
       <p className="hidden md:block mt-3 text-lg">{props.description}</p>
     </div>
