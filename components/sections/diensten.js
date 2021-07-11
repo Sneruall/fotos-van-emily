@@ -6,11 +6,11 @@ export default function Diensten() {
   return (
     <Section bg={"bg-pink-light md:bg-pink"}>
       <div className="md:bg-pink-light md:p-10 md:mx-auto md:max-w-6xl -mt-40">
-      <p className="my-3 text-6xl text-center font-display uppercase text-pink-darkest leading-snug">
+      <h2 className="my-3 text-6xl text-center font-display uppercase text-pink-darkest leading-snug">
         Fotografie diensten
-      </p>
+      </h2>
 
-      <div className="grid grid-rows-1 md:grid-cols-2 md:gap-6 justify-items-center mx-10 text-center">
+      <div className="grid grid-rows-1 md:grid-cols-2 md:gap-10 justify-items-center mx-10 text-center">
         <Dienst
           title={"Portret"}
           description={

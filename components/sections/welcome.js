@@ -39,9 +39,9 @@ export default function Welcome() {
               Mijn naam is
             </p>
 
-            <p className="font-display text-grey-darkest md:text-pink-darkest text-center md:text-left text-5xl md:text-7xl uppercase">
+            <h2 className="font-display text-grey-darkest md:text-pink-darkest text-center md:text-left text-5xl md:text-7xl uppercase">
               Emily van Roomen
-            </p>
+            </h2>
 
             <p className="font-sans normal-case text-black text-center md:text-left text-lg mx-6 md:mx-0 mt-7">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
