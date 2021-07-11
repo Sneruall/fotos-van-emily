@@ -4,6 +4,7 @@ import Header from "../components/layout/header";
 import Welcome from "../components/sections/welcome";
 import Diensten from "../components/sections/diensten";
 import Werkwijze from "../components/sections/werkwijze";
+import Reviews from "../components/sections/reviews";
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
      <Diensten/>
      
      <Werkwijze/>
+
+     <Reviews/>
 
       {/* <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
         <p className="font-semibold">Dit is montserrat</p>
