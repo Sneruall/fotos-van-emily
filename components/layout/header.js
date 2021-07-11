@@ -9,6 +9,7 @@ function Header() {
         alt="Hero image"
         layout="fill"
         objectFit="cover"
+        priority
       />
       <Image
         className="object-contain"
@@ -16,6 +17,7 @@ function Header() {
         width={800}
         height={140}
         alt="Foto's van Emily logo"
+        priority
       />
       <nav>
         <ul className="flex flex-col md:flex-row container mx-auto m-5 justify-evenly max-w-3xl items-center relative">
