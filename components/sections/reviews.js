@@ -1,5 +1,5 @@
 import Section from "../layout/Section";
-import Image from "next/image";
+import Dienst from "./elements/dienst";
 
 function Reviews() {
   return (
@@ -20,19 +20,15 @@ function Reviews() {
             </p>
             <p className="text-center mt-6 italic text-grey-dark">Name</p>
           </div>
-          <div className="py-10 max-w-sm">
-            <Image
-              src="/images/tarieven.png"
-              width={342}
-              height={513}
-              alt="Geldboom"
-            />
-          </div>
-          <h2 className="text-2xl xl:text-3xl uppercase text-pink-darkest transition-all duration-100 ease-in-out group-hover:font-bold">
-            Tarieven
-          </h2>
-          <hr className="border-1 border-pink-darkest" />
-          <p className="mt-3 text-lg">Lorum ipsum</p>
+          <Dienst
+            img="/images/tarieven.png"
+            imgwidth={342}
+            imgheight={513}
+            alt="Geldboom"
+            title="Tarieven"
+            description="Benieuwd naar mijn tarieven? Neem contact op of ga naar één van de diensten pagina’s voor meer informatie."
+            showDescriptionOnMobile
+          />
         </div>
       </div>
     </Section>

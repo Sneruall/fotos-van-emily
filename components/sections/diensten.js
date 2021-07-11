@@ -11,7 +11,7 @@ export default function Diensten() {
           Fotografie diensten
         </h2>
 
-        <div className="grid grid-rows-1 md:grid-cols-2 md:gap-10 3xl:grid-cols-4 justify-items-center mx-10 text-center">
+        <div className="grid grid-rows-1 md:grid-cols-2 md:gap-10 3xl:grid-cols-4 justify-items-center mx-10">
           <Dienst
             title={"Portret"}
             description={
@@ -19,6 +19,8 @@ export default function Diensten() {
             }
             img={"/images/diensten/portret.png"}
             alt={"Portretfotografie"}
+            imgwidth={421}
+            imgheight={434}
           />
           <Dienst
             title={"Loveshoot"}
@@ -27,6 +29,8 @@ export default function Diensten() {
             }
             img={"/images/diensten/loveshoot.png"}
             alt={"Koppelfotografie"}
+            imgwidth={421}
+            imgheight={434}
           />
           <Dienst
             title={"Zwangerschap"}
@@ -35,6 +39,8 @@ export default function Diensten() {
             }
             img={"/images/diensten/zwangerschap.png"}
             alt={"Zwangerschapsfotografie"}
+            imgwidth={421}
+            imgheight={434}
           />
           <Dienst
             title={"Honden"}
@@ -43,6 +49,8 @@ export default function Diensten() {
             }
             img={"/images/diensten/honden.png"}
             alt={"Hondenfotografie"}
+            imgwidth={421}
+            imgheight={434}
           />
         </div>
 
