@@ -13,7 +13,7 @@ export default function Diensten() {
 
         <div className="grid grid-rows-1 md:grid-cols-2 md:gap-10 2xl:grid-cols-4 justify-items-center mx-10 text-center">
           <Dienst
-            title={"Portret"}
+            title={"Portrets"}
             description={
               "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero."
             }
