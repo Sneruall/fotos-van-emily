@@ -1,13 +1,13 @@
 import Section from "../layout/Section";
 import Dienst from "./elements/dienst";
 import Fotobewerking from "./elements/fotobewerking";
-
+import Link from "next/link";
 
 export default function Diensten() {
   return (
     <Section bg={"bg-pink-light md:bg-pink"}>
       <div className="md:bg-pink-light md:p-10 md:mx-auto md:max-w-6xl 3xl:max-w-full -mt-40">
-        <h2 className="my-3 text-6xl text-center font-display uppercase text-pink-darkest leading-snug">
+        <h2 className="mt-40 md:mt-0 text-6xl text-center font-display uppercase text-pink-darkest leading-snug">
           Fotografie diensten
         </h2>
 
@@ -47,6 +47,13 @@ export default function Diensten() {
         </div>
 
         <Fotobewerking />
+        <div className="pt-20 md:pb-10 text-center">
+          <Link href="/">
+            <button class="bg-white hover:bg-pink-darkest hover:text-white text-pink-darkest font-semibold uppercase py-4 px-6 rounded-full">
+              Bekijk mijn portfolio
+            </button>
+          </Link>
+        </div>
       </div>
     </Section>
   );
