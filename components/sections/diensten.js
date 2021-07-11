@@ -1,11 +1,11 @@
-// import Section from "../layout/Section";
+import Section from "../layout/Section";
 import Dienst from "./elements/dienst";
 import Fotobewerking from "./elements/fotobewerking";
 
 
 export default function Diensten() {
   return (
-    // <Section bg={"bg-pink-light md:bg-pink"}>
+    <Section bg={"bg-pink-light md:bg-pink"}>
       <div className="md:bg-pink-light md:p-10 md:mx-auto md:max-w-6xl xl:max-w-full -mt-40">
         <h2 className="my-3 text-6xl text-center font-display uppercase text-pink-darkest leading-snug">
           Fotografie diensten
@@ -48,6 +48,6 @@ export default function Diensten() {
 
         <Fotobewerking />
       </div>
-    // </Section>
+    </Section>
   );
 }
