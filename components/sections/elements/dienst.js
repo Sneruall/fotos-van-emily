@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Dienst(props) {
   return (
-    <div className="mt-10 max-w-xs group cursor-pointer text-center">
+    <div className="mt-10 group cursor-pointer text-center">
       <div className="my-3 transition duration-200 ease-in transform group-hover:scale-105">
         <Image
           src={props.img}
@@ -18,7 +18,7 @@ export default function Dienst(props) {
       {!props.showDescriptionOnMobile ? (
         <p className="hidden md:block mt-3 text-lg">{props.description}</p>
       ) : (
-        <p className="mt-3 text-lg">{props.description}</p>
+        <p className="mt-3 text-lg flex">{props.description}</p>
       )}
     </div>
   );
