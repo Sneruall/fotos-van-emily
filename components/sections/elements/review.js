@@ -9,4 +9,6 @@ function Review(props) {
   );
 }
 
+// todo: add a slider effect: https://devdojo.com/tnylea/creating-a-slider-with-tailwind-css
+
 export default Review;
