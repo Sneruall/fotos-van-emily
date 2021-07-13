@@ -7,3 +7,5 @@ function Section(props) {
 }
 
 export default Section;
+
+// <main className="max-w-screen-2xl mx-auto">
