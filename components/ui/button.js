@@ -3,7 +3,7 @@ import Link from "next/link";
 function Button(props) {
   return (
     <Link href={props.link}>
-      <button class="button">
+      <button className="button">
         {props.text}
       </button>
     </Link>

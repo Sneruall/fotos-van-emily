@@ -15,12 +15,12 @@ function Reviews() {
           </h2>
           <div className="md:max-w-md -mx-16 md:m-0">
             <Carousel
-              autoplay
+              autoPlay
               infiniteLoop
               showStatus={false}
               showIndicators={false}
               showThumbs={false}
-              interval={5000}
+              interval="5000"
             >
                 <Review
                   text="Emily zorgt ervoor dat je op je gemak bent en maakt zo hele spontane en natuurlijke foto's!
