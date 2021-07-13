@@ -8,7 +8,7 @@ function Reviews() {
     <Section bg={"bg-brown-light"}>
       <div className=" border border-grey-dark p-2 md:mx-auto md:max-w-6xl 3xl:max-w-full">
         <div className="border border-grey-dark p-16">
-          <h2 className="text-center md:text-left text-6xl font-display uppercase text-white leading-snug">
+          <h2 className="text-center md:text-left text-5xl md:text-6xl font-display uppercase text-white leading-snug">
             Reviews
           </h2>
           <div className="flex justify-center">
@@ -55,8 +55,8 @@ function Reviews() {
                 img="/images/telefoon.png"
                 imgwidth={342}
                 imgheight={513}
-                alt="Geldboom"
-                title="Tarieven"
+                alt="Telefoon"
+                title="Contact"
                 description="Wil je mij inhuren of heb je vragen? Neem contact op met mij en we bespreken jouw wensen en de mogelijkheden."
                 showDescriptionOnMobile
               />
