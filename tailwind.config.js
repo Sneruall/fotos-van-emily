@@ -54,6 +54,9 @@ module.exports = {
       width: {
         "18/12": "150%",
       },
+      minWidth: {
+        '170': "170px",
+      },
     },
   },
   variants: {

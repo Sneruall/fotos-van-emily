@@ -6,7 +6,12 @@
     font-family: "Diranista-Regular";
     src: url("./fonts//Diranista-Regular.woff") format("woff");
   }
+}
 
+@layer components{
+  .button{
+    @apply bg-white hover:bg-pink-darkest hover:text-white text-pink-darkest font-semibold uppercase py-4 px-6 rounded-full min-w-170
+  }
 }
 
 @tailwind utilities;

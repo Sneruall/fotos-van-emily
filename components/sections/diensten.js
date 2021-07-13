@@ -1,7 +1,7 @@
 import Section from "../layout/Section";
 import Dienst from "./elements/dienst";
 import Fotobewerking from "./elements/fotobewerking";
-import Link from "next/link";
+import Button from "../ui/button";
 
 export default function Diensten() {
   return (
@@ -12,55 +12,59 @@ export default function Diensten() {
         </h2>
 
         <div className="grid grid-rows-1 md:grid-cols-2 md:gap-10 3xl:grid-cols-4 justify-items-center mx-10">
-          <Dienst
-            title={"Portret"}
-            description={
-              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero."
-            }
-            img={"/images/diensten/portret.png"}
-            alt={"Portretfotografie"}
-            imgwidth={421}
-            imgheight={434}
-          />
-          <Dienst
-            title={"Loveshoot"}
-            description={
-              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero."
-            }
-            img={"/images/diensten/loveshoot.png"}
-            alt={"Koppelfotografie"}
-            imgwidth={421}
-            imgheight={434}
-          />
-          <Dienst
-            title={"Zwangerschap"}
-            description={
-              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero."
-            }
-            img={"/images/diensten/zwangerschap.png"}
-            alt={"Zwangerschapsfotografie"}
-            imgwidth={421}
-            imgheight={434}
-          />
-          <Dienst
-            title={"Honden"}
-            description={
-              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero."
-            }
-            img={"/images/diensten/honden.png"}
-            alt={"Hondenfotografie"}
-            imgwidth={421}
-            imgheight={434}
-          />
+          <div className="max-w-xs">
+            <Dienst
+              title={"Portret"}
+              description={
+                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero."
+              }
+              img={"/images/diensten/portret.png"}
+              alt={"Portretfotografie"}
+              imgwidth={421}
+              imgheight={434}
+            />
+          </div>
+          <div className="max-w-xs">
+            <Dienst
+              title={"Loveshoot"}
+              description={
+                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero."
+              }
+              img={"/images/diensten/loveshoot.png"}
+              alt={"Koppelfotografie"}
+              imgwidth={421}
+              imgheight={434}
+            />
+          </div>
+          <div className="max-w-xs">
+            <Dienst
+              title={"Zwangerschap"}
+              description={
+                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero."
+              }
+              img={"/images/diensten/zwangerschap.png"}
+              alt={"Zwangerschapsfotografie"}
+              imgwidth={421}
+              imgheight={434}
+            />
+          </div>
+          <div className="max-w-xs">
+            <Dienst
+              title={"Honden"}
+              description={
+                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero."
+              }
+              img={"/images/diensten/honden.png"}
+              alt={"Hondenfotografie"}
+              imgwidth={421}
+              imgheight={434}
+            />
+          </div>
         </div>
 
         <Fotobewerking />
         <div className="pt-20 md:pb-10 text-center">
-          <Link href="/">
-            <button class="bg-white hover:bg-pink-darkest hover:text-white text-pink-darkest font-semibold uppercase py-4 px-6 rounded-full">
-              Bekijk mijn portfolio
-            </button>
-          </Link>
+              <Button link="/" text="Bekijk mijn portfolio"/>
         </div>
       </div>
     </Section>
