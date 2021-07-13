@@ -1,6 +1,6 @@
 function Review(props) {
   return (
-    <div className="py-10 max-w-sm">
+    <div className="py-12 px-12 max-w-sm mx-auto">
       <p className="text-white text-center">
           {props.text}
       </p>

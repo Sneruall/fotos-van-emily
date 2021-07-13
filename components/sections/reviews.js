@@ -2,6 +2,8 @@ import Section from "../layout/Section";
 import Button from "../ui/button";
 import Dienst from "./elements/dienst";
 import Review from "./elements/review";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 
 function Reviews() {
   return (
@@ -11,14 +13,30 @@ function Reviews() {
           <h2 className="text-center md:text-left text-5xl md:text-6xl font-display uppercase text-white leading-snug">
             Reviews
           </h2>
-          <div className="flex justify-center">
-            <Review
-              text="Emily zorgt ervoor dat je op je gemak bent en maakt zo hele spontane en natuurlijke foto's!
+          <div className="md:max-w-md -mx-16 md:m-0">
+            <Carousel
+              autoplay
+              infiniteLoop
+              showStatus={false}
+              showIndicators={false}
+              showThumbs={false}
+              interval={5000}
+            >
+                <Review
+                  text="Emily zorgt ervoor dat je op je gemak bent en maakt zo hele spontane en natuurlijke foto's!
             Ze heeft een goed oog voor mooie locaties en creatieve ideeën over de foto's. Nu hebben we
             mooie portretfoto's, leuke foto's als stel én heb ik professionele foto's voor mijn eigen
             website. Echt een aanrader!"
-              name="Rina"
-            />
+                  name="Rina"
+                />
+                <Review
+                  text="Emily zorgt ervoor dat je op je gemak bent en maakt zo hele spontane en natuurlijke foto's!
+            Ze heeft een goed oog voor mooie locaties en creatieve ideeën over de foto's. Nu hebben we
+            mooie portretfoto's, leuke foto's als stel én heb ik professionele foto's voor mijn eigen
+            website. Echt een aanrader!"
+                  name="Rina2"
+                />
+            </Carousel>
           </div>
 
           <div className="flex flex-wrap gap-6 justify-evenly">
