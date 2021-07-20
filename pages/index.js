@@ -13,6 +13,7 @@ export default function Home() {
         <title>De Foto's van Emily</title>
         {/* description meta */}
         {/* <link rel="icon" href="/favicon.ico" /> */}
+        {/* gebruik next-seo npm tool */}
       </Head>
       <Header/>
       <main>

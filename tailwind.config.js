@@ -47,7 +47,7 @@ module.exports = {
           greyish: "#d9e0e8",
         },
         brown: {
-          DEFAULT: "#a8896c",
+          DEFAULT: "#a28a6f",
           light: "#dfddd7",
         },
       },
