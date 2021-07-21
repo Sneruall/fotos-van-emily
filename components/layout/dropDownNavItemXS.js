@@ -38,19 +38,21 @@ function dropDownNavItemXS(props) {
             <h2 className="ml-12">{props.text}</h2>
           </div>
           {navExtended ? (
-            <ChevronUpIcon id="chevronup" className="h-6 w-6 my-auto mr-4" />
+            <ChevronUpIcon id="chevronup" className="h-6 w-6 my-auto mr-5" />
           ) : (
             <ChevronDownIcon
               id="chevrondown"
-              className="h-6 w-6 my-auto mr-4"
+              className="h-6 w-6 my-auto mr-5"
             />
           )}
         </div>
       </li>
       <ul id="diensten" className="hidden">
         <DroppedDownNavItemXS text="portret" link="/" />
-        <DroppedDownNavItemXS text="portret" link="/" />
-        <DroppedDownNavItemXS text="portret" link="/" />
+        <DroppedDownNavItemXS text="loveshoot" link="/" />
+        <DroppedDownNavItemXS text="zwangerschap" link="/" />
+        <DroppedDownNavItemXS text="honden" link="/" />
+        <DroppedDownNavItemXS text="fotobewerking" link="/" />
       </ul>
     </Fragment>
   );
