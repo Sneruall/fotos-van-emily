@@ -49,6 +49,7 @@ module.exports = {
         brown: {
           DEFAULT: "#a28a6f",
           light: "#dfddd7",
+          dark: "#a96b4d",
         },
       },
       width: {
