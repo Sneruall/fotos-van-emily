@@ -1,36 +1,15 @@
 import { ChevronUpIcon } from "@heroicons/react/outline";
 import { ChevronDownIcon } from "@heroicons/react/outline";
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useState } from "react";
 import DroppedDownNavItemXS from "./droppedDownNavItemXS";
 
 function dropDownNavItemXS(props) {
   const [navExtended, setNavExtended] = useState(false);
-  let dienstenDropdown = null;
-
-  useEffect(() => {
-    if (!dienstenDropdown) {
-      dienstenDropdown = document.getElementById("diensten");
-    }
-
-    if (navExtended) {
-      dienstenDropdown.classList.remove("hidden");
-    } else if (!dienstenDropdown.classList.contains("hidden")) {
-      dienstenDropdown.classList.add("hidden");
-    }
-  }, [navExtended]);
-
-  function toggleDropdown() {
-    if (!navExtended) {
-      setNavExtended(true);
-    } else {
-      setNavExtended(false);
-    }
-  }
 
   return (
     <Fragment>
       <li
-        onClick={toggleDropdown}
+        onClick={() => navExtended ? setNavExtended(false) : setNavExtended(true)}
         className="py-2 border-b border-opacity-25 cursor-pointer"
       >
         <div className="flex justify-between">
@@ -47,7 +26,7 @@ function dropDownNavItemXS(props) {
           )}
         </div>
       </li>
-      <ul id="diensten" className="hidden">
+      <ul className={`${!navExtended && 'hidden'}`}>
         <DroppedDownNavItemXS text="portret" link="/" />
         <DroppedDownNavItemXS text="loveshoot" link="/" />
         <DroppedDownNavItemXS text="zwangerschap" link="/" />
