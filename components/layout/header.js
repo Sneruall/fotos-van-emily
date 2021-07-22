@@ -11,7 +11,9 @@ function Header() {
   return (
     <header className="flex flex-col h-screen">
       <div
-        className={`${!mobileMenuExtended && 'hidden'} sm:hidden absolute top-0 bg-brown bg-opacity-50 w-full z-20`}
+        className={`${
+          !mobileMenuExtended && "hidden"
+        } sm:hidden absolute top-0 bg-brown bg-opacity-50 w-full z-20`}
       >
         <div className="flex w-full absolute justify-center mb-5 mt-4">
           <h1 className="font-display uppercase text-brown text-3xl">
@@ -36,33 +38,39 @@ function Header() {
         </nav>
       </div>
 
-      <Image
-        src="/images/header/hero.png"
-        alt="Hero image"
-        layout="fill"
-        objectFit="cover"
-        priority
-      />
+      <div className="hidden sm:block">
+        <Image
+          src="/images/header/hero.png"
+          alt="Hero image"
+          layout="fill"
+          objectFit="cover"
+          priority
+        />
+      </div>
+
+      <div className="sm:hidden">
+        <Image
+          src="/images/header/hero-mobile.png"
+          alt="Hero image"
+          layout="fill"
+          objectFit="cover"
+          priority
+        />
+      </div>
 
       <div className="sm:hidden self-end z-10 mt-5 mr-4 cursor-pointer">
         {!mobileMenuExtended && (
           <MenuIcon
-          onClick={() => setMobileMenuExtended(true)}
+            onClick={() => setMobileMenuExtended(true)}
             className="h-8 w-8 text-grey-darkest"
           />
         )}
       </div>
 
       {!mobileMenuExtended && (
-        <div className="mx-10 mt-2 sm:mt-10 md:mx-auto">
-          <Image
-            className="object-contain"
-            src="/images/header/fotosvanemily-logo.png"
-            width={800}
-            height={140}
-            alt="Foto's van Emily logo"
-            priority
-          />
+        <div className="mt-10 z-50 font-display uppercase text-grey-charcoal mx-auto">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl">Foto's van Emily</h1>
+          <h2 className="text-center text-lg sm:hidden">FOTOGRAFIE &amp; FOTOBEWERKING</h2>
         </div>
       )}
 
