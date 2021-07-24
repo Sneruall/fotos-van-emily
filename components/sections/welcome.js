@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Section from "../layout/Section";
 
+//hier gaat nog iets mis met margins van het witte vlak
 export default function Welcome() {
   return (
     <Section bg={"bg-pink"}>
@@ -34,7 +35,7 @@ export default function Welcome() {
             Hee, welkom op mijn site!
           </p>
 
-          <div className="bg-white md:bg-opacity-0 py-20 md:py-0 md:m-0 rounded-t-full -mt-60 -mb-40 -mx-5">
+          <div className="bg-white md:bg-opacity-0 py-20 md:py-0 md:m-0 rounded-t-full -mt-60 -mb-40">
             <p className="font-display text-pink-darkest md:text-white text-center md:text-left text-3xl uppercase md:normal-case mb-4 mt-40 md:mt-0">
               Mijn naam is
             </p>
@@ -48,6 +49,9 @@ export default function Welcome() {
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy e
             </p>
           </div>
+
+
+          
         </div>
       </div>
     </Section>
