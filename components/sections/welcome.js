@@ -5,7 +5,7 @@ import Section from "../layout/Section";
 export default function Welcome() {
   return (
     <Section bg={"bg-pink"}>
-      <div className="flex md:items-stretch mx-auto flex-col md:flex-row relative md:gap-10 md:max-w-5xl">
+      <div className="flex md:items-stretch mx-auto flex-col md:flex-row relative md:gap-10 max-w-5xl">
 
         <div className="flex-auto">
         <p className="font-display text-white text-center text-5xl mx-5 md:hidden">

@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer className="w-full bg-pink-light">
-      <div className="flex flex-col lg:flex-row text-center justify-around max-w-7xl mx-auto">
+      <div className="flex flex-col lg:flex-row text-center justify-between max-w-5xl mx-auto">
         <div>
           <h4 className="font-semibold uppercase text-brown-clay mt-10 mb-5">
             Locatie

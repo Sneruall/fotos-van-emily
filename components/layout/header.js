@@ -70,17 +70,19 @@ function Header() {
       {!mobileMenuExtended && (
         <div className="mt-10 z-50 font-display uppercase text-grey-charcoal mx-auto">
           <h1 className="text-5xl md:text-7xl lg:text-8xl">Foto's van Emily</h1>
-          <h2 className="text-center text-lg sm:hidden">FOTOGRAFIE &amp; FOTOBEWERKING</h2>
+          <h2 className="text-center text-lg sm:hidden">
+            FOTOGRAFIE &amp; FOTOBEWERKING
+          </h2>
         </div>
       )}
 
       <nav>
-        <ul className="hidden sm:flex flex-row container mx-auto m-5 justify-evenly max-w-3xl items-center relative">
-          <NavItem text={"Home"} />
-          <NavItem text={"Diensten"} />
-          <NavItem text={"Portfolio"} />
-          <NavItem text={"Over mij"} />
-          <NavItem text={"Contact"} />
+        <ul className="hidden sm:flex flex-row container mx-auto justify-between mt-5 max-w-5xl items-start relative">
+          <NavItem text={"Home"} link="/" />
+          <NavItem text={"Diensten"} link="/" dropdown />
+          <NavItem text={"Portfolio"} link="/portfolio" />
+          <NavItem text={"Over mij"} link="/over-mij" />
+          <NavItem text={"Contact"} link="/contact" />
         </ul>
       </nav>
     </header>
