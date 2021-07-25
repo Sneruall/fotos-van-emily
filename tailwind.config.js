@@ -42,13 +42,15 @@ module.exports = {
         grey: {
           darkest: "#2a2c2b",
           dark: "#7e817f",
+          charcoal: "#404342"
         },
         blue: {
           greyish: "#d9e0e8",
         },
         brown: {
-          DEFAULT: "#a8896c",
+          DEFAULT: "#a28a6f",
           light: "#dfddd7",
+          clay: "#a96b4d",
         },
       },
       width: {
