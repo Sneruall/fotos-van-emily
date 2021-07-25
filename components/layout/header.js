@@ -83,6 +83,7 @@ function Header() {
           <NavItem text={"Portfolio"} link="/portfolio" />
           <NavItem text={"Over mij"} link="/over-mij" />
           <NavItem text={"Contact"} link="/contact" />
+
         </ul>
       </nav>
     </header>
