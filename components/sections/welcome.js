@@ -4,11 +4,11 @@ import Section from "../layout/Section";
 //hier gaat nog iets mis met margins van het witte vlak
 export default function Welcome() {
   return (
-    <Section bg={"bg-grey-light"}>
+    <Section bg={"bg-grey-pinkish2 md:bg-grey-light"}>
       <div className="flex md:items-stretch mx-auto flex-col md:flex-row relative md:gap-10 max-w-5xl">
 
         <div className="flex-auto">
-        <p className="font-display text-charcoal text-center text-5xl mx-5 md:hidden">
+        <p className="font-display text-white text-center text-5xl mx-5 md:hidden">
           Hee, welkom op mijn site!
         </p>
         <div className="w-3/5 self-start mx-auto md:w-auto relative my-5 md:my-0">
@@ -32,7 +32,7 @@ export default function Welcome() {
           </p>
 
           <div className="bg-white md:bg-opacity-0 py-20 md:py-0 md:m-0 rounded-t-full -mt-60 -mb-40">
-            <p className="font-display text-pink-darkest md:text-charcoal text-center md:text-left text-3xl uppercase md:normal-case mb-4 mt-40 md:mt-0">
+            <p className="font-display text-brown-pale md:text-charcoal text-center md:text-left text-3xl uppercase md:normal-case mb-4 mt-40 md:mt-0">
               Mijn naam is
             </p>
 
