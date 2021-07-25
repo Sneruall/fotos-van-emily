@@ -64,7 +64,7 @@ export default function Diensten() {
 
         <Fotobewerking />
         <div className="pt-20 md:pb-10 text-center">
-              <Button link="/" text="Bekijk mijn portfolio"/>
+              <Button link="/" button="button-1" text="Bekijk mijn portfolio"/>
         </div>
       </div>
     </Section>

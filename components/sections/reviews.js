@@ -51,7 +51,7 @@ function Reviews() {
                 showDescriptionOnMobile
               />
               <div className="pt-10 text-center">
-                <Button link="/" text="Diensten" />
+                <Button link="/" button="button-2" text="Diensten" />
               </div>
             </div>
             <div className="w-60">
@@ -65,7 +65,7 @@ function Reviews() {
                 showDescriptionOnMobile
               />
               <div className="pt-10 text-center">
-                <Button link="/" text="Lees meer" />
+                <Button link="/" button="button-2" text="Lees meer" />
               </div>
             </div>
             <div className="w-60">
@@ -79,7 +79,7 @@ function Reviews() {
                 showDescriptionOnMobile
               />
               <div className="pt-10 text-center">
-                <Button link="/" text="Neem contact op" />
+                <Button link="/" button="button-2" text="Neem contact op" />
               </div>
             </div>
           </div>

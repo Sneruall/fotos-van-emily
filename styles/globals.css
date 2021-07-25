@@ -9,8 +9,14 @@
 }
 
 @layer components{
-  .button{
+  .button-1{
     @apply bg-brown-pale hover:bg-reddish text-white font-semibold uppercase py-4 px-6 rounded-full min-w-170
+  }
+  .button-2{
+    @apply bg-white hover:bg-clay text-clay hover:text-white font-semibold uppercase py-4 px-6 rounded-full min-w-170
+  }
+  .button-3{
+    @apply bg-white hover:bg-charcoal text-charcoal hover:text-white font-semibold uppercase py-4 px-6 rounded-full min-w-170
   }
 }
 
