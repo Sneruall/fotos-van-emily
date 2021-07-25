@@ -32,26 +32,17 @@ module.exports = {
       colors: {
         transparent: "transparent",
         current: "currentColor",
-        pink: {
-          lightest: "#fff8ef",
-          DEFAULT: "#dccfc6",
-          dark: "#fff",
-          darkest: "#b36747",
-        },
         grey: {
           light: '#efe9e0',
           light2: "#dfddd7",
-          darkest: "#2a2c2b",
-          dark: "#7e817f",
           pale: "#d9e0e8",
           pinkish: "#d4c7b8",
           pinkish2: "#dccfc6",
         },
         brown: {
-          DEFAULT: "#a28a6f",
-          light: "#dfddd7",
           pale: "#a8896c",
           pale2: "#a38a70",
+          pale3: "#a28a6f",
         },
         clay:{
           DEFAULT: "#a96b4d",

@@ -36,7 +36,7 @@ export default function Welcome() {
               Mijn naam is
             </p>
 
-            <h2 className="font-display text-grey-darkest md:text-pink-darkest text-center md:text-left text-5xl md:text-7xl uppercase">
+            <h2 className="font-display text-charcoal md:text-clay text-center md:text-left text-5xl md:text-7xl uppercase">
               Emily van Roomen
             </h2>
 

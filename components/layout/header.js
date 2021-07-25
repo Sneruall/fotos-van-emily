@@ -13,10 +13,10 @@ function Header() {
       <div
         className={`${
           !mobileMenuExtended && "hidden"
-        } sm:hidden absolute top-0 bg-brown bg-opacity-50 w-full z-20`}
+        } sm:hidden absolute top-0 bg-brown-pale3 bg-opacity-50 w-full z-20`}
       >
         <div className="flex w-full absolute justify-center mb-5 mt-4">
-          <h1 className="font-display uppercase text-brown text-3xl">
+          <h1 className="font-display uppercase text-brown-pale text-3xl">
             Foto's van Emily
           </h1>
         </div>
@@ -62,7 +62,7 @@ function Header() {
         {!mobileMenuExtended && (
           <MenuIcon
             onClick={() => setMobileMenuExtended(true)}
-            className="h-8 w-8 text-grey-darkest"
+            className="h-8 w-8 text-black"
           />
         )}
       </div>

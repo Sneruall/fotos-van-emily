@@ -12,10 +12,10 @@ export default function Fotobewerking(props) {
             alt="Fotobewerking"
           />
         </div>
-        <h2 className="text-2xl xl:text-3xl uppercase text-pink-darkest transition-all duration-100 ease-in-out group-hover:font-bold">
+        <h2 className="text-2xl xl:text-3xl uppercase text-brown-pale transition-all duration-100 ease-in-out group-hover:font-bold">
           Fotobewerking
         </h2>
-        <hr className="border-1 border-pink-darkest" />
+        <hr className="border-1 border-brown-pale2" />
         <p className="hidden md:block mt-3 text-lg">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
