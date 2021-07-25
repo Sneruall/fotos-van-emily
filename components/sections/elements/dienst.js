@@ -11,10 +11,10 @@ export default function Dienst(props) {
           alt={props.alt}
         />
       </div>
-      <h2 className="text-2xl xl:text-3xl uppercase text-pink-darkest transition-all duration-100 ease-in-out group-hover:font-bold">
+      <h2 className="text-2xl xl:text-3xl uppercase text-brown-pale transition-all duration-100 ease-in-out group-hover:font-bold">
         {props.title}
       </h2>
-      <hr className="border-1 border-pink-darkest" />
+      <hr className="border-1 border-brown-pale2" />
       {!props.showDescriptionOnMobile ? (
         <p className="hidden md:block mt-3 text-lg">{props.description}</p>
       ) : (

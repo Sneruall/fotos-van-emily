@@ -4,7 +4,7 @@ function Review(props) {
       <p className="text-white text-center">
           {props.text}
       </p>
-      <p className="text-center mt-6 italic text-grey-dark">{props.name}</p>
+      <p className="text-center mt-6 italic text-brown-pale">{props.name}</p>
     </div>
   );
 }

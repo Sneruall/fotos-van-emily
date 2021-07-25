@@ -68,7 +68,7 @@ function Header() {
       </div>
 
       {!mobileMenuExtended && (
-        <div className="mt-10 z-50 font-display uppercase text-grey-charcoal mx-auto">
+        <div className="mt-10 z-50 font-display uppercase text-charcoal mx-auto">
           <h1 className="text-5xl md:text-7xl lg:text-8xl">Foto's van Emily</h1>
           <h2 className="text-center text-lg sm:hidden">
             FOTOGRAFIE &amp; FOTOBEWERKING

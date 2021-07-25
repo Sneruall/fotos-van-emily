@@ -1,22 +1,22 @@
 function Footer() {
   return (
-    <footer className="w-full bg-pink-light">
+    <footer className="w-full bg-grey-light">
       <div className="flex flex-col lg:flex-row text-center justify-between max-w-5xl mx-auto">
         <div>
-          <h4 className="font-semibold uppercase text-brown-clay mt-10 mb-5">
+          <h4 className="font-semibold uppercase text-clay mt-10 mb-5">
             Locatie
           </h4>
           <p>Godfried van Seijstlaan 27 D1</p>
           <p>3703 BR Zeist</p>
         </div>
         <div>
-          <h4 className="font-semibold uppercase text-brown-clay mt-10 mb-5">
+          <h4 className="font-semibold uppercase text-clay mt-10 mb-5">
             Volg mij
           </h4>
           {/* volg icons */}
         </div>
         <div>
-          <h4 className="font-semibold uppercase text-brown-clay mt-10 mb-5">
+          <h4 className="font-semibold uppercase text-clay mt-10 mb-5">
             Contact
           </h4>
           <a href="mailto:info@fotosvanemily.nl" className="hover:underline">
@@ -24,7 +24,7 @@ function Footer() {
           </a>
           <p>
             Tel:{" "}
-            <a href="tel:+31652331778" className="text-brown-clay">
+            <a href="tel:+31652331778" className="text-mocha hover:underline">
               +31 6 52331778
             </a>
           </p>
@@ -37,7 +37,7 @@ function Footer() {
           <a
             href="https://www.laurensvanroomen.nl"
             target="_blank"
-            className="text-brown-clay hover:underline"
+            className="text-mocha hover:underline"
           >
             Laurens van Roomen
           </a>
