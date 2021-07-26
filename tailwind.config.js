@@ -56,6 +56,9 @@ module.exports = {
         charcoal:{
           DEFAULT: '#404342',
         },
+        sandstone:{
+          DEFAULT: '#c9a077',
+        },
       },
       width: {
         "18/12": "150%",
