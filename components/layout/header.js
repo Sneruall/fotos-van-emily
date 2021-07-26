@@ -13,7 +13,7 @@ function Header() {
       <div
         className={`${
           !mobileMenuExtended && "hidden"
-        } sm:hidden absolute top-0 bg-brown-pale3 bg-opacity-50 w-full z-20`}
+        } sm:hidden absolute top-0 bg-brown-pale3 bg-opacity-50 w-full`}
       >
         <div className="flex w-full absolute justify-center mb-5 mt-4">
           <h1 className="font-display uppercase text-brown-pale text-3xl">
