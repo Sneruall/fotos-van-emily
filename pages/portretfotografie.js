@@ -1,9 +1,13 @@
+import { Fragment } from "react";
+import ScrollNavbar from "../components/layout/scrollNavbar";
+
 function portretfotografie() {
-    return (
-        <div>
-            hoi
-        </div>
-    )
+  return (
+    <Fragment>
+      <ScrollNavbar />
+      <div>hoi</div>
+    </Fragment>
+  );
 }
 
-export default portretfotografie
+export default portretfotografie;

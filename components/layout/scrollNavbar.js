@@ -1,25 +1,29 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-function scrollNavbar() {
+function scrollNavbar(props) {
   const [scrollNav, setScrollNav] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    props.fade && window.addEventListener("scroll", handleScroll);
   }, []);
 
   const handleScroll = () => {
-      if (window.pageYOffset > 140) {
-          if(!scrollNav){
-              setScrollNav(true);
-          }
-      } else {
-          setScrollNav(false);
+    if (window.pageYOffset > 140) {
+      if (!scrollNav) {
+        setScrollNav(true);
       }
+    } else {
+      setScrollNav(false);
+    }
   };
 
   return (
-    <div className={`${!scrollNav ? "hidden" : "sm:block"} hidden fixed bg-white opacity-90 w-full z-50 top-0`}>
+    <div
+      className={`${
+        !scrollNav && props.fade ? "hidden" : "sm:block"
+      } hidden fixed bg-white opacity-90 w-full z-50 top-0`}
+    >
       <div className="px-2 flex max-w-6xl mx-auto uppercase font-display text-brown-pale justify-between">
         <div>
           <h2 className="text-2xl md:text-4xl my-2">Foto's van Emily</h2>

@@ -4,6 +4,7 @@ import Welcome from "../components/sections/welcome";
 import Diensten from "../components/sections/diensten";
 import Werkwijze from "../components/sections/werkwijze";
 import Reviews from "../components/sections/reviews";
+import ScrollNavbar from "../components/layout/scrollNavbar";
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
         {/* <link rel="icon" href="/favicon.ico" /> */}
         {/* gebruik next-seo npm tool */}
       </Head>
+
+      <ScrollNavbar fade/>
 
       <Welcome />
       <Diensten />
