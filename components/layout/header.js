@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Header(props) {
   return (
-    <header className="flex h-screen relative">
+    <header className="flex h-screen">
       <div className="hidden sm:block">
         <Image
           src={props.img}
@@ -32,7 +32,7 @@ function Header(props) {
 
       {props.pageTitle && (
           <div className="absolute left-1/2 transform -translate-x-1/2 bottom-10 max-w-6xl w-full">
-            <h1 className="max-w-5xl text-9xl text-sandstone font-display uppercase">portret fotografie</h1>
+            <h1 className="max-w-5xl text-7xl sm:text-9xl text-white sm:text-sandstone font-display uppercase mx-2">portret fotografie</h1>
           </div>
       )}
     </header>

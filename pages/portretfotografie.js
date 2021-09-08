@@ -7,7 +7,7 @@ function portretfotografie() {
     <Fragment>
       <Header
         img="/images/portretfotografie/hero.png"
-        imgMobile="/images/header/hero-mobile.png"
+        imgMobile="/images/portretfotografie/hero-mobile.png"
         pageTitle="portret fotografie"
       />
 
