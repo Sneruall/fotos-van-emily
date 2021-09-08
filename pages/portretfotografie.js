@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import Header from "../components/layout/header";
 import ScrollNavbar from "../components/layout/scrollNavbar";
+import PageIntro from "../components/sections/pageIntro";
 
 function portretfotografie() {
   return (
@@ -12,7 +13,7 @@ function portretfotografie() {
       />
 
       <ScrollNavbar />
-      <div>hoi</div>
+      <PageIntro />
     </Fragment>
   );
 }
