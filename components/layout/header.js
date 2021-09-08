@@ -1,12 +1,12 @@
 import Image from "next/image";
 
 
-function Header() {
+function Header(props) {
   return (
     <header className="flex flex-col h-screen">
       <div className="hidden sm:block">
         <Image
-          src="/images/header/hero.png"
+          src={props.img}
           alt="Hero image"
           layout="fill"
           objectFit="cover"
@@ -16,7 +16,7 @@ function Header() {
 
       <div className="sm:hidden">
         <Image
-          src="/images/header/hero-mobile.png"
+          src={props.imgMobile}
           alt="Hero image"
           layout="fill"
           objectFit="cover"
@@ -24,12 +24,14 @@ function Header() {
         />
       </div>
 
-      <div className="mt-10 z-10 font-display uppercase text-charcoal mx-auto">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl">Foto's van Emily</h1>
+      {props.title && 
+      <div className="mt-20 z-10 font-display uppercase text-charcoal mx-auto">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl">{props.title}</h1>
         <h2 className="text-center text-lg sm:hidden">
-          FOTOGRAFIE &amp; FOTOBEWERKING
+          {props.subtitle}
         </h2>
-      </div>
+      </div>}
+
     </header>
   );
 }

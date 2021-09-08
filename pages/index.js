@@ -6,6 +6,7 @@ import Werkwijze from "../components/sections/werkwijze";
 import Reviews from "../components/sections/reviews";
 import ScrollNavbar from "../components/layout/scrollNavbar";
 import Navigation from "../components/layout/navigation";
+import Header from "../components/layout/header";
 
 
 export default function Home() {
@@ -18,8 +19,10 @@ export default function Home() {
         {/* <link rel="icon" href="/favicon.ico" /> */}
         {/* gebruik next-seo npm tool */}
       </Head>
+      <Header img="/images/header/hero.png" imgMobile="/images/header/hero-mobile.png" title="Foto's van Emily" subtitle="FOTOGRAFIE &amp; FOTOBEWERKING"/>
       <Navigation/>
       <ScrollNavbar fade/>
+
 
       <Welcome />
       <Diensten />
