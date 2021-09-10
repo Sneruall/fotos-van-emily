@@ -43,14 +43,14 @@ function PageSectionTwo() {
             </p>
           </div>
         </div>
-        {/* reviews */}
-        <div className="border border-white my-5">
+        {/* reviews mobile */}
+        <div className="lg:hidden border border-white my-5">
           <div className="bg-white m-1 p-2 bg-opacity-70">
-            <h3 className="text-brown-pale uppercase font-display text-5xl md:text-6xl text-center my-10">
+            <h3 className="text-brown-pale uppercase font-display text-5xl text-center my-10">
               Reviews
             </h3>
             <div className="p-2">
-              <div className="lg:hidden flex justify-center">
+              <div className="flex justify-center">
                 <Carousel
                   autoplay
                   infiniteLoop
@@ -91,6 +91,12 @@ function PageSectionTwo() {
               </div>
             </div>
           </div>
+        </div>
+        {/* reviews desktop */}
+        <div className="w-full absolute left-0">
+          <h3 className="text-white uppercase font-display text-7xl my-10 truncate">
+            Reviews Reviews Reviews Reviews Reviews Reviews Reviews Reviews Reviews Reviews Reviews Reviews Reviews
+          </h3>
         </div>
       </div>
     </Section>
