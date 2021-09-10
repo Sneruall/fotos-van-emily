@@ -30,10 +30,10 @@ function pageIntro() {
             Lorem ipsum dolor sit amet."
               />
               <ImageWithText
-                img="/images/portretfotografie/portret-2s.png"
+                img="/images/portretfotografie/portret-2.png"
                 alt="Prive portret"
-                width={343}
-                height={212}
+                width={400}
+                height={267}
                 title="Prive"
                 text="Of misschien wil je graag een nieuwe leuke profielfoto op je dating site, of je social media feed weer wat opfrissen met gave foto’s! In welke levensfase je ook zit, je bent een prachtig mens en het is zo mooi om dat voor altijd vast te leggen."
                 mirrored
