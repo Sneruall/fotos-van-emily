@@ -1,10 +1,9 @@
-import { Fragment } from "react";
 import Button from "../../ui/button";
 import Image from "next/image";
 
 function ImageWithText(props) {
   return (
-    <div className="flex flex-col lg:flex-row lg:gap-10 mb-20 lg:mb-10">
+    <div className="flex flex-col lg:flex-row lg:gap-10 mt-20">
       <div className={`flex-shrink-0 self-center md:self-start order-first ${props.mirrored ? "lg:order-last" : ""}`}>
         <Image
           src={props.img}

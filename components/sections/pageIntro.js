@@ -2,18 +2,19 @@ import { Carousel } from "react-responsive-carousel";
 import Section from "../layout/Section";
 import Button from "../ui/button";
 import ImageWithText from "./elements/ImageWithText";
+import Image from "next/image";
 
 function pageIntro() {
   return (
     <Section bg={"bg-grey-light"}>
       <div className="mx-auto max-w-6xl">
-        <h2 className="font-display text-charcoal text-5xl md:text-6+xl text-center my-10">
+        <h2 className="font-display text-charcoal text-5xl md:text-6xl text-center my-10">
           LORUM IPSUM DOLOR SIT AMET, CONSETETUR SADIPSCING ELITR
         </h2>
 
         <div className="border border-white my-5">
           <div className="bg-white m-1 p-2">
-            <div className="p-10 max-w-5xl mx-auto">
+            <div className="p-2 sm:px-10 max-w-5xl mx-auto">
               <ImageWithText
                 img="/images/portretfotografie/portret-1.png"
                 alt="Zakelijk portret"
@@ -38,24 +39,71 @@ function pageIntro() {
                 text="Of misschien wil je graag een nieuwe leuke profielfoto op je dating site, of je social media feed weer wat opfrissen met gave foto’s! In welke levensfase je ook zit, je bent een prachtig mens en het is zo mooi om dat voor altijd vast te leggen."
                 mirrored
               />
+            </div>
 
-              <Carousel
-                autoplay
-                infiniteLoop
-                showStatus={false}
-                showIndicators={false}
-                showThumbs={false}
-                interval={5000}
-              ></Carousel>
+            <div className="p-2">
+              <div className="lg:hidden flex justify-center">
+                <Carousel
+                  autoplay
+                  infiniteLoop
+                  showStatus={false}
+                  showIndicators={true}
+                  showThumbs={false}
+                  interval={5000}
+                  width={318}
+                >
+                  <Image
+                    src="/images/portretfotografie/portret-3.png"
+                    alt="portret"
+                    width="318"
+                    height="477"
+                  />
+                  <Image
+                    src="/images/portretfotografie/portret-3.png"
+                    alt="portret"
+                    width="318"
+                    height="477"
+                  />
+                  <Image
+                    src="/images/portretfotografie/portret-3.png"
+                    alt="portret"
+                    width="318"
+                    height="477"
+                  />
+                </Carousel>
+              </div>
 
-              <div className="flex justify-center">
+              <div className="hidden my-10 lg:grid grid-cols-3 gap-x-4">
+                <Image
+                  src="/images/portretfotografie/portret-3.png"
+                  alt="portret"
+                  width="318"
+                  height="477"
+                  layout="responsive"
+                />
+                <Image
+                  src="/images/portretfotografie/portret-3.png"
+                  alt="portret"
+                  width="318"
+                  height="477"
+                  layout="responsive"
+                />
+                <Image
+                  src="/images/portretfotografie/portret-3.png"
+                  alt="portret"
+                  width="318"
+                  height="477"
+                  layout="responsive"
+                />
+              </div>
+            </div>
+
+            <div className="flex justify-center">
               <Button
                 text="Naar uitgebreid portfolio"
                 link="#"
-                button="button-1 my-5 w-full md:w-auto"
+                button="button-1 mb-20 w-full md:w-auto"
               />
-              </div>
-
             </div>
           </div>
         </div>
