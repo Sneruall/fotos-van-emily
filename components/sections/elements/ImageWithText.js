@@ -1,0 +1,34 @@
+import { Fragment } from "react";
+import Button from "../../ui/button";
+import Image from "next/image";
+
+function ImageWithText(props) {
+  return (
+    <div className="flex flex-col lg:flex-row lg:gap-10 mb-20 lg:mb-10">
+      <div className={`self-center md:self-start order-first ${props.mirrored ? "lg:order-last" : ""}`}>
+        <Image
+          src={props.img}
+          alt={props.alt}
+          width={props.width}
+          height={props.height}
+          layout="fixed"
+        />
+      </div>
+
+      <div>
+        <div className="w-1/2 my-5">
+          <h3 className="uppercase text-brown-pale text-3xl border-b-2 border-brown-pale">
+            {props.title}
+          </h3>
+        </div>
+
+        <p>{props.text}</p>
+
+        <Button text="Boek een shoot!" link="#" button="button-1 my-5" />
+     
+      </div>
+    </div>
+  );
+}
+
+export default ImageWithText;
