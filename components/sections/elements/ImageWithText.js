@@ -20,7 +20,7 @@ function ImageWithText(props) {
           </h3>
         </div>
 
-        <p>{props.text}</p>
+        <p className="text-charcoal">{props.text}</p>
 
         <Button text="Boek een shoot!" link="#" button="button-1 my-5" />
      

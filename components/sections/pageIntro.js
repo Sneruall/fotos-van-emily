@@ -13,7 +13,7 @@ function pageIntro() {
         </h2>
 
         <div className="border border-white my-5">
-          <div className="bg-white m-1 p-2">
+          <div className="bg-white m-1 p-2 bg-opacity-70">
             <div className="p-2 sm:px-10 max-w-5xl mx-auto">
               <ImageWithText
                 img="/images/portretfotografie/portret-1.png"
@@ -52,24 +52,32 @@ function pageIntro() {
                   interval={5000}
                   width={318}
                 >
-                  <Image
-                    src="/images/portretfotografie/portret-3.png"
-                    alt="portret"
-                    width="318"
-                    height="477"
-                  />
-                  <Image
-                    src="/images/portretfotografie/portret-3.png"
-                    alt="portret"
-                    width="318"
-                    height="477"
-                  />
-                  <Image
-                    src="/images/portretfotografie/portret-3.png"
-                    alt="portret"
-                    width="318"
-                    height="477"
-                  />
+                  <div className="py-10 px-7">
+                    <Image
+                      src="/images/portretfotografie/portret-3.png"
+                      alt="portret"
+                      width="318"
+                      height="477"
+                    />
+                  </div>
+                  <div className="py-10 px-7">
+                    <Image
+                      src="/images/portretfotografie/portret-3.png"
+                      alt="portret"
+                      width="318"
+                      height="477"
+                    />
+                  </div>
+                  <div className="py-10 px-7">
+                    <Image
+                      src="/images/portretfotografie/portret-3.png"
+                      alt="portret"
+                      width="318"
+                      height="477"
+                    />
+                  </div>
+
+
                 </Carousel>
               </div>
 
