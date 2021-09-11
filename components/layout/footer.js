@@ -42,7 +42,6 @@ function Footer() {
             Laurens van Roomen
           </a>
         </p>
-        <p>Ontworpen door Emily van Roomen</p>
       </div>
     </footer>
   );
