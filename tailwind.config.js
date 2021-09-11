@@ -33,38 +33,39 @@ module.exports = {
         transparent: "transparent",
         current: "currentColor",
         grey: {
-          light: '#efe9e0',
+          light: "#efe9e0",
           light2: "#dfddd7",
           pale: "#d9e0e8",
           pinkish: "#d4c7b8",
           pinkish2: "#dccfc6",
+          brownish: "#977b62",
         },
         brown: {
           pale: "#a8896c",
           pale2: "#a38a70",
           pale3: "#a28a6f",
         },
-        clay:{
+        clay: {
           DEFAULT: "#a96b4d",
         },
-        mocha:{
+        mocha: {
           DEFAULT: "#a06e52",
         },
-        reddish:{
+        reddish: {
           DEFAULT: "#c15540",
         },
-        charcoal:{
-          DEFAULT: '#404342',
+        charcoal: {
+          DEFAULT: "#404342",
         },
-        sandstone:{
-          DEFAULT: '#c9a077',
+        sandstone: {
+          DEFAULT: "#c9a077",
         },
       },
       width: {
         "18/12": "150%",
       },
       minWidth: {
-        '170': "170px",
+        170: "170px",
       },
     },
   },

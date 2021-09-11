@@ -4,6 +4,7 @@ import ScrollNavbar from "../components/layout/scrollNavbar";
 import PageIntro from "../components/sections/pageIntro";
 import PageSectionThree from "../components/sections/PageSectionThree";
 import PageSectionTwo from "../components/sections/PageSectionTwo";
+import PricingSection from "../components/sections/PricingSection";
 
 function portretfotografie() {
   return (
@@ -18,6 +19,7 @@ function portretfotografie() {
       <PageIntro />
       <PageSectionTwo />
       <PageSectionThree />
+      <PricingSection />
     </Fragment>
   );
 }
