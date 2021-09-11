@@ -66,6 +66,7 @@ module.exports = {
       },
       minWidth: {
         170: "170px",
+        130: "130px",
       },
     },
   },
