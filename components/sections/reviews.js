@@ -10,7 +10,7 @@ function Reviews() {
     <Section bg={"bg-grey-light2"}>
       <div className=" border border-brown-pale2 p-2 md:mx-auto md:max-w-6xl 3xl:max-w-full">
         <div className="border border-brown-pale2 p-16">
-          <h2 className="text-center md:text-left text-5xl md:text-6xl font-display uppercase text-white leading-snug">
+          <h2 className="text-center md:text-left text-5xl lg:text-6xl font-display uppercase text-white leading-snug">
             Reviews
           </h2>
           <div className="md:max-w-md -mx-16 md:m-0">

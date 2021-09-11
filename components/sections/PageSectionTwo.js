@@ -1,7 +1,6 @@
 import Section from "../layout/Section";
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
-import Review from "./elements/review";
 
 function PageSectionTwo() {
   return (
