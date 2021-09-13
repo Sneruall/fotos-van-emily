@@ -5,6 +5,7 @@ import PageIntro from "../components/sections/pageIntro";
 import PageSectionThree from "../components/sections/PageSectionThree";
 import PageSectionTwo from "../components/sections/PageSectionTwo";
 import PricingSection from "../components/sections/PricingSection";
+import WerkwijzeSection from "../components/sections/WerkwijzeSection";
 
 function portretfotografie() {
   return (
@@ -20,6 +21,7 @@ function portretfotografie() {
       <PageSectionTwo />
       <PageSectionThree />
       <PricingSection />
+      <WerkwijzeSection />
     </Fragment>
   );
 }
