@@ -39,6 +39,7 @@ module.exports = {
           pinkish: "#d4c7b8",
           pinkish2: "#dccfc6",
           brownish: "#977b62",
+          warm: "#707070",
         },
         brown: {
           pale: "#a8896c",
@@ -69,9 +70,26 @@ module.exports = {
         130: "130px",
       },
     },
+    textFillColor: theme => theme('borderColor'),
+    textStrokeColor: theme => theme('borderColor'),
+    textStrokeWidth: theme => theme('borderWidth'),
+    paintOrder: {
+      'fsm': { paintOrder: 'fill stroke markers' },
+      'fms': { paintOrder: 'fill markers stroke' },
+      'sfm': { paintOrder: 'stroke fill markers' },
+      'smf': { paintOrder: 'stroke markers fill' },
+      'mfs': { paintOrder: 'markers fill stroke' },
+      'msf': { paintOrder: 'markers stroke fill' },
+    },
   },
   variants: {
+    textFillColor: ['responsive'],
+    textStrokeColor: ['responsive'],
+    textStrokeWidth: ['responsive'],
+    paintOrder: ['responsive'],
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-text-fill-stroke')(), // no options to configure
+  ],
 };
