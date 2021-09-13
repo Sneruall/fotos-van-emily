@@ -12,8 +12,8 @@ function WerkwijzeSection() {
         <div className="border border-white my-5">
           <div className="bg-white m-1 px-6 lg:px-16 py-4 bg-opacity-70">
             {/* Stap */}
-            <div className="grid grid-cols-8 lg:grid-cols-4 grid-rows-4">
-              <div className="col-span-1 row-span-1 lg:row-span-4 lg:ml-10">
+            <div className="grid grid-cols-8 lg:grid-cols-4 grid-rows-2">
+              <div className="col-span-1 row-span-1 lg:row-span-4 lg:ml-10 self-end">
                 <p className="font-display text-9xl text-white text-stroke-grey-warm text-stroke-2">
                   1
                 </p>
@@ -23,7 +23,33 @@ function WerkwijzeSection() {
                   Contact vooraf
                 </h4>
               </div>
-              <div className="lg:col-start-2 col-span-8 lg:col-span-3 row-span-3">
+              <div className="lg:col-start-2 col-span-8 lg:col-span-3">
+                <p>
+                  Neem contact met mij op, dat kan via het contactformulier maar
+                  je mag me ook bellen of whatsappen. Ik laat zo snel mogelijk
+                  van mij horen, altijd binnen 24 uur. Samen bespreken we jouw
+                  wensen en vragen, we gaan op zoek naar een locatie en we
+                  prikken een datum. Ik stuur een overzichtelijk mailtje met
+                  alle info/details die we besproken hebben en wat extra tips en
+                  adviezen voor de shoot.
+                  
+                </p>
+              </div>
+            </div>
+            {/* Einde stap */}
+            {/* Stap */}
+            <div className="grid grid-cols-8 lg:grid-cols-4 grid-rows-2">
+              <div className="col-span-1 row-span-1 lg:row-span-4 lg:ml-10 self-end">
+                <p className="font-display text-9xl text-white text-stroke-grey-warm text-stroke-2">
+                  1
+                </p>
+              </div>
+              <div className="lg:col-span-3 col-span-7 row-span-1 self-end mb-3 lg:mt-4 ml-4 lg:ml-0">
+                <h4 className=" text-brown-pale text-xl uppercase border-b-2 border-brown-pale2">
+                  Contact vooraf
+                </h4>
+              </div>
+              <div className="lg:col-start-2 col-span-8 lg:col-span-3 row-span-1">
                 <p>
                   Neem contact met mij op, dat kan via het contactformulier maar
                   je mag me ook bellen of whatsappen. Ik laat zo snel mogelijk
@@ -36,6 +62,7 @@ function WerkwijzeSection() {
               </div>
             </div>
             {/* Einde stap */}
+           
           </div>
         </div>
       </div>
