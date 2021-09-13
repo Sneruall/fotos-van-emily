@@ -127,8 +127,8 @@ function PricingSection() {
               </div>
             </div>
           </div>
-  {/* Card todo: component with props */}
-  <div className="border border-white my-5">
+          {/* Card todo: component with props */}
+          <div className="border border-white my-5">
             <div className="bg-white m-1 px-4 py-2 bg-opacity-70">
               <div className="border-b-2 border-brown-pale my-7 mx-10 lg:mx-auto">
                 <h4 className="text-center text-3xl uppercase text-brown-pale mb-1">
@@ -184,6 +184,15 @@ function PricingSection() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        {/* caption en button offerte op maat */}
+        <div className="flex flex-col justify-center gap-10 my-10">
+          <h4 className="text-center text-3xl lg:text-4xl uppercase text-charcoal mb-1">
+            Liever een offerte op maat?
+          </h4>
+          <div className="self-center">
+            <Button link="/" button="button-1" text="Neem contact op" />
           </div>
         </div>
       </div>

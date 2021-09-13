@@ -8,7 +8,7 @@ function pageIntro() {
   return (
     <Section bg={"bg-grey-light"}>
       <div className="mx-auto max-w-6xl">
-        <h2 className="font-display text-charcoal text-5xl md:text-6xl text-center my-10">
+        <h2 className="font-display text-charcoal text-5xl lg:text-6xl text-center my-10">
           LORUM IPSUM DOLOR SIT AMET, CONSETETUR SADIPSCING ELITR
         </h2>
 
