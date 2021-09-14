@@ -3,7 +3,7 @@ import Header from "../components/layout/header";
 import ScrollNavbar from "../components/layout/scrollNavbar";
 import ContactFormSection from "../components/sections/ContactFormSection";
 import FotoshootKadoSection from "../components/sections/FotoshootKadoSection";
-import PageIntro from "../components/sections/pageIntro";
+import PortretIntroSection from "../components/sections/PortretIntroSection";
 import PageSectionThree from "../components/sections/PageSectionThree";
 import PageSectionTwo from "../components/sections/PageSectionTwo";
 import PricingSection from "../components/sections/PricingSection";
@@ -18,9 +18,8 @@ function portretfotografie() {
         imgMobile="/images/portretfotografie/hero-mobile.png"
         pageTitle="portret fotografie"
       />
-
       <ScrollNavbar />
-      <PageIntro />
+      <PortretIntroSection />
       <PageSectionTwo />
       <PageSectionThree />
       <PricingSection />

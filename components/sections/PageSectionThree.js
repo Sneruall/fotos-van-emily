@@ -1,6 +1,10 @@
 import Section from "../layout/Section";
 import Image from "next/image";
 import Button from "../ui/button";
+import {
+  ReactCompareSlider,
+  ReactCompareSliderImage,
+} from "react-compare-slider";
 
 function PageSectionThree() {
   return (
@@ -16,23 +20,43 @@ function PageSectionThree() {
           nabewerkt.
         </p>
         <div className="flex flex-col lg:flex-row gap-8 mb-10 justify-items-center">
-          <div>
-            <Image
-              src="/images/portretfotografie/portret-5.png"
-              alt="portret"
-              width="651"
-              height="434"
-            />
-          </div>
+          <ReactCompareSlider
+            itemOne={
+              <Image
+                src="/images/portretfotografie/portret-5.png"
+                alt="portret"
+                width="651"
+                height="434"
+              />
+            }
+            itemTwo={
+              <Image
+                src="/images/portretfotografie/portret-4.png"
+                alt="portret"
+                width="651"
+                height="434"
+              />
+            }
+          />
 
-          <div>
-            <Image
-              src="/images/portretfotografie/portret-5.png"
-              alt="portret"
-              width="651"
-              height="434"
-            />
-          </div>
+          <ReactCompareSlider
+            itemOne={
+              <Image
+                src="/images/portretfotografie/portret-5.png"
+                alt="portret"
+                width="651"
+                height="434"
+              />
+            }
+            itemTwo={
+              <Image
+                src="/images/portretfotografie/portret-4.png"
+                alt="portret"
+                width="651"
+                height="434"
+              />
+            }
+          />
         </div>
         <h2 className="text-white text-3xl lg:text-5xl text-center uppercase mb-5">
           EXTRA SERVICE: SKIN RETOUCHING
@@ -51,14 +75,25 @@ function PageSectionThree() {
           <Button link="/" button="button-3" text="Meer informatie" />
         </div>
         <div className="flex justify-center">
-          <Image
-            src="/images/portretfotografie/portret-5.png"
-            alt="portret"
-            width="651"
-            height="434"
+          <ReactCompareSlider
+            itemOne={
+              <Image
+                src="/images/portretfotografie/portret-5.png"
+                alt="portret"
+                width="651"
+                height="434"
+              />
+            }
+            itemTwo={
+              <Image
+                src="/images/portretfotografie/portret-4.png"
+                alt="portret"
+                width="651"
+                height="434"
+              />
+            }
           />
         </div>
-
       </div>
     </Section>
   );
