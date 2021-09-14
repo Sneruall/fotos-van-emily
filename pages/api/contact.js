@@ -8,6 +8,8 @@ async function handler (req, res) {
     const message = `
     Name: ${body.name}\r\n
     Email: ${body.email}\r\n
+    Tel: ${body.tel}\r\n
+    Onderwerp: ${body.onderwerp}\r\n
     Message: ${body.message}
   `;
   
