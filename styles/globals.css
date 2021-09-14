@@ -24,6 +24,9 @@
   .title-1 {
     @apply text-charcoal font-display text-5xl lg:text-6xl text-center uppercase my-10;
   }
+  .title-1-left {
+    @apply text-charcoal font-display text-5xl lg:text-6xl uppercase my-10;
+  }
 }
 
 @tailwind utilities;
