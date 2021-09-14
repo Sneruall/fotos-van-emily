@@ -17,6 +17,7 @@ function ContactForm() {
       method: "post",
       body: JSON.stringify(data),
     });
+    // add script to clear the form and show a message that the message was send (or an error occurred..)
   };
 
   return (

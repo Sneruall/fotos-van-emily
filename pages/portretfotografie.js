@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import Header from "../components/layout/header";
 import ScrollNavbar from "../components/layout/scrollNavbar";
+import ContactFormSection from "../components/sections/ContactFormSection";
 import FotoshootKadoSection from "../components/sections/FotoshootKadoSection";
 import PageIntro from "../components/sections/pageIntro";
 import PageSectionThree from "../components/sections/PageSectionThree";
@@ -25,6 +26,7 @@ function portretfotografie() {
       <PricingSection />
       <WerkwijzeSection />
       <FotoshootKadoSection />
+      <ContactFormSection />
 
     </Fragment>
   );

@@ -6,7 +6,7 @@ function FotoshootKadoSection() {
   return (
     <div className="relative">
       <Section bg="bg-pink-100">
-        <div className="">
+        <div className="hidden lg:block">
           <Image
             src="/images/portretfotografie/gift.png"
             alt="portret"
