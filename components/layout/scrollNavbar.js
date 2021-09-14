@@ -22,7 +22,7 @@ function scrollNavbar(props) {
     <div
       className={`${
         !scrollNav && props.fade ? "hidden" : "sm:block"
-      } hidden fixed bg-white opacity-90 w-full z-50 top-0`}
+      } hidden fixed bg-white opacity-90 w-full z-50 top-0 shadow-sm`}
     >
       <div className="px-2 flex max-w-6xl mx-auto uppercase font-display text-brown-pale justify-between">
         <div>
