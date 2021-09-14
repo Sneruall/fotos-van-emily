@@ -12,78 +12,117 @@ function WerkwijzeSection() {
         <div className="border border-white my-5">
           <div className="bg-white m-1 px-6 lg:px-16 py-4 bg-opacity-70">
             {/* Stap */}
-            <div className="flex flex-wrap lg:grid lg:grid-cols-4 lg:grid-rows-2">
-              <div className="lg:col-span-1 lg:row-span-2 lg:ml-10 lg:self-center">
+            <div className="flex flex-wrap lg:flex-nowrap my-5">
+              <div className="lg:w-64">
                 <p className="font-display text-9xl text-white text-stroke-grey-warm text-stroke-2">
                   1
                 </p>
               </div>
-              <div className="lg:col-span-3 lg:row-span-1 self-end mb-3 lg:mt-4 ml-4 lg:ml-0 flex-grow">
+              <div className="self-end mb-3 ml-4 flex-grow">
                 <h4 className=" text-brown-pale text-xl uppercase border-b-2 border-brown-pale2">
                   Contact vooraf
                 </h4>
+                <p className="hidden lg:block">
+                  Neem contact met mij op, dat kan via het contactformulier maar
+                  je mag me ook bellen of whatsappen. Ik laat zo snel mogelijk
+                  van mij horen, altijd binnen 24 uur. Samen bespreken we jouw
+                  wensen en vragen, we gaan op
+                </p>
               </div>
-              <div className="lg:col-start-2 lg:col-span-3">
+              <div className="lg:hidden">
                 <p>
                   Neem contact met mij op, dat kan via het contactformulier maar
                   je mag me ook bellen of whatsappen. Ik laat zo snel mogelijk
                   van mij horen, altijd binnen 24 uur. Samen bespreken we jouw
-                  wensen en vragen, we gaan op 
-                  
+                  wensen en vragen, we gaan op
                 </p>
               </div>
             </div>
             {/* Einde stap */}
-                     {/* Stap */}
-                     <div className="flex flex-wrap lg:grid lg:grid-cols-4 lg:grid-rows-2">
-              <div className="lg:col-span-1 lg:row-span-2 lg:ml-10 lg:self-center">
+            {/* Stap */}
+            <div className="flex flex-wrap lg:flex-nowrap my-5">
+              <div className="lg:w-64">
                 <p className="font-display text-9xl text-white text-stroke-grey-warm text-stroke-2">
-                  1
+                  2
                 </p>
               </div>
-              <div className="lg:col-span-3 lg:row-span-1 self-end mb-3 lg:mt-4 ml-4 lg:ml-0 flex-grow">
+              <div className="self-end mb-3 ml-4 flex-grow">
                 <h4 className=" text-brown-pale text-xl uppercase border-b-2 border-brown-pale2">
                   Contact vooraf
                 </h4>
+                <p className="hidden lg:block">
+                  Neem contact met mij op, dat kan via het contactformulier maar
+                  je mag me ook bellen of whatsappen. Ik laat zo snel mogelijk
+                  van mij horen, altijd binnen 24 uur. Samen bespreken we jouw
+                  wensen en vragen, we gaan op
+                </p>
               </div>
-              <div className="lg:col-start-2 lg:col-span-3">
+              <div className="lg:hidden">
                 <p>
                   Neem contact met mij op, dat kan via het contactformulier maar
                   je mag me ook bellen of whatsappen. Ik laat zo snel mogelijk
                   van mij horen, altijd binnen 24 uur. Samen bespreken we jouw
-                  wensen en vragen, we gaan op zoek naar een locatie en we
-                  prikken een datum. Ik stuur een overzichtelijk mailtje met
-                  alle info/details die we besproken hebben en wat extra tips en
-                  adviezen voor de shoot.
-                  
+                  wensen en vragen, we gaan op
+                </p>
+              </div>
+            </div>
+            {/* Einde stap */}
+            {/* Stap */}
+            <div className="flex flex-wrap lg:flex-nowrap my-5">
+              <div className="lg:w-64">
+                <p className="font-display text-9xl text-white text-stroke-grey-warm text-stroke-2">
+                  3
+                </p>
+              </div>
+              <div className="self-end mb-3 ml-4 flex-grow">
+                <h4 className=" text-brown-pale text-xl uppercase border-b-2 border-brown-pale2">
+                  Contact vooraf
+                </h4>
+                <p className="hidden lg:block">
+                  Neem contact met mij op, dat kan via het contactformulier maar
+                  je mag me ook bellen of whatsappen. Ik laat zo snel mogelijk
+                  van mij horen, altijd binnen 24 uur. Samen bespreken we jouw
+                  wensen en vragen, we gaan op
+                </p>
+              </div>
+              <div className="lg:hidden">
+                <p>
+                  Neem contact met mij op, dat kan via het contactformulier maar
+                  je mag me ook bellen of whatsappen. Ik laat zo snel mogelijk
+                  van mij horen, altijd binnen 24 uur. Samen bespreken we jouw
+                  wensen en vragen, we gaan op
                 </p>
               </div>
             </div>
             {/* Einde stap */}
                         {/* Stap */}
-                        <div className="flex flex-wrap lg:grid lg:grid-cols-4 lg:grid-rows-2">
-              <div className="lg:col-span-1 lg:row-span-2 lg:ml-10 lg:self-center">
+                        <div className="flex flex-wrap lg:flex-nowrap my-5">
+              <div className="lg:w-64">
                 <p className="font-display text-9xl text-white text-stroke-grey-warm text-stroke-2">
-                  1
+                  3
                 </p>
               </div>
-              <div className="lg:col-span-3 lg:row-span-1 self-end mb-3 lg:mt-4 ml-4 lg:ml-0 flex-grow">
+              <div className="self-end mb-3 ml-4 flex-grow">
                 <h4 className=" text-brown-pale text-xl uppercase border-b-2 border-brown-pale2">
                   Contact vooraf
                 </h4>
+                <p className="hidden lg:block">
+                  Neem contact met mij op, dat kan via het contactformulier maar
+                  je mag me ook bellen of whatsappen. Ik laat zo snel mogelijk
+                  van mij horen, altijd binnen 24 uur. Samen bespreken we jouw
+                  wensen en vragen, we gaan op
+                </p>
               </div>
-              <div className="lg:col-start-2 lg:col-span-3">
+              <div className="lg:hidden">
                 <p>
                   Neem contact met mij op, dat kan via het contactformulier maar
                   je mag me ook bellen of whatsappen. Ik laat zo snel mogelijk
                   van mij horen, altijd binnen 24 uur. Samen bespreken we jouw
-                  wensen en vragen, we gaan op 
-                  
+                  wensen en vragen, we gaan op
                 </p>
               </div>
             </div>
             {/* Einde stap */}
-           
           </div>
         </div>
       </div>
