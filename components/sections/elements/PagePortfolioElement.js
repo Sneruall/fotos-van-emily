@@ -10,6 +10,7 @@ function PagePortfolioElement(props) {
           infiniteLoop
           showStatus={false}
           showIndicators={true}
+          showArrows={false}
           showThumbs={false}
           interval={5000}
           width={318}

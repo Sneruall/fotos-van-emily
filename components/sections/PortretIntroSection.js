@@ -50,7 +50,7 @@ function PortretIntroSection() {
               <Button
                 text="Naar uitgebreid portfolio"
                 link="#"
-                button="button-1 mb-20 w-full md:w-auto"
+                button="button-1 mb-8"
               />
             </div>
           </div>
