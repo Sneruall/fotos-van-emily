@@ -11,11 +11,11 @@ function ContactFormSection() {
         <div className="flex flex-wrap gap-6 justify-center">
           <div className="flex gap-1 items-center">
             <MailIcon className="h-5 text-charcoal" />
-            <div>info@fotosvanemily.nl</div>
+              <a className="hover:underline" href="mailto:info@fotosvanemily.nl">info@fotosvanemily.nl</a>
           </div>
           <div className="flex gap-1 items-center">
             <PhoneIcon className="h-5 text-charcoal" />
-            <div>+31 6 52331778</div>
+            <a className="hover:underline" href="tel:0031652331778">06 52 33 17 78</a>
           </div>
         </div>
         <ContactFormElement />

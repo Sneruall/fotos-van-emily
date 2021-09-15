@@ -5,7 +5,7 @@ function WerkwijzeSection() {
   return (
     <Section bg="bg-grey-light2">
       <div className="mx-auto max-w-6xl">
-        <h2 className="title-1">
+        <h2 className="title-1 mb-16">
           HOE GA IK TE WERK?
         </h2>
         <div className="border border-white my-5">

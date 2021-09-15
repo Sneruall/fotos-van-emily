@@ -50,3 +50,9 @@
   border: solid #3a3a3a 1px;
 
 }
+
+/* Default settings for texts */
+p{
+ line-height: 1.67;
+ font-weight: 300;
+}
