@@ -68,7 +68,7 @@ function ContactFormElement() {
       </div>
       <div className="max-w-xl mx-auto">
         <button
-          className="bg-brown-pale hover:bg-reddish text-white font-semibold uppercase py-4 px-6 rounded-full min-w-170"
+          className="border-2 border-brown-pale bg-brown-pale hover:bg-transparent hover:text-brown-pale text-white font-semibold uppercase py-2 px-6 rounded-full"
           type="submit"
         >
           Verstuur

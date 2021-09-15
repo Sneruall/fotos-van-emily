@@ -29,6 +29,9 @@ module.exports = {
           "serif",
         ],
       },
+      fontSize: {
+        "10xl": "10rem",
+      },
       colors: {
         transparent: "transparent",
         current: "currentColor",
@@ -70,26 +73,26 @@ module.exports = {
         130: "130px",
       },
     },
-    textFillColor: theme => theme('borderColor'),
-    textStrokeColor: theme => theme('borderColor'),
-    textStrokeWidth: theme => theme('borderWidth'),
+    textFillColor: (theme) => theme("borderColor"),
+    textStrokeColor: (theme) => theme("borderColor"),
+    textStrokeWidth: (theme) => theme("borderWidth"),
     paintOrder: {
-      'fsm': { paintOrder: 'fill stroke markers' },
-      'fms': { paintOrder: 'fill markers stroke' },
-      'sfm': { paintOrder: 'stroke fill markers' },
-      'smf': { paintOrder: 'stroke markers fill' },
-      'mfs': { paintOrder: 'markers fill stroke' },
-      'msf': { paintOrder: 'markers stroke fill' },
+      fsm: { paintOrder: "fill stroke markers" },
+      fms: { paintOrder: "fill markers stroke" },
+      sfm: { paintOrder: "stroke fill markers" },
+      smf: { paintOrder: "stroke markers fill" },
+      mfs: { paintOrder: "markers fill stroke" },
+      msf: { paintOrder: "markers stroke fill" },
     },
   },
   variants: {
-    textFillColor: ['responsive'],
-    textStrokeColor: ['responsive'],
-    textStrokeWidth: ['responsive'],
-    paintOrder: ['responsive'],
+    textFillColor: ["responsive"],
+    textStrokeColor: ["responsive"],
+    textStrokeWidth: ["responsive"],
+    paintOrder: ["responsive"],
     extend: {},
   },
   plugins: [
-    require('tailwindcss-text-fill-stroke')(), // no options to configure
+    require("tailwindcss-text-fill-stroke")(), // no options to configure
   ],
 };

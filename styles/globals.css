@@ -10,19 +10,16 @@
 
 @layer components {
   .button-1 {
-    @apply bg-brown-pale hover:bg-reddish text-white font-semibold uppercase py-4 px-6 rounded-full min-w-170;
-  }
-  .button-1-xs {
-    @apply bg-brown-pale hover:bg-reddish text-white font-semibold uppercase py-2 px-6 rounded-full min-w-130;
+    @apply border-2 border-brown-pale bg-brown-pale hover:bg-transparent text-sm hover:text-brown-pale text-white font-semibold uppercase py-2 px-6 rounded-full;
   }
   .button-2 {
-    @apply bg-white hover:bg-clay text-clay hover:text-white font-semibold uppercase py-4 px-6 rounded-full min-w-170;
+    @apply bg-white hover:bg-clay text-clay text-sm hover:text-white font-semibold uppercase py-2 px-6 rounded-full min-w-170;
   }
   .button-3 {
-    @apply bg-white hover:bg-charcoal text-charcoal hover:text-white font-semibold uppercase py-4 px-6 rounded-full min-w-170;
+    @apply border-2 border-white bg-white hover:bg-transparent text-charcoal text-sm hover:text-white font-semibold uppercase py-2 px-6 rounded-full min-w-170;
   }
   .title-1 {
-    @apply text-charcoal font-display text-5xl lg:text-6xl text-center uppercase my-10;
+    @apply text-charcoal font-display text-5xl lg:text-6xl text-center uppercase my-10 mx-16;
   }
   .title-1-left {
     @apply text-charcoal font-display text-5xl lg:text-6xl uppercase my-10;

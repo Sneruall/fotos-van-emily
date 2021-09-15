@@ -19,14 +19,22 @@ function ImageWithText(props) {
 
       <div>
         {props.title && (
-          <div className="w-1/2 my-5">
-            <h3 className="uppercase text-brown-pale text-3xl border-b-2 border-brown-pale">
+          <div className="inline-block my-5">
+            <h3 className="uppercase text-brown-pale text-3xl border-b-2 pr-16 border-brown-pale">
               {props.title}
             </h3>
           </div>
         )}
 
-        <p className="text-charcoal">{props.text}</p>
+        <p className="text-charcoal">
+          {props.text[0]}
+        </p>
+        {props.text[1] && (
+          <p className="text-charcoal">
+            <br />
+            {props.text[1]}
+          </p>
+        )}
 
         {props.buttonText && (
           <Button text={props.buttonText} link="#" button="button-1 my-5" />

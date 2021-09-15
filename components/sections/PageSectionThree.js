@@ -19,15 +19,15 @@ function PageSectionThree() {
           warmte, kleur en een moderne look. Alle foto’s worden ook in zwart wit
           nabewerkt.
         </p>
-        <div className="flex flex-col lg:flex-row gap-8 mb-10 justify-items-center">
+        <div className="flex flex-col lg:flex-row gap-14 mb-10 justify-items-center">
           <ReactCompareSlider
             itemOne={
-              <Image
-                src="/images/portretfotografie/portret-5.png"
-                alt="portret"
-                width="651"
-                height="434"
-              />
+                <Image
+                  src="/images/portretfotografie/portret-5.png"
+                  alt="portret"
+                  width="651"
+                  height="434"
+                />
             }
             itemTwo={
               <Image

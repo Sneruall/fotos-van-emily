@@ -62,7 +62,7 @@ function PricingPlan(props) {
               </p>
             </div>
             <div className="my-10">
-              <Button link="/" button="button-1-xs" text="Boek nu" />
+              <Button link="/" button="button-1" text="Boek nu" />
             </div>
           </div>
 

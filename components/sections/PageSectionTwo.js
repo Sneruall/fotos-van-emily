@@ -4,16 +4,16 @@ import { Carousel } from "react-responsive-carousel";
 
 function PageSectionTwo() {
   return (
-    <Section bg={"bg-grey-pale"}>
+    <Section bg={"bg-grey-pinkish"}>
       <div className="mx-auto max-w-6xl">
-        <h2 className="text-white text-3xl lg:text-6xl text-center uppercase mb-2">
+        <h2 className="text-white text-3xl lg:text-6xl text-center uppercase mb-4">
           Natuurlijk op de foto
         </h2>
-        <div className="border border-white w-full mb-5"></div>
-        <div className="border border-white w-3/5 mx-auto"></div>
+        <div className="border-b-2 border-white w-full max-w-2xl mx-auto mb-3"></div>
+        <div className="border-b-2 border-white w-3/5 max-w-lg mx-auto"></div>
 
-        <div className="my-10 flex flex-col">
-          <div className="border border-white self-center p-1 pb-0">
+        <div className="my-10 lg:my-0 flex flex-col">
+          <div className="border border-white self-center my-5 p-1 pb-0">
             <Image
               src="/images/portretfotografie/portret-4.png"
               alt="portret"
@@ -22,7 +22,7 @@ function PageSectionTwo() {
             />
           </div>
 
-          <div className="lg:order-first text-center text-charcoal my-5">
+          <div className="lg:order-first text-center text-charcoal my-8 max-w-5xl mx-auto">
             <p>
               Ik fotografeer het liefst in de buitenlucht, dit zorgt voor de
               meest pure en unieke foto’s. Ik zorg voor voldoende afwisseling op

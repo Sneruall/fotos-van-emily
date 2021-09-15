@@ -24,9 +24,9 @@ function scrollNavbar(props) {
         !scrollNav && props.fade ? "hidden" : "sm:block"
       } hidden fixed bg-white opacity-90 w-full z-50 top-0 shadow-sm`}
     >
-      <div className="px-2 flex max-w-6xl mx-auto uppercase font-display text-brown-pale justify-between">
+      <div className="px-2 flex max-w-6xl mx-auto uppercase text-brown-pale justify-between">
         <div>
-          <h2 className="text-2xl md:text-4xl my-2">Foto's van Emily</h2>
+          <h2 className="text-2xl md:text-4xl my-2 font-display">Foto's van Emily</h2>
         </div>
         <div className="my-auto">
           <ul className="flex flex-row space-x-10">
