@@ -19,7 +19,7 @@
     @apply border-2 border-white bg-white hover:bg-transparent text-charcoal text-sm hover:text-white font-semibold uppercase py-2 px-6 rounded-full min-w-170;
   }
   .title-1 {
-    @apply text-charcoal font-display text-5xl lg:text-6xl text-center uppercase my-10 mx-16;
+    @apply text-charcoal font-display text-5xl lg:text-6xl text-center uppercase my-10 lg:mx-16;
   }
   .title-1-left {
     @apply text-charcoal font-display text-5xl lg:text-6xl uppercase my-10;

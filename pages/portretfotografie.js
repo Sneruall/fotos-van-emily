@@ -18,7 +18,7 @@ function portretfotografie() {
         imgMobile="/images/portretfotografie/hero-mobile.png"
         pageTitle="portret fotografie"
       />
-      <ScrollNavbar />
+      <ScrollNavbar fade={false} />
       <PortretIntroSection />
       <PageSectionTwo />
       <PageSectionThree />

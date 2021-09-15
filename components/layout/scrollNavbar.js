@@ -6,6 +6,9 @@ function scrollNavbar(props) {
 
   useEffect(() => {
     props.fade && window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    }
   }, []);
 
   const handleScroll = () => {

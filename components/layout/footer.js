@@ -1,19 +1,13 @@
 function Footer() {
   return (
     <footer className="w-full bg-grey-light">
-      <div className="flex flex-col lg:flex-row text-center justify-between max-w-5xl mx-auto">
+      <div className="flex flex-col lg:flex-row text-center justify-around max-w-5xl mx-auto">
         <div>
           <h4 className="font-semibold uppercase text-clay mt-10 mb-5">
             Locatie
           </h4>
           <p>Godfried van Seijstlaan 27 D1</p>
           <p>3703 BR Zeist</p>
-        </div>
-        <div>
-          <h4 className="font-semibold uppercase text-clay mt-10 mb-5">
-            Volg mij
-          </h4>
-          {/* volg icons */}
         </div>
         <div>
           <h4 className="font-semibold uppercase text-clay mt-10 mb-5">
@@ -25,7 +19,7 @@ function Footer() {
           <p>
             Tel:{" "}
             <a href="tel:+31652331778" className="text-mocha hover:underline">
-              +31 6 52331778
+              06 52 33 17 78
             </a>
           </p>
         </div>
