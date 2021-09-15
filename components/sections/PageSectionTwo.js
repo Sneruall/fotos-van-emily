@@ -13,7 +13,7 @@ function PageSectionTwo() {
         <div className="border-b-2 border-white w-3/5 max-w-lg mx-auto"></div>
 
         <div className="my-10 lg:my-0 flex flex-col">
-          <div className="border border-white self-center my-5 p-1 pb-0">
+          <div className="border border-white self-center my-5 lg:mb-24 p-1 pb-0">
             <Image
               src="/images/portretfotografie/portret-4.png"
               alt="portret"
@@ -60,6 +60,7 @@ function PageSectionTwo() {
                   interval={5000}
                   width={300}
                 >
+
                   <div className="py-10 px-10">
                     <p className="text-brown-pale text-center">
                       Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
@@ -98,7 +99,7 @@ function PageSectionTwo() {
             Reviews Reviews Reviews Reviews Reviews
           </h3>
         </div>
-        <div className="pt-40 hidden lg:block">
+        <div className="pt-28 hidden lg:block">
           <Carousel
             autoplay
             infiniteLoop

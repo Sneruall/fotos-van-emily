@@ -27,3 +27,26 @@
 }
 
 @tailwind utilities;
+
+/* react-responsive-carousel custom ccss */
+
+.carousel .control-arrow, .carousel.carousel-slider .control-arrow::before{
+  opacity: 1 !important;
+}
+
+.carousel .control-arrow:hover, .carousel.carousel-slider .control-arrow:active{
+  background: none !important;
+}
+
+.carousel .control-dots .dot{
+  box-shadow: none !important;
+  opacity: 1!important;
+  margin: 0 4px !important;
+  border: solid grey 1px;
+}
+
+.carousel .control-dots .dot.selected{
+  background: #a8896c !important;
+  border: solid #3a3a3a 1px;
+
+}
