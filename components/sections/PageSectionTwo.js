@@ -1,6 +1,7 @@
 import Section from "../layout/Section";
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
+import ReviewElement from "./elements/ReviewElement";
 
 function PageSectionTwo() {
   return (
@@ -60,33 +61,23 @@ function PageSectionTwo() {
                   interval={5000}
                   width={300}
                 >
-
-                  <div className="py-10 px-10">
-                    <p className="text-brown-pale text-center">
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                  <ReviewElement
+                    text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                       sed diam nonumy eirmod tempor invidunt ut labore et dolore
                       magna aliquyam erat, sed diam voluptua. At vero eos et
                       accusam et justo duo dolores et ea rebum. Stet clita kasd
                       gubergren, no sea takimata sanctus est Lorem ipsum dolor
-                      sit amet. Lorem ipsum dolor sit amet.
-                    </p>
-                    <p className="text-center mt-6 italic text-brown-pale">
-                      Rina
-                    </p>
-                  </div>
-                  <div className="py-10 px-10">
-                    <p className="text-brown-pale text-center">
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                      sit amet. Lorem ipsum dolor sit amet.sed diam voluptua."
+                    name="Rina"
+                  />
+                  <ReviewElement
+                    text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                       sed diam nonumy eirmod tempor invidunt ut labore et dolore
                       magna aliquyam erat, sed diam voluptua. At vero eos et
-                      accusam et justo duo dolores et ea rebum. Stet clita kasd
-                      gubergren, no sea takimata sanctus est Lorem ipsum dolor
-                      sit amet. Lorem ipsum dolor sit amet.
-                    </p>
-                    <p className="text-center mt-6 italic text-brown-pale">
-                      Rina
-                    </p>
-                  </div>
+                      accusam et justo duo dolores em ipsum dolor
+                      sit amet. Lorem ipsum dolor sit amet.sed diam voluptua."
+                    name="Rina2"
+                  />
                 </Carousel>
               </div>
             </div>
