@@ -43,44 +43,40 @@ function PageSectionTwo() {
             </p>
           </div>
         </div>
-        {/* reviews mobile todo van losse reviews component maken (er is al iets..) --> todo: reviews uit het "kaartje" halen en het kaartje als gehele carousel laten bewegen? */}
-        <div className="lg:hidden border border-white my-5">
-          <div className="bg-white m-1 p-2 bg-opacity-70">
-            <h3 className="text-brown-pale uppercase font-display text-5xl text-center my-10">
-              Reviews
-            </h3>
-            <div className="p-2">
-              <div className="flex justify-center">
-                <Carousel
-                  autoplay
-                  infiniteLoop
-                  showArrows={true}
-                  showStatus={false}
-                  showIndicators={true}
-                  showThumbs={false}
-                  interval={5000}
-                  width={300}
-                >
-                  <ReviewElement
-                    text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+        {/* reviews mobile */}
+        <div className="lg:hidden">
+          <h3 className="text-brown-pale uppercase font-display text-5xl text-center my-10">
+            Reviews
+          </h3>
+          <div className="flex justify-center">
+            <Carousel
+              autoplay
+              infiniteLoop
+              showArrows={true}
+              showStatus={false}
+              showIndicators={true}
+              showThumbs={false}
+              interval={5000}
+              width={350}
+            >
+              <ReviewElement
+                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                       sed diam nonumy eirmod tempor invidunt ut labore et dolore
                       magna aliquyam erat, sed diam voluptua. At vero eos et
                       accusam et justo duo dolores et ea rebum. Stet clita kasd
                       gubergren, no sea takimata sanctus est Lorem ipsum dolor
                       sit amet. Lorem ipsum dolor sit amet.sed diam voluptua."
-                    name="Rina"
-                  />
-                  <ReviewElement
-                    text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                name="Rina"
+              />
+              <ReviewElement
+                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                       sed diam nonumy eirmod tempor invidunt ut labore et dolore
                       magna aliquyam erat, sed diam voluptua. At vero eos et
                       accusam et justo duo dolores em ipsum dolor
                       sit amet. Lorem ipsum dolor sit amet.sed diam voluptua."
-                    name="Rina2"
-                  />
-                </Carousel>
-              </div>
-            </div>
+                name="Rina2"
+              />
+            </Carousel>
           </div>
         </div>
         {/* reviews desktop */}

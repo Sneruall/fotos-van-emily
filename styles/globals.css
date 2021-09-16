@@ -41,7 +41,7 @@
 .carousel .control-dots .dot{
   box-shadow: none !important;
   opacity: 1!important;
-  margin: 0 4px !important;
+  margin: 0px 4px !important;
   border: solid grey 1px;
 }
 
