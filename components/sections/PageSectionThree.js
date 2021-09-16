@@ -13,13 +13,13 @@ function PageSectionThree() {
         <h2 className="text-white text-3xl lg:text-5xl text-center uppercase mb-5 lg:leading-tight">
           ZORGVULDIGE NABEWERKING VOOR EEN VERBLUFFEND RESULAAT
         </h2>
-        <p className="text-white text-center max-w-4xl mx-auto mb-20">
+        <p className="text-white text-center max-w-4xl mx-auto mb-5 lg:mb-20">
           Alle foto’s worden met veel zorg en passie nabewerkt zodat jij
           uitblinkt op de foto! Mijn stijl kenmerkt zich door veel licht,
           warmte, kleur en een moderne look. Alle foto’s worden ook in zwart wit
           nabewerkt.
         </p>
-        <div className="flex flex-col lg:flex-row gap-14 mb-24 justify-items-center">
+        <div className="flex flex-col lg:flex-row gap-4 lg:gap-14 mb-8 lg:mb-24 justify-items-center">
           <ReactCompareSlider
             itemOne={
               <Image
@@ -71,28 +71,30 @@ function PageSectionThree() {
           overleg kijken we welke foto’s het meest geschikt hiervoor zijn
           (tarieven en meer informatie vind je op de fotobewerking pagina).
         </p>
-        <div className="pb-10 text-center">
-          <Button link="/" button="button-3" text="Meer informatie" />
-        </div>
-        <div className="flex justify-center">
-          <ReactCompareSlider
-            itemOne={
-              <Image
-                src="/images/portretfotografie/portret-5.png"
-                alt="portret"
-                width="651"
-                height="434"
-              />
-            }
-            itemTwo={
-              <Image
-                src="/images/portretfotografie/portret-4.png"
-                alt="portret"
-                width="651"
-                height="434"
-              />
-            }
-          />
+        <div className="flex flex-col">
+          <div className="flex justify-center">
+            <ReactCompareSlider
+              itemOne={
+                <Image
+                  src="/images/portretfotografie/portret-5.png"
+                  alt="portret"
+                  width="651"
+                  height="434"
+                />
+              }
+              itemTwo={
+                <Image
+                  src="/images/portretfotografie/portret-4.png"
+                  alt="portret"
+                  width="651"
+                  height="434"
+                />
+              }
+            />
+          </div>
+          <div className="mt-5 lg:mt-0 lg:mb-10 text-center lg:order-first">
+            <Button link="/" button="button-3" text="Meer informatie" />
+          </div>
         </div>
       </div>
     </Section>

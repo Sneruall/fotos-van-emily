@@ -26,16 +26,6 @@ function Footer() {
       </div>
       <div className="pb-5 mt-10 text-center">
         <p>© 2021 Media Modes | KVK: 75986272 | BTW: NL860468379B01</p>
-        <p>
-          Website ontwikkeld door{" "}
-          <a
-            href="https://www.laurensvanroomen.nl"
-            target="_blank"
-            className="text-mocha hover:underline"
-          >
-            Laurens van Roomen
-          </a>
-        </p>
       </div>
     </footer>
   );

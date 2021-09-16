@@ -14,28 +14,28 @@ function PricingPlan(props) {
         <div className="mb-8">
           <div className="flex space-x-4 my-2">
             <CheckIcon className="flex-shrink-0 w-6 h-6 text-grey-brownish" />
-            <p>
+            <p className="leading-snug">
               <span className="font-bold">{props.duur}</span> fotografie op
               locatie
             </p>
           </div>
           <div className="flex space-x-4 my-2">
             <CheckIcon className="flex-shrink-0 w-6 h-6 text-grey-brownish" />
-            <p>
+            <p className="leading-snug">
               <span className="font-bold">{props.fotos}</span> digitale foto’s
               in hoge kwaliteit
             </p>
           </div>
           <div className="flex space-x-4 my-2">
             <CheckIcon className="flex-shrink-0 w-6 h-6 text-grey-brownish" />
-            <p>
+            <p className="leading-snug">
               <span className="font-bold">Zorgvuldige nabewerking</span> (alle
               foto’s worden ook in zwart-wit geleverd)
             </p>
           </div>
           <div className="flex space-x-4 my-2">
             <CheckIcon className="flex-shrink-0 w-6 h-6 text-grey-brownish" />
-            <p>
+            <p className="leading-snug">
               Binnen <span className="font-bold">{props.oplevering}</span>{" "}
               worden alle foto’s via WeTransfer geleverd
             </p>
@@ -43,7 +43,7 @@ function PricingPlan(props) {
           {props.MetGallerij ? (
             <div className="flex space-x-4 my-2">
               <CheckIcon className="flex-shrink-0 w-6 h-6 text-grey-brownish" />
-              <p>Online gallerij voor het bekijken en delen van de foto’s</p>
+              <p className="leading-snug">Online gallerij voor het bekijken en delen van de foto’s</p>
             </div>
           ) : (
             <Fragment>

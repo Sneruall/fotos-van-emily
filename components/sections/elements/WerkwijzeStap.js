@@ -7,7 +7,7 @@ function WerkwijzeStap(props) {
         </p>
       </div>
       <div className="self-end mb-3 ml-4 flex-1">
-        <h4 className="inline-block text-brown-pale text-2xl uppercase border-b-2 border-brown-pale2 pr-16">
+        <h4 className="inline-block text-brown-pale text-2xl uppercase border-b-2 border-brown-pale2 lg:pr-16">
           {props.title}
         </h4>
         <p className="hidden lg:block mt-5">
