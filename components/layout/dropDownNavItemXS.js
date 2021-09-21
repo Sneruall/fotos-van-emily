@@ -12,7 +12,7 @@ function dropDownNavItemXS(props) {
         onClick={() => navExtended ? setNavExtended(false) : setNavExtended(true)}
         className="py-2 border-b border-opacity-25 cursor-pointer"
       >
-        <div className="flex justify-between">
+        <div className="flex justify-between text-brown-pale">
           <div>
             <h2 className="ml-12">{props.text}</h2>
           </div>
@@ -27,7 +27,7 @@ function dropDownNavItemXS(props) {
         </div>
       </li>
       <ul className={`${!navExtended && 'hidden'}`}>
-        <DroppedDownNavItemXS text="portret" link="/" />
+        <DroppedDownNavItemXS onClick={() => navExtended ? setNavExtended(false) : setNavExtended(true)} text="portret" link="/portretfotografie" />
         <DroppedDownNavItemXS text="loveshoot" link="/" />
         <DroppedDownNavItemXS text="zwangerschap" link="/" />
         <DroppedDownNavItemXS text="honden" link="/" />

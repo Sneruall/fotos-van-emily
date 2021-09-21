@@ -23,7 +23,7 @@ function mobileNavigation() {
       <div
         className={`${
           !mobileMenuExtended && "hidden"
-        } sm:hidden absolute top-0 bg-sandstone w-full z-50`}
+        } sm:hidden absolute top-0 bg-white bg-opacity-90 w-full z-50`}
       >
         <div className="flex w-full absolute justify-center mb-5 mt-4">
           <h1 className="font-display uppercase text-brown-pale text-3xl">
@@ -34,11 +34,11 @@ function mobileNavigation() {
         <div className="flex justify-end mb-5 mt-5">
           <XIcon
             onClick={() => setMobileMenuExtended(false)}
-            className="h-8 w-8 mr-4 cursor-pointer text-white my-auto z-50"
+            className="h-8 w-8 mr-4 cursor-pointer text-brown-pale my-auto z-50"
           />
         </div>
         <nav>
-          <ul className="flex flex-col text-white uppercase text-2xl font-display">
+          <ul className="flex flex-col uppercase text-lg">
             <NavItemXS text="home" link="/" />
             <DropDownNavItemXS text="diensten" />
             <NavItemXS text="portfolio" link="/portfolio" />
