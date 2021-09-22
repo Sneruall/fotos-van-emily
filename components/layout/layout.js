@@ -5,7 +5,7 @@ import MobileNavigation from "./mobileNavigation";
 function Layout(props) {
   return (
     <Fragment>
-      {/* <MobileNavigation/> */}
+      <MobileNavigation/>
 
 
       <main>{props.children}</main>

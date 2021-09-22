@@ -27,7 +27,7 @@ function dropDownNavItemXS(props) {
         </div>
       </li>
       <ul className={`${!navExtended && 'hidden'}`}>
-        <DroppedDownNavItemXS text="portret" link="/portretfotografie" />
+        <DroppedDownNavItemXS onClick={() => navExtended ? setNavExtended(false) : setNavExtended(true)} text="portret" link="/portretfotografie" />
         <DroppedDownNavItemXS text="loveshoot" link="/" />
         <DroppedDownNavItemXS text="zwangerschap" link="/" />
         <DroppedDownNavItemXS text="honden" link="/" />
