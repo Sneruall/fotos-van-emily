@@ -3,7 +3,7 @@ import Navigation from "../../components/layout/navigation";
 
 function Header(props) {
   return (
-    <header className="flex h-screen">
+    <header className="flex h-screen -mt-14 sm:mt-0">
       <div className="hidden sm:block">
         <Image
           src={props.img}
@@ -14,18 +14,18 @@ function Header(props) {
         />
       </div>
 
-      <div className="sm:hidden">
+      <div className="sm:hidden absolute max-h-screen">
         <Image
           src={props.imgMobile}
           alt="Hero image"
-          layout="fill"
-          objectFit="cover"
+          width={640}
+          height={1159}
           priority
         />
       </div>
 
       {props.title && (
-        <div className="mt-5 z-10 font-display uppercase text-charcoal mx-auto">
+        <div className="mt-24 sm:mt-5 z-10 font-display uppercase text-charcoal mx-auto">
             <h1 className="text-5xl md:text-7xl lg:text-8xl text-center">{props.title}</h1>
             {props.integratedNavigation && <Navigation />}
           <h2 className="text-center text-lg sm:hidden">{props.subtitle}</h2>

@@ -17,6 +17,9 @@ export default function Home() {
         {/* <link rel="icon" href="/favicon.ico" /> */}
         {/* gebruik next-seo npm tool */}
       </Head>
+
+      <ScrollNavbar fade />
+
       <Header
         img="/images/header/hero.png"
         imgMobile="/images/header/hero-mobile.png"
@@ -24,7 +27,6 @@ export default function Home() {
         subtitle="FOTOGRAFIE &amp; FOTOBEWERKING"
         integratedNavigation
       />
-      <ScrollNavbar fade />
 
       <Welcome />
       <Diensten />
