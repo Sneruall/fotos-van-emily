@@ -3,18 +3,39 @@ import Button from "../ui/button";
 import { CheckIcon } from "@heroicons/react/solid";
 import PricingPlan from "./elements/PricingPlan";
 
-function PricingSection() {
+function PricingSection(props) {
   return (
     <Section bg="bg-grey-light">
       <div className="mx-auto max-w-6xl">
-        <h2 className="title-1 leading-tight">
-          WAT KRIJG JE ALS JE EEN PORTRET LAAT MAKEN DOOR MIJ?
-        </h2>
+        <h2 className="title-1 leading-tight">{props.heading} </h2>
         {/* Pricing cards */}
         <div className="flex flex-col lg:flex-row gap-8">
-          <PricingPlan title="Pakket A" duur="~30 min" fotos="10" oplevering="1 week" prijs="79" />
-          <PricingPlan title="Pakket B" duur="~45 min" fotos="20" oplevering="1 week" MetGallerij prijs="149" />
-          <PricingPlan title="Pakket C" duur="~1 uur" fotos="30" oplevering="1 week" MetGallerij prijs="219" />
+          <PricingPlan
+            title="Pakket A"
+            duur={props.pakketA[0]}
+            fotos={props.pakketA[1]}
+            oplevering={props.pakketA[2]}
+            prijs={props.pakketA[3]}
+            MetGallerij={props.pakketA[4]}
+          />
+          <PricingPlan
+            title="Pakket B"
+            duur={props.pakketB[0]}
+            fotos={props.pakketB[1]}
+            oplevering={props.pakketB[2]}
+            prijs={props.pakketB[3]}
+            MetGallerij={props.pakketB[4]}
+          />
+          {props.pakketC && (
+            <PricingPlan
+              title="Pakket C"
+              duur={props.pakketC[0]}
+              fotos={props.pakketC[1]}
+              oplevering={props.pakketC[2]}
+              prijs={props.pakketC[3]}
+              MetGallerij={props.pakketC[4]}
+            />
+          )}
         </div>
         {/* caption en button offerte op maat */}
         <div className="flex flex-col justify-center gap-5 lg:gap-10 mt-12 lg:mt-20">

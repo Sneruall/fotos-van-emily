@@ -87,7 +87,7 @@ function mobileNavigation() {
                   <h2 className="ml-20">Portret</h2>
                 </li>
               </Link>
-              <Link href="/portretfotografie">
+              <Link href="/loveshoot">
                 <li
                   onClick={() => {
                     setMobileMenuExtended(false);

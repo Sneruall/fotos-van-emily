@@ -1,6 +1,6 @@
 function ReviewElement(props) {
   return (
-    <div className="lg:hidden border border-white mb-10 mx-7">
+    <div className="border border-white mb-10 mx-7">
       <div className="bg-white m-1 p-2 bg-opacity-70">
         <div className="p-2">
           <div className="flex justify-center">

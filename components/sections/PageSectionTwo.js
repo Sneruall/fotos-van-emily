@@ -2,45 +2,25 @@ import Section from "../layout/Section";
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import ReviewElement from "./elements/ReviewElement";
+import ReviewElementDesktop from "./elements/ReviewElementDesktop";
 
-function PageSectionTwo() {
+function PageSectionTwo(props) {
   return (
     <Section bg={"bg-grey-pinkish"}>
       <div className="mx-auto max-w-6xl">
         <h2 className="text-white text-4xl lg:text-6xl text-center uppercase mb-4">
-          Natuurlijk op de foto
+          {props.heading}
         </h2>
         <div className="border-b-2 border-white w-full max-w-2xl mx-auto mb-3"></div>
         <div className="border-b-2 border-white w-3/5 max-w-lg mx-auto"></div>
 
         <div className="my-5 lg:my-0 flex flex-col">
           <div className="border border-white self-center my-5 lg:mb-24 p-1 pb-0">
-            <Image
-              src="/images/portretfotografie/portret-4.png"
-              alt="portret"
-              width="801"
-              height="534"
-            />
+            <Image src={props.img} alt={props.alt} width="823" height="551" />
           </div>
 
           <div className="lg:order-first text-center text-charcoal lg:my-8 max-w-5xl mx-auto">
-            <p>
-              Ik fotografeer het liefst in de buitenlucht, dit zorgt voor de
-              meest pure en unieke foto’s. Ik zorg voor voldoende afwisseling op
-              locatie zodat jij een diversiteit aan foto’s krijgt. Heb je al een
-              locatie in gedachte? Super! Heb je wat meer inspiratie nodig? Ik
-              denk graag met je mee naar een locatie die bij jou past, het bos,
-              het strand, de heide of de stad, met veel passie zoek ik naar de
-              aller mooiste plekjes en gelukkig ken ik er een heleboel in
-              Nederland! Ik vind het belangrijk dat je je op je gemak voelt,
-              daarom klets ik gezellig en geef ik duidelijke aanwijzingen.
-              Tijdens de shoot zorg ik voor een ontspannen sfeer zodat je je op
-              je gemak voelt, daarom klets ik gezellig en geef ik duidelijke
-              aanwijzingen. Kortom, gewoon een heerlijk momentje in de
-              spotlight! Zo kom jij op een natuurlijke manier prachtig op de
-              foto te staan! Voor een zakelijke shoot is het soms leuker om
-              binnen te fotograferen, om ……………………………. fksjflk\k ksfljsdkf\kslfj
-            </p>
+            <p>{props.text}</p>
           </div>
         </div>
         {/* reviews mobile */}
@@ -96,143 +76,35 @@ function PageSectionTwo() {
             showThumbs={false}
             interval={5000}
           >
-            {/* Review tab -- todo van losse reviews én een tab components maken met props! */}
+            {/* Review tab */}
             <div className="my-10 mx-10 grid grid-cols-3 gap-x-4">
-              <div className="border border-white my-5">
-                <div className="bg-white m-1 p-2 bg-opacity-70">
-                  <div className="p-2">
-                    <div className="flex justify-center">
-                      <div className="py-10 px-10">
-                        <p className="text-brown-pale text-center">
-                          Lorem ipsum dolor sit amet, consetetur sadipscing
-                          elitr, sed diam nonumy eirmod tempor invidunt ut
-                          labore et dolore magna aliquyam erat, sed diam
-                          voluptua. At vero eos et accusam et justo duo dolores
-                          et ea rebum. Stet clita kasd gubergren, no sea
-                          takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-                          ipsum dolor sit amet.
-                        </p>
-                        <p className="text-center mt-6 italic text-brown-pale">
-                          Rina
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="border border-white my-5">
-                <div className="bg-white m-1 p-2 bg-opacity-70">
-                  <div className="p-2">
-                    <div className="flex justify-center">
-                      <div className="py-10 px-10">
-                        <p className="text-brown-pale text-center">
-                          Lorem ipsum dolor sit amet, consetetur sadipscing
-                          elitr, sed diam nonumy eirmod tempor invidunt ut
-                          labore et dolore magna aliquyam erat, sed diam
-                          voluptua. At vero eos et accusam et justo duo dolores
-                          et ea rebum. Stet clita kasd gubergren, no sea
-                          takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-                          ipsum dolor sit amet.
-                        </p>
-                        <p className="text-center mt-6 italic text-brown-pale">
-                          Rina
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="border border-white my-5">
-                <div className="bg-white m-1 p-2 bg-opacity-70">
-                  <div className="p-2">
-                    <div className="flex justify-center">
-                      <div className="py-10 px-10">
-                        <p className="text-brown-pale text-center">
-                          Lorem ipsum dolor sit amet, consetetur sadipscing
-                          elitr, sed diam nonumy eirmod tempor invidunt ut
-                          labore et dolore magna aliquyam erat, sed diam
-                          voluptua. At vero eos et accusam et justo duo dolores
-                          et ea rebum. Stet clita kasd gubergren, no sea
-                          takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-                          ipsum dolor sit amet.
-                        </p>
-                        <p className="text-center mt-6 italic text-brown-pale">
-                          Rina
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <ReviewElementDesktop
+                text={props.review1[0]}
+                name={props.review1[1]}
+              />
+              <ReviewElementDesktop
+                text={props.review2[0]}
+                name={props.review2[1]}
+              />
+              <ReviewElementDesktop
+                text={props.review3[0]}
+                name={props.review3[1]}
+              />
             </div>
-            {/* Review tab -- van losse reviews én een tab components maken met props! */}
+            {/* Review tab */}
             <div className="my-10 mx-10 grid grid-cols-3 gap-x-4">
-              <div className="border border-white my-5">
-                <div className="bg-white m-1 p-2 bg-opacity-70">
-                  <div className="p-2">
-                    <div className="flex justify-center">
-                      <div className="py-10 px-10">
-                        <p className="text-brown-pale text-center">
-                          Lorem ipsum dolor sit amet, consetetur sadipscing
-                          elitr, sed diam nonumy eirmod tempor invidunt ut
-                          labore et dolore magna aliquyam erat, sed diam
-                          voluptua. At vero eos et accusam et justo duo dolores
-                          et ea rebum. Stet clita kasd gubergren, no sea
-                          takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-                          ipsum dolor sit amet.
-                        </p>
-                        <p className="text-center mt-6 italic text-brown-pale">
-                          Rina
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="border border-white my-5">
-                <div className="bg-white m-1 p-2 bg-opacity-70">
-                  <div className="p-2">
-                    <div className="flex justify-center">
-                      <div className="py-10 px-10">
-                        <p className="text-brown-pale text-center">
-                          Lorem ipsum dolor sit amet, consetetur sadipscing
-                          elitr, sed diam nonumy eirmod tempor invidunt ut
-                          labore et dolore magna aliquyam erat, sed diam
-                          voluptua. At vero eos et accusam et justo duo dolores
-                          et ea rebum. Stet clita kasd gubergren, no sea
-                          takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-                          ipsum dolor sit amet.
-                        </p>
-                        <p className="text-center mt-6 italic text-brown-pale">
-                          Rina
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="border border-white my-5">
-                <div className="bg-white m-1 p-2 bg-opacity-70">
-                  <div className="p-2">
-                    <div className="flex justify-center">
-                      <div className="py-10 px-10">
-                        <p className="text-brown-pale text-center">
-                          Lorem ipsum dolor sit amet, consetetur sadipscing
-                          elitr, sed diam nonumy eirmod tempor invidunt ut
-                          labore et dolore magna aliquyam erat, sed diam
-                          voluptua. At vero eos et accusam et justo duo dolores
-                          et ea rebum. Stet clita kasd gubergren, no sea
-                          takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-                          ipsum dolor sit amet.
-                        </p>
-                        <p className="text-center mt-6 italic text-brown-pale">
-                          Rina
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <ReviewElementDesktop
+                text={props.review4[0]}
+                name={props.review4[1]}
+              />
+              <ReviewElementDesktop
+                text={props.review5[0]}
+                name={props.review5[1]}
+              />
+              <ReviewElementDesktop
+                text={props.review6[0]}
+                name={props.review6[1]}
+              />
             </div>
           </Carousel>
         </div>

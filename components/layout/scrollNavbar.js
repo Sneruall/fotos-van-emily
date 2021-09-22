@@ -86,7 +86,7 @@ function scrollNavbar(props) {
                     </div>
                   </li>
                 </Link>
-                <Link href="/">
+                <Link href="/loveshoot">
                   <li
                     onMouseEnter={() => setShowDiensten(true)}
                     onMouseLeave={() => setShowDiensten(false)}
