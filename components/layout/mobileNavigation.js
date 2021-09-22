@@ -1,11 +1,16 @@
 import { Fragment } from "react";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import NavItemXS from "./navItemXS";
-import DropDownNavItemXS from "./dropDownNavItemXS";
+import {
+  MenuIcon,
+  XIcon,
+  ChevronUpIcon,
+  ChevronDownIcon,
+} from "@heroicons/react/outline";
 import { useState } from "react";
+import Link from "next/link";
 
 function mobileNavigation() {
   const [mobileMenuExtended, setMobileMenuExtended] = useState(false);
+  const [navExtended, setNavExtended] = useState(false);
 
   return (
     <Fragment>
@@ -39,11 +44,118 @@ function mobileNavigation() {
         </div>
         <nav>
           <ul className="flex flex-col uppercase text-lg">
-            <NavItemXS text="home" link="/" />
-            <DropDownNavItemXS text="diensten" />
-            <NavItemXS text="portfolio" link="/portfolio" />
-            <NavItemXS text="over mij" link="/over-mij" />
-            <NavItemXS text="contact" link="/contact" />
+            <Link href="/">
+              <li
+                onClick={() => setMobileMenuExtended(false)}
+                className="py-2 border-b border-opacity-25 cursor-pointer text-brown-pale"
+              >
+                <h2 className="ml-12">Home</h2>
+              </li>
+            </Link>
+            <li
+              onClick={() =>
+                navExtended ? setNavExtended(false) : setNavExtended(true)
+              }
+              className="py-2 border-b border-opacity-25 cursor-pointer"
+            >
+              <div className="flex justify-between text-brown-pale">
+                <div>
+                  <h2 className="ml-12">Diensten</h2>
+                </div>
+                {navExtended ? (
+                  <ChevronUpIcon
+                    id="chevronup"
+                    className="h-6 w-6 my-auto mr-5"
+                  />
+                ) : (
+                  <ChevronDownIcon
+                    id="chevrondown"
+                    className="h-6 w-6 my-auto mr-5"
+                  />
+                )}
+              </div>
+            </li>
+            <ul className={`${!navExtended && "hidden"}`}>
+              <Link href="/portretfotografie">
+                <li
+                  onClick={() => {
+                    setMobileMenuExtended(false);
+                    setNavExtended(false);
+                  }}
+                  className="py-2 border-b border-opacity-25 cursor-pointer text-brown-pale"
+                >
+                  <h2 className="ml-20">Portret</h2>
+                </li>
+              </Link>
+              <Link href="/portretfotografie">
+                <li
+                  onClick={() => {
+                    setMobileMenuExtended(false);
+                    setNavExtended(false);
+                  }}
+                  className="py-2 border-b border-opacity-25 cursor-pointer text-brown-pale"
+                >
+                  <h2 className="ml-20">loveshoot</h2>
+                </li>
+              </Link>
+              <Link href="/portretfotografie">
+                <li
+                  onClick={() => {
+                    setMobileMenuExtended(false);
+                    setNavExtended(false);
+                  }}
+                  className="py-2 border-b border-opacity-25 cursor-pointer text-brown-pale"
+                >
+                  <h2 className="ml-20">zwangerschap</h2>
+                </li>
+              </Link>
+              <Link href="/portretfotografie">
+                <li
+                  onClick={() => {
+                    setMobileMenuExtended(false);
+                    setNavExtended(false);
+                  }}
+                  className="py-2 border-b border-opacity-25 cursor-pointer text-brown-pale"
+                >
+                  <h2 className="ml-20">honden</h2>
+                </li>
+              </Link>
+              <Link href="/portretfotografie">
+                <li
+                  onClick={() => {
+                    setMobileMenuExtended(false);
+                    setNavExtended(false);
+                  }}
+                  className="py-2 border-b border-opacity-25 cursor-pointer text-brown-pale"
+                >
+                  <h2 className="ml-20">fotobewerking</h2>
+                </li>
+              </Link>
+            </ul>
+            <Link href="/portfolio">
+              <li
+                onClick={() => setMobileMenuExtended(false)}
+                className="py-2 border-b border-opacity-25 cursor-pointer text-brown-pale"
+              >
+                <h2 className="ml-12">Portfolio</h2>
+              </li>
+            </Link>
+            <Link href="/over-mij">
+              <li
+                onClick={() => setMobileMenuExtended(false)}
+                className="py-2 border-b border-opacity-25 cursor-pointer text-brown-pale"
+              >
+                <h2 className="ml-12">over mij</h2>
+              </li>
+            </Link>
+            <Link href="/contact">
+              <li
+                onClick={() => setMobileMenuExtended(false)}
+                className="py-2 border-b border-opacity-25 cursor-pointer text-brown-pale"
+              >
+                <h2 className="ml-12">contact</h2>
+              </li>
+            </Link>
           </ul>
         </nav>
       </div>
