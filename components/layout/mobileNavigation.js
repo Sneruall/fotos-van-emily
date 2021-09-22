@@ -14,21 +14,21 @@ function mobileNavigation() {
 
   return (
     <Fragment>
-      <div className="flex justify-end">
-        <div className="sm:hidden z-10 mt-5 mr-4 cursor-pointer">
-          {!mobileMenuExtended && (
+      {!mobileMenuExtended && (
+        <div className="flex sticky top-0 z-50 justify-end">
+          <div className="sm:hidden z-10 mt-5 mr-4 cursor-pointer">
             <MenuIcon
               onClick={() => setMobileMenuExtended(true)}
               className="h-8 w-8 text-black"
             />
-          )}
+          </div>
         </div>
-      </div>
+      )}
 
       <div
         className={`${
           !mobileMenuExtended && "hidden"
-        } sm:hidden absolute top-0 bg-white bg-opacity-90 w-full z-50`}
+        } sm:hidden inline-block sticky top-0 bg-white bg-opacity-90 w-full z-50`}
       >
         <div className="flex w-full absolute justify-center mb-5 mt-4">
           <h1 className="font-display uppercase text-brown-pale text-3xl">
