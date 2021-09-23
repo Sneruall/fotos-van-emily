@@ -23,7 +23,7 @@ function WerkwijzeSection(props) {
             <WerkwijzeStap
               number="3"
               title="DE FOTOSHOOT ZELF"
-              description="We meeten elkaar op de afgesproken locatie. We zijn ongeveer 30 tot 45 minuten bezig, ik neem de tijd voor je en zorg voor een diversiteit aan foto's."
+              description={props.text3} //als er geen description wordt opgegeven bij stap 3 komt er een default tekst, zie <WerkwijzeStap/>
             />
             <WerkwijzeStap
               number="4"

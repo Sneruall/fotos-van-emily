@@ -40,10 +40,10 @@ function PricingSection(props) {
         {/* caption en button offerte op maat */}
         <div className="flex flex-col justify-center gap-5 lg:gap-10 mt-12 lg:mt-20">
           <h4 className="text-center text-3xl lg:text-4xl uppercase text-charcoal mb-1">
-            Liever een offerte op maat?
+            {props.cta}
           </h4>
           <div className="self-center">
-            <Button link="/" button="button-1" text="Neem contact op" />
+            <Button link="#contact" button="button-1" text="Neem contact op" />
           </div>
         </div>
       </div>

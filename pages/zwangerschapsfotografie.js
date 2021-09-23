@@ -4,8 +4,8 @@ import ScrollNavbar from "../components/layout/scrollNavbar";
 import ContactFormSection from "../components/sections/ContactFormSection";
 import FotoshootKadoSection from "../components/sections/FotoshootKadoSection";
 import IntroSection from "../components/sections/IntroSection";
-import PageSectionThree from "../components/sections/PageSectionThree";
-import PageSectionTwo from "../components/sections/PageSectionTwo";
+import EditingSection from "../components/sections/EditingSection";
+import SpotlightSection from "../components/sections/SpotlightSection";
 import PricingSection from "../components/sections/PricingSection";
 import WerkwijzeSection from "../components/sections/WerkwijzeSection";
 
@@ -35,7 +35,7 @@ function zwangerschapsfotografie() {
         ]}
         portfolioButtonLink="/portfolio"
       />
-      <PageSectionTwo
+      <SpotlightSection
         heading="NATUURLIJK IN DE SPOTLIGHT"
         text="Ik fotografeer het liefst in de buitenlucht, dit zorgt voor de meest pure en unieke foto’s. Ik zorg voor voldoende afwisseling op locatie zodat jullie een diversiteit aan foto’s krijgt. Heb je al een locatie in gedachte? Super! Heb je wat meer inspiratie nodig? Ik denk graag met je mee naar een locatie die bij jou past, het bos, het strand, de heide of de stad, met veel passie zoek ik naar de aller mooiste plekjes en gelukkig ken ik er een heleboel! Ik vind het belangrijk dat jullie je op je gemak voelen, daarom klets ik gezellig en geef ik duidelijke aanwijzingen. Kortom, gewoon een heerlijk momentje in de spotlight! Zo komen jullie op een natuurlijke manier prachtig op de foto te staan!"
         img="/images/zwangerschapsfotografie/spotlight.png"
@@ -65,7 +65,7 @@ function zwangerschapsfotografie() {
           "Name6",
         ]}
       />
-      <PageSectionThree
+      <EditingSection
         imgE1="/images/zwangerschapsfotografie/e1.png"
         imgE2="/images/zwangerschapsfotografie/e2.png"
         imgE3="/images/zwangerschapsfotografie/e1.png"
@@ -75,6 +75,7 @@ function zwangerschapsfotografie() {
         heading="WAT KRIJG JE ALS JE EEN ZWANGERSCHAPS REPORTAGE LAAT MAKEN DOOR MIJ?"
         pakketA={["~45 min", "20", "1,5 week", "149", true]}
         pakketB={["~1 uur", "30", "1,5 week", "219", true]}
+        cta="Liever een offerte op maat?"
       />
       <WerkwijzeSection />
       <FotoshootKadoSection />

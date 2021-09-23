@@ -109,7 +109,7 @@ function mobileNavigation() {
                   <h2 className="ml-20">zwangerschap</h2>
                 </li>
               </Link>
-              <Link href="/zwangerschapsfotografie">
+              <Link href="/hondenfotografie">
                 <li
                   onClick={() => {
                     setMobileMenuExtended(false);

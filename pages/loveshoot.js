@@ -4,8 +4,8 @@ import ScrollNavbar from "../components/layout/scrollNavbar";
 import ContactFormSection from "../components/sections/ContactFormSection";
 import FotoshootKadoSection from "../components/sections/FotoshootKadoSection";
 import IntroSection from "../components/sections/IntroSection";
-import PageSectionThree from "../components/sections/PageSectionThree";
-import PageSectionTwo from "../components/sections/PageSectionTwo";
+import EditingSection from "../components/sections/EditingSection";
+import SpotlightSection from "../components/sections/SpotlightSection";
 import PricingSection from "../components/sections/PricingSection";
 import WerkwijzeSection from "../components/sections/WerkwijzeSection";
 
@@ -14,7 +14,7 @@ function loveshoot() {
     <Fragment>
       <Header
         img="/images/loveshoot/hero.png"
-        imgMobile="/images/portretfotografie/hero-mobile.png"
+        imgMobile="/images/loveshoot/hero-mobile.png"
         pageTitle="love shoot"
       />
       <ScrollNavbar fade={false} />
@@ -34,7 +34,7 @@ function loveshoot() {
         ]}
         portfolioButtonLink="/portfolio"
       />
-      <PageSectionTwo
+      <SpotlightSection
         heading="NATUURLIJK IN DE SPOTLIGHT"
         text="Ik fotografeer het liefst in de buitenlucht, dit zorgt voor de
       meest pure en unieke foto’s. Ik zorg voor voldoende afwisseling op
@@ -75,7 +75,7 @@ function loveshoot() {
           "Name6",
         ]}
       />
-      <PageSectionThree
+      <EditingSection
         imgE1="/images/loveshoot/e1.png"
         imgE2="/images/loveshoot/e2.png"
         imgE3="/images/loveshoot/e1.png"
@@ -85,6 +85,7 @@ function loveshoot() {
         heading="WAT KRIJG JE ALS JE EEN PORTRET LAAT MAKEN DOOR MIJ?"
         pakketA={["~45 min", "20", "1,5 week", "149", true]}
         pakketB={["~1 uur", "30", "1,5 week", "219", true]}
+        cta="Liever een offerte op maat?"
       />
       <WerkwijzeSection />
       <FotoshootKadoSection />
