@@ -97,7 +97,7 @@ function scrollNavbar(props) {
                     </div>
                   </li>
                 </Link>
-                <Link href="/">
+                <Link href="/zwangerschapsfotografie">
                   <li
                     onMouseEnter={() => setShowDiensten(true)}
                     onMouseLeave={() => setShowDiensten(false)}
@@ -132,7 +132,7 @@ function scrollNavbar(props) {
                 </Link>
               </ul>
             </div>
-          </div>
+        </div>
         </div>
       )}
     </Fragment>

@@ -7,7 +7,7 @@ function Header(props) {
       <div className="hidden sm:block">
         <Image
           src={props.img}
-          alt="Hero image"
+          alt={"Hero image"}
           layout="fill"
           objectFit="cover"
           priority
@@ -34,7 +34,10 @@ function Header(props) {
 
       {props.pageTitle && (
         <div className="absolute left-1/2 transform -translate-x-1/2 bottom-10 max-w-6xl w-full">
-          <h1 className="max-w-5xl text-7xl sm:text-10xl leading-tight text-white font-display uppercase mx-2">
+          <h1 className="max-w-5xl sm:hidden text-7xl leading-tight text-white font-display uppercase mx-2">
+            {props.pageTitleMobile ? props.pageTitleMobile : props.pageTitle}
+          </h1>
+          <h1 className="max-w-5xl hidden sm:block md:text-8xl lg:text-9xl xl:text-10xl leading-tight text-white font-display uppercase mx-2">
             {props.pageTitle}
           </h1>
         </div>

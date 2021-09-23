@@ -98,7 +98,7 @@ function mobileNavigation() {
                   <h2 className="ml-20">loveshoot</h2>
                 </li>
               </Link>
-              <Link href="/portretfotografie">
+              <Link href="/zwangerschapsfotografie">
                 <li
                   onClick={() => {
                     setMobileMenuExtended(false);
@@ -109,7 +109,7 @@ function mobileNavigation() {
                   <h2 className="ml-20">zwangerschap</h2>
                 </li>
               </Link>
-              <Link href="/portretfotografie">
+              <Link href="/zwangerschapsfotografie">
                 <li
                   onClick={() => {
                     setMobileMenuExtended(false);

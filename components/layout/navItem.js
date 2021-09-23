@@ -18,6 +18,11 @@ function navItem(props) {
               <a className="hover:underline">Loveshoot</a>
             </Link>
           </li>
+          <li className="hidden group-hover:block">
+            <Link href="/zwangerschapsfotografie">
+              <a className="hover:underline">Zwangerschap</a>
+            </Link>
+          </li>
         </ul>
       )}
     </li>
