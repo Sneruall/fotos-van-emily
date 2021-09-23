@@ -53,7 +53,7 @@ function ContactFormElement() {
           className="rounded-sm p-2 px-4 placeholder-charcoal placeholder-opacity-90 shadow-sm outline-none"
           id="onderwerp"
           type="text"
-          placeholder="Onderwerp (bijv. portret fotografie)"
+          placeholder="Onderwerp"
           onChange={(e) => setOnderwerp(e.target.value)}
         />
         <textarea

@@ -6,10 +6,11 @@ function PricingPlan(props) {
   return (
     <div className="border border-white my-5">
       <div className="bg-white m-1 px-4 py-2 bg-opacity-70">
-        <div className="border-b-2 border-brown-pale my-7 mx-10 lg:mx-auto">
+        <div className="my-7">
           <h4 className="text-center text-3xl uppercase text-brown-pale mb-1">
             {props.title}
           </h4>
+          <div className="border-b-2 border-brown-pale max-w-xs mx-auto"></div>
         </div>
         <div className="mb-8">
           <div className="flex space-x-4 my-2">
@@ -52,7 +53,7 @@ function PricingPlan(props) {
             </Fragment>
           )}
         </div>
-        <div className="ml-10 lg:ml-0">
+        <div className="ml-10">
           <div className="flex lg:justify-between lg:flex-row flex-col">
             <div>
               <p className="font-bold text-xl mb-2">Vanaf:</p>

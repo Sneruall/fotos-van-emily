@@ -9,7 +9,7 @@ function PricingSection(props) {
       <div className="mx-auto max-w-6xl">
         <h2 className="title-1 leading-tight">{props.heading} </h2>
         {/* Pricing cards */}
-        <div className="flex flex-col lg:flex-row gap-8">
+        <div className={`flex flex-col lg:flex-row ${props.pakketC ? "gap-8" : "gap-16"}`}>
           <PricingPlan
             title="Pakket A"
             duur={props.pakketA[0]}
