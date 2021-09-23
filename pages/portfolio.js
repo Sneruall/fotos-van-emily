@@ -10,7 +10,6 @@ import Gallery from "react-photo-gallery";
 import { photos } from "./photos";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Modal from "react-modal";
 
 const customStyles = {
   content: {
@@ -23,28 +22,9 @@ const customStyles = {
   },
 };
 
-Modal.setAppElement("#modal-root");
-
 function portfolio() {
   const [currentImage, setCurrentImage] = useState(0);
-  const [viewerIsOpen, setViewerIsOpen] = useState(false);
-  const [modalIsOpen, setIsOpen] = React.useState(false);
   const [showModal, setShowModal] = React.useState(false);
-
-  let subtitle;
-
-  function openModal() {
-    setShowModal(true);
-  }
-
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    subtitle.style.color = "#f00";
-  }
-
-  function closeModal() {
-    setShowModal(false);
-  }
 
   const openLightbox = useCallback((event, { photo, index }) => {
     setCurrentImage(index);
@@ -52,10 +32,10 @@ function portfolio() {
     console.log("set image" + index);
   }, []);
 
-  const closeLightbox = () => {
-    setCurrentImage(0);
-    setShowModal(false);
-  };
+//   const closeLightbox = () => {
+//     setCurrentImage(0);
+//     setShowModal(false);
+//   };
 
   return (
     <Fragment>
@@ -82,18 +62,18 @@ function portfolio() {
           </button>
           {showModal ? (
             <>
-              <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-                <div className="relative w-auto my-6 mx-auto max-w-5xl">
+              <div className="justify-center items-center flex overflow-x-hidden overflow-y-hidden fixed inset-0 z-50 outline-none focus:outline-none">
+                <div className="relative mx-auto w-full h-full">
                   {/*content*/}
-                  <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-gray-200 outline-none focus:outline-none">
+                  <div className="relative flex flex-col w-full h-full bg-black outline-none focus:outline-none">
                     {/*header*/}
-                    <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
+                    <div className="flex items-start justify-between p-5">
                       <h3 className="text-3xl font-semibold">Modal Title</h3>
                       <button
-                        className="p-1 ml-auto bg-transparent border-0 text-black float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                        className="p-1 ml-auto bg-transparent border-0 text-white float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                         onClick={() => setShowModal(false)}
                       >
-                        <span className="bg-transparent text-black h-6 w-6 text-2xl block outline-none focus:outline-none">
+                        <span className="bg-transparent text-white h-6 w-6 text-2xl block outline-none focus:outline-none">
                           ×
                         </span>
                       </button>
@@ -104,14 +84,14 @@ function portfolio() {
                         <Image
                           src="/images/loveshoot/p1.png"
                           alt="Portretfoto"
-                          width="200"
-                          height="300"
+                          layout="fill"
+                          objectFit="contain"
                         />
                         <Image
                           src="/images/loveshoot/e1.png"
                           alt="Portretfoto"
-                          width="300"
-                          height="200"
+                          width="1200"
+                          height="800"
                         />
                       </Carousel>
                     </div>
@@ -138,35 +118,7 @@ function portfolio() {
           />
         </Carousel>
 
-        {/* <div>
-          <button onClick={openModal}>Open Modal</button>
-          <Modal
-            isOpen={modalIsOpen}
-            onAfterOpen={afterOpenModal}
-            onRequestClose={closeModal}
-            style={customStyles}
-            contentLabel="Example Modal"
-          >
-            <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
-            <button onClick={closeModal}>close</button>
-            <div>I am a modal</div>
-            <Carousel>
-              <Image
-                src="/images/loveshoot/e1.png"
-                alt="Portretfoto"
-                width="300"
-                height="200"
-              />
-              <Image
-                src="/images/loveshoot/e1.png"
-                alt="Portretfoto"
-                width="300"
-                height="200"
-              />
-            </Carousel>
-          </Modal>
-        </div> */}
-
+     
         {/* <ModalGateway>
           {viewerIsOpen ? (
             <Modal onClose={closeLightbox}>
