@@ -51,17 +51,17 @@ function scrollNavbar(props) {
                   <a className="my-auto">Diensten</a>
                 </li>
               </Link>
-              <Link href="/">
+              <Link href="/portfolio">
                 <li className="w-24 md:w-28 lg:w-32 text-center hover:underline flex flex-col justify-items-center">
                   <a className="my-auto">Portfolio</a>
                 </li>
               </Link>
-              <Link href="/">
+              <Link href="/over-mij">
                 <li className="w-24 md:w-28 lg:w-32 text-center hover:underline flex flex-col justify-items-center">
                   <a className="my-auto">Over mij</a>
                 </li>
               </Link>
-              <Link href="/">
+              <Link href="/contact">
                 <li className="w-24 md:w-28 lg:w-32 text-center hover:underline flex flex-col justify-items-center">
                   <a className="my-auto">Contact</a>
                 </li>
