@@ -1,10 +1,13 @@
 import { Fragment } from "react";
 import Header from "../components/layout/header";
 import ScrollNavbar from "../components/layout/scrollNavbar";
+import ContactFormSection from "../components/sections/ContactFormSection";
+import FotoshootKadoSection from "../components/sections/FotoshootKadoSection";
 import IntroSection from "../components/sections/IntroSection";
 import PageSectionThree from "../components/sections/PageSectionThree";
 import PageSectionTwo from "../components/sections/PageSectionTwo";
 import PricingSection from "../components/sections/PricingSection";
+import WerkwijzeSection from "../components/sections/WerkwijzeSection";
 
 function loveshoot() {
   return (
@@ -83,6 +86,9 @@ function loveshoot() {
         pakketA={["~45 min", "20", "1,5 week", "149", true]}
         pakketB={["~1 uur", "30", "1,5 week", "219", true]}
       />
+      <WerkwijzeSection />
+      <FotoshootKadoSection />
+      <ContactFormSection />
     </Fragment>
   );
 }
