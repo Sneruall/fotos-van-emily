@@ -42,7 +42,7 @@ function portfolio() {
     <Fragment>
       <ScrollNavbar fade={false} />
       <div className="mx-auto max-w-3xl text-center my-12 lg:my-24">
-        <div className="border-b-2 border-brown-pale inline-block lg:px-10 my-6">
+        <div className="border-b-2 border-brown-pale inline-block sm:px-10 my-6">
           <h2 className="title-2 leading-tight">Portfolio</h2>
         </div>
         <p className="mb-6 mx-2">
