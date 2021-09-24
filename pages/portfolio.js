@@ -10,6 +10,7 @@ import Gallery from "react-photo-gallery";
 import { photos } from "./photos";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Section from "../components/layout/Section";
 
 const customStyles = {
   content: {
@@ -40,14 +41,16 @@ function portfolio() {
   return (
     <Fragment>
       <ScrollNavbar fade={false} />
-      <div className="flex flex-col items-center my-20 gap-10 max-w-5xl text-center mx-auto">
-        <h1 className="text-5xl">Mijn portfolio</h1>
-        <p>
-          Kijk rond in mijn portfolio om een beeld te krijgen van mijn
-          fotografie stijl. Wil je graag foto's laten maken? Neem vrijblijvend
-          contact met mij op en we plannen samen een afspraak!
+      <div className="mx-auto max-w-3xl text-center my-12 lg:my-24">
+        <div className="border-b-2 border-brown-pale inline-block lg:px-10 my-6">
+          <h2 className="title-2 leading-tight">Portfolio</h2>
+        </div>
+        <p className="mb-6 mx-2">
+          Kijk rond en krijg een beeld van mijn fotografie stijl. Wil je graag
+          foto’s laten maken? Neem vrijblijvend contact met mij op en we plannen
+          samen een afspraak!
         </p>
-        <Button link="/" button="button-1" text="Neem contact op" />
+        <Button link="/contact" button="button-1" text="Neem contact op" />
       </div>
       <div>
         <Gallery photos={photos} onClick={openLightbox} direction="column" />
