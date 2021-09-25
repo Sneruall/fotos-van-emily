@@ -24,7 +24,7 @@ function fotobewerkingservice() {
           </h2>
           <div className="border border-white my-5">
             <div className="bg-white m-1 p-2 bg-opacity-70">
-              <div className="p-2 sm:p-10 max-w-5xl mx-auto text-center">
+              <div className="p-2 sm:p-10 max-w-6xl mx-auto text-center">
                 <p className="max-w-3xl mx-auto mb-6 sm:mb-10">
                   Wil je graag dat jouw foto’s er verbluffend uitzien, maar heb
                   je geen idee hoe? Gelukkig ben ik er voor je om je een handje
@@ -46,22 +46,22 @@ function fotobewerkingservice() {
                   </div>
                 </div>
 
-                <div className="flex flex-col lg:flex-row gap-4 lg:gap-14 mb-8 lg:mb-24 justify-items-center">
+                <div className="flex flex-col lg:grid grid-cols-2 gap-4 lg:gap-14 mb-8 justify-items-center">
                   <ReactCompareSlider
                     itemOne={
                       <Image
                         src="/images/portretfotografie/e1.png"
                         alt="foto"
-                        width="651"
-                        height="434"
+                        width="524"
+                        height="363"
                       />
                     }
                     itemTwo={
                       <Image
                         src="/images/portretfotografie/e2.png"
                         alt="nabewerkte foto"
-                        width="651"
-                        height="434"
+                        width="524"
+                        height="363"
                       />
                     }
                   />
@@ -71,22 +71,134 @@ function fotobewerkingservice() {
                       <Image
                         src="/images/portretfotografie/e1.png"
                         alt="foto"
-                        width="651"
-                        height="434"
+                        width="524"
+                        height="363"
                       />
                     }
                     itemTwo={
                       <Image
                         src="/images/portretfotografie/e2.png"
                         alt="nabewerkte foto"
-                        width="651"
-                        height="434"
+                        width="524"
+                        height="363"
+                      />
+                    }
+                  />
+
+                  <ReactCompareSlider
+                    itemOne={
+                      <Image
+                        src="/images/portretfotografie/e1.png"
+                        alt="foto"
+                        width="524"
+                        height="363"
+                      />
+                    }
+                    itemTwo={
+                      <Image
+                        src="/images/portretfotografie/e2.png"
+                        alt="nabewerkte foto"
+                        width="524"
+                        height="363"
+                      />
+                    }
+                  />
+
+                  <ReactCompareSlider
+                    itemOne={
+                      <Image
+                        src="/images/portretfotografie/e1.png"
+                        alt="foto"
+                        width="524"
+                        height="363"
+                      />
+                    }
+                    itemTwo={
+                      <Image
+                        src="/images/portretfotografie/e2.png"
+                        alt="nabewerkte foto"
+                        width="524"
+                        height="363"
+                      />
+                    }
+                  />
+                  <ReactCompareSlider
+                    itemOne={
+                      <Image
+                        src="/images/portretfotografie/e1.png"
+                        alt="foto"
+                        width="524"
+                        height="363"
+                      />
+                    }
+                    itemTwo={
+                      <Image
+                        src="/images/portretfotografie/e2.png"
+                        alt="nabewerkte foto"
+                        width="524"
+                        height="363"
+                      />
+                    }
+                  />
+                  <ReactCompareSlider
+                    itemOne={
+                      <Image
+                        src="/images/portretfotografie/e1.png"
+                        alt="foto"
+                        width="524"
+                        height="363"
+                      />
+                    }
+                    itemTwo={
+                      <Image
+                        src="/images/portretfotografie/e2.png"
+                        alt="nabewerkte foto"
+                        width="524"
+                        height="363"
                       />
                     }
                   />
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <h2 className="mx-auto text-center text-5xl font-sans my-10 lg:mt-16 text-white">
+          EXTRA SERVICE: SKIN RETOUCHING
+        </h2>
+        <p className="max-w-3xl mx-auto mb-6 sm:mb-10 text-white text-center">
+          Skin retouching kan op verzoek worden aangevraagd. Dit houdt in dat
+          oneffenheden van de huid worden weggewerkt en eventuele donkere
+          kringen onder de ogen worden opgelicht. Je wilt natuurlijk geen baby
+          face, daarom wordt er veel aandacht besteed aan het zo natuurlijk
+          mogelijk houden van de huid. Zo krijg je een gebalanceerd en fris
+          resultaat! Skin retouching is vooral geschikt bij headshots, in
+          overleg kijken we welke foto’s het meest geschikt hiervoor zijn
+          (tarieven en meer informatie vind je op de fotobewerking pagina).
+        </p>
+        <div className="flex flex-col">
+          <div className="flex justify-center">
+            <ReactCompareSlider
+              itemOne={
+                <Image
+                  src="/images/portretfotografie/e1.png"
+                  alt="skin retouching"
+                  width="651"
+                  height="434"
+                />
+              }
+              itemTwo={
+                <Image
+                  src="/images/portretfotografie/e2.png"
+                  alt="skin retouching"
+                  width="651"
+                  height="434"
+                />
+              }
+            />
+          </div>
+          <div className="mt-5 lg:mt-0 lg:mb-10 text-center lg:order-first">
+            <Button link="/" button="button-3" text="Meer informatie" />
           </div>
         </div>
       </Section>
