@@ -212,7 +212,7 @@ function fotobewerkingservice() {
             WERKWIJZE FOTOBEWERKING
           </h2>
         </div>
-        <div className="grid grid-cols-3 justify-items-stretch gap-0 lg:gap-8">
+        <div className="flex flex-col lg:grid lg:grid-cols-3 lg:justify-items-stretch gap-0 lg:gap-8">
           <div className="border border-white grid grid-cols-1 justify-items-stretch my-5">
             <div className="bg-white m-1 p-4 bg-opacity-70">
               <div className="mb-4">
