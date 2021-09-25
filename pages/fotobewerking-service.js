@@ -5,6 +5,7 @@ import Header from "../components/layout/header";
 import ScrollNavbar from "../components/layout/ScrollNavbar";
 import Section from "../components/layout/Section";
 import Button from "../components/ui/button";
+import { CheckIcon } from "@heroicons/react/solid";
 
 function fotobewerkingservice() {
   return (
@@ -17,6 +18,7 @@ function fotobewerkingservice() {
         titleMobile2="Foto- Bewerking Service"
       />
 
+      {/* VOORBEELDEN SECTIE */}
       <Section bg={"bg-grey-pinkish2"}>
         <div className="mx-auto max-w-6xl">
           <h2 className="title-1 my-0 lg:my-10 text-white leading-tight">
@@ -199,6 +201,102 @@ function fotobewerkingservice() {
           </div>
           <div className="mt-5 lg:mt-0 lg:mb-10 text-center lg:order-first">
             <Button link="/" button="button-3" text="Meer informatie" />
+          </div>
+        </div>
+      </Section>
+
+      {/* WERKWIJZE SECTIE */}
+      <Section bg={"bg-grey-light2"}>
+        <div className="mx-auto max-w-6xl">
+          <h2 className="title-1 my-0 lg:my-10 leading-tight">
+            WERKWIJZE FOTOBEWERKING
+          </h2>
+        </div>
+        <div className="flex flex-col lg:flex-row gap-0 lg:gap-8 justify-items-center">
+          <div className="border border-white my-5">
+            <div className="bg-white m-1 p-4 bg-opacity-70">
+              <div className="mb-4">
+                <h4 className="border-b-2 border-brown-pale text-3xl uppercase text-brown-pale mb-1">
+                  WAT IK DOE MET DE FOTO’S
+                </h4>
+              </div>
+              <div>
+                <div className="flex space-x-4 my-2">
+                  <CheckIcon className="flex-shrink-0 w-6 h-6 text-grey-brownish" />
+                  <p className="leading-snug">Bijsnijden en roteren</p>
+                </div>
+                <div className="flex space-x-4 my-2">
+                  <CheckIcon className="flex-shrink-0 w-6 h-6 text-grey-brownish" />
+                  <p className="leading-snug">
+                    Aanpassen van basis licht instellingen zoals belichting,
+                    contrast en schaduwen.
+                  </p>
+                </div>
+                <div className="flex space-x-4 my-2">
+                  <CheckIcon className="flex-shrink-0 w-6 h-6 text-grey-brownish" />
+                  <p className="leading-snug">
+                    Aanpassen van de totale kleur balans en individuele kleuren
+                  </p>
+                </div>
+                <div className="flex space-x-4 my-2">
+                  <CheckIcon className="flex-shrink-0 w-6 h-6 text-grey-brownish" />
+                  <p className="leading-snug">
+                    Overige nabewerking zodat de foto's nog mooier worden of
+                    specifieke verzoeken op aanvraag.
+                  </p>
+                </div>
+              </div>
+              <div className="mt-4">
+                <p>
+                  Naast het bewerken van de totale foto is het op aanvraag ook
+                  nog mogelijk de huid te retoucheren. Dit houdt in dat
+                  oneffenheden van de huid worden weggewerkt en eventuele
+                  donkere kringen onder de ogen worden opgelicht. Deze retouch
+                  wordt nauwkeurig en zo natuurlijk mogelijk gedaan, je wilt
+                  natuurlijk geen baby face. Zo krijg je een gebalanceerd en
+                  fris resultaat!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="border border-white my-5">
+            <div className="bg-white m-1 p-4 bg-opacity-70">
+              <div className="mb-4">
+                <h4 className="border-b-2 border-brown-pale text-3xl uppercase text-brown-pale mb-1">
+                  VOORWAARDEN VAN DE FOTO’S
+                </h4>
+              </div>
+              <div>
+                <p>
+                De foto moet van voldoende kwaliteit zijn. Het heeft geen zin om lage kwaliteit foto’s te bewerken omdat er te weinig informatie is opgeslagen in de foto. Dit betekent over het algemeen dat foto’s van mobiele telefoons niet geschikt zijn om te laten bewerken. Er zijn natuurlijk uitzonderingen, stuur mij een berichtje en we bekijken samen of nabewerking mogelijk is.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="border border-white my-5">
+            <div className="bg-white m-1 p-4 bg-opacity-70">
+              <div className="mb-4">
+                <h4 className="border-b-2 border-brown-pale text-3xl uppercase text-brown-pale mb-1">
+                  ADVIES BIJ HET MAKEN VAN FOTO’S
+                </h4>
+              </div>
+              <div>
+                <p>
+                  Maak je de foto’s met een fotocamera? Kies ervoor om de foto’s
+                  in RAW formaat op te slaan. Dit houdt in dat er meer
+                  informatie wordt opgeslagen waardoor er meer mogelijk is in de
+                  nabewerking (let op, hierdoor wordt het bestandsformaat ook
+                  groter). Je kunt dit aanpassen in de instellingen van je
+                  camera.
+                </p>
+              </div>
+              <div className="mt-5">
+                <p>
+                  Gooi donkere foto’s of te lichte foto’s niet meteen weg! Vaak
+                  zijn deze foto’s nog te redden in de nabewerking!
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </Section>

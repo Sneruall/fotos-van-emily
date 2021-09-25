@@ -70,7 +70,7 @@ function EditingSection(props) {
                   itemOne={
                     <Image
                       src={props.imgSk1}
-                      alt="portret"
+                      alt="skin retouching"
                       width="651"
                       height="434"
                     />
@@ -78,7 +78,7 @@ function EditingSection(props) {
                   itemTwo={
                     <Image
                       src={props.imgSk2}
-                      alt="portret"
+                      alt="skin retouching"
                       width="651"
                       height="434"
                     />
