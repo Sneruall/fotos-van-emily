@@ -46,7 +46,8 @@ function SpotlightSection(props) {
                       magna aliquyam erat, sed diam voluptua. At vero eos et
                       accusam et justo duo dolores et ea rebum. Stet clita kasd
                       gubergren, no sea takimata sanctus est Lorem ipsum dolor
-                      sit amet. Lorem ipsum dolor sit amet.sed diam voluptua."
+                      sit amet. Lorem ipsum dolor sit amet.sed diam voluptues et ea rebum. Stet clita kasd
+                      gubergren, no sea takimata sanctus est Lorem ipsua."
                 name="Rina"
               />
               <ReviewElement

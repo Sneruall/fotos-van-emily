@@ -1,22 +1,19 @@
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; 
-
 function testing() {
   return (
-    <Carousel>
-      <div>
-        <img src="/images/portretfotografie/portret-3-p1.png" />
-        <p className="legend">Legend 1</p>
+    <div className="grid grid-cols-3 justify-items-stretch">
+      <div className="border border-black grid grid-cols-1 justify-items-stretch">
+        <div className="bg-blue-300 m-1">
+          <div>
+            1
+          </div>
+          <div>
+            2
+          </div>
+        </div>
       </div>
-      <div>
-        <img src="/images/portretfotografie/portret-3-p1.png" />
-        <p className="legend">Legend 2</p>
-      </div>
-      <div>
-        <img src="/images/portretfotografie/portret-3-p1.png" />
-        <p className="legend">Legend 3</p>
-      </div>
-    </Carousel>
+      <div className=" bg-green-300">1</div>
+      <div className="h-60 bg-red-300">1</div>
+    </div>
   );
 }
 

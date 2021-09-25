@@ -205,15 +205,15 @@ function fotobewerkingservice() {
         </div>
       </Section>
 
-      {/* WERKWIJZE SECTIE */}
+      {/* WERKWIJZE SECTIE */} 
       <Section bg={"bg-grey-light2"}>
         <div className="mx-auto max-w-6xl">
           <h2 className="title-1 my-0 lg:my-10 leading-tight">
             WERKWIJZE FOTOBEWERKING
           </h2>
         </div>
-        <div className="flex flex-col lg:flex-row gap-0 lg:gap-8 justify-items-center">
-          <div className="border border-white my-5">
+        <div className="grid grid-cols-3 justify-items-stretch gap-0 lg:gap-8">
+          <div className="border border-white grid grid-cols-1 justify-items-stretch my-5">
             <div className="bg-white m-1 p-4 bg-opacity-70">
               <div className="mb-4">
                 <h4 className="border-b-2 border-brown-pale text-3xl uppercase text-brown-pale mb-1">
@@ -259,7 +259,7 @@ function fotobewerkingservice() {
               </div>
             </div>
           </div>
-          <div className="border border-white my-5">
+          <div className="border border-white my-5 grid grid-cols-1 justify-items-stretch">
             <div className="bg-white m-1 p-4 bg-opacity-70">
               <div className="mb-4">
                 <h4 className="border-b-2 border-brown-pale text-3xl uppercase text-brown-pale mb-1">
@@ -273,7 +273,7 @@ function fotobewerkingservice() {
               </div>
             </div>
           </div>
-          <div className="border border-white my-5">
+          <div className="border border-white my-5 grid grid-cols-1 justify-items-stretch">
             <div className="bg-white m-1 p-4 bg-opacity-70">
               <div className="mb-4">
                 <h4 className="border-b-2 border-brown-pale text-3xl uppercase text-brown-pale mb-1">
