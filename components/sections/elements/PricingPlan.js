@@ -27,16 +27,11 @@ function PricingPlan(props) {
               <CheckIcon className="flex-shrink-0 w-6 h-6 text-grey-brownish" />
               <p className="leading-snug">{parse(props.feature3)}</p>
             </div>
-            {props.feature4 ? (
+            {props.feature4 && (
               <div className="flex space-x-4 my-2">
                 <CheckIcon className="flex-shrink-0 w-6 h-6 text-grey-brownish" />
                 <p className="leading-snug">{parse(props.feature4)}</p>
               </div>
-            ) : (
-              <Fragment>
-                {/* <div className="lg:h-16 xl:h-10"></div>
-              <div className="lg:h-2"></div> */}
-              </Fragment>
             )}
           </div>
           <div className="ml-10">

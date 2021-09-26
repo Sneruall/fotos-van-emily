@@ -8,6 +8,7 @@ import EditingSection from "../components/sections/EditingSection";
 import SpotlightSection from "../components/sections/SpotlightSection";
 import PricingSection from "../components/sections/PricingSection";
 import WerkwijzeSection from "../components/sections/WerkwijzeSection";
+import CustomPricingSection from "../components/sections/CustomPricingSection";
 
 function portretfotografie() {
   return (
@@ -91,13 +92,40 @@ function portretfotografie() {
         imgSk1="/images/portretfotografie/e1.png"
         imgSk2="/images/portretfotografie/e2.png"
       />
-      <PricingSection
+      {/* <PricingSection
         heading="WAT KRIJG JE ALS JE EEN PORTRET LAAT MAKEN DOOR MIJ?"
         pakketA={["~30 min","10","1 week","79",false]}
         pakketB={["~45 min","20","1 week","149",true]}
         pakketC={["~1 uur","30","1 week","219",true]}
         cta="Liever een offerte op maat?"
+      /> */}
+
+      <CustomPricingSection
+        heading="Tarieven fotobewerking"
+        pakketA={[
+          `Zorgvuldige <span classname="font-bold">kleur</span> nabewerking`,
+          "Overige nabewerking zoals rotatie en bijsnijden",
+          `<span classname="font-bold">Zwart-wit</span> variant`,
+          `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
+          "Kleur Bewerking",
+        ]}
+        pakketB={[
+          `Oneffenheden van de huis nauwkeurig weggewerkt`,
+          "Donkere kringen onder de ogen natuurlijk opgelicht",
+          `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
+          "149",
+          "Skin Retouching",
+        ]}
+        pakketC={[
+          `Kleur bewerking`,
+          "Skin retouching",
+          `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
+          "219",
+          "Combi",
+        ]}
+        cta="Liever een offerte op maat?"
       />
+
       <WerkwijzeSection />
       <FotoshootKadoSection />
       <ContactFormSection />
