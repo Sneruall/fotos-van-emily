@@ -16,8 +16,7 @@ function PricingPlan(props) {
             <div className="flex space-x-4 my-2">
               <CheckIcon className="flex-shrink-0 w-6 h-6 text-grey-brownish" />
               <p className="leading-snug">
-                <span className="font-bold">{props.duur}</span> fotografie op
-                locatie
+                {props.feature1}
               </p>
             </div>
             <div className="flex space-x-4 my-2">

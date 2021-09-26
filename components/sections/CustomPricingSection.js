@@ -2,7 +2,7 @@ import Section from "../layout/Section";
 import Button from "../ui/button";
 import PricingPlan from "./elements/PricingPlan";
 
-function PricingSection(props) {
+function CustomPricingSection(props) {
   return (
     <Section bg="bg-grey-light">
       <div className="mx-auto max-w-6xl">
@@ -10,15 +10,15 @@ function PricingSection(props) {
         {/* Pricing cards */}
         <div className={`flex flex-col lg:flex-row ${props.pakketC ? "gap-8" : "gap-16"}`}>
           <PricingPlan
-            title="Pakket A"
-            duur={props.pakketA[0]}
+            title={props.pakketA[5]}
+            feature1={props.pakketA[0]}
             fotos={props.pakketA[1]}
             oplevering={props.pakketA[2]}
             prijs={props.pakketA[3]}
             MetGallerij={props.pakketA[4]}
           />
           <PricingPlan
-            title="Pakket B"
+            title={props.pakketB[5]}
             duur={props.pakketB[0]}
             fotos={props.pakketB[1]}
             oplevering={props.pakketB[2]}
@@ -27,7 +27,7 @@ function PricingSection(props) {
           />
           {props.pakketC && (
             <PricingPlan
-              title="Pakket C"
+            title={props.pakketC[5]}
               duur={props.pakketC[0]}
               fotos={props.pakketC[1]}
               oplevering={props.pakketC[2]}
@@ -50,4 +50,4 @@ function PricingSection(props) {
   );
 }
 
-export default PricingSection;
+export default CustomPricingSection;

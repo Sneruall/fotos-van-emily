@@ -6,6 +6,7 @@ import ScrollNavbar from "../components/layout/ScrollNavbar";
 import Section from "../components/layout/Section";
 import Button from "../components/ui/button";
 import { CheckIcon } from "@heroicons/react/solid";
+import CustomPricingSection from "../components/sections/CustomPricingSection";
 
 function fotobewerkingservice() {
   return (
@@ -205,18 +206,18 @@ function fotobewerkingservice() {
         </div>
       </Section>
 
-      {/* WERKWIJZE SECTIE */} 
+      {/* WERKWIJZE SECTIE */}
       <Section bg={"bg-grey-light2"}>
         <div className="mx-auto max-w-6xl">
           <h2 className="title-1 my-0 lg:my-10 leading-tight">
             WERKWIJZE FOTOBEWERKING
           </h2>
         </div>
-        <div className="flex flex-col lg:grid lg:grid-cols-3 lg:justify-items-stretch gap-0 lg:gap-8">
+        <div className="flex flex-col lg:grid lg:grid-cols-3 lg:justify-items-stretch gap-0 lg:gap-8 max-w-6xl mx-auto">
           <div className="border border-white grid grid-cols-1 justify-items-stretch my-5">
             <div className="bg-white m-1 p-4 bg-opacity-70">
               <div className="mb-4">
-                <h4 className="border-b-2 border-brown-pale text-3xl uppercase text-brown-pale mb-1">
+                <h4 className="border-b-2 border-brown-pale text-2xl xl:text-3xl uppercase text-brown-pale mb-1">
                   WAT IK DOE MET DE FOTO’S
                 </h4>
               </div>
@@ -262,13 +263,19 @@ function fotobewerkingservice() {
           <div className="border border-white my-5 grid grid-cols-1 justify-items-stretch">
             <div className="bg-white m-1 p-4 bg-opacity-70">
               <div className="mb-4">
-                <h4 className="border-b-2 border-brown-pale text-3xl uppercase text-brown-pale mb-1">
+                <h4 className="border-b-2 border-brown-pale text-2xl xl:text-3xl uppercase text-brown-pale mb-1">
                   VOORWAARDEN VAN DE FOTO’S
                 </h4>
               </div>
               <div>
                 <p>
-                De foto moet van voldoende kwaliteit zijn. Het heeft geen zin om lage kwaliteit foto’s te bewerken omdat er te weinig informatie is opgeslagen in de foto. Dit betekent over het algemeen dat foto’s van mobiele telefoons niet geschikt zijn om te laten bewerken. Er zijn natuurlijk uitzonderingen, stuur mij een berichtje en we bekijken samen of nabewerking mogelijk is.
+                  De foto moet van voldoende kwaliteit zijn. Het heeft geen zin
+                  om lage kwaliteit foto’s te bewerken omdat er te weinig
+                  informatie is opgeslagen in de foto. Dit betekent over het
+                  algemeen dat foto’s van mobiele telefoons niet geschikt zijn
+                  om te laten bewerken. Er zijn natuurlijk uitzonderingen, stuur
+                  mij een berichtje en we bekijken samen of nabewerking mogelijk
+                  is.
                 </p>
               </div>
             </div>
@@ -276,7 +283,7 @@ function fotobewerkingservice() {
           <div className="border border-white my-5 grid grid-cols-1 justify-items-stretch">
             <div className="bg-white m-1 p-4 bg-opacity-70">
               <div className="mb-4">
-                <h4 className="border-b-2 border-brown-pale text-3xl uppercase text-brown-pale mb-1">
+                <h4 className="border-b-2 border-brown-pale text-2xl xl:text-3xl uppercase text-brown-pale mb-1">
                   ADVIES BIJ HET MAKEN VAN FOTO’S
                 </h4>
               </div>
@@ -300,6 +307,21 @@ function fotobewerkingservice() {
           </div>
         </div>
       </Section>
+
+      <CustomPricingSection
+        heading="Tarieven fotobewerking"
+        pakketA={[
+          "Zorgvuldige <span>kleur</span> nabewerking",
+          "10",
+          "1 week",
+          "79",
+          false,
+          "Kleur Bewerking",
+        ]}
+        pakketB={["~45 min", "20", "1 week", "149", true, "Skin Retouching"]}
+        pakketC={["~1 uur", "30", "1 week", "219", true, "Combi"]}
+        cta="Liever een offerte op maat?"
+      />
     </Fragment>
   );
 }
