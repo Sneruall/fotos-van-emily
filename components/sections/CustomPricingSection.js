@@ -10,29 +10,26 @@ function CustomPricingSection(props) {
         {/* Pricing cards */}
         <div className={`flex flex-col lg:flex-row ${props.pakketC ? "gap-8" : "gap-16"}`}>
           <PricingPlan
-            title={props.pakketA[5]}
+            title={props.pakketA[4]}
             feature1={props.pakketA[0]}
-            fotos={props.pakketA[1]}
-            oplevering={props.pakketA[2]}
-            prijs={props.pakketA[3]}
-            MetGallerij={props.pakketA[4]}
+            feature2={props.pakketA[1]}
+            feature3={props.pakketA[2]}
+            feature4={props.pakketA[3]}
           />
           <PricingPlan
-            title={props.pakketB[5]}
-            duur={props.pakketB[0]}
-            fotos={props.pakketB[1]}
-            oplevering={props.pakketB[2]}
+            title={props.pakketB[4]}
+            feature1={props.pakketB[0]}
+            feature2={props.pakketB[1]}
+            feature3={props.pakketB[2]}
             prijs={props.pakketB[3]}
-            MetGallerij={props.pakketB[4]}
           />
           {props.pakketC && (
             <PricingPlan
-            title={props.pakketC[5]}
-              duur={props.pakketC[0]}
-              fotos={props.pakketC[1]}
-              oplevering={props.pakketC[2]}
+            title={props.pakketC[4]}
+            feature1={props.pakketC[0]}
+            feature2={props.pakketC[1]}
+            feature3={props.pakketC[2]}
               prijs={props.pakketC[3]}
-              MetGallerij={props.pakketC[4]}
             />
           )}
         </div>
