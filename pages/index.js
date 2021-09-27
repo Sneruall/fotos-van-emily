@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Fragment } from "react";
+import { Fragment, useRef } from "react";
 import Welcome from "../components/sections/welcome";
 import Diensten from "../components/sections/diensten";
 import Werkwijze from "../components/sections/werkwijze";
