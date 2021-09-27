@@ -140,6 +140,14 @@ function mobileNavigation() {
                 <h2 className="ml-12">Portfolio</h2>
               </li>
             </Link>
+            <Link href="/fotoshoot-cadeaubon">
+              <li
+                onClick={() => setMobileMenuExtended(false)}
+                className="py-2 border-b border-opacity-25 cursor-pointer text-brown-pale"
+              >
+                <h2 className="ml-12">Cadeaubon</h2>
+              </li>
+            </Link>
             <Link href="/over-mij">
               <li
                 onClick={() => setMobileMenuExtended(false)}
