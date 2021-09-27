@@ -6,8 +6,8 @@ import FotoshootKadoSection from "../components/sections/FotoshootKadoSection";
 import IntroSection from "../components/sections/IntroSection";
 import EditingSection from "../components/sections/EditingSection";
 import SpotlightSection from "../components/sections/SpotlightSection";
-import PricingSection from "../components/sections/PricingSection";
 import WerkwijzeSection from "../components/sections/WerkwijzeSection";
+import CustomPricingSection from "../components/sections/CustomPricingSection";
 
 function zwangerschapsfotografie() {
   return (
@@ -71,10 +71,30 @@ function zwangerschapsfotografie() {
         imgE3="/images/zwangerschapsfotografie/e1.png"
         imgE4="/images/zwangerschapsfotografie/e2.png"
       />
-      <PricingSection
+      <CustomPricingSection
         heading="WAT KRIJG JE ALS JE EEN ZWANGERSCHAPS REPORTAGE LAAT MAKEN DOOR MIJ?"
-        pakketA={["~45 min", "20", "1,5 week", "149", true]}
-        pakketB={["~1 uur", "30", "1,5 week", "219", true]}
+        reiskosten={true}
+        prijsText="Vanaf:"
+        pakketA={[
+          "Pakket A",
+          `<span classname="font-bold">~45 min</span> fotografie op locatie`,
+          `<span classname="font-bold">20</span> digitale foto’s in hoge kwaliteit`,
+          `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
+            worden ook in zwart-wit geleverd)`,
+          `Binnen <span classname="font-bold">1,5 week</span> worden alle foto’s via WeTransfer geleverd`,
+          `Online gallerij voor het <span classname="font-bold">bekijken en delen</span> van de foto’s`,
+          "149",
+        ]}
+        pakketB={[
+          "Pakket B",
+          `<span classname="font-bold">~1 uur</span> fotografie op locatie`,
+          `<span classname="font-bold">30</span> digitale foto’s in hoge kwaliteit`,
+          `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
+            worden ook in zwart-wit geleverd)`,
+          `Binnen <span classname="font-bold">1,5 week</span> worden alle foto’s via WeTransfer geleverd`,
+          `Online gallerij voor het <span classname="font-bold">bekijken en delen</span> van de foto’s`,
+          "219",
+        ]}
         cta="Liever een offerte op maat?"
       />
       <WerkwijzeSection />

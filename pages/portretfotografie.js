@@ -6,7 +6,6 @@ import FotoshootKadoSection from "../components/sections/FotoshootKadoSection";
 import IntroSection from "../components/sections/IntroSection";
 import EditingSection from "../components/sections/EditingSection";
 import SpotlightSection from "../components/sections/SpotlightSection";
-import PricingSection from "../components/sections/PricingSection";
 import WerkwijzeSection from "../components/sections/WerkwijzeSection";
 import CustomPricingSection from "../components/sections/CustomPricingSection";
 
@@ -92,36 +91,41 @@ function portretfotografie() {
         imgSk1="/images/portretfotografie/e1.png"
         imgSk2="/images/portretfotografie/e2.png"
       />
-      {/* <PricingSection
-        heading="WAT KRIJG JE ALS JE EEN PORTRET LAAT MAKEN DOOR MIJ?"
-        pakketA={["~30 min","10","1 week","79",false]}
-        pakketB={["~45 min","20","1 week","149",true]}
-        pakketC={["~1 uur","30","1 week","219",true]}
-        cta="Liever een offerte op maat?"
-      /> */}
+
 
       <CustomPricingSection
-        heading="Tarieven fotobewerking"
+        heading="WAT KRIJG JE ALS JE EEN PORTRET LAAT MAKEN DOOR MIJ?"
+        reiskosten={true}
+        prijsText="Vanaf:"
         pakketA={[
-          `Zorgvuldige <span classname="font-bold">kleur</span> nabewerking`,
-          "Overige nabewerking zoals rotatie en bijsnijden",
-          `<span classname="font-bold">Zwart-wit</span> variant`,
+          "Pakket A",
+          `<span classname="font-bold">~30 min</span> fotografie op locatie`,
+          `<span classname="font-bold">10</span> digitale foto’s in hoge kwaliteit`,
+          `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
+            worden ook in zwart-wit geleverd)`,
           `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
-          "Kleur Bewerking",
+          ,
+          "79",
         ]}
         pakketB={[
-          `Oneffenheden van de huis nauwkeurig weggewerkt`,
-          "Donkere kringen onder de ogen natuurlijk opgelicht",
+          "Pakket B",
+          `<span classname="font-bold">~45 min</span> fotografie op locatie`,
+          `<span classname="font-bold">20</span> digitale foto’s in hoge kwaliteit`,
+          `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
+            worden ook in zwart-wit geleverd)`,
           `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
+          `Online gallerij voor het <span classname="font-bold">bekijken en delen</span> van de foto’s`,
           "149",
-          "Skin Retouching",
         ]}
         pakketC={[
-          `Kleur bewerking`,
-          "Skin retouching",
+          "Pakket C",
+          `<span classname="font-bold">1 uur</span> fotografie op locatie`,
+          `<span classname="font-bold">30</span> digitale foto’s in hoge kwaliteit`,
+          `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
+            worden ook in zwart-wit geleverd)`,
           `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
+          `Online gallerij voor het <span classname="font-bold">bekijken en delen</span> van de foto’s`,
           "219",
-          "Combi",
         ]}
         cta="Liever een offerte op maat?"
       />

@@ -33,23 +33,30 @@ function PricingPlan(props) {
                 <p className="leading-snug">{parse(props.feature4)}</p>
               </div>
             )}
+            {props.feature5 && (
+              <div className="flex space-x-4 my-2">
+                <CheckIcon className="flex-shrink-0 w-6 h-6 text-grey-brownish" />
+                <p className="leading-snug">{parse(props.feature5)}</p>
+              </div>
+            )}
           </div>
           <div className="ml-10">
             <div className="flex lg:justify-between lg:flex-row flex-col">
               <div>
-                <p className="font-bold text-xl mb-2">Per foto:</p>
+                <p className="font-bold text-xl mb-2">{props.prijsText}</p>
                 <p className="text-4xl">
                   <span className="text-xl">€ </span>
                   {props.prijs}
                 </p>
               </div>
               <div className="my-10">
-                <Button link="/" button="button-1" text="vraag" />
+                <Button link="/" button="button-1" text="Boek nu" />
               </div>
             </div>
 
             <div className="mb-5">
               <p className="text-xs">Incl. BTW</p>
+              {props.reiskosten && <p className="text-xs">Excl. reiskosten</p>}
             </div>
           </div>
         </div>

@@ -6,8 +6,8 @@ import FotoshootKadoSection from "../components/sections/FotoshootKadoSection";
 import IntroSection from "../components/sections/IntroSection";
 import EditingSection from "../components/sections/EditingSection";
 import SpotlightSection from "../components/sections/SpotlightSection";
-import PricingSection from "../components/sections/PricingSection";
 import WerkwijzeSection from "../components/sections/WerkwijzeSection";
+import CustomPricingSection from "../components/sections/CustomPricingSection";
 
 function hondenfotografie() {
   return (
@@ -69,17 +69,36 @@ function hondenfotografie() {
         imgE3="/images/hondenfotografie/e1.png"
         imgE4="/images/hondenfotografie/e2.png"
       />
-      <PricingSection
+      <CustomPricingSection
         heading="WAT KRIJG JE ALS JE EEN PORTRET LAAT MAKEN DOOR MIJ?"
-        pakketA={["~1 uur", "10", "1,5 week", "149", true]}
-        pakketB={["~1,5 uur", "20", "1,5 week", "219", true]}
+        reiskosten={true}
+        prijsText="Vanaf:"
+        pakketA={[
+          "Pakket A",
+          `<span classname="font-bold">~1 uur</span> fotografie op locatie`,
+          `<span classname="font-bold">10</span> digitale foto’s in hoge kwaliteit`,
+          `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
+            worden ook in zwart-wit geleverd)`,
+          `Binnen <span classname="font-bold">1,5 week</span> worden alle foto’s via WeTransfer geleverd`,
+          `Online gallerij voor het <span classname="font-bold">bekijken en delen</span> van de foto’s`,
+          "149",
+        ]}
+        pakketB={[
+          "Pakket B",
+          `<span classname="font-bold">~1,5 uur</span> fotografie op locatie`,
+          `<span classname="font-bold">20</span> digitale foto’s in hoge kwaliteit`,
+          `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
+            worden ook in zwart-wit geleverd)`,
+          `Binnen <span classname="font-bold">1,5 week</span> worden alle foto’s via WeTransfer geleverd`,
+          `Online gallerij voor het <span classname="font-bold">bekijken en delen</span> van de foto’s`,
+          "219",
+        ]}
         cta="SPECIFIEKE WENSEN OF WIL JE GRAAG
         MEERDERE HONDEN OP DE FOTO?
         GEEN PROBLEEM, WE MAKEN SAMEN
         EEN OFFERTE OP MAAT."
       />
-      <WerkwijzeSection
-      text3="We meeten elkaar op de afgesproken locatie. We maken kennis en laten jouw hond aan mij en de camera wennen. Daarna gaan we op pad! We zijn ongeveer 1 tot 1,5 uur bezig, ik neem de tijd voor en zorg voor een diversiteit aan foto’s."/>
+      <WerkwijzeSection text3="We meeten elkaar op de afgesproken locatie. We maken kennis en laten jouw hond aan mij en de camera wennen. Daarna gaan we op pad! We zijn ongeveer 1 tot 1,5 uur bezig, ik neem de tijd voor en zorg voor een diversiteit aan foto’s." />
       <FotoshootKadoSection />
       <ContactFormSection />
     </Fragment>

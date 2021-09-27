@@ -310,26 +310,31 @@ function fotobewerkingservice() {
 
       <CustomPricingSection
         heading="Tarieven fotobewerking"
+        prijsText="Per foto:"
         pakketA={[
+          "Kleur Bewerking",
           `Zorgvuldige <span classname="font-bold">kleur</span> nabewerking`,
           "Overige nabewerking zoals rotatie en bijsnijden",
           `<span classname="font-bold">Zwart-wit</span> variant`,
           `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
-          "Kleur Bewerking",
+          ,
+          "1,99",
         ]}
         pakketB={[
+          "Skin Retouching",
           `Oneffenheden van de huis nauwkeurig weggewerkt`,
           "Donkere kringen onder de ogen natuurlijk opgelicht",
           `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
-          "149",
-          "Skin Retouching",
+          ,,
+          "3,99",
         ]}
         pakketC={[
+          "Combi",
           `Kleur bewerking`,
           "Skin retouching",
           `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
-          "219",
-          "Combi",
+          ,,
+          "5,50",
         ]}
         cta="Liever een offerte op maat?"
       />
