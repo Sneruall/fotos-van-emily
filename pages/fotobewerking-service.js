@@ -7,6 +7,7 @@ import Section from "../components/layout/Section";
 import Button from "../components/ui/button";
 import { CheckIcon } from "@heroicons/react/solid";
 import CustomPricingSection from "../components/sections/CustomPricingSection";
+import ContactFormSection from "../components/sections/ContactFormSection";
 
 function fotobewerkingservice() {
   return (
@@ -325,7 +326,8 @@ function fotobewerkingservice() {
           `Oneffenheden van de huis nauwkeurig weggewerkt`,
           "Donkere kringen onder de ogen natuurlijk opgelicht",
           `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
-          ,,
+          ,
+          ,
           "3,99",
         ]}
         pakketC={[
@@ -333,11 +335,71 @@ function fotobewerkingservice() {
           `Kleur bewerking`,
           "Skin retouching",
           `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
-          ,,
+          ,
+          ,
           "5,50",
         ]}
         cta="Liever een offerte op maat?"
       />
+
+      {/* SAMENWERKING SECTIE */}
+      <Section bg={"bg-brown-pale2"}>
+        <div className="mx-auto max-w-6xl">
+          <h2 className="title-1 text-white leading-tight mb-4">
+            Ben jij professioneel fotograaf?
+          </h2>
+          <h3 className="text-white text-3xl lg:text-4xl text-center uppercase mb-10">
+            Laten we samenwerken!
+          </h3>
+          <div className="flex flex-col lg:flex-row gap-5 lg:gap-10 mx-auto text-center">
+            <div>
+              <Image
+                src="/images/fotobewerking/camera.png"
+                alt="Professionele fotograaf"
+                width={540}
+                height={361}
+              />
+            </div>
+            <div className="px-2 max-w-lg xl:max-w-2xl mx-auto text-center lg:text-left text-white">
+              <p>
+                De nabewerking, de één heeft er een hekel aan, de ander kan er
+                geen genoeg van krijgen. Wel een must als professioneel
+                fotograaf want door nabewerking blaas je leven in een foto. Heb
+                jij moeite met de nabewerking of vind je het gewoon
+                verschrikkelijk? Je kunt de nabewerking ook uitbesteden! Ik heb
+                jarenlange ervaring in Adobe Lightroom en Photoshop en ik kan
+                niet anders zeggen dat het bewerken van foto’s mijn grootste
+                passie is. Dus lijkt het jou wat puur te focussen op het
+                fotograferen? Laten we samenwerken! Jij maakt de foto’s bij de
+                klant, ik bewerk ze professioneel voor je na.
+              </p>
+              <p className="mt-5">
+                Neem contact op om een mogelijke samenwerking te bespreken of
+                vraag direct een offerte aan voor je fotografie opdracht.
+                Daarnaast sta ik open voor andere samenwerkingen zoals second
+                shooter of backup fotograaf.
+              </p>
+              <div className="flex flex-col sm:flex-row sm:gap-5">
+                <div className="flex-none">
+                  <Button
+                    text="Neem Contact op"
+                    link="#contact"
+                    button="button-3 mt-8"
+                  />
+                </div>
+                <div className="flex-none">
+                  <Button
+                    text="Bekijk portfolio"
+                    link="/portfolio"
+                    button="button-3 mt-8"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+      <ContactFormSection />
     </Fragment>
   );
 }
