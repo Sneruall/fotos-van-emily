@@ -61,6 +61,7 @@ module.exports = {
         },
         charcoal: {
           DEFAULT: "#404342",
+          2: "#414342",
         },
         sandstone: {
           DEFAULT: "#c9a077",

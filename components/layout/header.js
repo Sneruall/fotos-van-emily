@@ -36,8 +36,12 @@ function Header(props) {
 
       {props.title2 && (
         <div className="z-10 font-display uppercase text-white max-w-6xl w-full mx-auto">
-          <h1 className="hidden sm:block mt-32 text-7xl md:text-8xl max-w-3xl">{props.title2}</h1>
-          <h1 className="sm:hidden text-7xl mt-16 max-w-3xl m-2">{props.titleMobile2}</h1>
+          <h1 className="hidden sm:block mt-32 text-7xl md:text-8xl max-w-3xl">
+            {props.title2}
+          </h1>
+          <h1 className="sm:hidden text-7xl mt-16 max-w-3xl m-2">
+            {props.titleMobile2}
+          </h1>
         </div>
       )}
 
@@ -48,6 +52,17 @@ function Header(props) {
           </h1>
           <h1 className="max-w-5xl hidden sm:block md:text-8xl lg:text-9xl xl:text-10xl leading-tight text-white font-display uppercase mx-2">
             {props.pageTitle}
+          </h1>
+        </div>
+      )}
+
+      {props.pageTitle2 && (
+        <div className="absolute left-1/2 transform -translate-x-1/2 bottom-96 sm:bottom-40 sm:text-left mx-auto text-center max-w-6xl w-full">
+          <h1 className="max-w-5xl sm:hidden text-6xl leading-tight text-charcoal-2 font-display uppercase mx-2">
+            {props.pageTitleMobile ? props.pageTitleMobile : props.pageTitle2}
+          </h1>
+          <h1 className="max-w-3xl hidden sm:block md:text-8xl lg:text-9xl leading-tight text-charcoal-2 font-display uppercase mx-2">
+            {props.pageTitle2}
           </h1>
         </div>
       )}
