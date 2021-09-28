@@ -25,7 +25,7 @@
     @apply text-brown-pale text-5xl lg:text-6xl text-center uppercase;
   }
   .title-1-left {
-    @apply text-charcoal font-display text-5xl lg:text-6xl uppercase my-10;
+    @apply text-charcoal font-display text-5xl lg:text-6xl uppercase;
   }
 }
 
