@@ -68,17 +68,6 @@ function Header(props) {
           </div>
         )}
       </div>
-
-      {props.title2 && (
-        <div className="z-10 font-display uppercase text-white max-w-6xl w-full mx-auto">
-          <h1 className="hidden sm:block mt-32 text-7xl md:text-8xl max-w-3xl">
-            {props.title2}
-          </h1>
-          <h1 className="sm:hidden text-7xl mt-16 max-w-3xl m-2">
-            {props.titleMobile2}
-          </h1>
-        </div>
-      )}
     </header>
   );
 }
