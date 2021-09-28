@@ -1,12 +1,11 @@
 import Head from "next/head";
-import { Fragment, useRef } from "react";
+import { Fragment } from "react";
 import Welcome from "../components/sections/welcome";
 import Diensten from "../components/sections/diensten";
 import Werkwijze from "../components/sections/werkwijze";
 import Reviews from "../components/sections/reviews";
 import ScrollNavbar from "../components/layout/scrollNavbar";
 import Header from "../components/layout/header";
-import ScrollNavbar2 from "../components/layout/scrollNavbar2";
 
 export default function Home() {
   return (
