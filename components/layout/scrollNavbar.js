@@ -31,11 +31,11 @@ function scrollNavbar(props) {
       >
         <div className="px-2 flex max-w-6xl mx-auto uppercase justify-between">
           <div className="flex flex-col justify-items-center my-1">
-            <h2 className="my-2 text-4xl lg:text-3xl xl:text-4xl font-display">
+            <h2 className="lg:my-1 my-2 text-4xl lg:text-3xl xl:text-3xl font-display">
               Foto's van Emily
             </h2>
           </div>
-          <div className="lg:flex sm:text-xs md:text-sm lg:text-base hidden">
+          <div className="lg:flex sm:text-xs md:text-sm lg:text-sm hidden">
             <ul className="grid grid-cols-6 justify-items-center hover:cursor-pointer items-stretch">
               <Link href="/">
                 <li className="w-24 lg:w-32 text-center hover:underline flex flex-col justify-items-center">
@@ -76,7 +76,7 @@ function scrollNavbar(props) {
         </div>
       </div>
       {showDiensten && (
-        <div className="fixed w-full z-40 top-8 md:top-10 lg:top-12">
+        <div className="fixed w-full z-40 top-8 md:top-10 lg:top-12 lg:mt-1">
           <div className="w-full">
             <div className="px-2 flex max-w-6xl mx-auto uppercase text-brown-pale justify-end h-full">
               <ul className="grid grid-cols-6 grid-rows-5 justify-items-center">

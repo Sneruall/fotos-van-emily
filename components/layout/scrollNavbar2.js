@@ -37,7 +37,7 @@ function scrollNavbar2(props) {
           <div className="lg:flex sm:text-xs md:text-sm lg:text-base hidden">
             <ul className="grid grid-cols-6 justify-items-center hover:cursor-pointer items-stretch">
               <Link href="/">
-                <li className="w-24 lg:w-32 text-center hover:underline flex flex-col justify-items-center">
+                <li className="w-24 lg:w-28 text-center hover:underline flex flex-col justify-items-center">
                   <a className="my-auto">Home</a>
                 </li>
               </Link>
@@ -45,28 +45,28 @@ function scrollNavbar2(props) {
                 <li
                   onMouseEnter={() => setShowDiensten2(true)}
                   onMouseLeave={() => setShowDiensten2(false)}
-                  className="w-24 lg:w-32 text-center hover:underline flex flex-col justify-items-center"
+                  className="w-24 lg:w-28 text-center hover:underline flex flex-col justify-items-center"
                 >
                   <a className="my-auto">Diensten</a>
                 </li>
               </Link>
               <Link href="/portfolio">
-                <li className="w-24 lg:w-32 text-center hover:underline flex flex-col justify-items-center">
+                <li className="w-24 lg:w-28 text-center hover:underline flex flex-col justify-items-center">
                   <a className="my-auto">Portfolio</a>
                 </li>
               </Link>
               <Link href="/portfolio">
-                <li className="w-24 lg:w-32 text-center hover:underline flex flex-col justify-items-center">
+                <li className="w-24 lg:w-28 text-center hover:underline flex flex-col justify-items-center">
                   <a className="my-auto">Cadeaubon</a>
                 </li>
               </Link>
               <Link href="/over-mij">
-                <li className="w-24 lg:w-32 text-center hover:underline flex flex-col justify-items-center">
+                <li className="w-24 lg:w-28 text-center hover:underline flex flex-col justify-items-center">
                   <a className="my-auto">Over mij</a>
                 </li>
               </Link>
               <Link href="/contact">
-                <li className="w-24 lg:w-32 text-center hover:underline flex flex-col justify-items-center">
+                <li className="w-24 lg:w-28 text-center hover:underline flex flex-col justify-items-center">
                   <a className="my-auto">Contact</a>
                 </li>
               </Link>
@@ -83,7 +83,7 @@ function scrollNavbar2(props) {
                   <li
                     onMouseEnter={() => setShowDiensten2(true)}
                     onMouseLeave={() => setShowDiensten2(false)}
-                    className="row-start-1 row-end-2 col-start-2 col-end-3 w-24 lg:w-32 text-center shadow-sm h-8 lg:h-10"
+                    className="row-start-1 row-end-2 col-start-2 col-end-3 w-24 lg:w-28 text-center shadow-sm h-8 lg:h-10"
                   >
                     <div className="h-full bg-white bg-opacity-90 pt-1 lg:pt-2 shadow-sm hover:underline hover:cursor-pointer">
                       <a className="text-xxs lg:text-xs">Portret</a>
@@ -94,7 +94,7 @@ function scrollNavbar2(props) {
                   <li
                     onMouseEnter={() => setShowDiensten2(true)}
                     onMouseLeave={() => setShowDiensten2(false)}
-                    className="row-start-2 row-end-3 col-start-2 col-end-3 w-24 lg:w-32 text-center shadow-sm h-8 lg:h-10"
+                    className="row-start-2 row-end-3 col-start-2 col-end-3 w-24 lg:w-28 text-center shadow-sm h-8 lg:h-10"
                   >
                     <div className="h-full bg-white bg-opacity-90 pt-1 lg:pt-2 shadow-sm hover:underline hover:cursor-pointer">
                       <a className="text-xxs lg:text-xs">Loveshoot</a>
@@ -105,7 +105,7 @@ function scrollNavbar2(props) {
                   <li
                     onMouseEnter={() => setShowDiensten2(true)}
                     onMouseLeave={() => setShowDiensten2(false)}
-                    className="row-start-3 row-end-4 col-start-2 col-end-3 w-24 lg:w-32 text-center shadow-sm h-8 lg:h-10"
+                    className="row-start-3 row-end-4 col-start-2 col-end-3 w-24 lg:w-28 text-center shadow-sm h-8 lg:h-10"
                   >
                     <div className="h-full bg-white bg-opacity-90 pt-1 lg:pt-2 shadow-sm hover:underline hover:cursor-pointer">
                       <a className="text-xxs lg:text-xs">Zwangerschap</a>
@@ -116,7 +116,7 @@ function scrollNavbar2(props) {
                   <li
                     onMouseEnter={() => setShowDiensten2(true)}
                     onMouseLeave={() => setShowDiensten2(false)}
-                    className="row-start-4 row-end-5 col-start-2 col-end-3 w-24 lg:w-32 text-center shadow-sm h-8 lg:h-10"
+                    className="row-start-4 row-end-5 col-start-2 col-end-3 w-24 lg:w-28 text-center shadow-sm h-8 lg:h-10"
                   >
                     <div className="h-full bg-white bg-opacity-90 pt-1 lg:pt-2 shadow-sm hover:underline hover:cursor-pointer">
                       <a className="text-xxs lg:text-xs">Honden</a>
@@ -127,7 +127,7 @@ function scrollNavbar2(props) {
                   <li
                     onMouseEnter={() => setShowDiensten2(true)}
                     onMouseLeave={() => setShowDiensten2(false)}
-                    className="row-start-5 row-end-6 col-start-2 col-end-3 w-24 lg:w-32 text-center shadow-sm h-8 lg:h-10"
+                    className="row-start-5 row-end-6 col-start-2 col-end-3 w-24 lg:w-28 text-center shadow-sm h-8 lg:h-10"
                   >
                     <div className="h-full bg-white bg-opacity-90 pt-1 lg:pt-2 shadow-sm hover:underline hover:cursor-pointer">
                       <a className="text-xxs lg:text-xs">Fotobewerking</a>

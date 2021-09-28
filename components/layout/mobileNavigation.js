@@ -28,7 +28,7 @@ function mobileNavigation() {
       <div
         className={`${
           !mobileMenuExtended && "hidden"
-        } lg:hidden inline-block sticky top-0 bg-white bg-opacity-90 w-full z-50`}
+        } lg:hidden inline-block sticky top-0 bg-white bg-opacity-90 w-full z-50 mb-14`}
       >
         <div className="flex w-full absolute justify-center mb-5 mt-4">
           <h1 className="font-display uppercase text-brown-pale text-3xl">

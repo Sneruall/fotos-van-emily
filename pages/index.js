@@ -23,12 +23,12 @@ export default function Home() {
       <ScrollNavbar fade />
 
       <Header
-        img="/images/header/hero.png"
-        imgMobile="/images/header/hero-mobile.png"
+        img="/images/header/header1.png"
+        imgMobile="/images/header/header1m.png"
         title="Foto's van Emily"
         subtitle="FOTOGRAFIE &amp; FOTOBEWERKING"
         // integratedNavigation
-        pageTitle2="FOTOGRAFIE &amp; FOTOBEWERKING"
+        // pageTitle2="FOTOGRAFIE &amp; FOTOBEWERKING"
       />
 
       <Welcome />
