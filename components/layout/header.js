@@ -3,8 +3,8 @@ import Navigation from "../../components/layout/navigation";
 
 function Header(props) {
   return (
-    <header className="flex flex-col h-screen -mt-14 sm:mt-0">
-      <div className="hidden sm:block">
+    <header className="relative">
+      <div className="hidden sm:block py-32 -mt-14">
         <Image
           src={props.img}
           alt={"Hero image"}
@@ -14,12 +14,12 @@ function Header(props) {
         />
       </div>
 
-      <div className="sm:hidden absolute max-h-screen">
+      <div className="sm:hidden max-h-screen -mt-14 pt-32 pb-64">
         <Image
           src={props.imgMobile}
           alt="Hero image"
-          width={640}
-          height={1159}
+          layout="fill"
+          objectFit="cover"
           priority
         />
       </div>
@@ -45,25 +45,24 @@ function Header(props) {
         </div>
       )}
 
-      {props.pageTitle && (
-        <div className="absolute left-1/2 transform -translate-x-1/2 bottom-10 max-w-6xl w-full">
-          <h1 className="max-w-5xl sm:hidden text-7xl leading-tight text-white font-display uppercase mx-2">
-            {props.pageTitleMobile ? props.pageTitleMobile : props.pageTitle}
-          </h1>
-          <h1 className="max-w-5xl hidden sm:block md:text-8xl lg:text-9xl xl:text-10xl leading-tight text-white font-display uppercase mx-2">
-            {props.pageTitle}
-          </h1>
-        </div>
-      )}
-
       {props.pageTitle2 && (
-        <div className="absolute left-1/2 transform -translate-x-1/2 bottom-96 sm:bottom-40 sm:text-left mx-auto text-center max-w-6xl w-full">
-          <h1 className="max-w-5xl sm:hidden text-6xl leading-tight text-charcoal-2 font-display uppercase mx-2">
-            {props.pageTitleMobile ? props.pageTitleMobile : props.pageTitle2}
-          </h1>
-          <h1 className="max-w-3xl hidden sm:block md:text-8xl lg:text-9xl leading-tight text-charcoal-2 font-display uppercase mx-2">
-            {props.pageTitle2}
-          </h1>
+        <div className="px-5 relative sm:pt-32 pb-28 max-w-6xl mx-auto">
+          <div className="max-w-3xl">
+            <h1
+              className={`sm:hidden text-6xl md:text-8xl lg:text-9xl text-center sm:text-left leading-tight font-display uppercase py-4 ${
+                props.whiteTitle ? "text-white" : "text-charcoal-2"
+              }`}
+            >
+              {props.pageTitleMobile ? props.pageTitleMobile : props.pageTitle2}
+            </h1>
+            <h1
+              className={`hidden sm:block text-6xl md:text-8xl lg:text-9xl text-center sm:text-left leading-tight font-display uppercase py-4 ${
+                props.whiteTitle ? "text-white" : "text-charcoal-2"
+              }`}
+            >
+              {props.pageTitle2}
+            </h1>
+          </div>
         </div>
       )}
     </header>

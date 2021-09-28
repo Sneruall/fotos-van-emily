@@ -12,12 +12,13 @@ import ContactFormSection from "../components/sections/ContactFormSection";
 function fotobewerkingservice() {
   return (
     <Fragment>
-      <ScrollNavbar fade={false} />
+      <ScrollNavbar fade={true} lightFade />
       <Header
         img="/images/fotobewerking/hero.png"
         imgMobile="/images/fotobewerking/hero-mobile.png"
-        title2="Fotobewerking Service"
-        titleMobile2="Foto- Bewerking Service"
+        pageTitle2="Fotobewerking Service"
+        whiteTitle
+        pageTitleMobile="Foto- Bewerking Service"
       />
 
       {/* VOORBEELDEN SECTIE */}

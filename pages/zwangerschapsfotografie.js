@@ -15,10 +15,11 @@ function zwangerschapsfotografie() {
       <Header
         img="/images/zwangerschapsfotografie/hero.png"
         imgMobile="/images/zwangerschapsfotografie/hero-mobile.png"
-        pageTitle="Zwangerschaps fotografie"
+        pageTitle2="Zwangerschaps fotografie"
+        whiteTitle
         pageTitleMobile="Zwanger- schaps fotografie"
       />
-      <ScrollNavbar fade={false} />
+      <ScrollNavbar fade={true} />
       <IntroSection
         heading="VAN HARTE GEFELICITEERD MET DE KOMST VAN JULLIE KLEINTJE!"
         img1="/images/zwangerschapsfotografie/img1.png"

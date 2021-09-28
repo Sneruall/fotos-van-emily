@@ -15,9 +15,10 @@ function hondenfotografie() {
       <Header
         img="/images/hondenfotografie/hero.png"
         imgMobile="/images/hondenfotografie/hero-mobile.png"
-        pageTitle="Honden fotografie"
+        pageTitle2="Honden fotografie"
+        whiteTitle
       />
-      <ScrollNavbar fade={false} />
+      <ScrollNavbar fade={true} lightFade />
       <IntroSection
         heading="JOUW TROUWE VIERVOETER OP ZIJN MOOIST VASTGELEGD!"
         img1="/images/hondenfotografie/img1.png"
