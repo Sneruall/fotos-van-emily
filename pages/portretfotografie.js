@@ -35,7 +35,7 @@ function portretfotografie() {
           />
           <div className="hidden sm:block px-5 relative mt-14 max-w-6xl mx-auto min-h-screen">
             <div className="max-w-3xl absolute bottom-20">
-              <h1 className="text-6xl md:text-8xl lg:text-9xl text-center sm:text-left leading-tight font-display uppercase py-4 text-white">
+              <h1 className="text-8xl md:text-9xl xl:text-10xl text-center sm:text-left leading-tight font-display uppercase py-4 text-white">
                 portret fotografie
               </h1>
             </div>
