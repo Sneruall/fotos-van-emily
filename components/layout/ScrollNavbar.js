@@ -33,15 +33,22 @@ function ScrollNavbar(props) {
             : "bg-white text-brown-pale shadow-sm"
         } sm:block hidden fixed bg-opacity-90 w-full z-40 top-0`}
       >
-        <div className={`${(props.hideLogo && !scrollNav) ? "justify-center" : "justify-between"} px-2 flex max-w-6xl mx-auto uppercase`}>
+        <div
+          className={`${
+            props.hideLogo && !scrollNav ? "justify-center" : "justify-between"
+          } px-2 flex max-w-6xl mx-auto uppercase`}
+        >
           {/* Logo */}
-          {(!props.hideLogo) || (props.hideLogo && scrollNav) && (
-            <div className="flex flex-col justify-items-center my-1">
-              <h2 className="lg:my-1 my-2 text-4xl lg:text-3xl xl:text-3xl font-display">
-                Foto's van Emily
-              </h2>
-            </div>
-          )}
+
+          <div
+            className={`${
+              props.hideLogo && !scrollNav && "hidden "
+            }flex flex-col justify-items-center my-1`}
+          >
+            <h2 className="lg:my-1 my-2 text-4xl lg:text-3xl xl:text-3xl font-display">
+              Foto's van Emily
+            </h2>
+          </div>
 
           <div className="lg:flex sm:text-xs md:text-sm hidden">
             <ul className="flex justify-items-between gap-10 hover:cursor-pointer">
@@ -54,7 +61,9 @@ function ScrollNavbar(props) {
                 <div
                   onMouseEnter={() => setShowDiensten(true)}
                   onMouseLeave={() => setShowDiensten(false)}
-                  className={`text-center hover:underline flex flex-col justify-items-center ${(props.hideLogo && !scrollNav) && "py-4"}`}
+                  className={`text-center hover:underline flex flex-col justify-items-center ${
+                    props.hideLogo && !scrollNav && "py-4"
+                  }`}
                 >
                   <a className="my-auto">Diensten</a>
                   {showDiensten && (

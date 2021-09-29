@@ -12,13 +12,19 @@ import CustomPricingSection from "../components/sections/CustomPricingSection";
 function portretfotografie() {
   return (
     <Fragment>
+      <ScrollNavbar fade={true} lightFade={true} />
+
       <Header
         img="/images/portretfotografie/hero.png"
         imgMobile="/images/portretfotografie/hero-mobile.png"
         pageTitle2="portret fotografie"
         whiteTitle={true}
       />
-      <ScrollNavbar fade={true} lightFade={true} />
+
+
+
+
+
       <IntroSection
         heading="ALLEEN OF SAMEN OP DE FOTO, HET KAN ALLEMAAL MET PORTRET FOTOGRAFIE!"
         img1="/images/portretfotografie/portret-1.png"
