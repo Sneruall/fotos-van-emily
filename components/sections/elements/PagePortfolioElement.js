@@ -7,7 +7,7 @@ function PagePortfolioElement(props) {
     <div className="p-2">
       <div className="lg:hidden flex justify-center">
         <Carousel
-          autoplay
+          autoPlay
           infiniteLoop
           showStatus={false}
           showIndicators={true}

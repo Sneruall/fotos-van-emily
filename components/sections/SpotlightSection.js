@@ -31,7 +31,7 @@ function SpotlightSection(props) {
           </h3>
           <div className="flex justify-center">
             <Carousel
-              autoplay
+              autoPlay
               infiniteLoop
               showArrows={true}
               showStatus={false}
@@ -70,7 +70,7 @@ function SpotlightSection(props) {
         </div>
         <div className="pt-28 hidden lg:block">
           <Carousel
-            autoplay
+            autoPlay
             infiniteLoop
             showArrows={true}
             showStatus={false}
