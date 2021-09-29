@@ -10,7 +10,6 @@ import Gallery from "react-photo-gallery";
 import { photos } from "../data/photos";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Section from "../components/layout/Section";
 
 const customStyles = {
   content: {
