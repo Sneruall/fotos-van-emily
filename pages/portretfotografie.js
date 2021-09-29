@@ -1,5 +1,4 @@
 import { Fragment } from "react";
-import Header from "../components/layout/header";
 import ScrollNavbar from "../components/layout/ScrollNavbar";
 import ContactFormSection from "../components/sections/ContactFormSection";
 import FotoshootKadoSection from "../components/sections/FotoshootKadoSection";
@@ -14,13 +13,6 @@ function portretfotografie() {
   return (
     <Fragment>
       <ScrollNavbar fade={true} lightFade={true} />
-
-      {/* <Header
-        img="/images/portretfotografie/hero.png"
-        imgMobile="/images/portretfotografie/hero-mobile.png"
-        pageTitle2="portret fotografie"
-        whiteTitle={true}
-      /> */}
 
       {/* HEADER PORTRETFOTOGRAFIE */}
       <header className="relative">
@@ -45,7 +37,7 @@ function portretfotografie() {
         <div className="sm:hidden -mt-14">
           <Image
             src="/images/portretfotografie/hero-mobile.png"
-            alt="Hero image"
+            alt="portret fotografie"
             layout="fill"
             objectFit="cover"
             priority

@@ -8,8 +8,8 @@ import ScrollNavbar from "../components/layout/ScrollNavbar";
 import Header from "../components/layout/header";
 import Image from "next/image";
 import parse from "html-react-parser";
-
-
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 
 export default function Home() {
   return (
@@ -28,7 +28,7 @@ export default function Home() {
       <header className="relative">
         <div className="hidden sm:block -mt-28 lg:-mt-14">
           <Image
-            src="/images/header/header1.png"
+            src="/images/header/headerIndex.png"
             alt="Foto's van Emily"
             layout="fill"
             objectFit="cover"
@@ -39,8 +39,41 @@ export default function Home() {
           <div className="relative mt-14 font-display uppercase text-charcoal mx-auto min-h-screen">
             <div className="absolute top-20 left-0 right-0">
               <h1 className="text-5xl md:text-8xl lg:text-9xl xl:text-10xl text-center">
-              Foto's van Emily
+                Foto's van Emily
               </h1>
+            </div>
+            <div className="absolute bottom-0 left-0 right-0">
+              <div className="text-center flex justify-center">
+                <Carousel
+                  autoplay={true}
+                  infiniteLoop
+                  showArrows={true}
+                  showStatus={false}
+                  showIndicators={false}
+                  showThumbs={false}
+                  interval={2000}
+                  width={380}
+                >
+                  <Image
+                    src="/images/header/mensen1.png"
+                    alt="Foto's van Emily"
+                    width={1722}
+                    height={2015}
+                  />
+                  <Image
+                    src="/images/header/mensen2.png"
+                    alt="Foto's van Emily"
+                    width={1722}
+                    height={2015}
+                  />
+                  <Image
+                    src="/images/header/mensen3.png"
+                    alt="Foto's van Emily"
+                    width={1722}
+                    height={2015}
+                  />
+                </Carousel>
+              </div>
             </div>
           </div>
         </div>
@@ -53,11 +86,13 @@ export default function Home() {
             objectFit="cover"
             priority
           />
-            <div className="relative z-10 font-display uppercase text-charcoal mx-auto min-h-screen">
-              <div className="absolute top-20 left-0 right-0">
-                <h1 className="text-7xl-2 leading-none text-center mx-4">{parse(`Foto's<br>van<br>Emily`)}</h1>
-              </div>
+          <div className="relative z-10 font-display uppercase text-charcoal mx-auto min-h-screen">
+            <div className="absolute top-20 left-0 right-0">
+              <h1 className="text-7xl-2 leading-none text-center mx-4">
+                {parse(`Foto's<br>van<br>Emily`)}
+              </h1>
             </div>
+          </div>
         </div>
       </header>
 

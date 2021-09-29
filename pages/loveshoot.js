@@ -18,7 +18,7 @@ function loveshoot() {
         pageTitle2="love shoot"
         whiteTitle
       />
-      <ScrollNavbar />
+      <ScrollNavbar fade />
       <IntroSection
         heading="EEN MOOIE HERINNERING AAN DEZE TIJD IN JULLIE RELATIE!"
         img1="/images/loveshoot/loveshoot-1.png"

@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import Header from "../components/layout/header";
+import Image from "next/image";
 import ScrollNavbar from "../components/layout/ScrollNavbar";
 import ContactFormSection from "../components/sections/ContactFormSection";
 import FotoshootKadoSection from "../components/sections/FotoshootKadoSection";
@@ -12,14 +12,52 @@ import CustomPricingSection from "../components/sections/CustomPricingSection";
 function zwangerschapsfotografie() {
   return (
     <Fragment>
-      <Header
+      <ScrollNavbar fade={true} />
+      {/* <Header
         img="/images/zwangerschapsfotografie/hero.png"
         imgMobile="/images/zwangerschapsfotografie/hero-mobile.png"
         pageTitle2="Zwangerschaps fotografie"
         whiteTitle
         pageTitleMobile="Zwanger- schaps fotografie"
-      />
-      <ScrollNavbar fade={true} />
+      /> */}
+
+      <header className="relative">
+        <div className="hidden sm:block -mt-28 lg:-mt-14">
+          <Image
+            src="/images/zwangerschapsfotografie/hero.png"
+            alt="zwangerschap fotografie"
+            layout="fill"
+            objectFit="cover"
+            priority
+            quality={100}
+          />
+          <div className="hidden sm:block px-5 relative mt-14 max-w-6xl mx-auto min-h-screen">
+            <div className="max-w-3xl absolute bottom-20">
+              <h1 className="text-7xl md:text-8xl lg:text-9xl xl:text-10xl text-center sm:text-left leading-tight font-display uppercase py-4 text-white">
+                Zwangerschaps fotografie
+              </h1>
+            </div>
+          </div>
+        </div>
+
+        <div className="sm:hidden -mt-14">
+          <Image
+            src="/images/zwangerschapsfotografie/hero-mobile.png"
+            alt="zwangerschap fotografie"
+            layout="fill"
+            objectFit="cover"
+            priority
+          />
+          <div className="px-5 relative max-w-6xl mx-auto min-h-screen">
+            <div className="max-w-3xl absolute bottom-10">
+              <h1 className="sm:hidden text-6xl leading-tight font-display uppercase py-4 text-white">
+                Zwanger- schaps fotografie
+              </h1>
+            </div>
+          </div>
+        </div>
+      </header>
+
       <IntroSection
         heading="VAN HARTE GEFELICITEERD MET DE KOMST VAN JULLIE KLEINTJE!"
         img1="/images/zwangerschapsfotografie/img1.png"
