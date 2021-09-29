@@ -18,7 +18,7 @@ function Reviews(props) {
           </h3>
           <div className="flex justify-center">
             <Carousel
-              autoplay
+              autoPlay
               infiniteLoop
               showArrows={true}
               showStatus={false}

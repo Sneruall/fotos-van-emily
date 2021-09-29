@@ -5,7 +5,6 @@ import Diensten from "../components/sections/diensten";
 import Werkwijze from "../components/sections/werkwijze";
 import Reviews from "../components/sections/reviews";
 import ScrollNavbar from "../components/layout/ScrollNavbar";
-import Header from "../components/layout/header";
 import Image from "next/image";
 import parse from "html-react-parser";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -45,7 +44,7 @@ export default function Home() {
             <div className="absolute bottom-0 left-0 right-0">
               <div className="text-center flex justify-center">
                 <Carousel
-                  autoplay={true}
+                  autoPlay={true}
                   infiniteLoop
                   showArrows={true}
                   showStatus={false}
