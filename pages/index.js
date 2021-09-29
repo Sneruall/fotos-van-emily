@@ -7,6 +7,8 @@ import Reviews from "../components/sections/reviews";
 import ScrollNavbar from "../components/layout/ScrollNavbar";
 import Header from "../components/layout/header";
 import Image from "next/image";
+import parse from "html-react-parser";
+
 
 
 export default function Home() {
@@ -52,8 +54,8 @@ export default function Home() {
             priority
           />
             <div className="relative z-10 font-display uppercase text-charcoal mx-auto min-h-screen">
-              <div className="absolute top-40 left-0 right-0">
-                <h1 className="text-5xl text-center">Foto's van Emily</h1>
+              <div className="absolute top-20 left-0 right-0">
+                <h1 className="text-7xl-2 leading-none text-center mx-4">{parse(`Foto's<br>van<br>Emily`)}</h1>
               </div>
             </div>
         </div>

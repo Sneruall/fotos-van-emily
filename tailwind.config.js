@@ -35,6 +35,7 @@ module.exports = {
       fontSize: {
         "xxs": '0.5rem',
         "10xl": "10rem",
+        "7xl-2": "5rem",
       },
       colors: {
         transparent: "transparent",
