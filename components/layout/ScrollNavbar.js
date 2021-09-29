@@ -31,14 +31,18 @@ function ScrollNavbar(props) {
                 props.lightFade ? "text-white" : "text-charcoal-2"
               } bg-opacity-0 shadow-none`
             : "bg-white text-brown-pale shadow-sm"
-        } sm:block hidden fixed bg-white bg-opacity-90 w-full z-40 top-0`}
+        } sm:block hidden fixed bg-opacity-90 w-full z-40 top-0`}
       >
-        <div className="px-2 flex max-w-6xl mx-auto uppercase justify-between">
-          <div className="flex flex-col justify-items-center my-1">
-            <h2 className="lg:my-1 my-2 text-4xl lg:text-3xl xl:text-3xl font-display">
-              Foto's van Emily
-            </h2>
-          </div>
+        <div className={`${(props.hideLogo && !scrollNav) ? "justify-center" : "justify-between"} px-2 flex max-w-6xl mx-auto uppercase`}>
+          {/* Logo */}
+          {(!props.hideLogo) || (props.hideLogo && scrollNav) && (
+            <div className="flex flex-col justify-items-center my-1">
+              <h2 className="lg:my-1 my-2 text-4xl lg:text-3xl xl:text-3xl font-display">
+                Foto's van Emily
+              </h2>
+            </div>
+          )}
+
           <div className="lg:flex sm:text-xs md:text-sm hidden">
             <ul className="flex justify-items-between gap-10 hover:cursor-pointer">
               <Link href="/">
@@ -50,7 +54,7 @@ function ScrollNavbar(props) {
                 <div
                   onMouseEnter={() => setShowDiensten(true)}
                   onMouseLeave={() => setShowDiensten(false)}
-                  className="text-center hover:underline flex flex-col justify-items-center"
+                  className={`text-center hover:underline flex flex-col justify-items-center ${(props.hideLogo && !scrollNav) && "py-4"}`}
                 >
                   <a className="my-auto">Diensten</a>
                   {showDiensten && (
@@ -65,7 +69,9 @@ function ScrollNavbar(props) {
                                 className="row-start-1 row-end-2 col-start-2 col-end-3 shadow-sm h-8 lg:h-10"
                               >
                                 <div className="h-full bg-white bg-opacity-90 pt-1 lg:pt-2 shadow-sm hover:underline hover:cursor-pointer">
-                                  <a className="text-xxs lg:text-xs pl-4">Portret</a>
+                                  <a className="text-xxs lg:text-xs pl-4">
+                                    Portret
+                                  </a>
                                 </div>
                               </li>
                             </Link>
@@ -102,7 +108,9 @@ function ScrollNavbar(props) {
                                 className="row-start-4 row-end-5 col-start-2 col-end-3 shadow-sm h-8 lg:h-10"
                               >
                                 <div className="h-full bg-white bg-opacity-90 pt-1 lg:pt-2 shadow-sm hover:underline hover:cursor-pointer">
-                                  <a className="text-xxs lg:text-xs pl-4">Honden</a>
+                                  <a className="text-xxs lg:text-xs pl-4">
+                                    Honden
+                                  </a>
                                 </div>
                               </li>
                             </Link>

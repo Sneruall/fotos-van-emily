@@ -19,13 +19,12 @@ export default function Home() {
       </Head>
 
       {/* <ScrollNavbar2 fade /> */}
-      <ScrollNavbar fade />
+      <ScrollNavbar fade hideLogo />
 
       <Header
         img="/images/header/header1.png"
         imgMobile="/images/header/header1m.png"
         title="Foto's van Emily"
-        subtitle="FOTOGRAFIE &amp; FOTOBEWERKING"
         // integratedNavigation
         // pageTitle2="FOTOGRAFIE &amp; FOTOBEWERKING"
       />
