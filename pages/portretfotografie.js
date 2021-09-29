@@ -8,22 +8,57 @@ import EditingSection from "../components/sections/EditingSection";
 import SpotlightSection from "../components/sections/SpotlightSection";
 import WerkwijzeSection from "../components/sections/WerkwijzeSection";
 import CustomPricingSection from "../components/sections/CustomPricingSection";
+import Image from "next/image";
 
 function portretfotografie() {
   return (
     <Fragment>
       <ScrollNavbar fade={true} lightFade={true} />
 
-      <Header
+      {/* <Header
         img="/images/portretfotografie/hero.png"
         imgMobile="/images/portretfotografie/hero-mobile.png"
         pageTitle2="portret fotografie"
         whiteTitle={true}
-      />
+      /> */}
 
+      {/* HEADER PORTRETFOTOGRAFIE */}
+      <header className="relative">
+        <div className="hidden sm:block -mt-28 lg:-mt-14">
+          <Image
+            src="/images/portretfotografie/hero.png"
+            alt="portret fotografie"
+            layout="fill"
+            objectFit="cover"
+            priority
+            quality={100}
+          />
+          <div className="hidden sm:block px-5 relative mt-14 max-w-6xl mx-auto min-h-screen">
+            <div className="max-w-3xl absolute bottom-20">
+              <h1 className="text-6xl md:text-8xl lg:text-9xl text-center sm:text-left leading-tight font-display uppercase py-4 text-white">
+                portret fotografie
+              </h1>
+            </div>
+          </div>
+        </div>
 
-
-
+        <div className="sm:hidden -mt-14">
+          <Image
+            src="/images/portretfotografie/hero-mobile.png"
+            alt="Hero image"
+            layout="fill"
+            objectFit="cover"
+            priority
+          />
+          <div className="px-5 relative max-w-6xl mx-auto min-h-screen">
+            <div className="max-w-3xl absolute bottom-10">
+              <h1 className="sm:hidden text-6xl leading-tight font-display uppercase py-4 text-white">
+                portret fotografie
+              </h1>
+            </div>
+          </div>
+        </div>
+      </header>
 
       <IntroSection
         heading="ALLEEN OF SAMEN OP DE FOTO, HET KAN ALLEMAAL MET PORTRET FOTOGRAFIE!"
@@ -98,7 +133,6 @@ function portretfotografie() {
         imgSk1="/images/portretfotografie/e1.png"
         imgSk2="/images/portretfotografie/e2.png"
       />
-
 
       <CustomPricingSection
         heading="WAT KRIJG JE ALS JE EEN PORTRET LAAT MAKEN DOOR MIJ?"
