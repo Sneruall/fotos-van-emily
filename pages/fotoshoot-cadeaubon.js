@@ -16,7 +16,7 @@ function fotoshootCadeaubon() {
         pageTitle2="Fotoshoot Cadeaubon"
       />
 
-      <Section bg={"bg-grey-light"}>
+      <Section bg={"bg-grey-pinkish2"}>
         <div className="mx-auto max-w-6xl px-4">
           <div className="border-white border relative z-10">
             <div className="bg-white bg-opacity-70 p-10 m-1">
@@ -38,7 +38,7 @@ function fotoshootCadeaubon() {
                       height={1628}
                     />
                   </div>
-                  <div>
+                  <div className="text-center lg:text-left">
                     <p>
                       Je beste vriendin verassen met een zwangerschapsshoot? Of
                       je partner met een loveshoot? Verras ze met een fotoshoot!
@@ -55,13 +55,13 @@ function fotoshootCadeaubon() {
                   </div>
                 </div>
                 {/* Vraag een cadeaubon aan */}
-                <div className="my-10">
-                  <h1 className="title-2 text-3xl mb-2 text-center">
+                <div className="lg:my-10 my-5">
+                  <h1 className="title-2 text-2xl lg:text-3xl mb-2 text-center">
                     Vraag een Cadeaubon aan
                   </h1>
                   <div className="border-b-2 border-brown-pale2 w-full max-w-xs mx-auto"></div>
                 </div>
-                <div className="flex flex-wrap gap-6 justify-center">
+                <div className="flex flex-wrap gap-2 lg:gap-6 justify-center">
                   <div className="flex gap-1 items-center">
                     <MailIcon className="h-5 text-charcoal" />
                     <a
@@ -78,7 +78,10 @@ function fotoshootCadeaubon() {
                     </a>
                   </div>
                 </div>
-                <ContactFormElement />
+                <ContactFormElement
+                  textPlaceholder="Typ hier je bericht…
+Graag hoor ik voor welk bedrag je een bon wilt bestellen. Tot slot graag vermelden op welk adres je de bon wilt ontvangen.*"
+                />
               </div>
             </div>
           </div>

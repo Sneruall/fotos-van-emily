@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function ContactFormElement() {
+function ContactFormElement(props) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [tel, setTel] = useState("");
@@ -60,7 +60,7 @@ function ContactFormElement() {
           className="col-span-full rounded-sm p-2 px-4 placeholder-charcoal placeholder-opacity-90 shadow-sm outline-none"
           id="message"
           type="text"
-          placeholder="Typ hier je bericht...*"
+          placeholder={props.textPlaceholder}
           rows="12"
           onChange={(e) => setMessage(e.target.value)}
           required

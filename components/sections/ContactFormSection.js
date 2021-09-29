@@ -21,7 +21,7 @@ function ContactFormSection() {
             <a className="hover:underline" href="tel:0031652331778">06 52 33 17 78</a>
           </div>
         </div>
-        <ContactFormElement />
+        <ContactFormElement textPlaceholder="Typ hier je bericht...*" />
       </div>
     </Section>
   );
