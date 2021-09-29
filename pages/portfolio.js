@@ -7,7 +7,7 @@ import React, { useState, useCallback } from "react";
 // import { render } from "react-dom";
 import Gallery from "react-photo-gallery";
 // import Carousel, { Modal, ModalGateway } from "react-images";
-import { photos } from "./photos";
+import { photos } from "../data/photos";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Section from "../components/layout/Section";
