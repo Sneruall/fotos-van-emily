@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import Welcome from "../components/sections/welcome";
 import Diensten from "../components/sections/diensten";
 import Werkwijze from "../components/sections/werkwijze";
@@ -11,6 +11,17 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 
 export default function Home() {
+
+  let [transition, setTransition] = useState("")
+
+  const transitionEffect = () => {
+    console.log("changed");
+    setTransition("transition duration-150 ease-out opacity-0")
+    setTimeout(() => {
+      setTransition("transition duration-150 ease-out opacity-100")
+    }, 200);
+  };
+
   return (
     <Fragment>
       <Head>
@@ -46,26 +57,31 @@ export default function Home() {
                 <Carousel
                   autoPlay={true}
                   infiniteLoop
-                  showArrows={true}
+                  stopOnHover={false}
+                  showArrows={false}
                   showStatus={false}
                   showIndicators={false}
                   showThumbs={false}
-                  interval={2000}
+                  interval={3000}
                   width={380}
+                  onChange={transitionEffect}
                 >
                   <Image
+                    className={transition}
                     src="/images/header/mensen1.png"
                     alt="Foto's van Emily"
                     width={1722}
                     height={2015}
                   />
                   <Image
+                    className={transition}
                     src="/images/header/mensen2.png"
                     alt="Foto's van Emily"
                     width={1722}
                     height={2015}
                   />
                   <Image
+                    className={transition}
                     src="/images/header/mensen3.png"
                     alt="Foto's van Emily"
                     width={1722}
