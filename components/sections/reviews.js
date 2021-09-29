@@ -1,7 +1,6 @@
 import Section from "../layout/Section";
 import Button from "../ui/button";
 import Dienst from "./elements/dienst";
-import Review from "./elements/review";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import ReviewElementDesktop from "./elements/ReviewElementDesktop";
