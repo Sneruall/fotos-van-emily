@@ -63,12 +63,12 @@ function portfolio() {
                   {/*content*/}
                   <div className="relative flex flex-col h-full bg-black">
                     {/*header*/}
-                    <div className="absolute top-0 right-0 p-2 z-50">
+                    <div className="absolute top-0 right-0 z-50 px-2">
                       <button
                         className="p-1 ml-auto bg-transparent border-0 text-white float-right text-3xl leading-none font-semibold"
                         onClick={() => setShowModal(false)}
                       >
-                        <span className="bg-transparent text-white h-6 w-6 text-4xl block">
+                        <span className="bg-transparent text-white w-6 text-5xl block">
                           ×
                         </span>
                       </button>
