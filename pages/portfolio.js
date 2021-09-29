@@ -4,9 +4,7 @@ import ScrollNavbar from "../components/layout/ScrollNavbar";
 import Button from "../components/ui/button";
 
 import React, { useState, useCallback } from "react";
-// import { render } from "react-dom";
 import Gallery from "react-photo-gallery";
-// import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from "../data/photos";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -31,11 +29,6 @@ function portfolio() {
     setShowModal(true);
     console.log("set image" + index);
   }, []);
-
-  //   const closeLightbox = () => {
-  //     setCurrentImage(0);
-  //     setShowModal(false);
-  //   };
 
   return (
     <Fragment>
@@ -104,7 +97,6 @@ function portfolio() {
                   </div>
                 </div>
               </div>
-              {/* <div className="opacity-25 fixed inset-0 z-40 bg-black"></div> */}
             </>
           ) : null}
         </>
