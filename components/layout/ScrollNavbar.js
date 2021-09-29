@@ -131,7 +131,7 @@ function ScrollNavbar(props) {
                   <a className="my-auto">Portfolio</a>
                 </li>
               </Link>
-              <Link href="/portfolio">
+              <Link href="/fotoshoot-cadeaubon">
                 <li className="text-center hover:underline flex flex-col justify-items-center">
                   <a className="my-auto">Cadeaubon</a>
                 </li>

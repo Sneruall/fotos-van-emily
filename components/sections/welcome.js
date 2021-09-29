@@ -12,7 +12,7 @@ export default function Welcome() {
           Hee, welkom op mijn site!
         </p>
         <div className="w-3/5 self-start mx-auto md:w-auto relative my-5 md:my-0">
-          <Image src="/images/emily.png" alt="Emily" width={370} height={553} priority quality={100} />
+          <Image src="/images/emily.png" alt="Emily" width={370} height={553} quality={100} />
 
           <div className="absolute top-0 right-0 md:left-0 transform translate-x-14 md:-translate-x-10 2xl:-translate-x-20 -translate-y-5">
             <Image

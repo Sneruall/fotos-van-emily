@@ -61,7 +61,7 @@ function Reviews() {
                 imgheight={513}
                 alt="Emily van Roomen"
                 title="Over mij"
-                description="Hoi, mijn naam is Emily van den Ende. Vanuit mijn zelfgebouwde camperbus rijd ik overal naartoe, geen locatie is te gek!"
+                description="Hoi, mijn naam is Emily van Roomen. Vanuit mijn zelfgebouwde camperbus rijd ik overal naartoe, geen locatie is te gek!"
                 showDescriptionOnMobile
               />
               <div className="pt-10 text-center">

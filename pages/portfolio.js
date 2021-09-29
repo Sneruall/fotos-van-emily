@@ -74,7 +74,7 @@ function portfolio() {
                       </button>
                     </div>
                     {/*body*/}
-                    <div className="p-6 h-full">
+                    <div className="h-full">
                       <Carousel
                         className="flex flex-col h-full justify-center"
                         selectedItem={currentImage}
@@ -83,22 +83,21 @@ function portfolio() {
                         showArrows={true}
                         showThumbs={false}
                       >
-                        <div className="">
+                        <div className="h-screen80">
                           <Image
                             src="/images/loveshoot/p1.png"
                             alt="Portretfoto"
-                            width={800}
-                            height={1200}
-                            objectFit="scale-down"
+                            layout="fill"
+                            objectFit="contain"
                           />
                         </div>
 
-                        <div className="">
+                        <div className="h-screen80">
                           <Image
                             src="/images/loveshoot/e1.png"
                             alt="Portretfoto"
-                            width={1200}
-                            height={800}
+                            layout="fill"
+                            objectFit="contain"
                           />
                         </div>
                       </Carousel>

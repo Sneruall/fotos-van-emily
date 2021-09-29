@@ -17,7 +17,7 @@ function FotoshootKadoSection() {
             DAT KAN IN DE VORM VAN EEN CADEAUBON!
           </h5>
           <div className="pb-10 pt-5">
-            <Button link="/" button="button-1" text="Meer informatie" />
+            <Button link="/fotoshoot-cadeaubon" button="button-1" text="Meer informatie" />
           </div>
         </div>
       </div>

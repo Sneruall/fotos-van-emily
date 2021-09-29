@@ -17,6 +17,9 @@ module.exports = {
       screens: {
         "3xl": "2000px",
       },
+      height:{
+        "screen80": "80vh",
+      },
       fontFamily: {
         sans: ["Montserrat", "Helvetica", "Arial", "sans-serif"],
         display: [
