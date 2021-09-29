@@ -4,40 +4,99 @@ import Dienst from "./elements/dienst";
 import Review from "./elements/review";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import ReviewElementDesktop from "./elements/ReviewElementDesktop";
+import ReviewElement from "./elements/ReviewElement";
 
-function Reviews() {
+function Reviews(props) {
   return (
     <Section bg={"bg-grey-light2"}>
       <div className=" border border-brown-pale2 p-2 md:mx-auto md:max-w-6xl 3xl:max-w-full">
         <div className="border border-brown-pale2 p-16">
-          <h2 className="text-center md:text-left text-5xl lg:text-6xl font-display uppercase text-white leading-snug">
+                  {/* reviews mobile */}
+        <div className="lg:hidden">
+          <h3 className="text-brown-pale uppercase font-display text-5xl text-center my-10">
             Reviews
-          </h2>
-          <div className="md:max-w-md -mx-16 md:m-0">
+          </h3>
+          <div className="flex justify-center">
             <Carousel
               autoplay
               infiniteLoop
+              showArrows={true}
               showStatus={false}
-              showIndicators={false}
+              showIndicators={true}
               showThumbs={false}
               interval={5000}
+              width={350}
             >
-                <Review
-                  text="Emily zorgt ervoor dat je op je gemak bent en maakt zo hele spontane en natuurlijke foto's!
-            Ze heeft een goed oog voor mooie locaties en creatieve ideeën over de foto's. Nu hebben we
-            mooie portretfoto's, leuke foto's als stel én heb ik professionele foto's voor mijn eigen
-            website. Echt een aanrader!"
-                  name="Rina"
-                />
-                <Review
-                  text="Emily zorgt ervoor dat je op je gemak bent en maakt zo hele spontane en natuurlijke foto's!
-            Ze heeft een goed oog voor mooie locaties en creatieve ideeën over de foto's. Nu hebben we
-            mooie portretfoto's, leuke foto's als stel én heb ik professionele foto's voor mijn eigen
-            website. Echt een aanrader!"
-                  name="Rina2"
-                />
+              <ReviewElement
+                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                      sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                      magna aliquyam erat, sed diam voluptua. At vero eos et
+                      accusam et justo duo dolores et ea rebum. Stet clita kasd
+                      gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                      sit amet. Lorem ipsum dolor sit amet.sed diam voluptues et ea rebum. Stet clita kasd
+                      gubergren, no sea takimata sanctus est Lorem ipsua."
+                name="Rina"
+              />
+              <ReviewElement
+                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                      sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                      magna aliquyam erat, sed diam voluptua. At vero eos et
+                      accusam et justo duo dolores em ipsum dolor
+                      sit amet. Lorem ipsum dolor sit amet.sed diam voluptua."
+                name="Rina2"
+              />
             </Carousel>
           </div>
+        </div>
+        {/* reviews desktop */}
+        <div className="hidden w-full lg:block absolute left-0">
+        <h3 className="text-brown-pale uppercase font-display text-7xl text-center my-10">
+            Reviews
+          </h3>
+        </div>
+        <div className="pt-28 hidden lg:block">
+          <Carousel
+            autoplay
+            infiniteLoop
+            showArrows={true}
+            showStatus={false}
+            showIndicators={true}
+            showThumbs={false}
+            interval={5000}
+          >
+            {/* Review tab */}
+            <div className="my-10 mx-10 grid grid-cols-3 gap-x-4">
+              <ReviewElementDesktop
+                text={props.review1[0]}
+                name={props.review1[1]}
+              />
+              <ReviewElementDesktop
+                text={props.review2[0]}
+                name={props.review2[1]}
+              />
+              <ReviewElementDesktop
+                text={props.review3[0]}
+                name={props.review3[1]}
+              />
+            </div>
+            {/* Review tab */}
+            <div className="my-10 mx-10 grid grid-cols-3 gap-x-4">
+            <ReviewElementDesktop
+                text={props.review4[0]}
+                name={props.review4[1]}
+              />
+              <ReviewElementDesktop
+                text={props.review5[0]}
+                name={props.review5[1]}
+              />
+              <ReviewElementDesktop
+                text={props.review6[0]}
+                name={props.review6[1]}
+              />
+            </div>
+          </Carousel>
+        </div>
 
           <div className="flex flex-wrap gap-6 justify-evenly">
             <div className="w-60">
