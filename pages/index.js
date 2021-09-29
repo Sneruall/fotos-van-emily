@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import Welcome from "../components/sections/welcome";
 import Diensten from "../components/sections/diensten";
 import Werkwijze from "../components/sections/werkwijze";
@@ -11,18 +11,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 
 export default function Home() {
-  let [transition, setTransition] = useState(
-    "transition delay-4500 duration-500 ease-out opacity-0"
-  );
-
-  const handleTransition = () => {
-    setTransition("transition delay-500 duration-500 ease-in opacity-100");
-
-    setTimeout(() => {
-      setTransition("transition duration-500 ease-out opacity-0");
-    }, 4500);
-  };
-
   return (
     <Fragment>
       <Head>
@@ -62,26 +50,22 @@ export default function Home() {
                   showStatus={false}
                   showIndicators={false}
                   showThumbs={false}
-                  interval={5000}
+                  interval={2000}
                   width={380}
-                  onChange={handleTransition}
                 >
                   <Image
-                    className={transition}
                     src="/images/header/mensen1.png"
                     alt="Foto's van Emily"
                     width={1722}
                     height={2015}
                   />
                   <Image
-                    className={transition}
                     src="/images/header/mensen2.png"
                     alt="Foto's van Emily"
                     width={1722}
                     height={2015}
                   />
                   <Image
-                    className={transition}
                     src="/images/header/mensen3.png"
                     alt="Foto's van Emily"
                     width={1722}
