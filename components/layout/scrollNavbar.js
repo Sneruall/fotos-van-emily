@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Fragment, useEffect, useState } from "react";
 
-function scrollNavbar(props) {
+function ScrollNavbar(props) {
   const [scrollNav, setScrollNav] = useState(false);
   const [showDiensten, setShowDiensten] = useState(false);
 
@@ -154,4 +154,4 @@ function scrollNavbar(props) {
   );
 }
 
-export default scrollNavbar;
+export default ScrollNavbar;
