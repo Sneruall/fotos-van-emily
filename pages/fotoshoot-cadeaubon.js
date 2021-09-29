@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import Header from "../components/layout/header";
-import ScrollNavbar from "../components/layout/scrollNavbar";
+import ScrollNavbar from "../components/layout/ScrollNavbar";
 import Section from "../components/layout/Section";
 
 function fotoshootCadeaubon() {

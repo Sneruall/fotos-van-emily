@@ -4,7 +4,7 @@ import Welcome from "../components/sections/welcome";
 import Diensten from "../components/sections/diensten";
 import Werkwijze from "../components/sections/werkwijze";
 import Reviews from "../components/sections/reviews";
-import ScrollNavbar from "../components/layout/scrollNavbar";
+import ScrollNavbar from "../components/layout/ScrollNavbar";
 import Header from "../components/layout/header";
 
 export default function Home() {
