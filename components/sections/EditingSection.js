@@ -86,7 +86,7 @@ function EditingSection(props) {
                 />
               </div>
               <div className="mt-5 lg:mt-0 lg:mb-10 text-center lg:order-first">
-                <Button link="/" button="button-3" text="Meer informatie" />
+                <Button link="/fotobewerking-service" button="button-3" text="Meer informatie" />
               </div>
             </div>
           </div>

@@ -109,7 +109,7 @@ function Reviews(props) {
                 showDescriptionOnMobile
               />
               <div className="pt-10 text-center">
-                <Button link="/" button="button-2" text="Diensten" />
+                <Button link="#diensten" button="button-2" text="Diensten" />
               </div>
             </div>
             <div className="w-60">
@@ -123,7 +123,7 @@ function Reviews(props) {
                 showDescriptionOnMobile
               />
               <div className="pt-10 text-center">
-                <Button link="/" button="button-2" text="Lees meer" />
+                <Button link="/over-mij" button="button-2" text="Lees meer" />
               </div>
             </div>
             <div className="w-60">
@@ -137,7 +137,7 @@ function Reviews(props) {
                 showDescriptionOnMobile
               />
               <div className="pt-10 text-center">
-                <Button link="/" button="button-2" text="Neem contact op" />
+                <Button link="/over-mij#contact" button="button-2" text="Neem contact op" />
               </div>
             </div>
           </div>

@@ -69,7 +69,7 @@ function fotobewerkingservice() {
                   laten we de handen bijeen slaan: jij maakt de foto’s, ik doe
                   de rest!
                 </p>
-                <Button link="/#werkwijze" button="button-1" text="Werkwijze" />
+                <Button link="#werkwijze" button="button-1" text="Werkwijze" />
                 <div>
                   <div className="border-b-2 border-brown-pale inline-block my-12 sm:px-10 ">
                     <h3 className="uppercase text-brown-pale text-3xl">
@@ -229,14 +229,11 @@ function fotobewerkingservice() {
               }
             />
           </div>
-          <div className="mt-5 lg:mt-0 lg:mb-10 text-center lg:order-first">
-            <Button link="/" button="button-3" text="Meer informatie" />
-          </div>
         </div>
       </Section>
 
       {/* WERKWIJZE SECTIE */}
-      <Section bg={"bg-grey-light2"}>
+      <Section id="werkwijze" bg={"bg-grey-light2"}>
         <div className="mx-auto max-w-6xl">
           <h2 className="title-1 my-0 lg:my-10 leading-tight">
             WERKWIJZE FOTOBEWERKING

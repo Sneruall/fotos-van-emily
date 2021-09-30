@@ -42,7 +42,7 @@ function portfolio() {
           foto’s laten maken? Neem vrijblijvend contact met mij op en we plannen
           samen een afspraak!
         </p>
-        <Button link="/contact" button="button-1" text="Neem contact op" />
+        <Button link="/over-mij#contact" button="button-1" text="Neem contact op" />
       </div>
       <div>
         <Gallery photos={photos} onClick={openLightbox} direction="column" />
