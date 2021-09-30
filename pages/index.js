@@ -16,10 +16,10 @@ export default function Home() {
 
   const transitionEffect = () => {
     console.log("changed");
-    setTransition("transition duration-150 ease-out opacity-0")
+    setTransition("transition duration-100 ease-out opacity-0")
     setTimeout(() => {
-      setTransition("transition duration-150 ease-out opacity-100")
-    }, 200);
+      setTransition("transition delay-75 duration-150 ease-out opacity-100")
+    }, 220);
   };
 
   return (
@@ -63,7 +63,7 @@ export default function Home() {
                   showIndicators={false}
                   showThumbs={false}
                   interval={3000}
-                  width={380}
+                  width={380} //variable maken adhv grootte scherm
                   onChange={transitionEffect}
                 >
                   <Image
