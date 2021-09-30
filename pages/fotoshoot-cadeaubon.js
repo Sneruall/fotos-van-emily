@@ -1,5 +1,4 @@
 import { Fragment } from "react";
-import Header from "../components/layout/header";
 import ScrollNavbar from "../components/layout/ScrollNavbar";
 import Section from "../components/layout/Section";
 import Image from "next/image";
@@ -10,11 +9,38 @@ function fotoshootCadeaubon() {
   return (
     <Fragment>
       <ScrollNavbar fade={false} />
-      <Header
-        img="/images/cadeaubon/header.png"
-        imgMobile="/images/cadeaubon/headerm.png"
-        pageTitle2="Fotoshoot Cadeaubon"
-      />
+
+      <header className="relative">
+        <div className="-mt-14 lg:mt-0">
+          <div className="hidden sm:block">
+            <Image
+              src="/images/cadeaubon/header.png"
+              alt="Fotoshoot Cadeaubon"
+              layout="fill"
+              objectFit="cover"
+              priority
+              quality={100}
+            />
+          </div>
+          <div className="sm:hidden">
+            <Image
+              src="/images/cadeaubon/headerm.png"
+              alt="Fotoshoot Cadeaubon"
+              layout="fill"
+              objectFit="cover"
+              priority
+            />
+          </div>
+
+          <div className="px-5 relative max-w-6xl mx-auto min-h-screen">
+            <div className="max-w-3xl absolute bottom-40 sm:bottom-20">
+              <h1 className="text-6xl sm:text-8xl md:text-9xl leading-tight font-display uppercase py-4 text-charcoal-2">
+              Fotoshoot Cadeaubon
+              </h1>
+            </div>
+          </div>
+        </div>
+      </header>
 
       <Section bg={"bg-grey-pinkish2"}>
         <div className="mx-auto max-w-6xl px-4">
@@ -26,7 +52,7 @@ function fotoshootCadeaubon() {
                   OP ZOEK NAAR EEN ORIGNEEL CADEAU?
                 </h1>
                 <div className="border-b-2 border-brown-pale2 w-full max-w-xs mx-auto"></div>
-                <h2 className="title-1 my-5 text-6xl leading-tight text-center ">
+                <h2 className="title-1 my-5 text-5xl sm:text-6xl leading-tight text-center ">
                   Doe een fotoshoot cadeau!
                 </h2>
                 <div className="flex flex-col lg:flex-row gap-10 my-16 max-w-4xl mx-auto">
