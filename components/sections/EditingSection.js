@@ -8,7 +8,7 @@ import {
 
 function EditingSection(props) {
   return (
-    <Section bg="bg-brown-pale2">
+    <Section>
       <div className="mx-auto max-w-6xl">
         <h2 className="text-white text-3xl lg:text-5xl text-center uppercase mb-5 lg:leading-tight">
           ZORGVULDIGE NABEWERKING VOOR EEN VERBLUFFEND RESULAAT

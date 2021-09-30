@@ -8,6 +8,7 @@ import SpotlightSection from "../components/sections/SpotlightSection";
 import WerkwijzeSection from "../components/sections/WerkwijzeSection";
 import CustomPricingSection from "../components/sections/CustomPricingSection";
 import Image from "next/image";
+import { Controller, Scene } from "react-scrollmagic";
 
 function portretfotografie() {
   return (
@@ -18,23 +19,23 @@ function portretfotografie() {
       <header className="relative">
         <div className="-mt-14 lg:mt-0">
           <div className="hidden sm:block">
-          <Image
-            src="/images/portretfotografie/hero.png"
-            alt="portret fotografie"
-            layout="fill"
-            objectFit="cover"
-            priority
-            quality={100}
-          />
+            <Image
+              src="/images/portretfotografie/hero.png"
+              alt="portret fotografie"
+              layout="fill"
+              objectFit="cover"
+              priority
+              quality={100}
+            />
           </div>
           <div className="sm:hidden">
-          <Image
-            src="/images/portretfotografie/hero-mobile.png"
-            alt="portret fotografie"
-            layout="fill"
-            objectFit="cover"
-            priority
-          />
+            <Image
+              src="/images/portretfotografie/hero-mobile.png"
+              alt="portret fotografie"
+              layout="fill"
+              objectFit="cover"
+              priority
+            />
           </div>
 
           <div className="px-5 relative max-w-6xl mx-auto min-h-screen">
@@ -71,6 +72,7 @@ function portretfotografie() {
         ]}
         portfolioButtonLink="/portfolio"
       />
+
       <SpotlightSection
         heading="Natuurlijk op de foto"
         text="Ik fotografeer het liefst in de buitenlucht, dit zorgt voor de
@@ -112,55 +114,66 @@ function portretfotografie() {
           "Name6",
         ]}
       />
-      <EditingSection
-        imgE1="/images/portretfotografie/e1.png"
-        imgE2="/images/portretfotografie/e2.png"
-        imgE3="/images/portretfotografie/e1.png"
-        imgE4="/images/portretfotografie/e2.png"
-        imgSk1="/images/portretfotografie/e1.png"
-        imgSk2="/images/portretfotografie/e2.png"
-      />
 
-      <CustomPricingSection
-        heading="WAT KRIJG JE ALS JE EEN PORTRET LAAT MAKEN DOOR MIJ?"
-        reiskosten={true}
-        prijsText="Vanaf:"
-        pakketA={[
-          "Pakket A",
-          `<span classname="font-bold">~30 min</span> fotografie op locatie`,
-          `<span classname="font-bold">10</span> digitale foto’s in hoge kwaliteit`,
-          `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
-            worden ook in zwart-wit geleverd)`,
-          `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
-          ,
-          "79",
-        ]}
-        pakketB={[
-          "Pakket B",
-          `<span classname="font-bold">~45 min</span> fotografie op locatie`,
-          `<span classname="font-bold">20</span> digitale foto’s in hoge kwaliteit`,
-          `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
-            worden ook in zwart-wit geleverd)`,
-          `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
-          `Online gallerij voor het <span classname="font-bold">bekijken en delen</span> van de foto’s`,
-          "149",
-        ]}
-        pakketC={[
-          "Pakket C",
-          `<span classname="font-bold">1 uur</span> fotografie op locatie`,
-          `<span classname="font-bold">30</span> digitale foto’s in hoge kwaliteit`,
-          `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
-            worden ook in zwart-wit geleverd)`,
-          `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
-          `Online gallerij voor het <span classname="font-bold">bekijken en delen</span> van de foto’s`,
-          "219",
-        ]}
-        cta="Liever een offerte op maat?"
-      />
+      <Controller>
+        <div className="bg-grey-pinkish">
+          <Scene indicators offset={100}
+            classToggle="bg-brown-pale2"
+          >
+            <div className="transition duration-500 ease-in-out">
+              <EditingSection
+                imgE1="/images/portretfotografie/e1.png"
+                imgE2="/images/portretfotografie/e2.png"
+                imgE3="/images/portretfotografie/e1.png"
+                imgE4="/images/portretfotografie/e2.png"
+                imgSk1="/images/portretfotografie/e1.png"
+                imgSk2="/images/portretfotografie/e2.png"
+              />
+            </div>
+          </Scene>
+        </div>
 
-      <WerkwijzeSection />
-      <FotoshootKadoSection />
-      <ContactFormSection />
+        <CustomPricingSection
+          heading="WAT KRIJG JE ALS JE EEN PORTRET LAAT MAKEN DOOR MIJ?"
+          reiskosten={true}
+          prijsText="Vanaf:"
+          pakketA={[
+            "Pakket A",
+            `<span classname="font-bold">~30 min</span> fotografie op locatie`,
+            `<span classname="font-bold">10</span> digitale foto’s in hoge kwaliteit`,
+            `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
+            worden ook in zwart-wit geleverd)`,
+            `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
+            ,
+            "79",
+          ]}
+          pakketB={[
+            "Pakket B",
+            `<span classname="font-bold">~45 min</span> fotografie op locatie`,
+            `<span classname="font-bold">20</span> digitale foto’s in hoge kwaliteit`,
+            `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
+            worden ook in zwart-wit geleverd)`,
+            `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
+            `Online gallerij voor het <span classname="font-bold">bekijken en delen</span> van de foto’s`,
+            "149",
+          ]}
+          pakketC={[
+            "Pakket C",
+            `<span classname="font-bold">1 uur</span> fotografie op locatie`,
+            `<span classname="font-bold">30</span> digitale foto’s in hoge kwaliteit`,
+            `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
+            worden ook in zwart-wit geleverd)`,
+            `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
+            `Online gallerij voor het <span classname="font-bold">bekijken en delen</span> van de foto’s`,
+            "219",
+          ]}
+          cta="Liever een offerte op maat?"
+        />
+
+        <WerkwijzeSection />
+        <FotoshootKadoSection />
+        <ContactFormSection />
+      </Controller>
     </Fragment>
   );
 }

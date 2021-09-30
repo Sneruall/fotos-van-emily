@@ -8,8 +8,8 @@ function testing() {
         <div className="h-screen bg-blue-900">
           <h1 className="text-10xl">Dit is een titel</h1>
         </div>
-        <Scene classToggle="bg-red-900" indicators>
-          <div className="h-screen bg-blue-900 transition duration-500 ease-in-out">
+        <Scene triggerElement="#spotlight" classToggle={("#spotlight", "bg-red-900")} indicators>
+          <div id="spotlight" className="h-screen bg-blue-900 transition duration-500 ease-in-out">
             <h1 className="text-10xl text-black">Dit is een titel</h1>
           </div>
         </Scene>
