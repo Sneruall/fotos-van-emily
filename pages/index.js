@@ -11,14 +11,13 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 
 export default function Home() {
-
-  let [transition, setTransition] = useState("")
+  let [transition, setTransition] = useState("");
 
   const transitionEffect = () => {
     console.log("changed");
-    setTransition("transition duration-100 ease-out opacity-0")
+    setTransition("transition duration-100 ease-out opacity-0");
     setTimeout(() => {
-      setTransition("transition delay-75 duration-150 ease-out opacity-100")
+      setTransition("transition delay-75 duration-150 ease-out opacity-100");
     }, 220);
   };
 
@@ -36,20 +35,35 @@ export default function Home() {
 
       {/* HEADER INDEX */}
       <header className="relative">
-        <div className="hidden sm:block -mt-28 lg:-mt-14">
-          <Image className="hidden sm:block"
-            src="/images/header/headerIndex.png"
-            alt="Foto's van Emily"
-            layout="fill"
-            objectFit="cover"
-            priority
-            quality={100}
-          />
+        <div className="-mt-28 lg:-mt-14">
+          <div className="hidden sm:block">
+            <Image
+              src="/images/header/headerIndex.png"
+              alt="Foto's van Emily"
+              layout="fill"
+              objectFit="cover"
+              priority
+              quality={100}
+            />
+          </div>
+
+          <div className="sm:hidden">
+            <Image
+              src="/images/header/header1m.png"
+              alt="Foto's van Emily"
+              layout="fill"
+              objectFit="cover"
+              priority
+            />
+          </div>
 
           <div className="relative mt-14 font-display uppercase text-charcoal mx-auto min-h-screen">
-            <div className="absolute top-20 left-0 right-0">
-              <h1 className="text-5xl md:text-8xl lg:text-9xl xl:text-10xl text-center">
+            <div className="absolute top-16 sm:top-20 left-0 right-0">
+              <h1 className="hidden sm:block text-5xl md:text-8xl lg:text-9xl xl:text-10xl text-center">
                 Foto's van Emily
+              </h1>
+              <h1 className="sm:hidden text-7xl-2 leading-none text-center mx-4">
+                {parse(`Foto's<br>van<br>Emily`)}
               </h1>
             </div>
             <div className="absolute left-0 right-0 -bottom-2">
@@ -63,7 +77,7 @@ export default function Home() {
                   showIndicators={false}
                   showThumbs={false}
                   interval={3000}
-                  width="50vh"
+                  width="45vh"
                   onChange={transitionEffect}
                 >
                   <Image
@@ -89,23 +103,6 @@ export default function Home() {
                   />
                 </Carousel>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="sm:hidden -mt-14">
-          <Image
-            src="/images/header/header1m.png"
-            alt="Foto's van Emily"
-            layout="fill"
-            objectFit="cover"
-            priority
-          />
-          <div className="relative z-10 font-display uppercase text-charcoal mx-auto min-h-screen">
-            <div className="absolute top-20 left-0 right-0">
-              <h1 className="text-7xl-2 leading-none text-center mx-4">
-                {parse(`Foto's<br>van<br>Emily`)}
-              </h1>
             </div>
           </div>
         </div>
