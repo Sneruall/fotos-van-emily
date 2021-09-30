@@ -8,17 +8,45 @@ import EditingSection from "../components/sections/EditingSection";
 import SpotlightSection from "../components/sections/SpotlightSection";
 import WerkwijzeSection from "../components/sections/WerkwijzeSection";
 import CustomPricingSection from "../components/sections/CustomPricingSection";
+import Image from "next/image";
+
 
 function hondenfotografie() {
   return (
     <Fragment>
-      <Header
-        img="/images/hondenfotografie/hero.png"
-        imgMobile="/images/hondenfotografie/hero-mobile.png"
-        pageTitle2="Honden fotografie"
-        whiteTitle
-      />
       <ScrollNavbar fade={true} lightFade />
+      <header className="relative">
+        <div className="-mt-14 lg:mt-0">
+          <div className="hidden sm:block">
+            <Image
+              src="/images/hondenfotografie/hero.png"
+              alt="Honden fotografie"
+              layout="fill"
+              objectFit="cover"
+              priority
+              quality={100}
+            />
+          </div>
+          <div className="sm:hidden">
+            <Image
+              src="/images/hondenfotografie/hero-mobile.png"
+              alt="Honden fotografie"
+              layout="fill"
+              objectFit="cover"
+              priority
+            />
+          </div>
+
+          <div className="px-5 relative max-w-6xl mx-auto min-h-screen">
+            <div className="max-w-3xl absolute bottom-10 sm:bottom-20">
+              <h1 className="text-6xl sm:text-8xl md:text-9xl xl:text-10xl leading-tight font-display uppercase py-4 text-white">
+                Honden fotografie
+              </h1>
+            </div>
+          </div>
+        </div>
+      </header>
+
       <IntroSection
         heading="JOUW TROUWE VIERVOETER OP ZIJN MOOIST VASTGELEGD!"
         img1="/images/hondenfotografie/img1.png"
