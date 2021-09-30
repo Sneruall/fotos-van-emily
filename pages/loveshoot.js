@@ -10,17 +10,10 @@ import WerkwijzeSection from "../components/sections/WerkwijzeSection";
 import CustomPricingSection from "../components/sections/CustomPricingSection";
 import Image from "next/image";
 
-
 function loveshoot() {
   return (
     <Fragment>
-      {/* <Header
-        img="/images/loveshoot/hero.png"
-        imgMobile="/images/loveshoot/hero-mobile.png"
-        pageTitle2="love shoot"
-        whiteTitle
-      /> */}
-            <ScrollNavbar fade lightFade />
+      <ScrollNavbar fade lightFade />
 
       <header className="relative">
         <div className="-mt-14 lg:mt-0">

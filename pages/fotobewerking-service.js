@@ -1,7 +1,6 @@
 import { Fragment } from "react";
 import { ReactCompareSlider } from "react-compare-slider";
 import Image from "next/image";
-import Header from "../components/layout/header";
 import ScrollNavbar from "../components/layout/ScrollNavbar";
 import Section from "../components/layout/Section";
 import Button from "../components/ui/button";
@@ -13,13 +12,41 @@ function fotobewerkingservice() {
   return (
     <Fragment>
       <ScrollNavbar fade={true} lightFade />
-      <Header
-        img="/images/fotobewerking/hero.png"
-        imgMobile="/images/fotobewerking/hero-mobile.png"
-        pageTitle2="Fotobewerking Service"
-        whiteTitle
-        pageTitleMobile="Foto- Bewerking Service"
-      />
+
+      <header className="relative">
+        <div className="-mt-14 lg:mt-0">
+          <div className="hidden sm:block">
+            <Image
+              src="/images/fotobewerking/hero.png"
+              alt="Fotobewerking Service"
+              layout="fill"
+              objectFit="cover"
+              priority
+              quality={100}
+            />
+          </div>
+          <div className="sm:hidden">
+            <Image
+              src="/images/fotobewerking/hero-mobile.png"
+              alt="Fotobewerking Service"
+              layout="fill"
+              objectFit="cover"
+              priority
+            />
+          </div>
+
+          <div className="px-5 relative max-w-6xl mx-auto min-h-screen">
+            <div className="max-w-3xl absolute top-10 sm:top-20">
+            <h1 className="hidden sm:block text-7xl md:text-8xl lg:text-9xl leading-tight font-display uppercase py-4 text-white">
+            Fotobewerking Service
+              </h1>
+              <h1 className="sm:hidden text-6xl leading-tight font-display uppercase py-4 text-white">
+              Foto- Bewerking Service
+              </h1>
+            </div>
+          </div>
+        </div>
+      </header>
 
       {/* VOORBEELDEN SECTIE */}
       <Section bg={"bg-grey-pinkish2"}>
