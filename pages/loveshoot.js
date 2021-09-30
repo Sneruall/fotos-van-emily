@@ -1,5 +1,4 @@
 import { Fragment } from "react";
-import Header from "../components/layout/header";
 import ScrollNavbar from "../components/layout/ScrollNavbar";
 import ContactFormSection from "../components/sections/ContactFormSection";
 import FotoshootKadoSection from "../components/sections/FotoshootKadoSection";
