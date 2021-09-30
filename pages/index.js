@@ -35,7 +35,7 @@ export default function Home() {
 
       {/* HEADER INDEX */}
       <header className="relative">
-        <div className="-mt-14">
+        <div className="-mt-14 lg:mt-0">
           <div className="hidden sm:block">
             <Image
               src="/images/header/headerIndex.png"

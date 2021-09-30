@@ -13,43 +13,33 @@ function zwangerschapsfotografie() {
   return (
     <Fragment>
       <ScrollNavbar fade={true} />
-      {/* <Header
-        img="/images/zwangerschapsfotografie/hero.png"
-        imgMobile="/images/zwangerschapsfotografie/hero-mobile.png"
-        pageTitle2="Zwangerschaps fotografie"
-        whiteTitle
-        pageTitleMobile="Zwanger- schaps fotografie"
-      /> */}
-
       <header className="relative">
-        <div className="hidden sm:block -mt-28 lg:-mt-14">
-          <Image
-            src="/images/zwangerschapsfotografie/hero.png"
-            alt="zwangerschap fotografie"
-            layout="fill"
-            objectFit="cover"
-            priority
-            quality={100}
-          />
-          <div className="hidden sm:block px-5 relative mt-14 max-w-6xl mx-auto min-h-screen">
-            <div className="max-w-3xl absolute bottom-20">
-              <h1 className="text-7xl md:text-8xl lg:text-9xl xl:text-10xl text-center sm:text-left leading-tight font-display uppercase py-4 text-white">
+        <div className="-mt-14 lg:mt-0">
+          <div className="hidden sm:block">
+            <Image
+              src="/images/zwangerschapsfotografie/hero.png"
+              alt="zwangerschap fotografie"
+              layout="fill"
+              objectFit="cover"
+              priority
+              quality={100}
+            />
+          </div>
+          <div className="sm:hidden">
+            <Image
+              src="/images/zwangerschapsfotografie/hero-mobile.png"
+              alt="zwangerschap fotografie"
+              layout="fill"
+              objectFit="cover"
+              priority
+            />
+          </div>
+
+          <div className="px-5 relative max-w-6xl mx-auto min-h-screen">
+            <div className="max-w-3xl absolute bottom-10 sm:bottom-20">
+              <h1 className="hidden sm:block text-7xl md:text-8xl lg:text-9xl xl:text-10xl leading-tight font-display uppercase py-4 text-white">
                 Zwangerschaps fotografie
               </h1>
-            </div>
-          </div>
-        </div>
-
-        <div className="sm:hidden -mt-14">
-          <Image
-            src="/images/zwangerschapsfotografie/hero-mobile.png"
-            alt="zwangerschap fotografie"
-            layout="fill"
-            objectFit="cover"
-            priority
-          />
-          <div className="px-5 relative max-w-6xl mx-auto min-h-screen">
-            <div className="max-w-3xl absolute bottom-10">
               <h1 className="sm:hidden text-6xl leading-tight font-display uppercase py-4 text-white">
                 Zwanger- schaps fotografie
               </h1>
