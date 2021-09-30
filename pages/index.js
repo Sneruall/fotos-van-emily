@@ -35,7 +35,7 @@ export default function Home() {
 
       {/* HEADER INDEX */}
       <header className="relative">
-        <div className="-mt-28 lg:-mt-14">
+        <div className="-mt-14">
           <div className="hidden sm:block">
             <Image
               src="/images/header/headerIndex.png"
@@ -57,8 +57,8 @@ export default function Home() {
             />
           </div>
 
-          <div className="relative mt-14 font-display uppercase text-charcoal mx-auto min-h-screen">
-            <div className="absolute top-16 sm:top-20 left-0 right-0">
+          <div className="relative font-display uppercase text-charcoal mx-auto min-h-screen">
+            <div className="absolute top-16 sm:top-24 left-0 right-0">
               <h1 className="hidden sm:block text-5xl md:text-8xl lg:text-9xl xl:text-10xl text-center">
                 Foto's van Emily
               </h1>
