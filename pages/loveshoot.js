@@ -8,17 +8,52 @@ import EditingSection from "../components/sections/EditingSection";
 import SpotlightSection from "../components/sections/SpotlightSection";
 import WerkwijzeSection from "../components/sections/WerkwijzeSection";
 import CustomPricingSection from "../components/sections/CustomPricingSection";
+import Image from "next/image";
+
 
 function loveshoot() {
   return (
     <Fragment>
-      <Header
+      {/* <Header
         img="/images/loveshoot/hero.png"
         imgMobile="/images/loveshoot/hero-mobile.png"
         pageTitle2="love shoot"
         whiteTitle
-      />
-      <ScrollNavbar fade />
+      /> */}
+            <ScrollNavbar fade lightFade />
+
+      <header className="relative">
+        <div className="-mt-14 lg:mt-0">
+          <div className="hidden sm:block">
+            <Image
+              src="/images/loveshoot/hero.png"
+              alt="love shoot"
+              layout="fill"
+              objectFit="cover"
+              priority
+              quality={100}
+            />
+          </div>
+          <div className="sm:hidden">
+            <Image
+              src="/images/loveshoot/hero-mobile.png"
+              alt="love shoot"
+              layout="fill"
+              objectFit="cover"
+              priority
+            />
+          </div>
+
+          <div className="px-5 relative max-w-6xl mx-auto min-h-screen">
+            <div className="max-w-3xl absolute bottom-10 sm:bottom-20">
+              <h1 className="text-7xl sm:text-8xl md:text-9xl xl:text-10xl leading-tight font-display uppercase py-4 text-white">
+                love shoot
+              </h1>
+            </div>
+          </div>
+        </div>
+      </header>
+
       <IntroSection
         heading="EEN MOOIE HERINNERING AAN DEZE TIJD IN JULLIE RELATIE!"
         img1="/images/loveshoot/loveshoot-1.png"
