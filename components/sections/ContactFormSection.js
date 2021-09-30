@@ -4,7 +4,7 @@ import ContactFormElement from "./elements/ContactFormElement";
 
 function ContactFormSection() {
   return (
-    <Section bg={"bg-grey-pinkish2"}>
+    <Section id="contact" bg={"bg-grey-pinkish2"}>
       <div className="mx-auto max-w-6xl">
         {/* intro text */}
         <h1 className="title-1">Neem contact op</h1>

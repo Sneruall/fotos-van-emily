@@ -155,7 +155,7 @@ function ScrollNavbar(props) {
                   <a className="my-auto">Over mij</a>
                 </li>
               </Link>
-              <Link href="/contact">
+              <Link href="/over-mij#contact">
                 <li className="text-center hover:underline flex flex-col justify-items-center">
                   <a className="my-auto">Contact</a>
                 </li>

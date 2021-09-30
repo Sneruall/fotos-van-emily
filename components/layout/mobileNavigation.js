@@ -150,7 +150,7 @@ function mobileNavigation() {
                 <h2 className="ml-12">over mij</h2>
               </li>
             </Link>
-            <Link href="/contact">
+            <Link href="/over-mij#contact">
               <li
                 onClick={() => setMobileMenuExtended(false)}
                 className="py-2 border-b border-opacity-25 cursor-pointer text-brown-pale"

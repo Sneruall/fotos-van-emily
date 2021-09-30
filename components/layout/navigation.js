@@ -8,7 +8,7 @@ function navigation() {
           <NavItem text={"Diensten"} link="#diensten" />
           <NavItem text={"Portfolio"} link="/portfolio" />
           <NavItem text={"Over mij"} link="/over-mij" />
-          <NavItem text={"Contact"} link="/contact" />
+          <NavItem text={"Contact"} link="/over-mij#contact" />
         </ul>
       </nav>
   );
