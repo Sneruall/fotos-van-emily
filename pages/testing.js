@@ -1,16 +1,28 @@
-import Image from "next/image";
+import { Fragment } from "react";
+import { Controller, Scene } from "react-scrollmagic";
 
 function testing() {
   return (
-    <div className="max-h-screen block">
-      <h1>Testpage</h1>
-      <Image
-        src="/images/cadeaubon/Business-A4-Mockup3.png"
-        alt="Emily van Roomen"
-        layout="fill"
-        objectFit="contain" // Scale your image down to fit into the container
-      />
-    </div>
+    <Fragment>
+      <Controller>
+        <div className="h-screen bg-blue-900">
+          <h1 className="text-10xl">Dit is een titel</h1>
+        </div>
+        <Scene classToggle="bg-red-900" indicators>
+          <div className="h-screen bg-blue-900 transition duration-500 ease-in-out">
+            <h1 className="text-10xl text-black">Dit is een titel</h1>
+          </div>
+        </Scene>
+        <Scene classToggle="bg-indigo-500">
+          <div className="h-screen bg-red-900 transition duration-500 ease-in-out">
+            <h1 className="text-10xl">Dit is een titel</h1>
+          </div>
+        </Scene>
+        <div className="h-screen bg-red-900">
+          <h1 className="text-10xl">Dit is een titel</h1>
+        </div>
+      </Controller>
+    </Fragment>
   );
 }
 
