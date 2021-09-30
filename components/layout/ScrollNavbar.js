@@ -45,18 +45,15 @@ function ScrollNavbar(props) {
               props.hideLogo && !scrollNav && "hidden "
             }flex flex-col justify-items-center my-1`}
           >
-            <h2 className="lg:my-1 my-2 text-4xl lg:text-3xl xl:text-3xl font-display">
-              Foto's van Emily
-            </h2>
+            <Link href="/">
+              <h2 className="lg:my-1 my-2 text-4xl lg:text-3xl xl:text-3xl font-display hover:cursor-pointer">
+                Foto's van Emily
+              </h2>
+            </Link>
           </div>
 
           <div className="lg:flex sm:text-xs md:text-sm hidden">
             <ul className="flex justify-items-between gap-10 hover:cursor-pointer">
-              <Link href="/">
-                <li className="text-center hover:underline flex flex-col justify-items-center">
-                  <a className="my-auto">Home</a>
-                </li>
-              </Link>
               <Link href="/#diensten">
                 <div
                   onMouseEnter={() => setShowDiensten(true)}

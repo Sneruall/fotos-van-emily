@@ -31,9 +31,11 @@ function mobileNavigation() {
         } lg:hidden inline-block sticky top-0 bg-white bg-opacity-90 w-full z-50 mb-14`}
       >
         <div className="flex w-full absolute justify-center mb-5 mt-4">
-          <h1 className="font-display uppercase text-brown-pale text-3xl">
+          <Link href="/">
+          <h1 className="font-display uppercase text-brown-pale text-3xl hover:cursor-pointer">
             Foto's van Emily
           </h1>
+          </Link>
         </div>
 
         <div className="flex justify-end mb-5 mt-5">
@@ -44,14 +46,6 @@ function mobileNavigation() {
         </div>
         <nav>
           <ul className="flex flex-col uppercase text-lg">
-            <Link href="/">
-              <li
-                onClick={() => setMobileMenuExtended(false)}
-                className="py-2 border-b border-opacity-25 cursor-pointer text-brown-pale"
-              >
-                <h2 className="ml-12">Home</h2>
-              </li>
-            </Link>
             <li
               onClick={() =>
                 navExtended ? setNavExtended(false) : setNavExtended(true)
