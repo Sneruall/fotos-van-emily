@@ -37,7 +37,7 @@ export default function Home() {
       {/* HEADER INDEX */}
       <header className="relative">
         <div className="hidden sm:block -mt-28 lg:-mt-14">
-          <Image
+          <Image className="hidden sm:block"
             src="/images/header/headerIndex.png"
             alt="Foto's van Emily"
             layout="fill"
@@ -52,7 +52,7 @@ export default function Home() {
                 Foto's van Emily
               </h1>
             </div>
-            <div className="absolute bottom-0 left-0 right-0">
+            <div className="absolute left-0 right-0 -bottom-2">
               <div className="text-center flex justify-center">
                 <Carousel
                   autoPlay={true}
@@ -63,7 +63,7 @@ export default function Home() {
                   showIndicators={false}
                   showThumbs={false}
                   interval={3000}
-                  width={380} //variable maken adhv grootte scherm
+                  width="50vh"
                   onChange={transitionEffect}
                 >
                   <Image
