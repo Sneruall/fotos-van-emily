@@ -16,7 +16,8 @@ function portretfotografie() {
 
       {/* HEADER PORTRETFOTOGRAFIE */}
       <header className="relative">
-        <div className="hidden sm:block -mt-28 lg:-mt-14">
+        <div className="-mt-14">
+          <div className="hidden sm:block">
           <Image
             src="/images/portretfotografie/hero.png"
             alt="portret fotografie"
@@ -25,16 +26,27 @@ function portretfotografie() {
             priority
             quality={100}
           />
-          <div className="hidden sm:block px-5 relative mt-14 max-w-6xl mx-auto min-h-screen">
-            <div className="max-w-3xl absolute bottom-20">
-              <h1 className="text-8xl md:text-9xl xl:text-10xl text-center sm:text-left leading-tight font-display uppercase py-4 text-white">
+          </div>
+          <div className="sm:hidden">
+          <Image
+            src="/images/portretfotografie/hero-mobile.png"
+            alt="portret fotografie"
+            layout="fill"
+            objectFit="cover"
+            priority
+          />
+          </div>
+
+          <div className="px-5 relative max-w-6xl mx-auto min-h-screen">
+            <div className="max-w-3xl absolute bottom-10 sm:bottom-20">
+              <h1 className="text-6xl sm:text-8xl md:text-9xl xl:text-10xl leading-tight font-display uppercase py-4 text-white">
                 portret fotografie
               </h1>
             </div>
           </div>
         </div>
 
-        <div className="sm:hidden -mt-14">
+        <div className="hidden -mt-14">
           <Image
             src="/images/portretfotografie/hero-mobile.png"
             alt="portret fotografie"
