@@ -15,7 +15,6 @@ export default function Home() {
   let [transition, setTransition] = useState("");
 
   const transitionEffect = () => {
-    console.log("changed");
     setTransition("transition duration-100 ease-out opacity-0");
     setTimeout(() => {
       setTransition("transition delay-75 duration-150 ease-out opacity-100");

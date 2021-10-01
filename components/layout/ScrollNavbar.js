@@ -36,18 +36,18 @@ function ScrollNavbar(props) {
         <div
           className={`${
             props.hideLogo && !scrollNav ? "justify-center" : "justify-between"
-          } px-2 flex max-w-6xl mx-auto uppercase`}
+          } px-2 flex max-w-6xl mx-auto uppercase z-50`}
         >
           {/* Logo */}
 
           <div
             className={`${
-              props.hideLogo && !scrollNav && "hidden "
-            }flex flex-col justify-items-center my-1`}
+              (props.hideLogo && !scrollNav) && "hidden"
+            } flex flex-col justify-items-center my-1`}
           >
             <Link href="/">
               <h2 className="lg:my-1 my-2 text-4xl lg:text-3xl xl:text-3xl font-display hover:cursor-pointer">
-                Foto's van Emily
+                <a>Foto's van Emily</a> 
               </h2>
             </Link>
           </div>
