@@ -4,7 +4,7 @@ import PricingPlan from "./elements/PricingPlan";
 
 function CustomPricingSection(props) {
   return (
-    <Section bg="bg-grey-light">
+    <Section>
       <div className="mx-auto max-w-6xl">
         <h2 className="title-1 leading-tight">{props.heading} </h2>
         {/* Pricing cards */}

@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import ScrollNavbar from "../components/layout/ScrollNavbar";
 import ContactFormSection from "../components/sections/ContactFormSection";
 import FotoshootKadoSection from "../components/sections/FotoshootKadoSection";
@@ -11,6 +11,31 @@ import Image from "next/image";
 import { Controller, Scene } from "react-scrollmagic";
 
 function portretfotografie() {
+  const [section1Height, setSection1Height] = useState(0);
+  const section1Ref = useRef(null);
+  const [section2Height, setSection2Height] = useState(0);
+  const section2Ref = useRef(null);
+  const [section3Height, setSection3Height] = useState(0);
+  const section3Ref = useRef(null);
+
+  useEffect(() => {
+    setSection1Height(section1Ref.current.clientHeight);
+    setSection2Height(section2Ref.current.clientHeight);
+    setSection3Height(section3Ref.current.clientHeight);
+  }, []); //empty dependency array so it only runs once at render
+
+  useEffect(() => {
+    const handleResize = () => {
+      setSection1Height(section1Ref.current.clientHeight);
+      setSection2Height(section2Ref.current.clientHeight);
+      setSection3Height(section3Ref.current.clientHeight);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <Fragment>
       <ScrollNavbar fade={true} lightFade={true} />
@@ -50,7 +75,7 @@ function portretfotografie() {
 
       <Controller>
         <div className="bg-grey-light">
-          <div id="page" className="transition duration-500 ease-in-out">
+          <div id="page" className="transition ease-linear duration-1000">
             <IntroSection
               heading="ALLEEN OF SAMEN OP DE FOTO, HET KAN ALLEMAAL MET PORTRET FOTOGRAFIE!"
               img1="/images/portretfotografie/portret-1.png"
@@ -76,14 +101,16 @@ function portretfotografie() {
               portfolioButtonLink="/portfolio"
             />
             <Scene
+              triggerElement="#section1"
+              classToggle={["#page", "bg-grey-pinkish"]}
               indicators
-              triggerElement="#spotlightsection"
-              classToggle={["#page", "bg-red-400"]} 
+              duration={section1Height}
             >
-              <div id="spotlightsection">
-                <SpotlightSection
-                  heading="Natuurlijk op de foto"
-                  text="Ik fotografeer het liefst in de buitenlucht, dit zorgt voor de
+              <div>
+                <div id="section1" ref={section1Ref}>
+                  <SpotlightSection
+                    heading="Natuurlijk op de foto"
+                    text="Ik fotografeer het liefst in de buitenlucht, dit zorgt voor de
       meest pure en unieke foto’s. Ik zorg voor voldoende afwisseling op
       locatie zodat jij een diversiteit aan foto’s krijgt. Heb je al een
       locatie in gedachte? Super! Heb je wat meer inspiratie nodig? Ik
@@ -95,91 +122,115 @@ function portretfotografie() {
       aanwijzingen. Kortom, gewoon een heerlijk momentje in de
       spotlight! Zo kom jij op een natuurlijke manier prachtig op de
       foto te staan!"
-                  img="/images/portretfotografie/portret-4.png"
-                  alt="portret"
-                  review1={[
-                    "Lorem ipsum dolor sit amet, consetetur sadipsc amet, consetetur sadip amet, consetetur sadiping elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                    "Name1",
-                  ]}
-                  review2={[
-                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                    "Name2",
-                  ]}
-                  review3={[
-                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                    "Name3",
-                  ]}
-                  review4={[
-                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                    "Name4",
-                  ]}
-                  review5={[
-                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                    "Name5",
-                  ]}
-                  review6={[
-                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                    "Name6",
-                  ]}
-                />
+                    img="/images/portretfotografie/portret-4.png"
+                    alt="portret"
+                    review1={[
+                      "Lorem ipsum dolor sit amet, consetetur sadipsc amet, consetetur sadip amet, consetetur sadiping elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
+                      "Name1",
+                    ]}
+                    review2={[
+                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
+                      "Name2",
+                    ]}
+                    review3={[
+                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
+                      "Name3",
+                    ]}
+                    review4={[
+                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
+                      "Name4",
+                    ]}
+                    review5={[
+                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
+                      "Name5",
+                    ]}
+                    review6={[
+                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
+                      "Name6",
+                    ]}
+                  />
+                </div>
               </div>
             </Scene>
 
             <Scene
+              triggerElement="#section2"
+              classToggle={["#page", "bg-brown-pale2"]}
               indicators
-              triggerElement="#editingsection"
-              classToggle={["#page", "bg-red-100"]}
+              duration={section2Height}
             >
-              <div id="editingsection">
-                <EditingSection
-                  imgE1="/images/portretfotografie/e1.png"
-                  imgE2="/images/portretfotografie/e2.png"
-                  imgE3="/images/portretfotografie/e1.png"
-                  imgE4="/images/portretfotografie/e2.png"
-                  imgSk1="/images/portretfotografie/e1.png"
-                  imgSk2="/images/portretfotografie/e2.png"
-                />
+              <div>
+                <div id="section2" ref={section2Ref}>
+                  <EditingSection
+                    imgE1="/images/portretfotografie/e1.png"
+                    imgE2="/images/portretfotografie/e2.png"
+                    imgE3="/images/portretfotografie/e1.png"
+                    imgE4="/images/portretfotografie/e2.png"
+                    imgSk1="/images/portretfotografie/e1.png"
+                    imgSk2="/images/portretfotografie/e2.png"
+                  />
+                </div>
               </div>
             </Scene>
 
-            <CustomPricingSection
-              heading="WAT KRIJG JE ALS JE EEN PORTRET LAAT MAKEN DOOR MIJ?"
-              reiskosten={true}
-              prijsText="Vanaf:"
-              pakketA={[
-                "Pakket A",
-                `<span classname="font-bold">~30 min</span> fotografie op locatie`,
-                `<span classname="font-bold">10</span> digitale foto’s in hoge kwaliteit`,
-                `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
+            <Scene
+              triggerElement="#section3"
+              classToggle={["#page", "bg-grey-light"]}
+              indicators
+              duration={section3Height}
+            >
+              <div>
+                <div id="section3" ref={section3Ref}>
+                  <CustomPricingSection
+                    heading="WAT KRIJG JE ALS JE EEN PORTRET LAAT MAKEN DOOR MIJ?"
+                    reiskosten={true}
+                    prijsText="Vanaf:"
+                    pakketA={[
+                      "Pakket A",
+                      `<span classname="font-bold">~30 min</span> fotografie op locatie`,
+                      `<span classname="font-bold">10</span> digitale foto’s in hoge kwaliteit`,
+                      `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
             worden ook in zwart-wit geleverd)`,
-                `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
-                ,
-                "79",
-              ]}
-              pakketB={[
-                "Pakket B",
-                `<span classname="font-bold">~45 min</span> fotografie op locatie`,
-                `<span classname="font-bold">20</span> digitale foto’s in hoge kwaliteit`,
-                `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
+                      `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
+                      ,
+                      "79",
+                    ]}
+                    pakketB={[
+                      "Pakket B",
+                      `<span classname="font-bold">~45 min</span> fotografie op locatie`,
+                      `<span classname="font-bold">20</span> digitale foto’s in hoge kwaliteit`,
+                      `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
             worden ook in zwart-wit geleverd)`,
-                `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
-                `Online gallerij voor het <span classname="font-bold">bekijken en delen</span> van de foto’s`,
-                "149",
-              ]}
-              pakketC={[
-                "Pakket C",
-                `<span classname="font-bold">1 uur</span> fotografie op locatie`,
-                `<span classname="font-bold">30</span> digitale foto’s in hoge kwaliteit`,
-                `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
+                      `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
+                      `Online gallerij voor het <span classname="font-bold">bekijken en delen</span> van de foto’s`,
+                      "149",
+                    ]}
+                    pakketC={[
+                      "Pakket C",
+                      `<span classname="font-bold">1 uur</span> fotografie op locatie`,
+                      `<span classname="font-bold">30</span> digitale foto’s in hoge kwaliteit`,
+                      `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
             worden ook in zwart-wit geleverd)`,
-                `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
-                `Online gallerij voor het <span classname="font-bold">bekijken en delen</span> van de foto’s`,
-                "219",
-              ]}
-              cta="Liever een offerte op maat?"
-            />
-
-            <WerkwijzeSection />
+                      `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
+                      `Online gallerij voor het <span classname="font-bold">bekijken en delen</span> van de foto’s`,
+                      "219",
+                    ]}
+                    cta="Liever een offerte op maat?"
+                  />
+                </div>
+              </div>
+            </Scene>
+            <Scene
+              triggerElement="#section4"
+              classToggle={["#page", "bg-grey-light2"]}
+              indicators
+            >
+              <div>
+                <div id="section4">
+                  <WerkwijzeSection />
+                </div>
+              </div>
+            </Scene>
             <FotoshootKadoSection />
             <ContactFormSection />
           </div>

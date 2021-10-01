@@ -3,7 +3,7 @@ import WerkwijzeStap from "./elements/WerkwijzeStap";
 
 function WerkwijzeSection(props) {
   return (
-    <Section bg="bg-grey-light2">
+    <Section>
       <div className="mx-auto max-w-6xl">
         <h2 className="title-1 mb-16">
           HOE GA IK TE WERK?
