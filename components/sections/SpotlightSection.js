@@ -7,7 +7,7 @@ import ReviewElementDesktop from "./elements/ReviewElementDesktop";
 
 function SpotlightSection(props) {
   return (
-    <Section bg={"bg-grey-pinkish"}>
+    <Section>
       <div className="mx-auto max-w-6xl">
         <h2 className="text-white text-4xl lg:text-6xl text-center uppercase mb-4">
           {props.heading}

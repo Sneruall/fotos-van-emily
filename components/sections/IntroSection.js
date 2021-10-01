@@ -5,7 +5,7 @@ import PagePortfolioElement from "./elements/PagePortfolioElement";
 
 function IntroSection(props) {
   return (
-    <Section bg={"bg-grey-light"}>
+    <Section>
       <div className="mx-auto max-w-6xl">
         <h2 className="title-1 leading-tight">
           {props.heading}
