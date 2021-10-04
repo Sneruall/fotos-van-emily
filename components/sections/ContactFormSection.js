@@ -2,9 +2,9 @@ import Section from "../layout/Section";
 import { MailIcon, PhoneIcon } from "@heroicons/react/solid";
 import ContactFormElement from "./elements/ContactFormElement";
 
-function ContactFormSection() {
+function ContactFormSection(props) {
   return (
-    <Section id="contact" bg={"bg-grey-pinkish2"}>
+    <Section id="contact" bg={props.bg}>
       <div className="mx-auto max-w-6xl">
         {/* intro text */}
         <h1 className="title-1">Neem contact op</h1>

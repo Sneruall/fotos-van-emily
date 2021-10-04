@@ -228,7 +228,7 @@ function portretfotografie() {
               </div>
             </Scene>
             <FotoshootKadoSection />
-            <ContactFormSection />
+            <ContactFormSection bg="bg-grey-pinkish2"/>
           </div>
         </div>
       </Controller>

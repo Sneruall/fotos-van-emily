@@ -65,7 +65,7 @@ function overmij() {
           </div>
         </div>
       </div>
-      <ContactFormSection />
+      <ContactFormSection bg="bg-grey-pinkish2" />
     </Fragment>
   );
 }
