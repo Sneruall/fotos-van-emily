@@ -42,11 +42,24 @@ function portfolio() {
           foto’s laten maken? Neem vrijblijvend contact met mij op en we plannen
           samen een afspraak!
         </p>
-        <Button link="/over-mij#contact" button="button-1" text="Neem contact op" />
+        <Button
+          link="/over-mij#contact"
+          button="button-1"
+          text="Neem contact op"
+        />
       </div>
       <div>
-        <Gallery photos={photos} onClick={openLightbox} direction="column" />
-
+        <div className="hidden xl:block">
+          <Gallery
+            photos={photos}
+            onClick={openLightbox}
+            direction="column"
+            columns={3}
+          />
+        </div>
+        <div className="xl:hidden">
+          <Gallery photos={photos} onClick={openLightbox} direction="column" />
+        </div>
         <>
           {showModal ? (
             <>
