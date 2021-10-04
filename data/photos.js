@@ -36,4 +36,24 @@ export const photos = [
     width: 4,
     height: 3,
   },
+  {
+    src: "https://picsum.photos/400/601",
+    width: 2,
+    height: 3,
+  },
+  {
+    src: "https://picsum.photos/400/600",
+    width: 2,
+    height: 3,
+  },
+  {
+    src: "https://picsum.photos/400/602",
+    width: 2,
+    height: 3,
+  },
+  {
+    src: "https://picsum.photos/400/603",
+    width: 2,
+    height: 3,
+  },
 ];
