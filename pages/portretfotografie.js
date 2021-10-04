@@ -22,7 +22,7 @@ function portretfotografie() {
     setSection1Height(section1Ref.current.clientHeight);
     setSection2Height(section2Ref.current.clientHeight);
     setSection3Height(section3Ref.current.clientHeight);
-  }, []); //empty dependency array so it only runs once at render
+  }, []); 
 
   useEffect(() => {
     const handleResize = () => {
@@ -103,7 +103,6 @@ function portretfotografie() {
             <Scene
               triggerElement="#section1"
               classToggle={["#page", "bg-grey-pinkish"]}
-              indicators
               duration={section1Height}
             >
               <div>
@@ -156,7 +155,6 @@ function portretfotografie() {
             <Scene
               triggerElement="#section2"
               classToggle={["#page", "bg-brown-pale2"]}
-              indicators
               duration={section2Height}
             >
               <div>
@@ -176,7 +174,6 @@ function portretfotografie() {
             <Scene
               triggerElement="#section3"
               classToggle={["#page", "bg-grey-light"]}
-              indicators
               duration={section3Height}
             >
               <div>
@@ -223,7 +220,6 @@ function portretfotografie() {
             <Scene
               triggerElement="#section4"
               classToggle={["#page", "bg-grey-light2"]}
-              indicators
             >
               <div>
                 <div id="section4">

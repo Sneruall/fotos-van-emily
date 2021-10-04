@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import Welcome from "../components/sections/welcome";
 import Diensten from "../components/sections/diensten";
 import Werkwijze from "../components/sections/werkwijze";
@@ -9,9 +9,10 @@ import Image from "next/image";
 import parse from "html-react-parser";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-
+import { Controller, Scene } from "react-scrollmagic";
 
 export default function Home() {
+  //index slider
   let [transition, setTransition] = useState("");
 
   const transitionEffect = () => {
@@ -20,6 +21,25 @@ export default function Home() {
       setTransition("transition delay-75 duration-150 ease-out opacity-100");
     }, 220);
   };
+
+  //scrollmagic
+
+  const [section1Height, setSection1Height] = useState(0);
+  const section1Ref = useRef(null);
+
+  useEffect(() => {
+    setSection1Height(section1Ref.current.clientHeight);
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setSection1Height(section1Ref.current.clientHeight);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <Fragment>
@@ -107,38 +127,65 @@ export default function Home() {
           </div>
         </div>
       </header>
+      <Controller>
+      <div className="bg-grey-light">
 
+        <div id="page" className="transition ease-linear duration-1000">
       <Welcome />
-      <Diensten />
 
-      <Werkwijze />
 
-      <Reviews
-        review1={[
-          "Lorem ipsum dolor sit amet, consetetur sadipsc amet, consetetur sadip amet, consetetur sadiping elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-          "Name1",
-        ]}
-        review2={[
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-          "Name2",
-        ]}
-        review3={[
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-          "Name3",
-        ]}
-        review4={[
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-          "Name4",
-        ]}
-        review5={[
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-          "Name5",
-        ]}
-        review6={[
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-          "Name6",
-        ]}
-      />
+          <Diensten />
+
+          <Scene
+            triggerElement="#section1"
+            classToggle={["#page", "bg-grey-pale"]}
+            duration={section1Height}
+          >
+            <div>
+              <div id="section1" ref={section1Ref}>
+                <Werkwijze />
+              </div>{" "}
+            </div>
+          </Scene>
+
+          <Scene
+            triggerElement="#section2"
+            classToggle={["#page", "bg-grey-light2"]}
+          >
+            <div>
+              <div id="section2">
+                <Reviews
+                  review1={[
+                    "Lorem ipsum dolor sit amet, consetetur sadipsc amet, consetetur sadip amet, consetetur sadiping elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
+                    "Name1",
+                  ]}
+                  review2={[
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
+                    "Name2",
+                  ]}
+                  review3={[
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
+                    "Name3",
+                  ]}
+                  review4={[
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
+                    "Name4",
+                  ]}
+                  review5={[
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
+                    "Name5",
+                  ]}
+                  review6={[
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
+                    "Name6",
+                  ]}
+                />
+              </div>
+            </div>
+          </Scene>
+        </div>
+        </div>
+      </Controller>
     </Fragment>
   );
 }

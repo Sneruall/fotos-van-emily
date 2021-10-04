@@ -4,7 +4,7 @@ import Section from "../layout/Section";
 //hier gaat nog iets mis met margins van het witte vlak
 export default function Welcome() {
   return (
-    <Section bg={"bg-grey-pinkish2 md:bg-grey-light"}>
+    <Section>
       <div className="flex md:items-stretch mx-auto flex-col md:flex-row relative md:gap-10 max-w-5xl">
 
         <div className="flex-auto">

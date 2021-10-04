@@ -8,7 +8,7 @@ import ReviewElement from "./elements/ReviewElement";
 
 function Reviews(props) {
   return (
-    <Section bg={"bg-grey-light2"}>
+    <Section>
       <div className=" border border-brown-pale2 p-2 md:mx-auto md:max-w-6xl 3xl:max-w-full">
         <div className="border border-brown-pale2 p-16">
                   {/* reviews mobile */}
