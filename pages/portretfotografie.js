@@ -124,28 +124,16 @@ function portretfotografie() {
                     img="/images/portretfotografie/portret-4.png"
                     alt="portret"
                     review1={[
-                      "Lorem ipsum dolor sit amet, consetetur sadipsc amet, consetetur sadip amet, consetetur sadiping elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                      "Name1",
+                      "Emily zorgt ervoor dat je op je gemak bent en maakt zo hele spontane en natuurlijke foto's! Ze heeft een goed oog voor mooie locaties en creatieve ideeën over de foto's. Nu hebben we mooie portretfoto's, leuke foto's als stel én heb ik professionele foto's voor mijn eigen website. Echt een aanrader!",
+                      "Rina & Nick",
                     ]}
                     review2={[
-                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                      "Name2",
+                      "Bedankt voor de super leuke gezellige fotoshoot! De foto's zijn echt prachtig geworden! En de kinderen vonden het super leuk! Geen gedwongen foto sessie maar gewoon lekker spelen en tijdens het spelen foto's maken.",
+                      "Chantal",
                     ]}
                     review3={[
-                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                      "Name3",
-                    ]}
-                    review4={[
-                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                      "Name4",
-                    ]}
-                    review5={[
-                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                      "Name5",
-                    ]}
-                    review6={[
-                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                      "Name6",
+                      "Ik wilde graag een professionele portretfoto laten maken. Emily had daarbij direct de juiste context in gedachte en nam de tijd om veel verschillende foto’s te maken. Ze sloot goed aan bij mijn wensen en gaf fijne aanwijzingen. Ik voelde me bij haar erg op mijn gemak, waardoor de foto’s natuurlijk overkomen. De foto’s volgde al snel en ik ben erg tevreden met het resultaat! Ik zou zeker bij een volgende gelegenheid terug gaan naar Emily.",
+                      "Lisa",
                     ]}
                   />
                 </div>
