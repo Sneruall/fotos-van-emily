@@ -128,62 +128,60 @@ export default function Home() {
         </div>
       </header>
       <Controller>
-      <div className="bg-grey-light">
+        <div className="bg-grey-light">
+          <div id="page" className="transition ease-linear duration-1000">
+            <Welcome />
 
-        <div id="page" className="transition ease-linear duration-1000">
-      <Welcome />
+            <Diensten />
 
-
-          <Diensten />
-
-          <Scene
-            triggerElement="#section1"
-            classToggle={["#page", "bg-grey-pale"]}
-            duration={section1Height}
-          >
-            <div>
-              <div id="section1" ref={section1Ref}>
-                <Werkwijze />
-              </div>{" "}
-            </div>
-          </Scene>
-
-          <Scene
-            triggerElement="#section2"
-            classToggle={["#page", "bg-grey-light2"]}
-          >
-            <div>
-              <div id="section2">
-                <Reviews
-                  review1={[
-                    "Lorem ipsum dolor sit amet, consetetur sadipsc amet, consetetur sadip amet, consetetur sadiping elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                    "Name1",
-                  ]}
-                  review2={[
-                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                    "Name2",
-                  ]}
-                  review3={[
-                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                    "Name3",
-                  ]}
-                  review4={[
-                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                    "Name4",
-                  ]}
-                  review5={[
-                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                    "Name5",
-                  ]}
-                  review6={[
-                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                    "Name6",
-                  ]}
-                />
+            <Scene
+              triggerElement="#section1"
+              classToggle={["#page", "bg-grey-pale"]}
+              duration={section1Height}
+            >
+              <div>
+                <div id="section1" ref={section1Ref}>
+                  <Werkwijze />
+                </div>{" "}
               </div>
-            </div>
-          </Scene>
-        </div>
+            </Scene>
+
+            <Scene
+              triggerElement="#section2"
+              classToggle={["#page", "bg-grey-light2"]}
+            >
+              <div>
+                <div id="section2">
+                  <Reviews
+                    review1={[
+                      "Lorem ipsum dolor sit amet, consetetur sadipsc amet, consetetur sadip amet, consetetur sadiping elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
+                      "Name1",
+                    ]}
+                    review2={[
+                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
+                      "Name2",
+                    ]}
+                    review3={[
+                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
+                      "Name3",
+                    ]}
+                    review4={[
+                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
+                      "Name4",
+                    ]}
+                    review5={[
+                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
+                      "Name5",
+                    ]}
+                    review6={[
+                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
+                      "Name6",
+                    ]}
+                  />
+                </div>
+              </div>
+            </Scene>
+          </div>
         </div>
       </Controller>
     </Fragment>
