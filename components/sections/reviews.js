@@ -9,59 +9,12 @@ import ReviewElement from "./elements/ReviewElement";
 function Reviews(props) {
   return (
     <Section>
-      <div className=" border border-brown-pale2 p-2 md:mx-auto md:max-w-6xl 3xl:max-w-full">
-        <div className="border border-brown-pale2 p-16">
-                  {/* reviews mobile */}
-        <div className="lg:hidden">
-          <h3 className="text-brown-pale uppercase font-display text-5xl text-center my-10">
-            Reviews
-          </h3>
-          <div className="flex justify-center">
-            <Carousel
-              autoPlay
-              infiniteLoop
-              showArrows={true}
-              showStatus={false}
-              showIndicators={true}
-              showThumbs={false}
-              interval={5000}
-              width={350}
-            >
-              <ReviewElement
-                text={props.review1[0]}
-                name={props.review1[1]}
-              />
-              <ReviewElement
-                text={props.review2[0]}
-                name={props.review2[1]}
-              />
-              <ReviewElement
-                text={props.review3[0]}
-                name={props.review3[1]}
-              />
-              <ReviewElement
-                text={props.review4[0]}
-                name={props.review4[1]}
-              />
-              <ReviewElement
-                text={props.review5[0]}
-                name={props.review5[1]}
-              />
-              <ReviewElement
-                text={props.review6[0]}
-                name={props.review6[1]}
-              />
-
-            </Carousel>
-          </div>
-        </div>
-        {/* reviews desktop */}
-        <div className="hidden w-full lg:block absolute left-0">
-        <h3 className="text-brown-pale uppercase font-display text-7xl text-center my-10">
-            Reviews
-          </h3>
-        </div>
-        <div className="pt-28 hidden lg:block">
+      <h3 className="text-brown-pale uppercase font-display text-5xl md:text-7xl text-center">
+        Reviews
+      </h3>
+      {/* reviews mobile */}
+      <div className="lg:hidden p-10">
+        <div className="flex justify-center">
           <Carousel
             autoPlay
             infiniteLoop
@@ -70,40 +23,63 @@ function Reviews(props) {
             showIndicators={true}
             showThumbs={false}
             interval={5000}
+            width={350}
           >
-            {/* Review tab */}
-            <div className="my-10 mx-10 grid grid-cols-3 gap-x-4">
-              <ReviewElementDesktop
-                text={props.review1[0]}
-                name={props.review1[1]}
-              />
-              <ReviewElementDesktop
-                text={props.review2[0]}
-                name={props.review2[1]}
-              />
-              <ReviewElementDesktop
-                text={props.review3[0]}
-                name={props.review3[1]}
-              />
-            </div>
-            {/* Review tab */}
-            <div className="my-10 mx-10 grid grid-cols-3 gap-x-4">
-            <ReviewElementDesktop
-                text={props.review4[0]}
-                name={props.review4[1]}
-              />
-              <ReviewElementDesktop
-                text={props.review5[0]}
-                name={props.review5[1]}
-              />
-              <ReviewElementDesktop
-                text={props.review6[0]}
-                name={props.review6[1]}
-              />
-            </div>
+            <ReviewElement text={props.review1[0]} name={props.review1[1]} />
+            <ReviewElement text={props.review2[0]} name={props.review2[1]} />
+            <ReviewElement text={props.review3[0]} name={props.review3[1]} />
+            <ReviewElement text={props.review4[0]} name={props.review4[1]} />
+            <ReviewElement text={props.review5[0]} name={props.review5[1]} />
+            <ReviewElement text={props.review6[0]} name={props.review6[1]} />
           </Carousel>
         </div>
+      </div>
+      {/* reviews desktop */}
+      <div className="hidden lg:block max-w-6xl mx-auto mb-10">
+        <Carousel
+          autoPlay
+          infiniteLoop
+          showArrows={true}
+          showStatus={false}
+          showIndicators={true}
+          showThumbs={false}
+          interval={5000}
+        >
+          {/* Review tab */}
+          <div className="my-10 mx-10 grid grid-cols-3 gap-x-4">
+            <ReviewElementDesktop
+              text={props.review1[0]}
+              name={props.review1[1]}
+            />
+            <ReviewElementDesktop
+              text={props.review2[0]}
+              name={props.review2[1]}
+            />
+            <ReviewElementDesktop
+              text={props.review3[0]}
+              name={props.review3[1]}
+            />
+          </div>
+          {/* Review tab */}
+          <div className="my-10 mx-10 grid grid-cols-3 gap-x-4">
+            <ReviewElementDesktop
+              text={props.review4[0]}
+              name={props.review4[1]}
+            />
+            <ReviewElementDesktop
+              text={props.review5[0]}
+              name={props.review5[1]}
+            />
+            <ReviewElementDesktop
+              text={props.review6[0]}
+              name={props.review6[1]}
+            />
+          </div>
+        </Carousel>
+      </div>
 
+      <div className=" border border-brown-pale2 p-2 md:mx-auto md:max-w-6xl 3xl:max-w-full">
+        <div className="border border-brown-pale2 md:p-16">
           <div className="flex flex-wrap gap-6 justify-evenly">
             <div className="w-60">
               <Dienst
@@ -126,7 +102,7 @@ function Reviews(props) {
                 imgheight={513}
                 alt="Emily van Roomen"
                 title="Over mij"
-                description="Hoi, mijn naam is Emily van Roomen. Vanuit mijn zelfgebouwde camperbus rijd ik overal naartoe, geen locatie is te gek!"
+                description="Vind meer informatie over mijn ervaring en werkwijze op de over mij pagina."
                 showDescriptionOnMobile
               />
               <div className="pt-10 text-center">
@@ -144,7 +120,11 @@ function Reviews(props) {
                 showDescriptionOnMobile
               />
               <div className="pt-10 text-center">
-                <Button link="/over-mij#contact" button="button-2" text="Neem contact op" />
+                <Button
+                  link="/over-mij#contact"
+                  button="button-2"
+                  text="Neem contact op"
+                />
               </div>
             </div>
           </div>

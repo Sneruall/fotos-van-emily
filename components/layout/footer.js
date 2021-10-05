@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer className="w-full bg-grey-light">
-      <div className="flex flex-col lg:flex-row text-center justify-around max-w-5xl mx-auto">
+      <div className="flex flex-col lg:flex-row text-center justify-around max-w-3xl mx-auto">
         <div>
           <h4 className="font-semibold uppercase text-clay mt-10 mb-5">
             Locatie
@@ -13,7 +13,7 @@ function Footer() {
           <h4 className="font-semibold uppercase text-clay mt-10 mb-5">
             Contact
           </h4>
-          <a href="mailto:info@fotosvanemily.nl" className="hover:underline">
+          <a href="mailto:info@fotosvanemily.nl" className="hover:underline text-mocha">
             info@fotosvanemily.nl
           </a>
           <p>
@@ -24,7 +24,7 @@ function Footer() {
           </p>
         </div>
       </div>
-      <div className="pb-5 mt-10 text-center">
+      <div className="pb-5 mt-10 text-center text-xs">
         <p>© 2021 Media Modes | KVK: 75986272 | BTW: NL860468379B01</p>
       </div>
     </footer>

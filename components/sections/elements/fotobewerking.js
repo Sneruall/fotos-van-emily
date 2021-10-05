@@ -16,7 +16,7 @@ export default function Fotobewerking(props) {
           Fotobewerking
         </h2>
         <hr className="border-1 border-brown-pale2" />
-        <p className="hidden md:block mt-3 text-lg">
+        <p className="hidden md:block mt-3">
           Professionele nabewerking om jouw foto’s er verbluffend uit te laten
           zien!
         </p>

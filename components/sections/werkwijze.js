@@ -4,9 +4,9 @@ import Section from "../layout/Section";
 export default function Werkwijze() {
   return (
     <Section>
-      <div className="bg-white max-w-4xl 3xl:max-w-5xl mx-auto p-10 pt-16 md:-mt-40 md:-mb-40 rounded-b-full rounded-t-full md:rounded-b-none">
-        <p className="font-display text-brown-pale text-center text-5xl mb-4 mt-0 md:mt-10 mx-0 md:mx-40">
-          De Professioneel Fotograaf VS de Mobiele Telefoon
+      <div className="max-w-5xl mx-auto">
+        <p className="font-display text-white text-center text-5xl mb-10 mt-0 md:mt-10 mx-0 md:mx-40 uppercase">
+          Professioneel Fotograaf VS Mobiele Telefoon
         </p>
         <div className="my-3 block md:hidden">
           <Image
@@ -16,11 +16,11 @@ export default function Werkwijze() {
             alt="Fotograaf met camera"
           />
         </div>
-        <p className="text-lg mt-20 md:my-5 mx-0 md:mx-16 text-center">
+        <p className="mt-20 md:my-10 mx-0 md:mx-16 text-center text-white">
           Ik snap dat je misschien denkt “kan ik niet gewoon zelf foto’s maken
           met mijn telefoon”. Natuurlijk, de kwaliteit van telefoon camera’s
           worden steeds beter en beter. Super leuk om herinneringen vast te
-          leggen on the go. Maar een goede foto bestaat uit meer dan alleen
+          leggen on the fly. Maar een goede foto bestaat uit meer dan alleen
           technische kwaliteit. Iedereen is in staat een foto te maken, maar die
           spreken niet allemaal 1000 woorden. Juist dat extra’s, die laatste
           paar 100 woorden, zijn lastig zelf te realiseren. Hiervoor heb je de

@@ -136,7 +136,7 @@ export default function Home() {
 
             <Scene
               triggerElement="#section1"
-              classToggle={["#page", "bg-grey-pale"]}
+              classToggle={["#page", "bg-grey-pinkish"]}
               duration={section1Height}
             >
               <div>

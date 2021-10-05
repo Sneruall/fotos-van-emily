@@ -45,12 +45,10 @@
   box-shadow: none !important;
   opacity: 1!important;
   margin: 0px 4px !important;
-  border: solid grey 1px;
 }
 
 .carousel .control-dots .dot.selected{
   background: #a8896c !important;
-  border: solid #3a3a3a 1px;
 
 }
 
