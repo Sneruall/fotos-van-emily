@@ -4,7 +4,7 @@ function ReviewElementDesktop(props) {
       <div className="bg-white m-1 p-2 bg-opacity-70">
         <div className="p-2">
           <div className="flex justify-center">
-            <div className="py-10 px-10">
+            <div className="py-5">
               <p className="text-brown-pale text-center">{props.text}</p>
               <p className="text-center mt-6 italic text-brown-pale">
                 {props.name}

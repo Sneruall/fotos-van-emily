@@ -28,23 +28,30 @@ function Reviews(props) {
               width={350}
             >
               <ReviewElement
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                      sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                      magna aliquyam erat, sed diam voluptua. At vero eos et
-                      accusam et justo duo dolores et ea rebum. Stet clita kasd
-                      gubergren, no sea takimata sanctus est Lorem ipsum dolor
-                      sit amet. Lorem ipsum dolor sit amet.sed diam voluptues et ea rebum. Stet clita kasd
-                      gubergren, no sea takimata sanctus est Lorem ipsua."
-                name="Rina"
+                text={props.review1[0]}
+                name={props.review1[1]}
               />
               <ReviewElement
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                      sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                      magna aliquyam erat, sed diam voluptua. At vero eos et
-                      accusam et justo duo dolores em ipsum dolor
-                      sit amet. Lorem ipsum dolor sit amet.sed diam voluptua."
-                name="Rina2"
+                text={props.review2[0]}
+                name={props.review2[1]}
               />
+              <ReviewElement
+                text={props.review3[0]}
+                name={props.review3[1]}
+              />
+              <ReviewElement
+                text={props.review4[0]}
+                name={props.review4[1]}
+              />
+              <ReviewElement
+                text={props.review5[0]}
+                name={props.review5[1]}
+              />
+              <ReviewElement
+                text={props.review6[0]}
+                name={props.review6[1]}
+              />
+
             </Carousel>
           </div>
         </div>
