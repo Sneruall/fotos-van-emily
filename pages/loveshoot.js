@@ -38,7 +38,7 @@ function loveshoot() {
 
   return (
     <Fragment>
-      <ScrollNavbar fade lightFade />
+      <ScrollNavbar fade />
 
       <header className="relative">
         <div className="-mt-14 lg:mt-0">
