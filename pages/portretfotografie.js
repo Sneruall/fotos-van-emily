@@ -94,9 +94,9 @@ function portretfotografie() {
               ]}
               mirrored2
               portfolioImages={[
-                "/images/portretfotografie/portret-3-p1.png",
-                "/images/portretfotografie/portret-3-p2.png",
-                "/images/portretfotografie/portret-3-p3.png",
+                "/images/portretfotografie/p1.png",
+                "/images/portretfotografie/p2.png",
+                "/images/portretfotografie/p3.png",
               ]}
               portfolioButtonLink="/portfolio"
             />

@@ -38,7 +38,7 @@ function ImageWithText(props) {
         )}
 
         {props.buttonText && (
-          <Button text={props.buttonText} link="#contact" button="button-1 my-8" />
+          <Button text={props.buttonText} link="#contact" button="button-1 mt-8" />
         )}
       </div>
     </div>

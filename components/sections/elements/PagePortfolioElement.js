@@ -50,6 +50,7 @@ function PagePortfolioElement(props) {
           width="318"
           height="477"
           layout="responsive"
+          quality={100}
         />
         <Image
           src={props.images[1]}
@@ -57,6 +58,7 @@ function PagePortfolioElement(props) {
           width="318"
           height="477"
           layout="responsive"
+          quality={100}
         />
         <Image
           src={props.images[2]}
@@ -64,6 +66,7 @@ function PagePortfolioElement(props) {
           width="318"
           height="477"
           layout="responsive"
+          quality={100}
         />
       </div>
     </div>
