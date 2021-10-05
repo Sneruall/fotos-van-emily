@@ -16,7 +16,7 @@ export default function Diensten() {
             <Dienst
               title={"Portret"}
               description={
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero."
+                "Voor zowel zakelijke als privé shoots kun je bij mij terecht. Denk aan team foto’s voor je bedrijf of een leuke familie fotoshoot."
               }
               img={"/images/diensten/portret.png"}
               alt={"Portretfotografie"}
@@ -28,7 +28,7 @@ export default function Diensten() {
             <Dienst
               title={"Loveshoot"}
               description={
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero."
+                "Prachtige foto’s met je geliefde, wie wilt dat nou niet! Ook leuk om een unieke trouwkaart te creëren."
               }
               img={"/images/diensten/loveshoot.png"}
               alt={"Koppelfotografie"}
@@ -40,7 +40,7 @@ export default function Diensten() {
             <Dienst
               title={"Zwangerschap"}
               description={
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero."
+                "Een bijzonder moment dat je voor altijd wilt vastleggen zodat je kunt blijven nagenieten."
               }
               img={"/images/diensten/zwangerschap.png"}
               alt={"Zwangerschapsfotografie"}
@@ -52,7 +52,7 @@ export default function Diensten() {
             <Dienst
               title={"Honden"}
               description={
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero."
+                "Foto’s van jouw beste maatje kunnen natuurlijk niet ontbreken! Zowel apart als van jullie samen."
               }
               img={"/images/diensten/honden.png"}
               alt={"Hondenfotografie"}

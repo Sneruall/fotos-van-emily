@@ -17,9 +17,8 @@ export default function Fotobewerking(props) {
         </h2>
         <hr className="border-1 border-brown-pale2" />
         <p className="hidden md:block mt-3 text-lg">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero.
+          Professionele nabewerking om jouw foto’s er verbluffend uit te laten
+          zien!
         </p>
       </div>
     </div>
