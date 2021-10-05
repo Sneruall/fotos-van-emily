@@ -15,7 +15,7 @@ export default function Fotobewerking(props) {
         <h2 className="text-2xl xl:text-3xl uppercase text-brown-pale transition-all duration-100 ease-in-out group-hover:font-bold">
           Fotobewerking
         </h2>
-        <hr className="border-1 border-brown-pale2" />
+        <hr className="border-t-2 border-brown-pale2 md:mt-2" />
         <p className="hidden md:block mt-3">
           Professionele nabewerking om jouw foto’s er verbluffend uit te laten
           zien!

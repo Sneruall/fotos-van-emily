@@ -119,7 +119,7 @@ function Reviews(props) {
                 description="Wil je mij inhuren of heb je vragen? Neem contact op met mij en we bespreken jouw wensen en de mogelijkheden."
                 showDescriptionOnMobile
               />
-              <div className="pt-10 text-center">
+              <div className="pt-10 pb-10 md:pb-0 text-center">
                 <Button
                   link="/over-mij#contact"
                   button="button-2"

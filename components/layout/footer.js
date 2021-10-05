@@ -25,7 +25,8 @@ function Footer() {
         </div>
       </div>
       <div className="pb-5 mt-10 text-center text-xs">
-        <p>© 2021 Media Modes | KVK: 75986272 | BTW: NL860468379B01</p>
+        <p>© 2021 Media Modes | KVK: 75986272</p>
+        <p>BTW: NL860468379B01</p>
       </div>
     </footer>
   );

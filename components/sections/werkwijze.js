@@ -16,7 +16,7 @@ export default function Werkwijze() {
             alt="Fotograaf met camera"
           />
         </div>
-        <p className="mt-20 md:my-10 mx-0 md:mx-16 text-center text-white">
+        <p className="mt-5 md:mt-20 md:my-10 mx-0 md:mx-16 text-center text-white">
           Ik snap dat je misschien denkt “kan ik niet gewoon zelf foto’s maken
           met mijn telefoon”. Natuurlijk, de kwaliteit van telefoon camera’s
           worden steeds beter en beter. Super leuk om herinneringen vast te
