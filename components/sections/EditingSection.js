@@ -33,20 +33,12 @@ function EditingSection(props) {
               />
             }
           />
-
-          <ReactCompareSlider
-            itemOne={
-              <Image src={props.imgE3} alt="foto" width="651" height="434" />
-            }
-            itemTwo={
-              <Image
-                src={props.imgE4}
-                alt="nabewerkte foto"
-                width="651"
-                height="434"
-              />
-            }
-          />
+            <Image
+              src={props.imgE4}
+              alt="nabewerkte foto"
+              width="651"
+              height="434"
+            />
         </div>
         {props.imgSk1 && (
           <div>
@@ -86,7 +78,11 @@ function EditingSection(props) {
                 />
               </div>
               <div className="mt-5 lg:mt-0 lg:mb-10 text-center lg:order-first">
-                <Button link="/fotobewerking-service" button="button-3" text="Meer informatie" />
+                <Button
+                  link="/fotobewerking-service"
+                  button="button-3"
+                  text="Meer informatie"
+                />
               </div>
             </div>
           </div>

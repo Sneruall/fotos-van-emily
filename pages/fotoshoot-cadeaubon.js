@@ -8,7 +8,7 @@ import ContactFormElement from "../components/sections/elements/ContactFormEleme
 function fotoshootCadeaubon() {
   return (
     <Fragment>
-      <ScrollNavbar fade={false} />
+      <ScrollNavbar fade={true} />
 
       <header className="relative">
         <div className="-mt-14 lg:mt-0">
@@ -35,7 +35,7 @@ function fotoshootCadeaubon() {
           <div className="px-5 relative max-w-6xl mx-auto min-h-screen">
             <div className="max-w-3xl absolute bottom-40 sm:bottom-20">
               <h1 className="text-6xl sm:text-8xl md:text-9xl leading-tight font-display uppercase py-4 text-charcoal-2">
-              Fotoshoot Cadeaubon
+                Fotoshoot Cadeaubon
               </h1>
             </div>
           </div>
@@ -43,15 +43,17 @@ function fotoshootCadeaubon() {
       </header>
 
       <Section bg={"bg-grey-pinkish2"}>
-        <div className="mx-auto max-w-6xl px-4">
+        <div className="mx-auto max-w-6xl">
           <div className="border-white border relative z-10">
-            <div className="bg-white bg-opacity-70 p-10 m-1">
+            <div className="bg-white bg-opacity-70 px-2 py-5 lg:p-10 m-1">
               <div className="mx-auto">
                 {/* Cadeaukaart */}
                 <h1 className="title-2 text-3xl mb-2 text-center">
                   OP ZOEK NAAR EEN ORIGNEEL CADEAU?
                 </h1>
-                <div className="border-b-2 border-brown-pale2 w-full max-w-xs mx-auto"></div>
+                <div className="max-w-xs mx-10 lg:mx-auto">
+                  <div className="border-b-2 border-brown-pale2 w-full max-w-xs mx-auto"></div>
+                </div>
                 <h2 className="title-1 my-5 text-5xl sm:text-6xl leading-tight text-center ">
                   Doe een fotoshoot cadeau!
                 </h2>

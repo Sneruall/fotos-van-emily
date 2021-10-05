@@ -165,7 +165,7 @@ function hondenfotografie() {
                       `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
             worden ook in zwart-wit geleverd)`,
                       `Binnen <span classname="font-bold">1,5 week</span> worden alle foto’s via WeTransfer geleverd`,
-                      `Online gallerij voor het <span classname="font-bold">bekijken en delen</span> van de foto’s`,
+                      `Online gallerij voor het bekijken en delen van de foto’s`,
                       "149",
                     ]}
                     pakketB={[
@@ -175,7 +175,7 @@ function hondenfotografie() {
                       `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
             worden ook in zwart-wit geleverd)`,
                       `Binnen <span classname="font-bold">1,5 week</span> worden alle foto’s via WeTransfer geleverd`,
-                      `Online gallerij voor het <span classname="font-bold">bekijken en delen</span> van de foto’s`,
+                      `Online gallerij voor het bekijken en delen van de foto’s`,
                       "219",
                     ]}
                     cta="SPECIFIEKE WENSEN OF WIL JE GRAAG

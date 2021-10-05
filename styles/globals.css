@@ -52,6 +52,19 @@
 
 }
 
+/* react compare slider */
+/* .__rcs-handle-button{
+  background-color: white;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+  border-width: 0px !important;
+  width: 46px !important;
+  height: 46px !important;
+}
+.__rcs-handle-button:first-child{
+  background-color: red!important;
+} */
+
 /* Default settings for texts */
 p{
  line-height: 1.67;

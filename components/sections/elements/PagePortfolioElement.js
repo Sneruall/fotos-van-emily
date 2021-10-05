@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function PagePortfolioElement(props) {
   return (
-    <div className="p-2">
+    <div className="p-2 md:p-0">
       <div className="lg:hidden flex justify-center">
         <Carousel
           autoPlay
@@ -18,7 +18,7 @@ function PagePortfolioElement(props) {
         >
           <div className="py-10 px-7">
             <Image
-              src={props.images[0]}
+              src={props.images[1]}
               alt="Portretfoto"
               width="318"
               height="477"
@@ -26,7 +26,7 @@ function PagePortfolioElement(props) {
           </div>
           <div className="py-10 px-7">
             <Image
-              src={props.images[1]}
+              src={props.images[0]}
               alt="Portretfoto"
               width="318"
               height="477"

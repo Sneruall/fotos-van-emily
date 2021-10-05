@@ -8,7 +8,7 @@ function overmij() {
 
   return (
     <Fragment>
-      <ScrollNavbar fade={false} />
+      <ScrollNavbar fade={true} />
       <Controller>
         <div className="bg-grey-light2">
           <div id="page" className="transition ease-linear duration-1000">

@@ -57,7 +57,7 @@ function SpotlightSection(props) {
         </div>
         {/* reviews desktop */}
         <div className="hidden w-full lg:block absolute left-0">
-          <h3 className="text-white uppercase font-display text-7xl my-10 truncate">
+          <h3 className="text-white uppercase font-display text-7xl my-10 absolute truncate overflow-clip w-full">
             Reviews Reviews Reviews Reviews Reviews Reviews Reviews Reviews
             Reviews Reviews Reviews Reviews Reviews
           </h3>

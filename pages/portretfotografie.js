@@ -148,12 +148,11 @@ function portretfotografie() {
               <div>
                 <div id="section2" ref={section2Ref}>
                   <EditingSection
-                    imgE1="/images/portretfotografie/e1.png"
-                    imgE2="/images/portretfotografie/e2.png"
-                    imgE3="/images/portretfotografie/e1.png"
-                    imgE4="/images/portretfotografie/e2.png"
-                    imgSk1="/images/portretfotografie/e1.png"
-                    imgSk2="/images/portretfotografie/e2.png"
+                    imgE1="/images/portretfotografie/e1.jpg"
+                    imgE2="/images/portretfotografie/e3.jpg"
+                    imgE4="/images/portretfotografie/e2.jpg"
+                    imgSk1="/images/portretfotografie/sk1.jpg"
+                    imgSk2="/images/portretfotografie/sk2.jpg"
                   />
                 </div>
               </div>
@@ -187,17 +186,17 @@ function portretfotografie() {
                       `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
             worden ook in zwart-wit geleverd)`,
                       `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
-                      `Online gallerij voor het <span classname="font-bold">bekijken en delen</span> van de foto’s`,
+                      `Online gallerij voor het bekijken en delen van de foto’s`,
                       "149",
                     ]}
                     pakketC={[
                       "Pakket C",
-                      `<span classname="font-bold">1 uur</span> fotografie op locatie`,
+                      `<span classname="font-bold">~1 uur</span> fotografie op locatie`,
                       `<span classname="font-bold">30</span> digitale foto’s in hoge kwaliteit`,
                       `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
             worden ook in zwart-wit geleverd)`,
                       `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
-                      `Online gallerij voor het <span classname="font-bold">bekijken en delen</span> van de foto’s`,
+                      `Online gallerij voor het bekijken en delen van de foto’s`,
                       "219",
                     ]}
                     cta="Liever een offerte op maat?"

@@ -14,6 +14,7 @@ function ImageWithText(props) {
           alt={props.alt}
           width={props.width}
           height={props.height}
+          quality={100}
         />
       </div>
 
@@ -37,7 +38,7 @@ function ImageWithText(props) {
         )}
 
         {props.buttonText && (
-          <Button text={props.buttonText} link="#contact" button="button-1 my-5" />
+          <Button text={props.buttonText} link="#contact" button="button-1 my-8" />
         )}
       </div>
     </div>

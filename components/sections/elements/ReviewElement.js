@@ -5,8 +5,8 @@ function ReviewElement(props) {
         <div className="p-2">
           <div className="flex justify-center">
             <div className="px-2">
-              <p className="text-brown-pale text-center">{props.text}</p>
-              <p className="text-center mt-6 italic text-brown-pale">
+              <p className="text-center">{props.text}</p>
+              <p className="text-center mt-6 italic text-brown-pale font-semibold">
                 {props.name}
               </p>
             </div>

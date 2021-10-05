@@ -116,7 +116,7 @@ function fotobewerkingservice() {
                         <ReactCompareSlider
                           itemOne={
                             <Image
-                              src="/images/portretfotografie/e1.png"
+                              src="/images/portretfotografie/e1.jpg"
                               alt="foto"
                               width="524"
                               height="363"
@@ -124,7 +124,7 @@ function fotobewerkingservice() {
                           }
                           itemTwo={
                             <Image
-                              src="/images/portretfotografie/e2.png"
+                              src="/images/portretfotografie/e2.jpg"
                               alt="nabewerkte foto"
                               width="524"
                               height="363"
@@ -135,7 +135,7 @@ function fotobewerkingservice() {
                         <ReactCompareSlider
                           itemOne={
                             <Image
-                              src="/images/portretfotografie/e1.png"
+                              src="/images/portretfotografie/e1.jpg"
                               alt="foto"
                               width="524"
                               height="363"
@@ -143,7 +143,7 @@ function fotobewerkingservice() {
                           }
                           itemTwo={
                             <Image
-                              src="/images/portretfotografie/e2.png"
+                              src="/images/portretfotografie/e2.jpg"
                               alt="nabewerkte foto"
                               width="524"
                               height="363"
@@ -154,7 +154,7 @@ function fotobewerkingservice() {
                         <ReactCompareSlider
                           itemOne={
                             <Image
-                              src="/images/portretfotografie/e1.png"
+                              src="/images/portretfotografie/e1.jpg"
                               alt="foto"
                               width="524"
                               height="363"
@@ -162,7 +162,7 @@ function fotobewerkingservice() {
                           }
                           itemTwo={
                             <Image
-                              src="/images/portretfotografie/e2.png"
+                              src="/images/portretfotografie/e2.jpg"
                               alt="nabewerkte foto"
                               width="524"
                               height="363"
@@ -173,7 +173,7 @@ function fotobewerkingservice() {
                         <ReactCompareSlider
                           itemOne={
                             <Image
-                              src="/images/portretfotografie/e1.png"
+                              src="/images/portretfotografie/e1.jpg"
                               alt="foto"
                               width="524"
                               height="363"
@@ -181,7 +181,7 @@ function fotobewerkingservice() {
                           }
                           itemTwo={
                             <Image
-                              src="/images/portretfotografie/e2.png"
+                              src="/images/portretfotografie/e2.jpg"
                               alt="nabewerkte foto"
                               width="524"
                               height="363"
@@ -191,7 +191,7 @@ function fotobewerkingservice() {
                         <ReactCompareSlider
                           itemOne={
                             <Image
-                              src="/images/portretfotografie/e1.png"
+                              src="/images/portretfotografie/e1.jpg"
                               alt="foto"
                               width="524"
                               height="363"
@@ -199,7 +199,7 @@ function fotobewerkingservice() {
                           }
                           itemTwo={
                             <Image
-                              src="/images/portretfotografie/e2.png"
+                              src="/images/portretfotografie/e2.jpg"
                               alt="nabewerkte foto"
                               width="524"
                               height="363"
@@ -209,7 +209,7 @@ function fotobewerkingservice() {
                         <ReactCompareSlider
                           itemOne={
                             <Image
-                              src="/images/portretfotografie/e1.png"
+                              src="/images/portretfotografie/e1.jpg"
                               alt="foto"
                               width="524"
                               height="363"
@@ -217,7 +217,7 @@ function fotobewerkingservice() {
                           }
                           itemTwo={
                             <Image
-                              src="/images/portretfotografie/e2.png"
+                              src="/images/portretfotografie/e2.jpg"
                               alt="nabewerkte foto"
                               width="524"
                               height="363"
@@ -248,7 +248,7 @@ function fotobewerkingservice() {
                   <ReactCompareSlider
                     itemOne={
                       <Image
-                        src="/images/portretfotografie/e1.png"
+                        src="/images/portretfotografie/sk1.jpg"
                         alt="skin retouching"
                         width="651"
                         height="434"
@@ -256,7 +256,7 @@ function fotobewerkingservice() {
                     }
                     itemTwo={
                       <Image
-                        src="/images/portretfotografie/e2.png"
+                        src="/images/portretfotografie/sk2.jpg"
                         alt="skin retouching"
                         width="651"
                         height="434"

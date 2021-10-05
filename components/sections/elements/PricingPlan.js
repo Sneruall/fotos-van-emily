@@ -40,10 +40,10 @@ function PricingPlan(props) {
               </div>
             )}
           </div>
-          <div className="ml-10">
+          <div className="ml-10 my-5">
             <div className="flex lg:justify-between lg:flex-row flex-col">
               <div>
-                <p className="font-bold text-xl mb-2">{props.prijsText}</p>
+                <p className="font-bold mb-2">{props.prijsText}</p>
                 <p className="text-4xl">
                   <span className="text-xl">€ </span>
                   {props.prijs}

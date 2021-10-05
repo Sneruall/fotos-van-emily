@@ -11,12 +11,12 @@ function WerkwijzeStap(props) {
           {props.title}
         </h4>
         <p className="hidden lg:block mt-5">
-        {props.description ? props.description : props.number==="3" ? "We meeten elkaar op de afgesproken locatie. We kletsen even gezellig, misschien met een lekker koekje erbij en daarna gaan we aan de slag! We zijn ongeveer 30 tot 45 minuten bezig, ik neem de tijd voor je en zorg voor een diversiteit aan foto’s." : ""}
+        {props.description ? props.description : props.number==="3" ? "We meeten elkaar op de afgesproken locatie. We zijn ongeveer 30 tot 60 minuten bezig, ik neem de tijd voor je en zorg voor een diversiteit aan foto's." : ""}
         </p>
       </div>
       <div className="lg:hidden">
         <p>
-          {props.description}
+        {props.description ? props.description : props.number==="3" ? "We meeten elkaar op de afgesproken locatie. We zijn ongeveer 30 tot 60 minuten bezig, ik neem de tijd voor je en zorg voor een diversiteit aan foto's." : ""}
         </p>
       </div>
     </div>
