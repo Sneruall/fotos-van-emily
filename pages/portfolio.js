@@ -24,7 +24,7 @@ function portfolio() {
   const [currentImage, setCurrentImage] = useState(0);
   const [showModal, setShowModal] = React.useState(false);
 
-  const openLightbox = useCallback((event, { photo, index }) => {
+  const openLightbox = useCallback((event, { photo, index }) => { //dit hoeft volgens mij geen usecallback te zijn?
     setCurrentImage(index);
     setShowModal(true);
     console.log("set image" + index);
