@@ -167,7 +167,7 @@ export default function Home() {
                     ]}
                     review4={[
                       "Ik ben heel erg blij met de foto's die Emily heeft gemaakt tijdens mijn zwangerschapsshoot. Ik had zelf een locatie gekozen en Emily vond daar de mooiste plekken voor het maken van de foto's. Ze stelde me op mijn gemak, gaf goede tips over poses die ik kon aannemen en nam echt de tijd voor het maken van de foto's. De foto's zijn voor mijn man en mij enorm waardevol als herinnering aan mijn zwangerschap. Ik raad Emily absoluut aan als fotografe!",
-                      "Cathalijne & Tim",
+                      "Kathelijne & Tim",
                     ]}
                     review5={[
                       "Emily zorgt ervoor dat je op je gemak bent en maakt zo hele spontane en natuurlijke foto's! Ze heeft een goed oog voor mooie locaties en creatieve ideeën over de foto's. Nu hebben we mooie portretfoto's, leuke foto's als stel én heb ik professionele foto's voor mijn eigen website. Echt een aanrader!",

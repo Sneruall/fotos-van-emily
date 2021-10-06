@@ -5,10 +5,20 @@ export default function Werkwijze() {
   return (
     <Section>
       <div className="max-w-5xl mx-auto">
-        <p className="font-display text-white text-center text-5xl mb-10 mt-0 md:mt-10 mx-0 md:mx-40 uppercase">
-          Professioneel Fotograaf VS Mobiele Telefoon
-        </p>
-        <div className="my-3 block md:hidden">
+        <div className="relative">
+          <p className="font-display text-white text-center text-5xl mb-10 mt-0 md:mt-10 mx-0 md:mx-40 uppercase">
+            Professioneel Fotograaf VS Mobiele Telefoon
+          </p>
+          <div className="hidden md:block absolute bottom-0 left-0 transform scale-75 lg:scale-100 -translate-x-8 lg:-translate-x-12 lg:translate-y-24 xl:translate-y-16 translate-y-10">
+            <Image
+              src="/images/stars5.png"
+              alt="Stars"
+              width={164}
+              height={125}
+            />
+          </div>
+        </div>
+        <div className="my-3 md:hidden flex justify-center">
           <Image
             src="/images/fotograaf-met-camera.png"
             width={413}
@@ -28,7 +38,7 @@ export default function Werkwijze() {
           nabewerking etc. Dus voor het vastleggen van speciale gelegenheden kan
           de mobiel niet tippen aan de fotograaf!
         </p>
-        <div className="hidden md:flex justify-center ">
+        <div className="hidden md:flex justify-center relative">
           <Image
             className="rounded"
             src="/images/fotograaf-met-camera.png"
@@ -36,6 +46,14 @@ export default function Werkwijze() {
             height={232}
             alt="Fotograaf met camera"
           />
+          <div className="hidden md:block absolute top-0 right-0 transform scale-75 lg:scale-100 -translate-x-16 lg:-translate-x-36 xl:-translate-x-48">
+            <Image
+              src="/images/stars6.png"
+              alt="Stars"
+              width={64}
+              height={64}
+            />
+          </div>
         </div>
       </div>
     </Section>
