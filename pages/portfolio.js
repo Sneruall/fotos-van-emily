@@ -2,32 +2,18 @@ import { Fragment } from "react";
 import Image from "next/image";
 import ScrollNavbar from "../components/layout/ScrollNavbar";
 import Button from "../components/ui/button";
-
 import React, { useState, useCallback } from "react";
-import Gallery from "react-photo-gallery";
 import { photos } from "../data/photos";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
-const customStyles = {
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-  },
-};
 
 function portfolio() {
   const [currentImage, setCurrentImage] = useState(0);
   const [showModal, setShowModal] = React.useState(false);
 
-  const openLightbox = useCallback((event, { photo, index }) => { //dit hoeft volgens mij geen usecallback te zijn?
+  const openLightbox = useCallback((index) => {
     setCurrentImage(index);
     setShowModal(true);
-    console.log("set image" + index);
   }, []);
 
   return (
@@ -49,16 +35,82 @@ function portfolio() {
         />
       </div>
       <div>
-        <div className="hidden xl:block">
-          <Gallery
-            photos={photos}
-            onClick={openLightbox}
-            direction="column"
-            columns={3}
-          />
-        </div>
-        <div className="xl:hidden">
-          <Gallery photos={photos} onClick={openLightbox} direction="column" />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-x-2 mr-2">
+          <div className="ml-2 hover:cursor-pointer">
+            <Image
+              src={photos[2]}
+              alt="portfolio foto"
+              width={photos[2].width}
+              height={photos[2].height}
+              onClick={() => openLightbox(0)}
+            />
+          </div>
+          <div className="hover:cursor-pointer">
+            <Image
+              src={photos[2]}
+              alt="portfolio foto"
+              width={photos[2].width}
+              height={photos[2].height}
+              onClick={() => openLightbox(1)}
+            />
+          </div>
+          <div className="row-span-3 hover:cursor-pointer">
+            <Image
+              src={photos[0]}
+              alt="portfolio foto"
+              width={photos[0].width}
+              height={photos[0].height}
+              onClick={() => openLightbox(2)}
+            />
+          </div>
+          <div className="row-span-3 hover:cursor-pointer">
+            <Image
+              src="/images/portfolio/1.jpg"
+              alt="portfolio foto"
+              width={800}
+              height={1200}
+            />
+          </div>
+          <div className="hover:cursor-pointer">
+            <Image
+              src="/images/portfolio/6.jpg"
+              alt="portfolio foto"
+              width={1200}
+              height={800}
+            />
+          </div>
+          <div className="row-span-3 hover:cursor-pointer">
+            <Image
+              src="/images/portfolio/1.jpg"
+              alt="portfolio foto"
+              width={800}
+              height={1200}
+            />
+          </div>
+          <div className="hover:cursor-pointer">
+            <Image
+              src="/images/portfolio/6.jpg"
+              alt="portfolio foto"
+              width={1200}
+              height={800}
+            />
+          </div>
+          <div className="hover:cursor-pointer">
+            <Image
+              src="/images/portfolio/6.jpg"
+              alt="portfolio foto"
+              width={1200}
+              height={800}
+            />
+          </div>
+          <div className="hover:cursor-pointer">
+            <Image
+              src="/images/portfolio/6.jpg"
+              alt="portfolio foto"
+              width={1200}
+              height={800}
+            />
+          </div>
         </div>
         <>
           {showModal ? (
@@ -84,13 +136,13 @@ function portfolio() {
                         className="flex flex-col h-full justify-center"
                         selectedItem={currentImage}
                         showStatus={false}
-                        showIndicators={true}
+                        showIndicators={false}
                         showArrows={true}
                         showThumbs={false}
                       >
                         <div className="h-screen80">
                           <Image
-                            src="/images/loveshoot/p1.png"
+                            src={photos[2]}
                             alt="Portretfoto"
                             layout="fill"
                             objectFit="contain"
@@ -99,7 +151,15 @@ function portfolio() {
 
                         <div className="h-screen80">
                           <Image
-                            src="/images/loveshoot/e1.png"
+                            src={photos[2]}
+                            alt="Portretfoto"
+                            layout="fill"
+                            objectFit="contain"
+                          />
+                        </div>
+                        <div className="h-screen80">
+                          <Image
+                            src={photos[0]}
                             alt="Portretfoto"
                             layout="fill"
                             objectFit="contain"

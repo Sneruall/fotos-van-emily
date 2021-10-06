@@ -3,7 +3,7 @@ import ScrollNavbar from "../components/layout/ScrollNavbar";
 import Button from "../components/ui/button";
 
 import React, { useState, useCallback } from "react";
-import Gallery from "react-photo-gallery";
+import Gallery from "react-photo-gallery"; //todo: delete this entire page and uninstall the react-photo-gallery npm package
 import { photos } from "../data/photos";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import {
