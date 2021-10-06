@@ -80,7 +80,7 @@ function Reviews(props) {
 
       <div className=" border border-brown-pale2 p-2 md:mx-auto md:max-w-6xl 3xl:max-w-full">
         <div className="border border-brown-pale2 md:p-16">
-          <div className="flex flex-wrap gap-6 justify-evenly">
+          <div className="flex flex-wrap md:flex-col-3 gap-6 justify-evenly">
             <div className="w-60">
               <Dienst
                 img="/images/tarieven.png"
@@ -91,7 +91,7 @@ function Reviews(props) {
                 description="Benieuwd naar mijn tarieven? Neem contact op of ga naar één van de diensten pagina’s voor meer informatie."
                 showDescriptionOnMobile
               />
-              <div className="pt-10 text-center">
+              <div className="xl:hidden pt-10 text-center">
                 <Button link="#diensten" button="button-2" text="Diensten" />
               </div>
             </div>
@@ -105,7 +105,7 @@ function Reviews(props) {
                 description="Vind meer informatie over mijn ervaring en werkwijze op de over mij pagina."
                 showDescriptionOnMobile
               />
-              <div className="pt-10 text-center">
+              <div className="xl:hidden pt-10 text-center">
                 <Button link="/over-mij" button="button-2" text="Lees meer" />
               </div>
             </div>
@@ -119,13 +119,28 @@ function Reviews(props) {
                 description="Wil je mij inhuren of heb je vragen? Neem contact op met mij en we bespreken jouw wensen en de mogelijkheden."
                 showDescriptionOnMobile
               />
-              <div className="pt-10 pb-10 md:pb-0 text-center">
+              <div className="xl:hidden pt-10 pb-10 md:pb-0 text-center">
                 <Button
                   link="/over-mij#contact"
                   button="button-2"
                   text="Neem contact op"
                 />
               </div>
+            </div>
+          </div>
+          <div className="hidden xl:flex gap-12 justify-evenly">
+            <div className="pt-10 text-center">
+              <Button link="#diensten" button="button-2" text="Diensten" />
+            </div>
+            <div className="pt-10 text-center">
+              <Button link="/over-mij" button="button-2" text="Lees meer" />
+            </div>
+            <div className="pt-10 pb-10 md:pb-0 text-center">
+              <Button
+                link="/over-mij#contact"
+                button="button-2"
+                text="Neem contact op"
+              />
             </div>
           </div>
         </div>
