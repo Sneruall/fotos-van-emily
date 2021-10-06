@@ -49,7 +49,7 @@ function portfolio2() {
       </div>
       <div>
         <div className="grid grid-cols-3 space-x-2 mr-2">
-          <div className="ml-2 hover:cursor-pointer hover:scale-105 hover:z-50 transition duration-300 ease-in-out">
+          <div className="ml-2 hover:cursor-pointer">
             <Image
               src="/images/portfolio/6.jpg"
               alt="portfolio foto"
@@ -58,7 +58,7 @@ function portfolio2() {
               onClick={()=>openLightbox(0)}
             />
           </div>
-          <div className="hover:cursor-pointer hover:scale-105 hover:z-50 transition duration-300 ease-in-out">
+          <div className="hover:cursor-pointer">
             <Image
               src="/images/portfolio/6.jpg"
               alt="portfolio foto"
@@ -67,7 +67,7 @@ function portfolio2() {
               onClick={()=>openLightbox(1)}
             />
           </div>
-          <div className="row-span-3 hover:cursor-pointer hover:scale-105 hover:z-50 transition duration-300 ease-in-out">
+          <div className="row-span-3 hover:cursor-pointer">
             <Image
               src="/images/portfolio/1.jpg"
               alt="portfolio foto"
@@ -76,7 +76,7 @@ function portfolio2() {
               onClick={()=>openLightbox(2)}
             />
           </div>
-          <div className="row-span-3 hover:cursor-pointer hover:scale-105 hover:z-50 transition duration-300 ease-in-out">
+          <div className="row-span-3 hover:cursor-pointer">
             <Image
               src="/images/portfolio/1.jpg"
               alt="portfolio foto"
@@ -84,7 +84,7 @@ function portfolio2() {
               height={1200}
             />
           </div>
-          <div className="hover:cursor-pointer hover:scale-105 hover:z-50 transition duration-300 ease-in-out">
+          <div className="hover:cursor-pointer">
             <Image
               src="/images/portfolio/6.jpg"
               alt="portfolio foto"
@@ -92,7 +92,7 @@ function portfolio2() {
               height={800}
             />
           </div>
-          <div className="row-span-3 hover:cursor-pointer hover:scale-105 hover:z-50 transition duration-300 ease-in-out">
+          <div className="row-span-3 hover:cursor-pointer">
             <Image
               src="/images/portfolio/1.jpg"
               alt="portfolio foto"
@@ -100,7 +100,7 @@ function portfolio2() {
               height={1200}
             />
           </div>
-          <div className="hover:cursor-pointer hover:scale-105 hover:z-50 transition duration-300 ease-in-out">
+          <div className="hover:cursor-pointer">
             <Image
               src="/images/portfolio/6.jpg"
               alt="portfolio foto"
@@ -108,7 +108,7 @@ function portfolio2() {
               height={800}
             />
           </div>
-          <div className="hover:cursor-pointer hover:scale-105 hover:z-50 transition duration-300 ease-in-out">
+          <div className="hover:cursor-pointer">
             <Image
               src="/images/portfolio/6.jpg"
               alt="portfolio foto"
@@ -116,7 +116,7 @@ function portfolio2() {
               height={800}
             />
           </div>
-          <div className="hover:cursor-pointer hover:scale-105 hover:z-50 transition duration-300 ease-in-out">
+          <div className="hover:cursor-pointer">
             <Image
               src="/images/portfolio/6.jpg"
               alt="portfolio foto"
@@ -149,7 +149,7 @@ function portfolio2() {
                         className="flex flex-col h-full justify-center"
                         selectedItem={currentImage}
                         showStatus={false}
-                        showIndicators={true}
+                        showIndicators={false}
                         showArrows={true}
                         showThumbs={false}
                       >
