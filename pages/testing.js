@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import Image from "next/image";
 
 function testing() {
   // const divStyle = {
@@ -7,11 +8,79 @@ function testing() {
 
   return (
     <Fragment>
-      <div className="grid grid-cols-3 gap-1">
-        <div className="bg-red-500 h-56"></div>
-        <div className="bg-blue-500 h-96"></div>
-        <div className="bg-green-500 h-56"></div>
-        <div className="bg-yellow-500 h-56"></div>
+      <div className="grid grid-cols-3">
+        <div className="">
+          <Image
+            src="/images/portfolio/6.jpg"
+            alt="portfolio foto"
+            width={1200}
+            height={800}
+          />
+        </div>
+        <div className="">
+          <Image
+            src="/images/portfolio/6.jpg"
+            alt="portfolio foto"
+            width={1200}
+            height={800}
+          />
+        </div>
+        <div className="row-span-3">
+          <Image
+            src="/images/portfolio/1.jpg"
+            alt="portfolio foto"
+            width={800}
+            height={1200}
+          />
+        </div>
+        <div className="row-span-3">
+          <Image
+            src="/images/portfolio/1.jpg"
+            alt="portfolio foto"
+            width={800}
+            height={1200}
+          />
+        </div>
+        <div className="">
+          <Image
+            src="/images/portfolio/6.jpg"
+            alt="portfolio foto"
+            width={1200}
+            height={800}
+          />
+        </div>
+        <div className="row-span-3">
+          <Image
+            src="/images/portfolio/1.jpg"
+            alt="portfolio foto"
+            width={800}
+            height={1200}
+          />
+        </div>
+        <div className="">
+          <Image
+            src="/images/portfolio/6.jpg"
+            alt="portfolio foto"
+            width={1200}
+            height={800}
+          />
+        </div>
+        <div className="">
+          <Image
+            src="/images/portfolio/6.jpg"
+            alt="portfolio foto"
+            width={1200}
+            height={800}
+          />
+        </div>
+        <div className="">
+          <Image
+            src="/images/portfolio/6.jpg"
+            alt="portfolio foto"
+            width={1200}
+            height={800}
+          />
+        </div>
       </div>
     </Fragment>
   );
