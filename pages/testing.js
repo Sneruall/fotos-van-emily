@@ -9,8 +9,8 @@ function testing() {
   return (
     <Fragment>
 
-      <div className="grid grid-cols-3 space-x-1 mr-1">
-        <div className="ml-1">
+      <div className="grid grid-cols-3 space-x-2 mr-2">
+        <div className="ml-2">
           <Image
             src="/images/portfolio/6.jpg"
             alt="portfolio foto"
