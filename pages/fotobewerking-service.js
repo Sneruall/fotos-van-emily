@@ -135,8 +135,43 @@ function fotobewerkingservice() {
                           }
                           itemOne={
                             <Image
+                              src="/images/fotobewerking/1e.jpg"
+                              alt="nabewerkte foto"
+                              width="524"
+                              height="363"
+                            />
+                          }
+                          itemTwo={
+                            <Image
                               src="/images/fotobewerking/1.jpg"
-                              alt="foto"
+                              alt="onbewerkte foto"
+                              width="524"
+                              height="363"
+                            />
+                          }
+                        />
+
+                        <ReactCompareSlider
+                          handle={
+                            <ReactCompareSliderHandle
+                              buttonStyle={{
+                                WebkitBackdropFilter: undefined,
+                                backdropFilter: undefined,
+                                backgroundColor: "rgba(255, 255, 255, 0.9)",
+                                border: 0,
+                                boxShadow: undefined,
+                                color: "#777",
+                                opacity: 0.9,
+                                width: "50px",
+                                height: "50px",
+                              }}
+                              linesStyle={{ opacity: 0.5 }}
+                            />
+                          }
+                          itemOne={
+                            <Image
+                              src="/images/fotobewerking/2e.jpg"
+                              alt="bewerkte foto"
                               width="524"
                               height="363"
                             />
@@ -144,7 +179,7 @@ function fotobewerkingservice() {
                           itemTwo={
                             <Image
                               src="/images/fotobewerking/2.jpg"
-                              alt="nabewerkte foto"
+                              alt="onbewerkte foto"
                               width="524"
                               height="363"
                             />
@@ -170,16 +205,16 @@ function fotobewerkingservice() {
                           }
                           itemOne={
                             <Image
-                              src="/images/portretfotografie/e1.jpg"
-                              alt="foto"
+                            src="/images/fotobewerking/3e.jpg"
+                            alt="nabewerkte foto"
                               width="524"
                               height="363"
                             />
                           }
                           itemTwo={
                             <Image
-                              src="/images/portretfotografie/e2.jpg"
-                              alt="nabewerkte foto"
+                            src="/images/fotobewerking/3.jpg"
+                            alt="onbewerkte foto"
                               width="524"
                               height="363"
                             />
@@ -205,51 +240,16 @@ function fotobewerkingservice() {
                           }
                           itemOne={
                             <Image
-                              src="/images/portretfotografie/e1.jpg"
-                              alt="foto"
-                              width="524"
+                            src="/images/fotobewerking/4e.jpg"
+                            alt="nabewerkte foto"
+                            width="524"
                               height="363"
                             />
                           }
                           itemTwo={
                             <Image
-                              src="/images/portretfotografie/e2.jpg"
-                              alt="nabewerkte foto"
-                              width="524"
-                              height="363"
-                            />
-                          }
-                        />
-
-                        <ReactCompareSlider
-                          handle={
-                            <ReactCompareSliderHandle
-                              buttonStyle={{
-                                WebkitBackdropFilter: undefined,
-                                backdropFilter: undefined,
-                                backgroundColor: "rgba(255, 255, 255, 0.9)",
-                                border: 0,
-                                boxShadow: undefined,
-                                color: "#777",
-                                opacity: 0.9,
-                                width: "50px",
-                                height: "50px",
-                              }}
-                              linesStyle={{ opacity: 0.5 }}
-                            />
-                          }
-                          itemOne={
-                            <Image
-                              src="/images/portretfotografie/e1.jpg"
-                              alt="foto"
-                              width="524"
-                              height="363"
-                            />
-                          }
-                          itemTwo={
-                            <Image
-                              src="/images/portretfotografie/e2.jpg"
-                              alt="nabewerkte foto"
+                            src="/images/fotobewerking/4.jpg"
+                              alt="onbewerkte foto"
                               width="524"
                               height="363"
                             />
@@ -274,16 +274,16 @@ function fotobewerkingservice() {
                           }
                           itemOne={
                             <Image
-                              src="/images/portretfotografie/e1.jpg"
-                              alt="foto"
-                              width="524"
+                            src="/images/fotobewerking/5e.jpg"
+                            alt="nabewerkte foto"
+                            width="524"
                               height="363"
                             />
                           }
                           itemTwo={
                             <Image
-                              src="/images/portretfotografie/e2.jpg"
-                              alt="nabewerkte foto"
+                            src="/images/fotobewerking/5.jpg"
+                              alt="onbewerkte foto"
                               width="524"
                               height="363"
                             />
@@ -308,16 +308,16 @@ function fotobewerkingservice() {
                           }
                           itemOne={
                             <Image
-                              src="/images/portretfotografie/e1.jpg"
-                              alt="foto"
-                              width="524"
+                            src="/images/fotobewerking/6e.jpg"
+                            alt="nabewerkte foto"
+                            width="524"
                               height="363"
                             />
                           }
                           itemTwo={
                             <Image
-                              src="/images/portretfotografie/e2.jpg"
-                              alt="nabewerkte foto"
+                            src="/images/fotobewerking/6.jpg"
+                              alt="onbewerkte foto"
                               width="524"
                               height="363"
                             />
@@ -372,7 +372,7 @@ function fotobewerkingservice() {
                     itemTwo={
                       <Image
                         src="/images/portretfotografie/sk2.jpg"
-                        alt="skin retouching"
+                        alt="skin retouching result"
                         width="651"
                         height="434"
                       />
