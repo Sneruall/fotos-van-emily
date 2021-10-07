@@ -1,5 +1,8 @@
 import { Fragment, useEffect, useRef, useState } from "react";
-import { ReactCompareSlider } from "react-compare-slider";
+import {
+  ReactCompareSlider,
+  ReactCompareSliderHandle,
+} from "react-compare-slider";
 import Image from "next/image";
 import ScrollNavbar from "../components/layout/ScrollNavbar";
 import Section from "../components/layout/Section";
@@ -114,6 +117,57 @@ function fotobewerkingservice() {
 
                       <div className="flex flex-col lg:grid grid-cols-2 gap-4 lg:gap-14 mb-8 justify-items-center">
                         <ReactCompareSlider
+                          handle={
+                            <ReactCompareSliderHandle
+                              buttonStyle={{
+                                WebkitBackdropFilter: undefined,
+                                backdropFilter: undefined,
+                                backgroundColor: "rgba(255, 255, 255, 0.9)",
+                                border: 0,
+                                boxShadow: undefined,
+                                color: "#777",
+                                opacity: 0.9,
+                                width: "50px",
+                                height: "50px",
+                              }}
+                              linesStyle={{ opacity: 0.5 }}
+                            />
+                          }
+                          itemOne={
+                            <Image
+                              src="/images/fotobewerking/1.jpg"
+                              alt="foto"
+                              width="524"
+                              height="363"
+                            />
+                          }
+                          itemTwo={
+                            <Image
+                              src="/images/fotobewerking/2.jpg"
+                              alt="nabewerkte foto"
+                              width="524"
+                              height="363"
+                            />
+                          }
+                        />
+
+                        <ReactCompareSlider
+                          handle={
+                            <ReactCompareSliderHandle
+                              buttonStyle={{
+                                WebkitBackdropFilter: undefined,
+                                backdropFilter: undefined,
+                                backgroundColor: "rgba(255, 255, 255, 0.9)",
+                                border: 0,
+                                boxShadow: undefined,
+                                color: "#777",
+                                opacity: 0.9,
+                                width: "50px",
+                                height: "50px",
+                              }}
+                              linesStyle={{ opacity: 0.5 }}
+                            />
+                          }
                           itemOne={
                             <Image
                               src="/images/portretfotografie/e1.jpg"
@@ -133,6 +187,22 @@ function fotobewerkingservice() {
                         />
 
                         <ReactCompareSlider
+                          handle={
+                            <ReactCompareSliderHandle
+                              buttonStyle={{
+                                WebkitBackdropFilter: undefined,
+                                backdropFilter: undefined,
+                                backgroundColor: "rgba(255, 255, 255, 0.9)",
+                                border: 0,
+                                boxShadow: undefined,
+                                color: "#777",
+                                opacity: 0.9,
+                                width: "50px",
+                                height: "50px",
+                              }}
+                              linesStyle={{ opacity: 0.5 }}
+                            />
+                          }
                           itemOne={
                             <Image
                               src="/images/portretfotografie/e1.jpg"
@@ -152,43 +222,22 @@ function fotobewerkingservice() {
                         />
 
                         <ReactCompareSlider
-                          itemOne={
-                            <Image
-                              src="/images/portretfotografie/e1.jpg"
-                              alt="foto"
-                              width="524"
-                              height="363"
+                          handle={
+                            <ReactCompareSliderHandle
+                              buttonStyle={{
+                                WebkitBackdropFilter: undefined,
+                                backdropFilter: undefined,
+                                backgroundColor: "rgba(255, 255, 255, 0.9)",
+                                border: 0,
+                                boxShadow: undefined,
+                                color: "#777",
+                                opacity: 0.9,
+                                width: "50px",
+                                height: "50px",
+                              }}
+                              linesStyle={{ opacity: 0.5 }}
                             />
                           }
-                          itemTwo={
-                            <Image
-                              src="/images/portretfotografie/e2.jpg"
-                              alt="nabewerkte foto"
-                              width="524"
-                              height="363"
-                            />
-                          }
-                        />
-
-                        <ReactCompareSlider
-                          itemOne={
-                            <Image
-                              src="/images/portretfotografie/e1.jpg"
-                              alt="foto"
-                              width="524"
-                              height="363"
-                            />
-                          }
-                          itemTwo={
-                            <Image
-                              src="/images/portretfotografie/e2.jpg"
-                              alt="nabewerkte foto"
-                              width="524"
-                              height="363"
-                            />
-                          }
-                        />
-                        <ReactCompareSlider
                           itemOne={
                             <Image
                               src="/images/portretfotografie/e1.jpg"
@@ -207,6 +256,56 @@ function fotobewerkingservice() {
                           }
                         />
                         <ReactCompareSlider
+                          handle={
+                            <ReactCompareSliderHandle
+                              buttonStyle={{
+                                WebkitBackdropFilter: undefined,
+                                backdropFilter: undefined,
+                                backgroundColor: "rgba(255, 255, 255, 0.9)",
+                                border: 0,
+                                boxShadow: undefined,
+                                color: "#777",
+                                opacity: 0.9,
+                                width: "50px",
+                                height: "50px",
+                              }}
+                              linesStyle={{ opacity: 0.5 }}
+                            />
+                          }
+                          itemOne={
+                            <Image
+                              src="/images/portretfotografie/e1.jpg"
+                              alt="foto"
+                              width="524"
+                              height="363"
+                            />
+                          }
+                          itemTwo={
+                            <Image
+                              src="/images/portretfotografie/e2.jpg"
+                              alt="nabewerkte foto"
+                              width="524"
+                              height="363"
+                            />
+                          }
+                        />
+                        <ReactCompareSlider
+                          handle={
+                            <ReactCompareSliderHandle
+                              buttonStyle={{
+                                WebkitBackdropFilter: undefined,
+                                backdropFilter: undefined,
+                                backgroundColor: "rgba(255, 255, 255, 0.9)",
+                                border: 0,
+                                boxShadow: undefined,
+                                color: "#777",
+                                opacity: 0.9,
+                                width: "50px",
+                                height: "50px",
+                              }}
+                              linesStyle={{ opacity: 0.5 }}
+                            />
+                          }
                           itemOne={
                             <Image
                               src="/images/portretfotografie/e1.jpg"
@@ -246,6 +345,22 @@ function fotobewerkingservice() {
               <div className="flex flex-col">
                 <div className="flex justify-center">
                   <ReactCompareSlider
+                    handle={
+                      <ReactCompareSliderHandle
+                        buttonStyle={{
+                          WebkitBackdropFilter: undefined,
+                          backdropFilter: undefined,
+                          backgroundColor: "rgba(255, 255, 255, 0.9)",
+                          border: 0,
+                          boxShadow: undefined,
+                          color: "#777",
+                          opacity: 0.9,
+                          width: "50px",
+                          height: "50px",
+                        }}
+                        linesStyle={{ opacity: 0.5 }}
+                      />
+                    }
                     itemOne={
                       <Image
                         src="/images/portretfotografie/sk1.jpg"

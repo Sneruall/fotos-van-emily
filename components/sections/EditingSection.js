@@ -3,7 +3,7 @@ import Image from "next/image";
 import Button from "../ui/button";
 import {
   ReactCompareSlider,
-  ReactCompareSliderImage,
+  ReactCompareSliderHandle,
 } from "react-compare-slider";
 
 function EditingSection(props) {
@@ -21,6 +21,22 @@ function EditingSection(props) {
         </p>
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-14 mb-8 lg:mb-24 justify-items-center items-center">
           <ReactCompareSlider
+            handle={
+              <ReactCompareSliderHandle
+                buttonStyle={{
+                  WebkitBackdropFilter: undefined,
+                  backdropFilter: undefined,
+                  backgroundColor: "rgba(255, 255, 255, 0.9)",
+                  border: 0,
+                  boxShadow: undefined,
+                  color: "#777",
+                  opacity: 0.9,
+                  width: "50px",
+                  height: "50px",
+                }}
+                linesStyle={{ opacity: 0.5 }}
+              />
+            }
             itemOne={
               <Image src={props.imgE1} alt="foto" width="651" height="434" />
             }
@@ -33,7 +49,7 @@ function EditingSection(props) {
               />
             }
           />
-          <div className="mb-2">
+          <div className="mb-2 lg:translate-y-1">
             <Image
               src={props.imgE4}
               alt="nabewerkte foto"
@@ -61,6 +77,22 @@ function EditingSection(props) {
             <div className="flex flex-col">
               <div className="flex justify-center">
                 <ReactCompareSlider
+                  handle={
+                    <ReactCompareSliderHandle
+                      buttonStyle={{
+                        WebkitBackdropFilter: undefined,
+                        backdropFilter: undefined,
+                        backgroundColor: "rgba(255, 255, 255, 0.9)",
+                        border: 0,
+                        boxShadow: undefined,
+                        color: "#777",
+                        opacity: 0.9,
+                        width: "50px",
+                        height: "50px",
+                      }}
+                      linesStyle={{ opacity: 0.5 }}
+                    />
+                  }
                   itemOne={
                     <Image
                       src={props.imgSk1}
