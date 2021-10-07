@@ -36,7 +36,135 @@ function portfolio() {
       </div>
       <div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-x-2 mr-2">
+          {/* Start pattern */}
           <div className="ml-2 hover:cursor-pointer">
+            <Image
+              src={photos[0]}
+              alt="portfolio foto"
+              width={photos[0].width}
+              height={photos[0].height}
+              onClick={() => openLightbox(0)}
+            />
+          </div>
+          <div className="hover:cursor-pointer">
+            <Image
+              src={photos[1]}
+              alt="portfolio foto"
+              width={photos[1].width}
+              height={photos[1].height}
+              onClick={() => openLightbox(1)}
+            />
+          </div>
+          <div className="row-span-3 hover:cursor-pointer">
+            <Image
+              src={photos[2]}
+              alt="portfolio foto"
+              width={photos[2].width}
+              height={photos[2].height}
+              onClick={() => openLightbox(2)}
+            />
+          </div>
+          <div className="row-span-3 hover:cursor-pointer">
+          <Image
+              src={photos[3]}
+              alt="portfolio foto"
+              width={photos[3].width}
+              height={photos[3].height}
+              onClick={() => openLightbox(2)}
+            />
+          </div>
+          <div className="row-span-3 hover:cursor-pointer">
+            <Image
+              src="/images/portfolio/1.jpg"
+              alt="portfolio foto"
+              width={800}
+              height={1200}
+            />
+          </div>
+          <div className="hover:cursor-pointer">
+            <Image
+              src={photos[2]}
+              alt="portfolio foto"
+              width={photos[2].width}
+              height={photos[2].height}
+              onClick={() => openLightbox(0)}
+            />
+          </div>
+          <div className="hover:cursor-pointer">
+            <Image
+              src="/images/portfolio/6.jpg"
+              alt="portfolio foto"
+              width={1200}
+              height={800}
+            />
+          </div>
+          <div className="row-span-3 hover:cursor-pointer">
+            <Image
+              src="/images/portfolio/1.jpg"
+              alt="portfolio foto"
+              width={800}
+              height={1200}
+            />
+          </div>
+          <div className="row-span-3 hover:cursor-pointer">
+            <Image
+              src="/images/portfolio/1.jpg"
+              alt="portfolio foto"
+              width={800}
+              height={1200}
+            />
+          </div>
+          <div className="row-span-3 hover:cursor-pointer">
+            <Image
+              src="/images/portfolio/1.jpg"
+              alt="portfolio foto"
+              width={800}
+              height={1200}
+            />
+          </div>
+          <div className="hover:cursor-pointer">
+            <Image
+              src="/images/portfolio/6.jpg"
+              alt="portfolio foto"
+              width={1200}
+              height={800}
+            />
+          </div>
+          <div className="row-span-3 hover:cursor-pointer">
+            <Image
+              src="/images/portfolio/1.jpg"
+              alt="portfolio foto"
+              width={800}
+              height={1200}
+            />
+          </div>
+          <div className="row-span-3 hover:cursor-pointer">
+            <Image
+              src="/images/portfolio/1.jpg"
+              alt="portfolio foto"
+              width={800}
+              height={1200}
+            />
+          </div>
+          <div className="row-span-3 hover:cursor-pointer">
+            <Image
+              src="/images/portfolio/1.jpg"
+              alt="portfolio foto"
+              width={800}
+              height={1200}
+            />
+          </div>
+          <div className="hover:cursor-pointer">
+            <Image
+              src="/images/portfolio/6.jpg"
+              alt="portfolio foto"
+              width={1200}
+              height={800}
+            />
+          </div>
+          {/* End pattern */}
+          {/* Start pattern */}
+          <div className="hover:cursor-pointer">
             <Image
               src={photos[2]}
               alt="portfolio foto"
@@ -71,12 +199,45 @@ function portfolio() {
               height={1200}
             />
           </div>
+          <div className="row-span-3 hover:cursor-pointer">
+            <Image
+              src="/images/portfolio/1.jpg"
+              alt="portfolio foto"
+              width={800}
+              height={1200}
+            />
+          </div>
+          <div className="hover:cursor-pointer">
+            <Image
+              src={photos[2]}
+              alt="portfolio foto"
+              width={photos[2].width}
+              height={photos[2].height}
+              onClick={() => openLightbox(0)}
+            />
+          </div>
           <div className="hover:cursor-pointer">
             <Image
               src="/images/portfolio/6.jpg"
               alt="portfolio foto"
               width={1200}
               height={800}
+            />
+          </div>
+          <div className="row-span-3 hover:cursor-pointer">
+            <Image
+              src="/images/portfolio/1.jpg"
+              alt="portfolio foto"
+              width={800}
+              height={1200}
+            />
+          </div>
+          <div className="row-span-3 hover:cursor-pointer">
+            <Image
+              src="/images/portfolio/1.jpg"
+              alt="portfolio foto"
+              width={800}
+              height={1200}
             />
           </div>
           <div className="row-span-3 hover:cursor-pointer">
@@ -95,12 +256,28 @@ function portfolio() {
               height={800}
             />
           </div>
-          <div className="hover:cursor-pointer">
+          <div className="row-span-3 hover:cursor-pointer">
             <Image
-              src="/images/portfolio/6.jpg"
+              src="/images/portfolio/1.jpg"
               alt="portfolio foto"
-              width={1200}
-              height={800}
+              width={800}
+              height={1200}
+            />
+          </div>
+          <div className="row-span-3 hover:cursor-pointer">
+            <Image
+              src="/images/portfolio/1.jpg"
+              alt="portfolio foto"
+              width={800}
+              height={1200}
+            />
+          </div>
+          <div className="row-span-3 hover:cursor-pointer">
+            <Image
+              src="/images/portfolio/1.jpg"
+              alt="portfolio foto"
+              width={800}
+              height={1200}
             />
           </div>
           <div className="hover:cursor-pointer">
@@ -111,6 +288,7 @@ function portfolio() {
               height={800}
             />
           </div>
+          {/* End pattern */}
         </div>
         <>
           {showModal ? (
