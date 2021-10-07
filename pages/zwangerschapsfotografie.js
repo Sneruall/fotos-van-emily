@@ -107,29 +107,18 @@ function zwangerschapsfotografie() {
                     img="/images/zwangerschapsfotografie/spotlight.png"
                     alt="zwangerschapsfotografie"
                     review1={[
-                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                      "Name1",
+                      "Ik ben heel erg blij met de foto's die Emily heeft gemaakt tijdens mijn zwangerschapsshoot. Ik had zelf een locatie gekozen en Emily vond daar de mooiste plekken voor het maken van de foto's. Ze stelde me op mijn gemak, gaf goede tips over poses die ik kon aannemen en nam echt de tijd voor het maken van de foto's. De foto's zijn voor mijn man en mij enorm waardevol als herinnering aan mijn zwangerschap. Ik raad Emily absoluut aan als fotografe!",
+                      "Kathelijne & Tim",
                     ]}
                     review2={[
-                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                      "Name2",
+                      "Wij hebben een zwangerschapsshoot gedaan met Emily in de duinen. Wat hebben wij hiervan genoten! Emily hielp ons met leuke poses die de babybuik goed naar voren lieten komen en ze zorgde voor een fijne sfeer. We voelden ons daardoor erg op ons gemak bij haar. Zelf konden we ook al onze ideeën kwijt en Emily nam uitgebreid de tijd om alle probeersels vast te leggen. Het resultaat is mooier dan we konden dromen!",
+                      "Gwen & Dexter",
                     ]}
                     review3={[
-                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                      "Name3",
+                      "Per toeval kwamen we bij Emily terecht. Ze was heel betrokken en kwam met leuke ideeën. Ze zorgde ervoor dat we ons zelf waren voor de camera en mede daardoor zijn de foto’s heel puur geworden. Wij zijn heel blij met het resultaat. Echt een aanrader :)",
+                      "Shannon & Gerben",
                     ]}
-                    review4={[
-                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                      "Name4",
-                    ]}
-                    review5={[
-                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                      "Name5",
-                    ]}
-                    review6={[
-                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                      "Name6",
-                    ]}
+
                   />
                 </div>
               </div>

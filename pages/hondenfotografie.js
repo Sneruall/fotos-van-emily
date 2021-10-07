@@ -102,28 +102,16 @@ function hondenfotografie() {
                     img="/images/hondenfotografie/spotlight.png"
                     alt="hondenfotografie"
                     review1={[
-                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                      "Name1",
+                      "Emily is een enthousiaste fotografe, die mij en mijn hond Câline mooi op de foto heeft gezet. Zij ziet met haar creatieve blik overal mooie plekjes en kansen voor een leuke foto in. Ze stopt niet tot jij tevreden bent. En dat kan je zien... de foto’s zijn natuurlijk, ongedwongen en brengen de wow factor met zich mee!",
+                      "Gaëlla",
                     ]}
                     review2={[
-                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                      "Name2",
+                      "Bedankt voor de super leuke gezellige fotoshoot! De foto's zijn echt prachtig geworden! En de kinderen vonden het super leuk! Geen gedwongen foto sessie maar gewoon lekker spelen en tijdens het spelen foto's maken.",
+                      "Chantal",
                     ]}
                     review3={[
-                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                      "Name3",
-                    ]}
-                    review4={[
-                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                      "Name4",
-                    ]}
-                    review5={[
-                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                      "Name5",
-                    ]}
-                    review6={[
-                      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-                      "Name6",
+                      "Per toeval kwamen we bij Emily terecht. Ze was heel betrokken en kwam met leuke ideeën. Ze zorgde ervoor dat we ons zelf waren voor de camera en mede daardoor zijn de foto’s heel puur geworden. Wij zijn heel blij met het resultaat. Echt een aanrader :)",
+                      "Shannon & Gerben",
                     ]}
                   />
                 </div>
