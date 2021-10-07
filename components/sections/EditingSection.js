@@ -19,7 +19,7 @@ function EditingSection(props) {
           warmte, kleur en een moderne look. Alle foto’s worden ook in zwart wit
           nabewerkt.
         </p>
-        <div className="flex flex-col lg:flex-row gap-4 lg:gap-14 mb-8 lg:mb-24 justify-items-center">
+        <div className="flex flex-col lg:flex-row gap-4 lg:gap-14 mb-8 lg:mb-24 justify-items-center items-center">
           <ReactCompareSlider
             itemOne={
               <Image src={props.imgE1} alt="foto" width="651" height="434" />
@@ -33,12 +33,14 @@ function EditingSection(props) {
               />
             }
           />
+          <div className="mb-2">
             <Image
               src={props.imgE4}
               alt="nabewerkte foto"
               width="651"
               height="434"
             />
+          </div>
         </div>
         {props.imgSk1 && (
           <div>
