@@ -79,9 +79,9 @@ function fotobewerkingservice() {
 
       {/* VOORBEELDEN SECTIE */}
       <Controller>
-        <div className="bg-grey-light">
+        <div className="bg-grey-pinkish2">
           <div id="page" className="transition ease-linear duration-1000">
-            <Section bg={"bg-grey-pinkish2"}>
+            <Section>
               <div className="mx-auto max-w-6xl">
                 <h2 className="title-1 my-0 lg:my-10 text-white leading-tight">
                   JOUW FOTO’S, PROFESSIONEEL BEWERKT
