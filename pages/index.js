@@ -10,6 +10,8 @@ import parse from "html-react-parser";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { Controller, Scene } from "react-scrollmagic";
+import { photos } from "../data/photos"
+
 
 export default function Home() {
   //index slider
@@ -40,6 +42,8 @@ export default function Home() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  console.log(photos[0]);
 
   return (
     <Fragment>

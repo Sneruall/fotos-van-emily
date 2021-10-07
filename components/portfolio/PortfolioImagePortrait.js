@@ -1,18 +1,19 @@
 import Image from "next/image";
 import { photos } from "../../data/photos";
 
-function PortfolioImage(props) {
+
+function PortfolioImagePortrait(props) {
   return (
-    <div className="hover:cursor-pointer">
+    <div className="hover:cursor-pointer row-span-3">
       <Image
         src={photos[props.id]}
         alt="portfolio foto"
-        width={1200}
-        height={800}
+        width={800}
+        height={1200}
         onClick={() => openLightbox(props.id)}
       />
     </div>
   );
 }
 
-export default PortfolioImage;
+export default PortfolioImagePortrait;
