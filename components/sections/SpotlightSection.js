@@ -2,7 +2,6 @@ import Section from "../layout/Section";
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
-import ReviewElement from "./elements/ReviewElement";
 import ReviewElementDesktop from "./elements/ReviewElementDesktop";
 
 function SpotlightSection(props) {
@@ -40,15 +39,15 @@ function SpotlightSection(props) {
               interval={5000}
               width={350}
             >
-              <ReviewElement
+              <ReviewElementDesktop
                 text={props.review1[0]}
                 name={props.review1[1]}
               />
-              <ReviewElement
+              <ReviewElementDesktop
                 text={props.review2[0]}
                 name={props.review2[1]}
               />
-              <ReviewElement
+              <ReviewElementDesktop
                 text={props.review3[0]}
                 name={props.review3[1]}
               />

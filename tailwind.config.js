@@ -22,6 +22,9 @@ module.exports = {
         "700": "700px",
         "300": "300px",
       },
+      minHeight:{
+        '9/10': '90%',
+      },
       fontFamily: {
         sans: ["Montserrat", "Helvetica", "Arial", "sans-serif"],
         display: [

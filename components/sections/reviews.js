@@ -4,7 +4,6 @@ import Dienst from "./elements/dienst";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import ReviewElementDesktop from "./elements/ReviewElementDesktop";
-import ReviewElement from "./elements/ReviewElement";
 
 function Reviews(props) {
   return (
@@ -25,12 +24,12 @@ function Reviews(props) {
             interval={5000}
             width={350}
           >
-            <ReviewElement text={props.review1[0]} name={props.review1[1]} />
-            <ReviewElement text={props.review2[0]} name={props.review2[1]} />
-            <ReviewElement text={props.review3[0]} name={props.review3[1]} />
-            <ReviewElement text={props.review4[0]} name={props.review4[1]} />
-            <ReviewElement text={props.review5[0]} name={props.review5[1]} />
-            <ReviewElement text={props.review6[0]} name={props.review6[1]} />
+            <ReviewElementDesktop text={props.review1[0]} name={props.review1[1]} />
+            <ReviewElementDesktop text={props.review2[0]} name={props.review2[1]} />
+            <ReviewElementDesktop text={props.review3[0]} name={props.review3[1]} />
+            <ReviewElementDesktop text={props.review4[0]} name={props.review4[1]} />
+            <ReviewElementDesktop text={props.review5[0]} name={props.review5[1]} />
+            <ReviewElementDesktop text={props.review6[0]} name={props.review6[1]} />
           </Carousel>
         </div>
       </div>
