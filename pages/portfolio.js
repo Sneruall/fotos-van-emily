@@ -41,8 +41,8 @@ function portfolio() {
             <Image
               src={photos[0]}
               alt="portfolio foto"
-              width={photos[0].width}
-              height={photos[0].height}
+              width={1200}
+              height={800}
               onClick={() => openLightbox(0)}
             />
           </div>
@@ -50,9 +50,9 @@ function portfolio() {
             <Image
               src={photos[1]}
               alt="portfolio foto"
-              width={photos[1].width}
-              height={photos[1].height}
-              onClick={() => openLightbox(1)}
+              width={1200}
+              height={800}
+              onClick={() => openLightbox(0)}
             />
           </div>
           <div className="row-span-3 hover:cursor-pointer">
