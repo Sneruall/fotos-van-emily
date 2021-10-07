@@ -27,9 +27,7 @@ function ImageWithText(props) {
           </div>
         )}
 
-        <p className="text-charcoal">
-          {props.text[0]}
-        </p>
+        <p className="text-charcoal">{props.text[0]}</p>
         {props.text[1] && (
           <p className="text-charcoal">
             <br />
@@ -38,7 +36,13 @@ function ImageWithText(props) {
         )}
 
         {props.buttonText && (
-          <Button text={props.buttonText} link="#contact" button="button-1 mt-8" />
+          <div className={`${props.text2 && "hidden lg:block"}`}>
+            <Button
+              text={props.buttonText}
+              link="#contact"
+              button="button-1 mt-8"
+            />
+          </div>
         )}
       </div>
     </div>

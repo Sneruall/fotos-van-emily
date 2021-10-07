@@ -20,6 +20,7 @@ function IntroSection(props) {
                 text={props.text1}
                 buttonText={props.buttonText1}
                 mirrored={props.mirrored1}
+                text2={props.text2}
               />
               {props.text2 && (
                 <div>
@@ -30,6 +31,16 @@ function IntroSection(props) {
                   </div>
 
                   <p className="text-charcoal">{props.text2}</p>
+                  {props.buttonText1 && (
+                    <div className="lg:hidden">
+                    <Button
+                      text={props.buttonText1}
+                      link="#contact"
+                      button="button-1 mt-8"
+                    />
+                      </div>
+
+                  )}
                 </div>
               )}
 
