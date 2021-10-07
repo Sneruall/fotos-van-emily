@@ -9,7 +9,6 @@ function PortfolioImage(props) {
         alt="portfolio foto"
         width={1200}
         height={800}
-        onClick={() => openLightbox(props.id)}
       />
     </div>
   );

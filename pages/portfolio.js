@@ -8,6 +8,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import PortfolioImage from "../components/portfolio/PortfolioImage";
 import PortfolioImagePortrait from "../components/portfolio/PortfolioImagePortrait";
+import PortfolioLightboxImage from "../components/portfolio/PortfolioLightboxImage";
 
 function portfolio() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -39,10 +40,12 @@ function portfolio() {
       <div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-x-2 mr-2">
           {/* Start pattern */}
-          <div className="ml-2">
+          <div className="ml-2" onClick={() => openLightbox(0)}>
             <PortfolioImage id={0} />
           </div>
-          <PortfolioImage id={1} />
+          <div onClick={() => openLightbox(0)}>
+            <PortfolioImage id={1} />
+          </div>
           <PortfolioImagePortrait id={2} />
           <PortfolioImagePortrait id={3} />
           <PortfolioImagePortrait id={4} />
@@ -86,31 +89,17 @@ function portfolio() {
                         showArrows={true}
                         showThumbs={false}
                       >
-                        <div className="h-screen80">
-                          <Image
-                            src={photos[2]}
-                            alt="Portretfoto"
-                            layout="fill"
-                            objectFit="contain"
-                          />
-                        </div>
-
-                        <div className="h-screen80">
-                          <Image
-                            src={photos[2]}
-                            alt="Portretfoto"
-                            layout="fill"
-                            objectFit="contain"
-                          />
-                        </div>
-                        <div className="h-screen80">
-                          <Image
-                            src={photos[0]}
-                            alt="Portretfoto"
-                            layout="fill"
-                            objectFit="contain"
-                          />
-                        </div>
+                        <PortfolioLightboxImage id={0} />
+                        <PortfolioLightboxImage id={1} />
+                        <PortfolioLightboxImage id={2} />
+                        <PortfolioLightboxImage id={3} />
+                        <PortfolioLightboxImage id={4} />
+                        <PortfolioLightboxImage id={5} />
+                        <PortfolioLightboxImage id={6} />
+                        <PortfolioLightboxImage id={7} />
+                        <PortfolioLightboxImage id={8} />
+                        <PortfolioLightboxImage id={9} />
+                        <PortfolioLightboxImage id={10} />
                       </Carousel>
                     </div>
                   </div>
