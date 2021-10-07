@@ -38,12 +38,17 @@ function EditingSection(props) {
               />
             }
             itemOne={
-              <Image src={props.imgE1} alt="foto" width="651" height="434" />
+              <Image
+                src={props.imgE1}
+                alt="nabewerkte foto"
+                width="651"
+                height="434"
+              />
             }
             itemTwo={
               <Image
                 src={props.imgE2}
-                alt="nabewerkte foto"
+                alt="onbewerkte foto"
                 width="651"
                 height="434"
               />
@@ -52,7 +57,7 @@ function EditingSection(props) {
           <div className="mb-2 lg:translate-y-1">
             <Image
               src={props.imgE4}
-              alt="nabewerkte foto"
+              alt="zwart-wit foto"
               width="651"
               height="434"
             />

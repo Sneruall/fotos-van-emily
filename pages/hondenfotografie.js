@@ -126,10 +126,9 @@ function hondenfotografie() {
               <div>
                 <div id="section2" ref={section2Ref}>
                   <EditingSection
-                    imgE1="/images/hondenfotografie/e1.png"
-                    imgE2="/images/hondenfotografie/e2.png"
-                    imgE3="/images/hondenfotografie/e1.png"
-                    imgE4="/images/hondenfotografie/e2.png"
+                    imgE1="/images/fotobewerking/3e.jpg"
+                    imgE2="/images/fotobewerking/3.jpg"
+                    imgE4="/images/fotobewerking/3z.jpg"
                   />
                 </div>
               </div>

@@ -138,10 +138,9 @@ function loveshoot() {
               <div>
                 <div id="section2" ref={section2Ref}>
                   <EditingSection
-                    imgE1="/images/loveshoot/e1.png"
-                    imgE2="/images/loveshoot/e2.png"
-                    imgE3="/images/loveshoot/e1.png"
-                    imgE4="/images/loveshoot/e2.png"
+                    imgE1="/images/fotobewerking/5e.jpg"
+                    imgE2="/images/fotobewerking/5.jpg"
+                    imgE4="/images/fotobewerking/5z.jpg"
                   />
                 </div>
               </div>

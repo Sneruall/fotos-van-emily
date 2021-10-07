@@ -131,10 +131,9 @@ function zwangerschapsfotografie() {
               <div>
                 <div id="section2" ref={section2Ref}>
                   <EditingSection
-                    imgE1="/images/zwangerschapsfotografie/e1.png"
-                    imgE2="/images/zwangerschapsfotografie/e2.png"
-                    imgE3="/images/zwangerschapsfotografie/e1.png"
-                    imgE4="/images/zwangerschapsfotografie/e2.png"
+                    imgE1="/images/fotobewerking/7e.jpg"
+                    imgE2="/images/fotobewerking/7.jpg"
+                    imgE4="/images/fotobewerking/7z.jpg"
                   />
                 </div>
               </div>
