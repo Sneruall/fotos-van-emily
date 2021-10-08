@@ -39,7 +39,7 @@ function portfolio() {
       </div>
       <div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-x-2 mr-2">
-          {/* Start pattern  TODO: Pass Data from Child to Parent using Referenced Action: https://www.pluralsight.com/guides/how-to-reference-a-function-in-another-component*/}
+          {/* Start pattern FIRST WITH ADDITIONAL MARGIN */}
           <div className="ml-2">
             <PortfolioImage id={0} onClickAction={(id) => openLightbox(id)}/>
           </div>
@@ -57,6 +57,57 @@ function portfolio() {
           <PortfolioImagePortrait id={12} onClickAction={(id) => openLightbox(id)} />
           <PortfolioImagePortrait id={13} onClickAction={(id) => openLightbox(id)} />
           <PortfolioImage id={14} onClickAction={(id) => openLightbox(id)} />
+          {/* End pattern */}
+          {/* Start pattern */}
+          <PortfolioImage id={15} onClickAction={(id) => openLightbox(id)}/>
+          <PortfolioImage id={16} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={17} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={18} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={19} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImage id={20} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImage id={21} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={22} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={23} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={24} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImage id={25} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={26} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={27} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={28} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImage id={29} onClickAction={(id) => openLightbox(id)} />
+          {/* End pattern */}
+          {/* Start pattern */}
+          <PortfolioImage id={30} onClickAction={(id) => openLightbox(id)}/>
+          <PortfolioImage id={31} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={32} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={33} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={34} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImage id={35} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImage id={36} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={37} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={38} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={39} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImage id={40} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={41} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={42} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={43} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImage id={44} onClickAction={(id) => openLightbox(id)} />
+          {/* End pattern */}
+          {/* Start pattern */}
+          <PortfolioImage id={45} onClickAction={(id) => openLightbox(id)}/>
+          <PortfolioImage id={46} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={47} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={48} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={49} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImage id={50} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImage id={51} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={52} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={53} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={54} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImage id={55} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={56} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={57} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImagePortrait id={58} onClickAction={(id) => openLightbox(id)} />
+          <PortfolioImage id={59} onClickAction={(id) => openLightbox(id)} />
           {/* End pattern */}
         </div>
         <>
