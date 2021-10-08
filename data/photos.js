@@ -17,7 +17,7 @@ export const photos = [
   "/images/portfolio/16.jpg",
   "/images/portfolio/17.jpg",
   "/images/portfolio/18.jpg",
-  "/images/portfolio/19.jpg",
+  "/images/portfolio/rina.jpg",
   "/images/portfolio/20.jpg",
   "/images/portfolio/21.jpg",
   "/images/portfolio/22.jpg",

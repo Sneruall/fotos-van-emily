@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 function ContactFormElement(props) {
   const [name, setName] = useState("");
@@ -6,6 +7,8 @@ function ContactFormElement(props) {
   const [tel, setTel] = useState("");
   const [onderwerp, setOnderwerp] = useState("");
   const [message, setMessage] = useState("");
+
+  const router = useRouter();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,8 +23,11 @@ function ContactFormElement(props) {
     fetch("/api/contact", {
       method: "post",
       body: JSON.stringify(data),
-    });
-    // add script to clear the form and show a message that the message was send (or an error occurred..)
+    })
+      .then(router.push("/bericht-verzonden"))
+      .catch((err) => {
+        console.log(err);
+      });
   };
   return (
     <form onSubmit={handleSubmit}>
