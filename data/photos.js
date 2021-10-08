@@ -42,7 +42,6 @@ export const photos = [
   "/images/portfolio/41.jpg",
   "/images/portfolio/42.jpg",
   "/images/portfolio/43.jpg",
-
   "/images/portfolio/46.jpg",
   "/images/portfolio/47.jpg",
   "/images/portfolio/48.jpg",

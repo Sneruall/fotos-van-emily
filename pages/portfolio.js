@@ -105,9 +105,6 @@ function portfolio() {
           <PortfolioImagePortrait id={54} onClickAction={(id) => openLightbox(id)} />
           <PortfolioImage id={55} onClickAction={(id) => openLightbox(id)} />
           <PortfolioImagePortrait id={56} onClickAction={(id) => openLightbox(id)} />
-          <PortfolioImagePortrait id={57} onClickAction={(id) => openLightbox(id)} />
-          <PortfolioImagePortrait id={58} onClickAction={(id) => openLightbox(id)} />
-          <PortfolioImage id={59} onClickAction={(id) => openLightbox(id)} />
           {/* End pattern */}
         </div>
         <>
