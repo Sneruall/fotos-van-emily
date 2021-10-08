@@ -14,9 +14,9 @@ async function handler (req, res) {
   `;
   
   const data = {
-      to: 'l.c.vanroomen@gmail.com',
-      from: 'info@laurensvanroomen.nl',
-      subject: `Nieuw contactform bericht van ${body.name}`,
+      to: 'info@fotosvanemily.nl',
+      from: 'info@fotosvanemily.nl',
+      subject: `Nieuw bericht van ${body.name}`,
       text: message,
       html: message.replace(/\r\n/g, '<br />'),
     };
