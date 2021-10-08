@@ -3,7 +3,7 @@ import { photos } from "../../data/photos";
 
 function PortfolioImage(props) {
   return (
-    <div className="hover:cursor-pointer">
+    <div className="hover:cursor-pointer" onClick={() => props.onClickAction(props.id)}>
       <Image
         src={photos[props.id]}
         alt="portfolio foto"
