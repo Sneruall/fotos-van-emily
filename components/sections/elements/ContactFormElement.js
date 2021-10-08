@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useRouter } from "next/router";
 
 function ContactFormElement(props) {
@@ -7,6 +7,9 @@ function ContactFormElement(props) {
   const [tel, setTel] = useState("");
   const [onderwerp, setOnderwerp] = useState("");
   const [message, setMessage] = useState("");
+  const [error, setError] = useState(false);
+
+  const myFormRef = useRef(null);
 
   const router = useRouter();
 
@@ -24,13 +27,22 @@ function ContactFormElement(props) {
       method: "post",
       body: JSON.stringify(data),
     })
-      .then(router.push("/bericht-verzonden"))
+      .then(() => {
+        clearForm();
+        router.push("/bericht-verzonden");
+      })
       .catch((err) => {
         console.log(err);
+        setError(true);
       });
   };
+
+  const clearForm = () => {
+    myFormRef.current.reset();
+  };
+
   return (
-    <form onSubmit={handleSubmit}>
+    <form ref={myFormRef} onSubmit={handleSubmit}>
       <div className="grid lg:grid-cols-2 gap-2 lg:gap-10 my-10 max-w-xl mx-auto">
         <input
           className="rounded-sm p-2 px-4 placeholder-charcoal placeholder-opacity-90 shadow-sm outline-none"
@@ -79,6 +91,25 @@ function ContactFormElement(props) {
         >
           Verstuur
         </button>
+        {error && (
+          <p className="my-5 text-red-600">
+            Oeps, er gaat iets mis! Neem anders even contact op via mail of
+            telefoon:{" "}
+            <a
+              href="mailto:info@fotosvanemily.nl"
+              className="hover:underline text-charcoal"
+            >
+              info@fotosvanemily.nl
+            </a>
+            <span className="text-charcoal"> / </span>
+            <a
+              href="tel:+31652331778"
+              className="text-charcoal hover:underline"
+            >
+              06 52 33 17 78
+            </a>
+          </p>
+        )}
       </div>
     </form>
   );
