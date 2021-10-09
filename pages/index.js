@@ -10,7 +10,6 @@ import parse from "html-react-parser";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { Controller, Scene } from "react-scrollmagic";
-import { photos } from "../data/photos"
 
 
 export default function Home() {
@@ -43,8 +42,6 @@ export default function Home() {
     };
   }, []);
 
-  console.log(photos[0]);
-
   return (
     <Fragment>
       <Head>
@@ -67,7 +64,6 @@ export default function Home() {
               layout="fill"
               objectFit="cover"
               priority
-              quality={100}
             />
           </div>
 
