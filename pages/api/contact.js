@@ -8,13 +8,15 @@ async function handler (req, res) {
     const message = `
     Name: ${body.name}\r\n
     Email: ${body.email}\r\n
+    Tel: ${body.tel}\r\n
+    Onderwerp: ${body.onderwerp}\r\n
     Message: ${body.message}
   `;
   
   const data = {
-      to: 'l.c.vanroomen@gmail.com',
-      from: 'info@laurensvanroomen.nl',
-      subject: `Nieuw contactform bericht van ${body.name}`,
+      to: 'info@fotosvanemily.nl',
+      from: 'info@fotosvanemily.nl',
+      subject: `Nieuw bericht van ${body.name}`,
       text: message,
       html: message.replace(/\r\n/g, '<br />'),
     };

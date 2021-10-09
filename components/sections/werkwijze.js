@@ -3,13 +3,22 @@ import Section from "../layout/Section";
 
 export default function Werkwijze() {
   return (
-    <Section bg={"bg-blue-greyish"}>
-      <div className="bg-white max-w-4xl 3xl:max-w-5xl mx-auto p-5 pt-16 md:-mt-40 md:-mb-40 rounded-b-full rounded-t-full md:rounded-b-none">
-        <p className="font-display text-brown text-center text-5xl mb-4 mt-0 md:mt-10 mx-0 md:mx-40">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut.
-        </p>
-        <div className="my-3 block md:hidden">
+    <Section>
+      <div className="max-w-5xl mx-auto">
+        <div className="relative">
+          <p className="font-display text-white text-center text-5xl mb-10 mt-0 md:mt-10 mx-0 md:mx-40 uppercase">
+            Professioneel Fotograaf VS Mobiele Telefoon
+          </p>
+          <div className="hidden md:block absolute bottom-0 left-0 transform scale-75 lg:scale-100 -translate-x-8 lg:-translate-x-12 lg:translate-y-24 xl:translate-y-16 translate-y-10">
+            <Image
+              src="/images/stars5.png"
+              alt="Stars"
+              width={164}
+              height={125}
+            />
+          </div>
+        </div>
+        <div className="my-3 md:hidden flex justify-center">
           <Image
             src="/images/fotograaf-met-camera.png"
             width={413}
@@ -17,42 +26,33 @@ export default function Werkwijze() {
             alt="Fotograaf met camera"
           />
         </div>
-        <p className="text-lg mt-20 md:my-5 mx-0 md:mx-16 text-center md:text-left">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-          takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-          amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-          invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-          kasd gubergren, no sea.
+        <p className="mt-5 md:mt-20 md:my-10 mx-0 md:mx-16 text-center text-white">
+          Ik snap dat je misschien denkt “kan ik niet gewoon zelf foto’s maken
+          met mijn telefoon”. Natuurlijk, de kwaliteit van telefoon camera’s
+          worden steeds beter en beter. Super leuk om herinneringen vast te
+          leggen on the fly. Maar een goede foto bestaat uit meer dan alleen
+          technische kwaliteit. Iedereen is in staat een foto te maken, maar die
+          spreken niet allemaal 1000 woorden. Juist dat extra’s, die laatste
+          paar 100 woorden, zijn lastig zelf te realiseren. Hiervoor heb je de
+          expertise van een fotograaf nodig. Denk aan composite, lichtgebruik,
+          nabewerking etc. Dus voor het vastleggen van speciale gelegenheden kan
+          de mobiel niet tippen aan de fotograaf!
         </p>
-        <div className="grid md:grid-cols-2">
-          <div>
-            <p className="text-lg mb-20 mx-0 md:mx-16 text-center md:text-left">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore et dolore
-            </p>
-          </div>
-          <div className="hidden md:block">
-            <div className="">
-              <Image
-                src="/images/fotograaf-met-camera.png"
-                width={413}
-                height={232}
-                alt="Fotograaf met camera"
-              />
-            </div>
+        <div className="hidden md:flex justify-center relative">
+          <Image
+            className="rounded"
+            src="/images/fotograaf-met-camera.png"
+            width={413}
+            height={232}
+            alt="Fotograaf met camera"
+          />
+          <div className="hidden md:block absolute top-0 right-0 transform scale-75 lg:scale-100 -translate-x-16 lg:-translate-x-36 xl:-translate-x-48">
+            <Image
+              src="/images/stars6.png"
+              alt="Stars"
+              width={64}
+              height={64}
+            />
           </div>
         </div>
       </div>

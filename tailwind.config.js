@@ -17,6 +17,14 @@ module.exports = {
       screens: {
         "3xl": "2000px",
       },
+      height:{
+        "screen80": "80vh",
+        "700": "700px",
+        "300": "300px",
+      },
+      minHeight:{
+        '9/10': '90%',
+      },
       fontFamily: {
         sans: ["Montserrat", "Helvetica", "Arial", "sans-serif"],
         display: [
@@ -29,40 +37,74 @@ module.exports = {
           "serif",
         ],
       },
+      fontSize: {
+        "xxs": '0.5rem',
+        "10xl": "10rem",
+        "7xl-2": "5rem",
+      },
       colors: {
         transparent: "transparent",
         current: "currentColor",
-        pink: {
-          lightest: "#fff8ef",
-          light: "#efe9e0",
-          DEFAULT: "#dccfc6",
-          dark: "#fff",
-          darkest: "#b36747",
-        },
         grey: {
-          darkest: "#2a2c2b",
-          dark: "#7e817f",
-          charcoal: "#404342"
-        },
-        blue: {
-          greyish: "#d9e0e8",
+          light: "#efe9e0",
+          light2: "#dfddd7",
+          pale: "#d9e0e8",
+          pinkish: "#d4c7b8",
+          pinkish2: "#dccfc6",
+          brownish: "#977b62",
+          warm: "#707070",
         },
         brown: {
-          DEFAULT: "#a28a6f",
-          light: "#dfddd7",
-          clay: "#a96b4d",
+          pale: "#a8896c",
+          pale2: "#a38a70",
+          pale3: "#a28a6f",
+        },
+        clay: {
+          DEFAULT: "#a96b4d",
+        },
+        mocha: {
+          DEFAULT: "#a06e52",
+        },
+        reddish: {
+          DEFAULT: "#c15540",
+        },
+        charcoal: {
+          DEFAULT: "#404342",
+          2: "#414342",
+          3: "#c6c6c6"
+        },
+        sandstone: {
+          DEFAULT: "#c9a077",
         },
       },
       width: {
         "18/12": "150%",
       },
       minWidth: {
-        '170': "170px",
+        170: "170px",
+        130: "130px",
       },
+    },
+    textFillColor: (theme) => theme("borderColor"),
+    textStrokeColor: (theme) => theme("borderColor"),
+    textStrokeWidth: (theme) => theme("borderWidth"),
+    paintOrder: {
+      fsm: { paintOrder: "fill stroke markers" },
+      fms: { paintOrder: "fill markers stroke" },
+      sfm: { paintOrder: "stroke fill markers" },
+      smf: { paintOrder: "stroke markers fill" },
+      mfs: { paintOrder: "markers fill stroke" },
+      msf: { paintOrder: "markers stroke fill" },
     },
   },
   variants: {
+    textFillColor: ["responsive"],
+    textStrokeColor: ["responsive"],
+    textStrokeWidth: ["responsive"],
+    paintOrder: ["responsive"],
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-text-fill-stroke")(), // no options to configure
+  ],
 };

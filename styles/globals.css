@@ -1,17 +1,72 @@
 @tailwind base;
 @tailwind components;
 
-@layer base{
+@layer base {
   @font-face {
     font-family: "Diranista-Regular";
     src: url("./fonts//Diranista-Regular.woff") format("woff");
   }
 }
 
-@layer components{
-  .button{
-    @apply bg-white hover:bg-pink-darkest hover:text-white text-pink-darkest font-semibold uppercase py-4 px-6 rounded-full min-w-170
+@layer components {
+  .button-1 {
+    @apply border-2 border-brown-pale bg-brown-pale hover:bg-transparent text-sm hover:text-brown-pale text-white font-semibold uppercase py-2 px-6 rounded-full;
+  }
+  .button-2 {
+    @apply bg-white hover:bg-clay text-clay text-sm hover:text-white font-semibold uppercase py-2 px-6 rounded-full min-w-170;
+  }
+  .button-3 {
+    @apply border-2 border-white bg-white hover:bg-transparent text-charcoal text-sm hover:text-white font-semibold uppercase py-2 px-6 rounded-full min-w-170;
+  }
+  .title-1 {
+    @apply text-charcoal font-display text-5xl lg:text-6xl text-center uppercase my-10 lg:mx-16;
+  }
+  .title-2 {
+    @apply text-brown-pale text-5xl lg:text-6xl text-center uppercase;
+  }
+  .title-1-left {
+    @apply text-charcoal font-display text-5xl lg:text-6xl uppercase;
   }
 }
 
 @tailwind utilities;
+
+/* react-responsive-carousel custom ccss */
+
+.carousel .control-arrow, .carousel.carousel-slider .control-arrow::before{
+  opacity: 1 !important;
+}
+
+.carousel .control-arrow:hover, .carousel.carousel-slider .control-arrow:active{
+  background: none !important;
+}
+
+.carousel .control-dots .dot{
+  box-shadow: none !important;
+  opacity: 1!important;
+  margin: 0px 4px !important;
+}
+
+.carousel .control-dots .dot.selected{
+  background: #a8896c !important;
+
+}
+
+/* react compare slider */
+/* .__rcs-handle-button{
+  background-color: white;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+  border-width: 0px !important;
+  width: 46px !important;
+  height: 46px !important;
+}
+.__rcs-handle-button:first-child{
+  background-color: red!important;
+} */
+
+/* Default settings for texts */
+p{
+ line-height: 1.67;
+ font-weight: 300;
+}
