@@ -108,7 +108,7 @@ function portfolio() {
           {/* End pattern */}
         </div>
         <>
-          {showModal ? (
+          {showModal && (
             <>
               <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 max-h-screen">
                 <div className="relative mx-auto w-full h-screen">
@@ -146,13 +146,59 @@ function portfolio() {
                         <PortfolioLightboxImage id={8} />
                         <PortfolioLightboxImage id={9} />
                         <PortfolioLightboxImage id={10} />
+                        <PortfolioLightboxImage id={11} />
+                        <PortfolioLightboxImage id={12} />
+                        <PortfolioLightboxImage id={13} />
+                        <PortfolioLightboxImage id={14} />
+                        <PortfolioLightboxImage id={15} />
+                        <PortfolioLightboxImage id={16} />
+                        <PortfolioLightboxImage id={17} />
+                        <PortfolioLightboxImage id={18} />
+                        <PortfolioLightboxImage id={19} />
+                        <PortfolioLightboxImage id={20} />
+                        <PortfolioLightboxImage id={21} />
+                        <PortfolioLightboxImage id={22} />
+                        <PortfolioLightboxImage id={23} />
+                        <PortfolioLightboxImage id={24} />
+                        <PortfolioLightboxImage id={25} />
+                        <PortfolioLightboxImage id={26} />
+                        <PortfolioLightboxImage id={27} />
+                        <PortfolioLightboxImage id={28} />
+                        <PortfolioLightboxImage id={29} />
+                        <PortfolioLightboxImage id={30} />
+                        <PortfolioLightboxImage id={31} />
+                        <PortfolioLightboxImage id={32} />
+                        <PortfolioLightboxImage id={33} />
+                        <PortfolioLightboxImage id={34} />
+                        <PortfolioLightboxImage id={35} />
+                        <PortfolioLightboxImage id={36} />
+                        <PortfolioLightboxImage id={37} />
+                        <PortfolioLightboxImage id={38} />
+                        <PortfolioLightboxImage id={39} />
+                        <PortfolioLightboxImage id={40} />
+                        <PortfolioLightboxImage id={41} />
+                        <PortfolioLightboxImage id={42} />
+                        <PortfolioLightboxImage id={43} />
+                        <PortfolioLightboxImage id={44} />
+                        <PortfolioLightboxImage id={45} />
+                        <PortfolioLightboxImage id={46} />
+                        <PortfolioLightboxImage id={47} />
+                        <PortfolioLightboxImage id={48} />
+                        <PortfolioLightboxImage id={49} />
+                        <PortfolioLightboxImage id={50} />
+                        <PortfolioLightboxImage id={51} />
+                        <PortfolioLightboxImage id={52} />
+                        <PortfolioLightboxImage id={53} />
+                        <PortfolioLightboxImage id={54} />
+                        <PortfolioLightboxImage id={55} />
+                        <PortfolioLightboxImage id={56} />
                       </Carousel>
                     </div>
                   </div>
                 </div>
               </div>
             </>
-          ) : null}
+          )}
         </>
       </div>
     </Fragment>
