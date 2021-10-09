@@ -100,6 +100,7 @@ export default function Home() {
                   showStatus={false}
                   showIndicators={false}
                   showThumbs={false}
+                  swipeable={false}
                   interval={3000}
                   width="45vh"
                   onChange={transitionEffect}
