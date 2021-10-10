@@ -97,6 +97,7 @@ export default function Home() {
                   showThumbs={false}
                   swipeable={false}
                   interval={3000}
+                  width="45vh"
                   onChange={transitionEffect}
                 >
                   <Image

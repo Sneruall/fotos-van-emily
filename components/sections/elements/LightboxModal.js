@@ -36,6 +36,7 @@ function LightboxModal(props) {
                 showIndicators={false}
                 showArrows={true}
                 showThumbs={false}
+                emulateTouch={true}
               >
                 <PortfolioLightboxImage id={0} />
                 <PortfolioLightboxImage id={1} />

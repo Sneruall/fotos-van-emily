@@ -43,6 +43,7 @@ function Reviews(props) {
           showIndicators={true}
           showThumbs={false}
           interval={5000}
+          emulateTouch={true}
         >
           {/* Review tab */}
           <div className="my-10 mx-10 grid grid-cols-3 gap-x-4">
