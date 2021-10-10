@@ -7,8 +7,8 @@ function PortfolioImage(props) {
       <Image
         src={photos[props.id]}
         alt="portfolio foto"
-        width={1200}
-        height={800}
+        width={600}
+        height={400}
       />
     </div>
   );
