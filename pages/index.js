@@ -11,7 +11,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import { Controller, Scene } from "react-scrollmagic";
 
-
 export default function Home() {
   //index slider
   let [transition, setTransition] = useState("");
@@ -87,7 +86,7 @@ export default function Home() {
               </h1>
             </div>
             <div className="absolute left-0 right-0 -bottom-2">
-              <div className="text-center flex justify-center">
+              <div className="hidden sm:flex justify-center">
                 <Carousel
                   autoPlay={true}
                   infiniteLoop
@@ -98,29 +97,61 @@ export default function Home() {
                   showThumbs={false}
                   swipeable={false}
                   interval={3000}
-                  width="45vh"
                   onChange={transitionEffect}
                 >
                   <Image
                     className={transition}
                     src="/images/header/mensen1.png"
                     alt="Foto's van Emily"
-                    width={1722}
-                    height={2015}
+                    width={561}
+                    height={656}
                   />
                   <Image
                     className={transition}
                     src="/images/header/mensen2.png"
                     alt="Foto's van Emily"
-                    width={1722}
-                    height={2015}
+                    width={561}
+                    height={656}
                   />
                   <Image
                     className={transition}
                     src="/images/header/mensen3.png"
                     alt="Foto's van Emily"
-                    width={1722}
-                    height={2015}
+                    width={561}
+                    height={656}
+                  />
+                </Carousel>
+              </div>
+              <div className="flex sm:hidden justify-center">
+                <Carousel
+                  autoPlay={true}
+                  infiniteLoop
+                  stopOnHover={false}
+                  showArrows={false}
+                  showStatus={false}
+                  showIndicators={false}
+                  showThumbs={false}
+                  swipeable={false}
+                  interval={3000}
+                  width="32vh"
+                >
+                  <Image
+                    src="/images/header/mensen1.png"
+                    alt="Foto's van Emily"
+                    width={561}
+                    height={656}
+                  />
+                  <Image
+                    src="/images/header/mensen2.png"
+                    alt="Foto's van Emily"
+                    width={561}
+                    height={656}
+                  />
+                  <Image
+                    src="/images/header/mensen3.png"
+                    alt="Foto's van Emily"
+                    width={561}
+                    height={656}
                   />
                 </Carousel>
               </div>
