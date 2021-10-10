@@ -1,8 +1,16 @@
+import { useEffect, useState } from "react";
+import ReactDOM from 'react-dom'
 import { Carousel } from "react-responsive-carousel";
 import PortfolioLightboxImage from "../../portfolio/PortfolioLightboxImage";
 
 function LightboxModal(props) {
-  return (
+  const [isBrowser, setIsBrowser] = useState(false);
+
+  useEffect(() => {
+    setIsBrowser(true);
+  }, []);
+
+  const modalContent = (
     <>
       <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 max-h-screen">
         <div className="relative mx-auto w-full h-screen">
@@ -93,6 +101,15 @@ function LightboxModal(props) {
       </div>
     </>
   );
+
+  if (isBrowser) {
+    return ReactDOM.createPortal(
+      modalContent,
+      document.getElementById("modal-root")
+    );
+  } else {
+    return null;
+  }
 }
 
 export default LightboxModal;
