@@ -46,8 +46,18 @@ export default function Home() {
       <NextSeo
         title="De foto's van Emily"
         description="A short description goes here."
+        additionalLinkTags={[
+          {
+            rel: "icon",
+            href: "/images/favicons/favicon.ico",
+          },
+          {
+            rel: "apple-touch-icon",
+            href: "/images/favicons/apple-touch-icon.png",
+          },
+        ]}
       />
-        {/* favicon /> */}
+      {/* favicon /> */}
 
       <ScrollNavbar fade hideLogo />
 
