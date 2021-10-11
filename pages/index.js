@@ -1,4 +1,4 @@
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 import { Fragment, useEffect, useRef, useState } from "react";
 import Welcome from "../components/sections/welcome";
 import Diensten from "../components/sections/diensten";
@@ -43,13 +43,11 @@ export default function Home() {
 
   return (
     <Fragment>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>De Foto's van Emily</title>
-        {/* description meta */}
-        {/* <link rel="icon" href="/favicon.ico" /> */}
-        {/* gebruik next-seo npm tool */}
-      </Head>
+      <NextSeo
+        title="De foto's van Emily"
+        description="A short description goes here."
+      />
+        {/* favicon /> */}
 
       <ScrollNavbar fade hideLogo />
 
