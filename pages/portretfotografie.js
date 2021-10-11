@@ -1,3 +1,4 @@
+import { NextSeo } from "next-seo";
 import { Fragment, useEffect, useRef, useState } from "react";
 import ScrollNavbar from "../components/layout/ScrollNavbar";
 import ContactFormSection from "../components/sections/ContactFormSection";
@@ -22,7 +23,7 @@ function portretfotografie() {
     setSection1Height(section1Ref.current.clientHeight);
     setSection2Height(section2Ref.current.clientHeight);
     setSection3Height(section3Ref.current.clientHeight);
-  }, []); 
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -38,6 +39,43 @@ function portretfotografie() {
 
   return (
     <Fragment>
+      <NextSeo
+        title="Portretfotografie | De Foto's van Emily"
+        description="Portretfotografie door professioneel fotograaf in Utrecht en omgeving ✓ Binnen- en buiten foto's ✓ Nabewerking ✓ Portretfotografie ✓ Loveshoot ✓ Zwangerschap ✓ Honden"
+        additionalLinkTags={[
+          {
+            rel: "icon",
+            href: "/images/favicons/favicon.ico",
+          },
+          {
+            rel: "apple-touch-icon",
+            href: "/images/favicons/apple-touch-icon.png",
+          },
+        ]}
+        openGraph={{
+          type: "website",
+          url: "https://www.fotosvanemily.nl/portretfotografie",
+          title: "Portretfotografie | De Foto's van Emily",
+          description:
+            "Portretfotografie door professioneel fotograaf in Utrecht en omgeving ✓ Binnen- en buiten foto's ✓ Nabewerking ✓ Portretfotografie ✓ Loveshoot ✓ Zwangerschap ✓ Honden",
+          locale: "nl_NL",
+          site_name: "De Foto's van Emily",
+          images: [
+            {
+              url: "/images/OG-1.jpg",
+              width: 1200,
+              height: 630,
+              alt: "Hondenfotografie",
+            },
+            {
+              url: "/images/OG-1.jpg",
+              width: 1200,
+              height: 630,
+              alt: "Loveshoot",
+            },
+          ],
+        }}
+      />
       <ScrollNavbar fade={true} lightFade={true} />
 
       {/* HEADER PORTRETFOTOGRAFIE */}
@@ -215,7 +253,7 @@ function portretfotografie() {
               </div>
             </Scene>
             <FotoshootKadoSection />
-            <ContactFormSection bg="bg-grey-pinkish2"/>
+            <ContactFormSection bg="bg-grey-pinkish2" />
           </div>
         </div>
       </Controller>
