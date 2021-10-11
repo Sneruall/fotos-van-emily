@@ -1,6 +1,8 @@
 import { Fragment } from "react";
 import ScrollNavbar from "../components/layout/ScrollNavbar";
 import Button from "../components/ui/button";
+import { NextSeo } from "next-seo";
+
 
 function berichtVerzonden() {
   return (
