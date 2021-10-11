@@ -44,8 +44,8 @@ export default function Home() {
   return (
     <Fragment>
       <NextSeo
-        title="De foto's van Emily"
-        description="A short description goes here."
+        title="De Foto's van Emily"
+        description="Professioneel fotograaf in Utrecht en omgeving, bekijk mijn portfolio. ✓ Binnen- en buiten foto's ✓ Nabewerking ✓ Portretfotografie ✓ Loveshoot ✓ Zwangerschap ✓ Honden"
         additionalLinkTags={[
           {
             rel: "icon",
@@ -56,8 +56,30 @@ export default function Home() {
             href: "/images/favicons/apple-touch-icon.png",
           },
         ]}
+        openGraph={{
+          type: "website",
+          url: "https://www.fotosvanemily.nl",
+          title: "De Foto's van Emily",
+          description:
+            "Professioneel fotograaf in Utrecht en omgeving, bekijk mijn portfolio. ✓ Binnen- en buiten foto's ✓ Nabewerking ✓ Portretfotografie ✓ Loveshoot ✓ Zwangerschap ✓ Honden",
+          locale: "nl_NL",
+          site_name: "De Foto's van Emily",
+          images: [
+            {
+              url: "/images/OG-1.jpg",
+              width: 1200,
+              height: 630,
+              alt: "Hondenfotografie",
+            },
+            {
+              url: "/images/OG-1.jpg",
+              width: 1200,
+              height: 630,
+              alt: "Loveshoot",
+            },
+          ],
+        }}
       />
-      {/* favicon /> */}
 
       <ScrollNavbar fade hideLogo />
 
