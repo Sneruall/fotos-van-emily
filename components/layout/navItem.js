@@ -4,7 +4,7 @@ function navItem(props) {
   return (
     <li className="uppercase text-black text-center group w-32">
       <Link href={props.link}>
-        <a className="hover:underline">{props.text}</a>
+        <a href={props.link} className="hover:underline">{props.text}</a>
       </Link>
     </li>
   );
