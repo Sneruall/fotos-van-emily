@@ -3,6 +3,7 @@ import Layout from "../components/layout/layout";
 import { DefaultSeo } from "next-seo";
 import { useRouter } from "next/router";
 import * as ga from "../lib/ga";
+import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
