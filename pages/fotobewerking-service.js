@@ -11,6 +11,8 @@ import { CheckIcon } from "@heroicons/react/solid";
 import CustomPricingSection from "../components/sections/CustomPricingSection";
 import ContactFormSection from "../components/sections/ContactFormSection";
 import { Controller, Scene } from "react-scrollmagic";
+import { NextSeo } from "next-seo";
+
 
 function fotobewerkingservice() {
   const [section1Height, setSection1Height] = useState(0);
@@ -40,6 +42,43 @@ function fotobewerkingservice() {
 
   return (
     <Fragment>
+      <NextSeo
+        title="Fotobewerking service | De Foto's van Emily"
+        description="Fotobewerking service door professioneel fotograaf in Utrecht en omgeving ✓ Binnen- en buiten foto's ✓ Nabewerking ✓ Portretfotografie ✓ Loveshoot ✓ Zwangerschap ✓ Honden"
+        additionalLinkTags={[
+          {
+            rel: "icon",
+            href: "/images/favicons/favicon.ico",
+          },
+          {
+            rel: "apple-touch-icon",
+            href: "/images/favicons/apple-touch-icon.png",
+          },
+        ]}
+        openGraph={{
+          type: "website",
+          url: "https://www.fotosvanemily.nl/fotobewerking-service",
+          title: "Fotobewerking service | De Foto's van Emily",
+          description:
+            "Fotobewerking service door professioneel fotograaf in Utrecht en omgeving ✓ Binnen- en buiten foto's ✓ Nabewerking ✓ Portretfotografie ✓ Loveshoot ✓ Zwangerschap ✓ Honden",
+          locale: "nl_NL",
+          site_name: "De Foto's van Emily",
+          images: [
+            {
+              url: "/images/OG-1.jpg",
+              width: 1200,
+              height: 630,
+              alt: "Fotobewerking",
+            },
+            {
+              url: "/images/OG-2.jpg",
+              width: 1200,
+              height: 630,
+              alt: "Fotobewerking",
+            },
+          ],
+        }}
+      />
       <ScrollNavbar fade={true} lightFade />
 
       <header className="relative">

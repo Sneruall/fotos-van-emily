@@ -3,10 +3,49 @@ import ScrollNavbar from "../components/layout/ScrollNavbar";
 import Image from "next/image";
 import ContactFormSection from "../components/sections/ContactFormSection";
 import { Controller, Scene } from "react-scrollmagic";
+import { NextSeo } from "next-seo";
+
 
 function overmij() {
   return (
     <Fragment>
+      <NextSeo
+        title="Over mij | De Foto's van Emily"
+        description="Over Emily van Roomen, professioneel fotograaf in Utrecht en omgeving. ✓ Binnen- en buiten foto's ✓ Nabewerking ✓ Portretfotografie ✓ Loveshoot ✓ Zwangerschap ✓ Honden"
+        additionalLinkTags={[
+          {
+            rel: "icon",
+            href: "/images/favicons/favicon.ico",
+          },
+          {
+            rel: "apple-touch-icon",
+            href: "/images/favicons/apple-touch-icon.png",
+          },
+        ]}
+        openGraph={{
+          type: "website",
+          url: "https://www.fotosvanemily.nl/over-mij",
+          title: "De Foto's van Emily",
+          description:
+            "Over Emily van Roomen, professioneel fotograaf in Utrecht en omgeving. ✓ Binnen- en buiten foto's ✓ Nabewerking ✓ Portretfotografie ✓ Loveshoot ✓ Zwangerschap ✓ Honden",
+          locale: "nl_NL",
+          site_name: "De Foto's van Emily",
+          images: [
+            {
+              url: "/images/OG-1.jpg",
+              width: 1200,
+              height: 630,
+              alt: "Hondenfotografie",
+            },
+            {
+              url: "/images/OG-2.jpg",
+              width: 1200,
+              height: 630,
+              alt: "Loveshoot",
+            },
+          ],
+        }}
+      />
       <ScrollNavbar fade={true} />
       <Controller>
         <div className="bg-grey-light2 -mt-14 lg:mt-0">

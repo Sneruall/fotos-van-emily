@@ -1,15 +1,13 @@
 import { Fragment } from "react";
-import Image from "next/image";
 import ScrollNavbar from "../components/layout/ScrollNavbar";
 import Button from "../components/ui/button";
 import React, { useState, useCallback } from "react";
-import { photos } from "../data/photos";
-import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import PortfolioImage from "../components/portfolio/PortfolioImage";
 import PortfolioImagePortrait from "../components/portfolio/PortfolioImagePortrait";
-import PortfolioLightboxImage from "../components/portfolio/PortfolioLightboxImage";
 import LightboxModal from "../components/sections/elements/LightboxModal";
+import { NextSeo } from "next-seo";
+
 
 function portfolio() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -22,6 +20,43 @@ function portfolio() {
 
   return (
     <Fragment>
+      <NextSeo
+        title="Portfolio | De Foto's van Emily"
+        description="Portfolio van professioneel fotograaf in Utrecht en omgeving ✓ Binnen- en buiten foto's ✓ Nabewerking ✓ Portretfotografie ✓ Loveshoot ✓ Zwangerschap ✓ Honden"
+        additionalLinkTags={[
+          {
+            rel: "icon",
+            href: "/images/favicons/favicon.ico",
+          },
+          {
+            rel: "apple-touch-icon",
+            href: "/images/favicons/apple-touch-icon.png",
+          },
+        ]}
+        openGraph={{
+          type: "website",
+          url: "https://www.fotosvanemily.nl/portfolio",
+          title: "Portfolio | De Foto's van Emily",
+          description:
+            "Portfolio van professioneel fotograaf in Utrecht en omgeving ✓ Binnen- en buiten foto's ✓ Nabewerking ✓ Portretfotografie ✓ Loveshoot ✓ Zwangerschap ✓ Honden",
+          locale: "nl_NL",
+          site_name: "De Foto's van Emily",
+          images: [
+            {
+              url: "/images/OG-1.jpg",
+              width: 1200,
+              height: 630,
+              alt: "Portfolio",
+            },
+            {
+              url: "/images/OG-2.jpg",
+              width: 1200,
+              height: 630,
+              alt: "Portfolio",
+            },
+          ],
+        }}
+      />
       <ScrollNavbar fade={true} />
       <div className="mx-auto max-w-3xl text-center my-12 lg:my-24">
         <div className="border-b-2 border-brown-pale inline-block sm:px-10 my-6">
