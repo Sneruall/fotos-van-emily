@@ -98,7 +98,7 @@ export default function Home() {
 
           <div className="sm:hidden">
             <Image
-              src="/images/header/header1m.png"
+              src="/images/header/header1m2.jpg"
               alt="Foto's van Emily"
               layout="fill"
               objectFit="cover"
@@ -165,20 +165,24 @@ export default function Home() {
                   swipeable={false}
                   interval={3000}
                   width="32vh"
+                  onChange={transitionEffect}
                 >
                   <Image
+                    className={transition}
                     src="/images/header/mensen1.png"
                     alt="Foto's van Emily"
                     width={561}
                     height={656}
                   />
                   <Image
+                    className={transition}
                     src="/images/header/mensen2.png"
                     alt="Foto's van Emily"
                     width={561}
                     height={656}
                   />
                   <Image
+                    className={transition}
                     src="/images/header/mensen3.png"
                     alt="Foto's van Emily"
                     width={561}

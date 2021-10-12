@@ -82,7 +82,6 @@ export default function Diensten() {
                 imgwidth={421}
                 imgheight={434}
                 link="/hondenfotografie"
-
               />
             </div>
           </div>
