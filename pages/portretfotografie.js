@@ -65,13 +65,13 @@ function portretfotografie() {
               url: "/images/portretfotografie/OG-1.jpg",
               width: 1200,
               height: 630,
-              alt: "Hondenfotografie",
+              alt: "Portretfoto",
             },
             {
               url: "/images/portretfotografie/OG-2.jpg",
               width: 1200,
               height: 630,
-              alt: "Loveshoot",
+              alt: "Portretfoto",
             },
           ],
         }}
