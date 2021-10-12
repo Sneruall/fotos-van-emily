@@ -57,7 +57,7 @@ function zwangerschapsfotografie() {
         openGraph={{
           type: "website",
           url: "https://www.fotosvanemily.nl/zwangerschapsfotografie",
-          title: "Portretfotografie | De Foto's van Emily",
+          title: "Zwangerschapsfotografie | De Foto's van Emily",
           description:
             "Zwangerschapsfotografie door professioneel fotograaf in Utrecht en omgeving ✓ Binnen- en buiten foto's ✓ Nabewerking ✓ Portretfotografie ✓ Loveshoot ✓ Zwangerschap ✓ Honden",
           locale: "nl_NL",

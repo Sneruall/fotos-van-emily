@@ -55,7 +55,7 @@ function hondenfotografie() {
         openGraph={{
           type: "website",
           url: "https://www.fotosvanemily.nl/hondenfotografie",
-          title: "Portretfotografie | De Foto's van Emily",
+          title: "Hondenfotografie | De Foto's van Emily",
           description:
             "Hondenfotografie door professioneel fotograaf in Utrecht en omgeving ✓ Binnen- en buiten foto's ✓ Nabewerking ✓ Portretfotografie ✓ Loveshoot ✓ Zwangerschap ✓ Honden",
           locale: "nl_NL",

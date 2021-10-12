@@ -25,7 +25,7 @@ function overmij() {
         openGraph={{
           type: "website",
           url: "https://www.fotosvanemily.nl/over-mij",
-          title: "De Foto's van Emily",
+          title: "Over Mij | De Foto's van Emily",
           description:
             "Over Emily van Roomen, professioneel fotograaf in Utrecht en omgeving. ✓ Binnen- en buiten foto's ✓ Nabewerking ✓ Portretfotografie ✓ Loveshoot ✓ Zwangerschap ✓ Honden",
           locale: "nl_NL",
