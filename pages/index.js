@@ -1,4 +1,4 @@
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 import { Fragment, useEffect, useRef, useState } from "react";
 import Welcome from "../components/sections/welcome";
 import Diensten from "../components/sections/diensten";
@@ -10,7 +10,6 @@ import parse from "html-react-parser";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { Controller, Scene } from "react-scrollmagic";
-
 
 export default function Home() {
   //index slider
@@ -44,13 +43,43 @@ export default function Home() {
 
   return (
     <Fragment>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>De Foto's van Emily</title>
-        {/* description meta */}
-        {/* <link rel="icon" href="/favicon.ico" /> */}
-        {/* gebruik next-seo npm tool */}
-      </Head>
+      <NextSeo
+        title="De Foto's van Emily"
+        description="Professioneel fotograaf in Utrecht en omgeving, bekijk mijn portfolio. ✓ Binnen- en buiten foto's ✓ Nabewerking ✓ Portretfotografie ✓ Loveshoot ✓ Zwangerschap ✓ Honden"
+        additionalLinkTags={[
+          {
+            rel: "icon",
+            href: "/images/favicons/favicon.ico",
+          },
+          {
+            rel: "apple-touch-icon",
+            href: "/images/favicons/apple-touch-icon.png",
+          },
+        ]}
+        openGraph={{
+          type: "website",
+          url: "https://www.fotosvanemily.nl",
+          title: "De Foto's van Emily",
+          description:
+            "Professioneel fotograaf in Utrecht en omgeving, bekijk mijn portfolio. ✓ Binnen- en buiten foto's ✓ Nabewerking ✓ Portretfotografie ✓ Loveshoot ✓ Zwangerschap ✓ Honden",
+          locale: "nl_NL",
+          site_name: "De Foto's van Emily",
+          images: [
+            {
+              url: "/images/OG-1.jpg",
+              width: 1200,
+              height: 630,
+              alt: "Hondenfotografie",
+            },
+            {
+              url: "/images/OG-2.jpg",
+              width: 1200,
+              height: 630,
+              alt: "Loveshoot",
+            },
+          ],
+        }}
+      />
 
       <ScrollNavbar fade hideLogo />
 
@@ -87,7 +116,7 @@ export default function Home() {
               </h1>
             </div>
             <div className="absolute left-0 right-0 -bottom-2">
-              <div className="text-center flex justify-center">
+              <div className="hidden sm:flex justify-center">
                 <Carousel
                   autoPlay={true}
                   infiniteLoop
@@ -105,22 +134,55 @@ export default function Home() {
                     className={transition}
                     src="/images/header/mensen1.png"
                     alt="Foto's van Emily"
-                    width={1722}
-                    height={2015}
+                    width={561}
+                    height={656}
                   />
                   <Image
                     className={transition}
                     src="/images/header/mensen2.png"
                     alt="Foto's van Emily"
-                    width={1722}
-                    height={2015}
+                    width={561}
+                    height={656}
                   />
                   <Image
                     className={transition}
                     src="/images/header/mensen3.png"
                     alt="Foto's van Emily"
-                    width={1722}
-                    height={2015}
+                    width={561}
+                    height={656}
+                  />
+                </Carousel>
+              </div>
+              <div className="flex sm:hidden justify-center">
+                <Carousel
+                  autoPlay={true}
+                  infiniteLoop
+                  stopOnHover={false}
+                  showArrows={false}
+                  showStatus={false}
+                  showIndicators={false}
+                  showThumbs={false}
+                  swipeable={false}
+                  interval={3000}
+                  width="32vh"
+                >
+                  <Image
+                    src="/images/header/mensen1.png"
+                    alt="Foto's van Emily"
+                    width={561}
+                    height={656}
+                  />
+                  <Image
+                    src="/images/header/mensen2.png"
+                    alt="Foto's van Emily"
+                    width={561}
+                    height={656}
+                  />
+                  <Image
+                    src="/images/header/mensen3.png"
+                    alt="Foto's van Emily"
+                    width={561}
+                    height={656}
                   />
                 </Carousel>
               </div>

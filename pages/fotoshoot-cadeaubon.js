@@ -4,10 +4,49 @@ import Section from "../components/layout/Section";
 import Image from "next/image";
 import { MailIcon, PhoneIcon } from "@heroicons/react/solid";
 import ContactFormElement from "../components/sections/elements/ContactFormElement";
+import { NextSeo } from "next-seo";
+
 
 function fotoshootCadeaubon() {
   return (
     <Fragment>
+      <NextSeo
+        title="Fotoshoot cadeaubon | De Foto's van Emily"
+        description="Fotoshoot cadeaubon van professioneel fotograaf in Utrecht en omgeving ✓ Binnen- en buiten foto's ✓ Nabewerking ✓ Portretfotografie ✓ Loveshoot ✓ Zwangerschap ✓ Honden"
+        additionalLinkTags={[
+          {
+            rel: "icon",
+            href: "/images/favicons/favicon.ico",
+          },
+          {
+            rel: "apple-touch-icon",
+            href: "/images/favicons/apple-touch-icon.png",
+          },
+        ]}
+        openGraph={{
+          type: "website",
+          url: "https://www.fotosvanemily.nl/fotoshoot-cadeaubon",
+          title: "Fotoshoot cadeaubon | De Foto's van Emily",
+          description:
+            "Fotoshoot cadeaubon van professioneel fotograaf in Utrecht en omgeving ✓ Binnen- en buiten foto's ✓ Nabewerking ✓ Portretfotografie ✓ Loveshoot ✓ Zwangerschap ✓ Honden",
+          locale: "nl_NL",
+          site_name: "De Foto's van Emily",
+          images: [
+            {
+              url: "/images/OG-1.jpg",
+              width: 1200,
+              height: 630,
+              alt: "Fotoshoot cadeaubon",
+            },
+            {
+              url: "/images/OG-2.jpg",
+              width: 1200,
+              height: 630,
+              alt: "Fotoshoot cadeaubon",
+            },
+          ],
+        }}
+      />
       <ScrollNavbar fade={true} />
 
       <header className="relative">
