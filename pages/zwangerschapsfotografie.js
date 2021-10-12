@@ -9,6 +9,8 @@ import SpotlightSection from "../components/sections/SpotlightSection";
 import WerkwijzeSection from "../components/sections/WerkwijzeSection";
 import CustomPricingSection from "../components/sections/CustomPricingSection";
 import { Controller, Scene } from "react-scrollmagic";
+import { NextSeo } from "next-seo";
+
 
 
 function zwangerschapsfotografie() {
@@ -39,6 +41,43 @@ function zwangerschapsfotografie() {
 
   return (
     <Fragment>
+      <NextSeo
+        title="Zwangerschapsfotografie | De Foto's van Emily"
+        description="Zwangerschapsfotografie door professioneel fotograaf in Utrecht en omgeving ✓ Binnen- en buiten foto's ✓ Nabewerking ✓ Portretfotografie ✓ Loveshoot ✓ Zwangerschap ✓ Honden"
+        additionalLinkTags={[
+          {
+            rel: "icon",
+            href: "/images/favicons/favicon.ico",
+          },
+          {
+            rel: "apple-touch-icon",
+            href: "/images/favicons/apple-touch-icon.png",
+          },
+        ]}
+        openGraph={{
+          type: "website",
+          url: "https://www.fotosvanemily.nl/zwangerschapsfotografie",
+          title: "Portretfotografie | De Foto's van Emily",
+          description:
+            "Zwangerschapsfotografie door professioneel fotograaf in Utrecht en omgeving ✓ Binnen- en buiten foto's ✓ Nabewerking ✓ Portretfotografie ✓ Loveshoot ✓ Zwangerschap ✓ Honden",
+          locale: "nl_NL",
+          site_name: "De Foto's van Emily",
+          images: [
+            {
+              url: "/images/zwangerschapsfotografie/OG-1.jpg",
+              width: 1200,
+              height: 630,
+              alt: "Zwangerschapsfotografie",
+            },
+            {
+              url: "/images/zwangerschapsfotografie/OG-2.jpg",
+              width: 1200,
+              height: 630,
+              alt: "Zwangerschapsfotografie",
+            },
+          ],
+        }}
+      />
       <ScrollNavbar fade={true} />
       <header className="relative">
         <div className="-mt-14 lg:mt-0">

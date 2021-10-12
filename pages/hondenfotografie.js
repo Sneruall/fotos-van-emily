@@ -9,6 +9,7 @@ import WerkwijzeSection from "../components/sections/WerkwijzeSection";
 import CustomPricingSection from "../components/sections/CustomPricingSection";
 import Image from "next/image";
 import { Controller, Scene } from "react-scrollmagic";
+import { NextSeo } from "next-seo";
 
 function hondenfotografie() {
   const [section1Height, setSection1Height] = useState(0);
@@ -38,6 +39,43 @@ function hondenfotografie() {
 
   return (
     <Fragment>
+      <NextSeo
+        title="Hondenfotografie | De Foto's van Emily"
+        description="Hondenfotografie door professioneel fotograaf in Utrecht en omgeving ✓ Binnen- en buiten foto's ✓ Nabewerking ✓ Portretfotografie ✓ Loveshoot ✓ Zwangerschap ✓ Honden"
+        additionalLinkTags={[
+          {
+            rel: "icon",
+            href: "/images/favicons/favicon.ico",
+          },
+          {
+            rel: "apple-touch-icon",
+            href: "/images/favicons/apple-touch-icon.png",
+          },
+        ]}
+        openGraph={{
+          type: "website",
+          url: "https://www.fotosvanemily.nl/hondenfotografie",
+          title: "Portretfotografie | De Foto's van Emily",
+          description:
+            "Hondenfotografie door professioneel fotograaf in Utrecht en omgeving ✓ Binnen- en buiten foto's ✓ Nabewerking ✓ Portretfotografie ✓ Loveshoot ✓ Zwangerschap ✓ Honden",
+          locale: "nl_NL",
+          site_name: "De Foto's van Emily",
+          images: [
+            {
+              url: "/images/hondenfotografie/OG-1.jpg",
+              width: 1200,
+              height: 630,
+              alt: "Hondenfotografie",
+            },
+            {
+              url: "/images/hondenfotografie/OG-2.jpg",
+              width: 1200,
+              height: 630,
+              alt: "Hondenfotografie",
+            },
+          ],
+        }}
+      />
       <ScrollNavbar fade={true} lightFade />
       <header className="relative">
         <div className="-mt-14 lg:mt-0">
