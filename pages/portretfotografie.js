@@ -62,13 +62,13 @@ function portretfotografie() {
           site_name: "De Foto's van Emily",
           images: [
             {
-              url: "/images/OG-1.jpg",
+              url: "/images/portretfotografie/OG-1.jpg",
               width: 1200,
               height: 630,
               alt: "Hondenfotografie",
             },
             {
-              url: "/images/OG-1.jpg",
+              url: "/images/portretfotografie/OG-2.jpg",
               width: 1200,
               height: 630,
               alt: "Loveshoot",
