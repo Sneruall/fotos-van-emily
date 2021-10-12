@@ -1,7 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
+
 
 export default function Dienst(props) {
   return (
+    <Link href={props.link}>
     <div className="mt-10 group cursor-pointer text-center">
       <div className="my-3 transition duration-200 ease-in transform group-hover:scale-105">
         <Image
@@ -21,5 +24,6 @@ export default function Dienst(props) {
         <p className="mt-3 flex">{props.description}</p>
       )}
     </div>
+    </Link>
   );
 }

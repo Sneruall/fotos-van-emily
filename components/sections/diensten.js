@@ -24,6 +24,7 @@ export default function Diensten() {
                 alt={"Portretfotografie"}
                 imgwidth={421}
                 imgheight={434}
+                link="/portretfotografie"
               />
             </div>
             <div className="max-w-xs relative">
@@ -36,6 +37,8 @@ export default function Diensten() {
                 alt={"Koppelfotografie"}
                 imgwidth={421}
                 imgheight={434}
+                link="/loveshoot"
+
               />
               <div className="hidden md:block absolute top-0 right-0 transform scale-75 lg:scale-100 translate-x-10 -translate-y-2 lg:translate-x-4 lg:-translate-y-4">
                 <Image
@@ -56,6 +59,8 @@ export default function Diensten() {
                 alt={"Zwangerschapsfotografie"}
                 imgwidth={421}
                 imgheight={434}
+                link="/zwangerschapsfotografie"
+
               />
               <div className="hidden md:block absolute top-0 left-0 transform scale-75 lg:scale-100 -translate-x-20">
                 <Image
@@ -76,6 +81,8 @@ export default function Diensten() {
                 alt={"Hondenfotografie"}
                 imgwidth={421}
                 imgheight={434}
+                link="/hondenfotografie"
+
               />
             </div>
           </div>

@@ -90,6 +90,7 @@ function Reviews(props) {
                 title="Tarieven"
                 description="Benieuwd naar mijn tarieven? Neem contact op of ga naar één van de diensten pagina’s voor meer informatie."
                 showDescriptionOnMobile
+                link="#diensten"
               />
               <div className="xl:hidden pt-10 text-center">
                 <Button link="#diensten" button="button-2" text="Diensten" />
@@ -104,6 +105,7 @@ function Reviews(props) {
                 title="Over mij"
                 description="Vind meer informatie over mijn ervaring en werkwijze op de over mij pagina."
                 showDescriptionOnMobile
+                link="/over-mij"
               />
               <div className="xl:hidden pt-10 text-center">
                 <Button link="/over-mij" button="button-2" text="Lees meer" />
@@ -118,6 +120,7 @@ function Reviews(props) {
                 title="Contact"
                 description="Wil je mij inhuren of heb je vragen? Neem contact op met mij en we bespreken jouw wensen en de mogelijkheden."
                 showDescriptionOnMobile
+                link="/over-mij#contact"
               />
               <div className="xl:hidden pt-10 pb-10 md:pb-0 text-center">
                 <Button
