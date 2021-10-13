@@ -18,7 +18,7 @@ function WerkwijzeSection(props) {
             <WerkwijzeStap
               number="2"
               title="TWEE DAGEN VOOR DE FOTOSHOOT"
-              description="Ik neem nog even contact met je op, ik geef je een update over het weer en we passen eventueel het tijdstip of de locatie van de portretshoot iets aan."
+              description="Ik neem nog even contact met je op, ik geef je een update over het weer en we passen eventueel het tijdstip of de locatie van de shoot iets aan."
             />
             <WerkwijzeStap
               number="3"
