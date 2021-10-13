@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Section from "../layout/Section";
+import FadeInEffect from "./elements/FadeInEffect";
 
 //hier gaat nog iets mis met margins van het witte vlak
 export default function Welcome() {
@@ -9,7 +10,9 @@ export default function Welcome() {
 
         <div className="flex-auto">
         <div className="w-3/5 self-start mx-auto md:w-auto relative">
+        <FadeInEffect effect="fade-in-effect-top" fade top>
           <Image src="/images/emily.png" alt="Emily" width={370} height={553} quality={100} />
+          </FadeInEffect>
 
           <div className="absolute md:hidden top-0 right-0 transform translate-x-14 -translate-y-5">
             <Image

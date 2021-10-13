@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Section from "../layout/Section";
+import FadeInEffect from "./elements/FadeInEffect";
 
 export default function Werkwijze() {
   return (
@@ -39,13 +40,15 @@ export default function Werkwijze() {
           de mobiel niet tippen aan de fotograaf!
         </p>
         <div className="hidden md:flex justify-center relative">
-          <Image
-            className="rounded"
-            src="/images/fotograaf-met-camera.png"
-            width={413}
-            height={232}
-            alt="Fotograaf met camera"
-          />
+          <FadeInEffect effect="fade-in-effect-bottom" fade bottom offset={-100}>
+            <Image
+              className="rounded"
+              src="/images/fotograaf-met-camera.png"
+              width={413}
+              height={232}
+              alt="Fotograaf met camera"
+            />
+          </FadeInEffect>
           <div className="hidden md:block absolute top-0 right-0 transform scale-75 lg:scale-100 -translate-x-16 lg:-translate-x-36 xl:-translate-x-48">
             <Image
               src="/images/stars6.png"
