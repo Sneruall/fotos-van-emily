@@ -4,7 +4,7 @@ import FadeInEffect from "./FadeInEffect";
 
 export default function Fotobewerking(props) {
   return (
-    <FadeInEffect effect="fade-in-effect-bottom">
+    <FadeInEffect effect="fade-in-effect-bottom" fade bottom>
       <Link href={props.link}>
         <div className="flex justify-center mt-10">
           <div className="group cursor-pointer text-center max-w-xs md:max-w-sm">
