@@ -70,3 +70,9 @@ p{
  line-height: 1.67;
  font-weight: 300;
 }
+
+.fade-in-effect{
+  opacity: 100;
+  --tw-translate-y: -2.5rem;
+
+}
