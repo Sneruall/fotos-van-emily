@@ -135,8 +135,8 @@ function hondenfotografie() {
               <div>
                 <div id="section1" ref={section1Ref}>
                   <SpotlightSection
-                    heading="HOE ZIET DE SHOOT ERUIT?"
-                    text="Tijdens een fotoshoot gaan we samen op pad. We maken er een gezellige wandeling waarbij we opzoek gaan naar mooie plekjes om foto’s te maken. Tijdens het fotograferen zorgen we er samen voor dat jouw hond zo mooi mogelijk gefotografeerd wordt. Neem iets lekkers mee waarvan je weet dat dat de aandacht van jouw hond trekt, of een favoriet speeltje of andere aandacht trekker. Als we naar een andere locatie lopen kan jouw hond lekker zijn ei kwijt: snuffelen, rennen of gewoon lekker gek doen. Ondertussen klik ik gewoon door voor wat gave actie foto’s!"
+                    heading="HOE ZIET EEN HONDENSHOOT ERUIT?"
+                    text="Tijdens de fotoshoot gaan we samen op pad. We maken een gezellige wandeling waarbij we opzoek gaan naar mooie plekjes om foto’s te maken. Tijdens het fotograferen zorgen we er samen voor dat jouw hond zo mooi mogelijk gefotografeerd wordt. Neem iets lekkers mee waarvan je weet dat het de aandacht van jouw hond trekt, een favoriet speeltje of andere aandacht trekker. Als we naar een andere locatie lopen kan jouw hond lekker zijn ei kwijt: snuffelen, rennen of gewoon lekker gek doen. Ondertussen klik ik gewoon door voor wat gave actie foto’s!"
                     img="/images/hondenfotografie/spotlight.png"
                     alt="hondenfotografie"
                     review1={[
