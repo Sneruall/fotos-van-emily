@@ -138,19 +138,8 @@ function loveshoot() {
               <div>
                 <div id="section1" ref={section1Ref}>
                   <SpotlightSection
-                    heading="NATUURLIJK IN DE SPOTLIGHT"
-                    text="Ik fotografeer het liefst in de buitenlucht, dit zorgt voor de
-      meest pure en unieke foto’s. Ik zorg voor voldoende afwisseling op
-      locatie zodat jij een diversiteit aan foto’s krijgt. Heb je al een
-      locatie in gedachte? Super! Heb je wat meer inspiratie nodig? Ik
-      denk graag met je mee naar een locatie die bij jou past, het bos,
-      het strand, de heide of de stad, met veel passie zoek ik naar de
-      aller mooiste plekjes en gelukkig ken ik er een heleboel! Tijdens
-      de shoot zorg ik voor een ontspannen sfeer zodat je je op je gemak
-      voelt, daarom klets ik gezellig en geef ik duidelijke
-      aanwijzingen. Kortom, gewoon een heerlijk momentje in de
-      spotlight! Zo kom jij op een natuurlijke manier prachtig op de
-      foto te staan!"
+                    heading="SAMEN IN DE SPOTLIGHT"
+                    text="Ik fotografeer het liefst in de buitenlucht, dit zorgt voor de meest pure en unieke foto’s. Ik zorg voor voldoende afwisseling op locatie zodat jullie een diversiteit aan foto’s krijgen. Hebben jullie al een locatie in gedachte? Super! Hebben jullie wat meer inspiratie nodig? Ik denk graag met jullie mee naar een locatie die bij jullie past, het bos, een kasteel, de heide of de stad, met veel passie zoek ik naar de aller mooiste plekjes en gelukkig ken ik er een heleboel! Tijdens de loveshoot zorg ik voor een ontspannen sfeer zodat jullie je op je gemak voelen, daarom klets ik gezellig en geef ik duidelijke aanwijzingen. Kortom, gewoon een heerlijk momentje in de spotlight. Zo komen jullie op een natuurlijke manier samen prachtig op de foto te staan!"
                     img="/images/loveshoot/spotlight.png"
                     alt="loveshoot"
                     review1={[
