@@ -4,7 +4,7 @@ import FadeInEffect from "./FadeInEffect";
 
 export default function Dienst(props) {
   return (
-    <FadeInEffect effect="fade-in-effect-bottom" fade bottom>
+    <FadeInEffect effect="fade-in-effect-bottom" fade bottom offset={-30}>
       <Link href={props.link}>
         <div className="mt-10 group cursor-pointer text-center">
           <div className="my-3 transition duration-200 ease-in transform group-hover:scale-105">

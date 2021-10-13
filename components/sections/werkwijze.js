@@ -40,7 +40,7 @@ export default function Werkwijze() {
           de mobiel niet tippen aan de fotograaf!
         </p>
         <div className="hidden md:flex justify-center relative">
-          <FadeInEffect effect="fade-in-effect-bottom" fade bottom>
+          <FadeInEffect effect="fade-in-effect-bottom" fade bottom offset={-100}>
             <Image
               className="rounded"
               src="/images/fotograaf-met-camera.png"

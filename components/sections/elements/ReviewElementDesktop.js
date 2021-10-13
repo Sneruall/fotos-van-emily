@@ -2,7 +2,7 @@ import FadeInEffect from "./FadeInEffect";
 
 function ReviewElementDesktop(props) {
   return (
-    <FadeInEffect effect="fade-in-effect-bottom" fade bottom>
+    <FadeInEffect effect="fade-in-effect-bottom" fade bottom offset={-30}>
       <div className="border border-white min-h-9/10 lg:h-auto mx-7 lg:mx-0 mb-10 lg:mb-0 lg:my-5 grid grid-cols-1 justify-items-stretch">
         <div className="bg-white m-1 p-2 bg-opacity-70">
           <div className="p-2">
