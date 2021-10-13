@@ -100,7 +100,7 @@ function hondenfotografie() {
           </div>
 
           <div className="px-5 relative max-w-6xl mx-auto min-h-screen">
-            <div className="max-w-3xl absolute bottom-64 sm:bottom-7">
+            <div className="max-w-3xl absolute top-64 sm:bottom-7">
               <h1 className="text-6xl sm:text-8xl md:text-9xl xl:text-10xl leading-tight font-display uppercase py-4 text-white">
                 Honden fotografie
               </h1>

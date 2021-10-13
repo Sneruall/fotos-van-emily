@@ -27,7 +27,7 @@ function ImageWithText(props) {
           </div>
         )}
 
-        <p className="text-charcoal">{props.text[0]}</p>
+        <p className={`${!props.title && "lg:mt-10 "} text-charcoal`}>{props.text[0]}</p>
         {props.text[1] && (
           <p className="text-charcoal">
             <br />
