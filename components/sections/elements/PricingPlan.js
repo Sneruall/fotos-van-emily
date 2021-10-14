@@ -1,11 +1,9 @@
 import { CheckIcon } from "@heroicons/react/solid";
 import Button from "../../ui/button";
 import parse from "html-react-parser";
-import FadeInEffect from "./FadeInEffect";
 
 function PricingPlan(props) {
   return (
-    <FadeInEffect effect="fade-in-effect-bottom" fade bottom offset={0}>
       <div className="border border-white my-5 grid grid-cols-1 justify-items-stretch">
         <div className="bg-white m-1 px-4 py-2 bg-opacity-70 flex flex-col">
           <div className="my-7">
@@ -65,7 +63,6 @@ function PricingPlan(props) {
           </div>
         </div>
       </div>
-    </FadeInEffect>
   );
 }
 
