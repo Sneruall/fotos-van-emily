@@ -1,5 +1,9 @@
+import FadeInEffect from "./FadeInEffect";
+
 function WerkwijzeStap(props) {
   return (
+    <FadeInEffect effect="fade-in-effect-left" fade left offset={-80}>
+
     <div className="flex flex-wrap lg:flex-nowrap my-5">
       <div className="lg:w-40 text-center lg:mr-10">
         <p className="font-display text-9xl text-white opacity-70 text-stroke-grey-warm text-stroke-2">
@@ -20,6 +24,7 @@ function WerkwijzeStap(props) {
         </p>
       </div>
     </div>
+    </FadeInEffect>
   );
 }
 

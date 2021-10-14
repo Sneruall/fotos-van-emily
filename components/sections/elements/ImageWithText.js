@@ -1,5 +1,6 @@
 import Button from "../../ui/button";
 import Image from "next/image";
+import FadeInEffect from "./FadeInEffect";
 
 function ImageWithText(props) {
   return (
@@ -9,13 +10,15 @@ function ImageWithText(props) {
           props.mirrored ? "lg:order-last" : ""
         }`}
       >
-        <Image
-          src={props.img}
-          alt={props.alt}
-          width={props.width}
-          height={props.height}
-          quality={100}
-        />
+        <FadeInEffect effect="fade-in-effect-top" fade top offset={0}>
+          <Image
+            src={props.img}
+            alt={props.alt}
+            width={props.width}
+            height={props.height}
+            quality={100}
+          />
+        </FadeInEffect>
       </div>
 
       <div>
@@ -27,7 +30,9 @@ function ImageWithText(props) {
           </div>
         )}
 
-        <p className={`${!props.title && "lg:mt-10 "} text-charcoal`}>{props.text[0]}</p>
+        <p className={`${!props.title && "lg:mt-10 "} text-charcoal`}>
+          {props.text[0]}
+        </p>
         {props.text[1] && (
           <p className="text-charcoal">
             <br />
