@@ -10,7 +10,7 @@ export default function Welcome() {
 
         <div className="flex-auto">
         <div className="w-3/5 self-start mx-auto md:w-auto relative">
-        <FadeInEffect effect="fade-in-effect-top" fade top>
+        <FadeInEffect effect="fade-in-effect-top" fade top offset={0}>
           <Image src="/images/emily.png" alt="Emily" width={370} height={553} quality={100} />
           </FadeInEffect>
 
