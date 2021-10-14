@@ -1,8 +1,7 @@
-import { Controller, Scene } from "react-scrollmagic";
+import { Scene } from "react-scrollmagic";
 
 function FadeInEffect(props) {
   return (
-    <Controller>
       <Scene classToggle={props.effect} reverse={false} offset={props.offset}>
         <div
           className={`transition duration-700 transform ${
@@ -14,7 +13,6 @@ function FadeInEffect(props) {
           </div>
         </div>
       </Scene>
-    </Controller>
   );
 }
 

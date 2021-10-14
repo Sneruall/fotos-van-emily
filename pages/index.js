@@ -136,7 +136,6 @@ export default function Home() {
                     alt="Foto's van Emily"
                     width={561}
                     height={656}
-                    priority
                   />
                   <Image
                     className={transition}
@@ -174,7 +173,6 @@ export default function Home() {
                     alt="Foto's van Emily"
                     width={561}
                     height={656}
-                    priority
                   />
                   <Image
                     className={transition}
