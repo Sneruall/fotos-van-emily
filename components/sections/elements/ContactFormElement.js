@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import { useRouter } from "next/router";
+import * as ga from "../../../lib/ga";
 
 function ContactFormElement(props) {
   const [name, setName] = useState("");
@@ -12,6 +13,12 @@ function ContactFormElement(props) {
   const myFormRef = useRef(null);
 
   const router = useRouter();
+
+  const generateLead = () => {
+    ga.event({
+      action: "generate_lead",
+    });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -29,6 +36,7 @@ function ContactFormElement(props) {
     })
       .then(() => {
         clearForm();
+        generateLead();
         router.push("/bericht-verzonden");
       })
       .catch((err) => {
