@@ -16,7 +16,6 @@ function ImageWithText(props) {
             alt={props.alt}
             width={props.width}
             height={props.height}
-            quality={100}
           />
         </FadeInEffect>
       </div>

@@ -88,7 +88,6 @@ function zwangerschapsfotografie() {
               layout="fill"
               objectFit="cover"
               priority
-              quality={100}
             />
           </div>
           <div className="sm:hidden">
