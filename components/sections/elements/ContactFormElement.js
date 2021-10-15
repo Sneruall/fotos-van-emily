@@ -94,7 +94,7 @@ function ContactFormElement(props) {
         {error && (
           <p className="my-5 text-red-600">
             Oeps, er gaat iets mis! Neem anders even contact op via mail of
-            telefoon:{" "}
+            telefoon:
             <a
               href="mailto:info@fotosvanemily.nl"
               className="hover:underline text-charcoal"

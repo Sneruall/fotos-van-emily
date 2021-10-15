@@ -12,7 +12,7 @@ import CustomPricingSection from "../components/sections/CustomPricingSection";
 import ContactFormSection from "../components/sections/ContactFormSection";
 import { Controller, Scene } from "react-scrollmagic";
 import { NextSeo } from "next-seo";
-
+import FadeInEffect from "../components/sections/elements/FadeInEffect";
 
 function fotobewerkingservice() {
   const [section1Height, setSection1Height] = useState(0);
@@ -155,213 +155,254 @@ function fotobewerkingservice() {
                       </div>
 
                       <div className="flex flex-col lg:grid grid-cols-2 gap-4 lg:gap-14 mb-8 justify-items-center">
-                        <ReactCompareSlider
-                          handle={
-                            <ReactCompareSliderHandle
-                              buttonStyle={{
-                                WebkitBackdropFilter: undefined,
-                                backdropFilter: undefined,
-                                backgroundColor: "rgba(255, 255, 255, 0.9)",
-                                border: 0,
-                                boxShadow: undefined,
-                                color: "#777",
-                                opacity: 0.9,
-                                width: "50px",
-                                height: "50px",
-                              }}
-                              linesStyle={{ opacity: 0.5 }}
-                            />
-                          }
-                          itemOne={
-                            <Image
-                              src="/images/fotobewerking/1e.jpg"
-                              alt="nabewerkte foto"
-                              width="524"
-                              height="363"
-                            />
-                          }
-                          itemTwo={
-                            <Image
-                              src="/images/fotobewerking/1.jpg"
-                              alt="onbewerkte foto"
-                              width="524"
-                              height="363"
-                            />
-                          }
-                        />
+                        <FadeInEffect
+                          effect="fade-in-effect-bottom"
+                          fade
+                          bottom
+                          offset={0}
+                        >
+                          <ReactCompareSlider
+                            handle={
+                              <ReactCompareSliderHandle
+                                buttonStyle={{
+                                  WebkitBackdropFilter: undefined,
+                                  backdropFilter: undefined,
+                                  backgroundColor: "rgba(255, 255, 255, 0.9)",
+                                  border: 0,
+                                  boxShadow: undefined,
+                                  color: "#777",
+                                  opacity: 0.9,
+                                  width: "50px",
+                                  height: "50px",
+                                }}
+                                linesStyle={{ opacity: 0.5 }}
+                              />
+                            }
+                            itemOne={
+                              <Image
+                                src="/images/fotobewerking/1e.jpg"
+                                alt="nabewerkte foto"
+                                width="524"
+                                height="363"
+                              />
+                            }
+                            itemTwo={
+                              <Image
+                                src="/images/fotobewerking/1.jpg"
+                                alt="onbewerkte foto"
+                                width="524"
+                                height="363"
+                              />
+                            }
+                          />
+                        </FadeInEffect>
+                        <FadeInEffect
+                          effect="fade-in-effect-bottom"
+                          fade
+                          bottom
+                          offset={0}
+                        >
+                          <ReactCompareSlider
+                            handle={
+                              <ReactCompareSliderHandle
+                                buttonStyle={{
+                                  WebkitBackdropFilter: undefined,
+                                  backdropFilter: undefined,
+                                  backgroundColor: "rgba(255, 255, 255, 0.9)",
+                                  border: 0,
+                                  boxShadow: undefined,
+                                  color: "#777",
+                                  opacity: 0.9,
+                                  width: "50px",
+                                  height: "50px",
+                                }}
+                                linesStyle={{ opacity: 0.5 }}
+                              />
+                            }
+                            itemOne={
+                              <Image
+                                src="/images/fotobewerking/2e.jpg"
+                                alt="bewerkte foto"
+                                width="524"
+                                height="363"
+                              />
+                            }
+                            itemTwo={
+                              <Image
+                                src="/images/fotobewerking/2.jpg"
+                                alt="onbewerkte foto"
+                                width="524"
+                                height="363"
+                              />
+                            }
+                          />
+                        </FadeInEffect>
 
-                        <ReactCompareSlider
-                          handle={
-                            <ReactCompareSliderHandle
-                              buttonStyle={{
-                                WebkitBackdropFilter: undefined,
-                                backdropFilter: undefined,
-                                backgroundColor: "rgba(255, 255, 255, 0.9)",
-                                border: 0,
-                                boxShadow: undefined,
-                                color: "#777",
-                                opacity: 0.9,
-                                width: "50px",
-                                height: "50px",
-                              }}
-                              linesStyle={{ opacity: 0.5 }}
-                            />
-                          }
-                          itemOne={
-                            <Image
-                              src="/images/fotobewerking/2e.jpg"
-                              alt="bewerkte foto"
-                              width="524"
-                              height="363"
-                            />
-                          }
-                          itemTwo={
-                            <Image
-                              src="/images/fotobewerking/2.jpg"
-                              alt="onbewerkte foto"
-                              width="524"
-                              height="363"
-                            />
-                          }
-                        />
+                        <FadeInEffect
+                          effect="fade-in-effect-bottom"
+                          fade
+                          bottom
+                          offset={0}
+                        >
+                          <ReactCompareSlider
+                            handle={
+                              <ReactCompareSliderHandle
+                                buttonStyle={{
+                                  WebkitBackdropFilter: undefined,
+                                  backdropFilter: undefined,
+                                  backgroundColor: "rgba(255, 255, 255, 0.9)",
+                                  border: 0,
+                                  boxShadow: undefined,
+                                  color: "#777",
+                                  opacity: 0.9,
+                                  width: "50px",
+                                  height: "50px",
+                                }}
+                                linesStyle={{ opacity: 0.5 }}
+                              />
+                            }
+                            itemOne={
+                              <Image
+                                src="/images/fotobewerking/3e.jpg"
+                                alt="nabewerkte foto"
+                                width="524"
+                                height="363"
+                              />
+                            }
+                            itemTwo={
+                              <Image
+                                src="/images/fotobewerking/3.jpg"
+                                alt="onbewerkte foto"
+                                width="524"
+                                height="363"
+                              />
+                            }
+                          />
+                        </FadeInEffect>
 
-                        <ReactCompareSlider
-                          handle={
-                            <ReactCompareSliderHandle
-                              buttonStyle={{
-                                WebkitBackdropFilter: undefined,
-                                backdropFilter: undefined,
-                                backgroundColor: "rgba(255, 255, 255, 0.9)",
-                                border: 0,
-                                boxShadow: undefined,
-                                color: "#777",
-                                opacity: 0.9,
-                                width: "50px",
-                                height: "50px",
-                              }}
-                              linesStyle={{ opacity: 0.5 }}
-                            />
-                          }
-                          itemOne={
-                            <Image
-                            src="/images/fotobewerking/3e.jpg"
-                            alt="nabewerkte foto"
-                              width="524"
-                              height="363"
-                            />
-                          }
-                          itemTwo={
-                            <Image
-                            src="/images/fotobewerking/3.jpg"
-                            alt="onbewerkte foto"
-                              width="524"
-                              height="363"
-                            />
-                          }
-                        />
-
-                        <ReactCompareSlider
-                          handle={
-                            <ReactCompareSliderHandle
-                              buttonStyle={{
-                                WebkitBackdropFilter: undefined,
-                                backdropFilter: undefined,
-                                backgroundColor: "rgba(255, 255, 255, 0.9)",
-                                border: 0,
-                                boxShadow: undefined,
-                                color: "#777",
-                                opacity: 0.9,
-                                width: "50px",
-                                height: "50px",
-                              }}
-                              linesStyle={{ opacity: 0.5 }}
-                            />
-                          }
-                          itemOne={
-                            <Image
-                            src="/images/fotobewerking/4e.jpg"
-                            alt="nabewerkte foto"
-                            width="524"
-                              height="363"
-                            />
-                          }
-                          itemTwo={
-                            <Image
-                            src="/images/fotobewerking/4.jpg"
-                              alt="onbewerkte foto"
-                              width="524"
-                              height="363"
-                            />
-                          }
-                        />
-                        <ReactCompareSlider
-                          handle={
-                            <ReactCompareSliderHandle
-                              buttonStyle={{
-                                WebkitBackdropFilter: undefined,
-                                backdropFilter: undefined,
-                                backgroundColor: "rgba(255, 255, 255, 0.9)",
-                                border: 0,
-                                boxShadow: undefined,
-                                color: "#777",
-                                opacity: 0.9,
-                                width: "50px",
-                                height: "50px",
-                              }}
-                              linesStyle={{ opacity: 0.5 }}
-                            />
-                          }
-                          itemOne={
-                            <Image
-                            src="/images/fotobewerking/5e.jpg"
-                            alt="nabewerkte foto"
-                            width="524"
-                              height="363"
-                            />
-                          }
-                          itemTwo={
-                            <Image
-                            src="/images/fotobewerking/5.jpg"
-                              alt="onbewerkte foto"
-                              width="524"
-                              height="363"
-                            />
-                          }
-                        />
-                        <ReactCompareSlider
-                          handle={
-                            <ReactCompareSliderHandle
-                              buttonStyle={{
-                                WebkitBackdropFilter: undefined,
-                                backdropFilter: undefined,
-                                backgroundColor: "rgba(255, 255, 255, 0.9)",
-                                border: 0,
-                                boxShadow: undefined,
-                                color: "#777",
-                                opacity: 0.9,
-                                width: "50px",
-                                height: "50px",
-                              }}
-                              linesStyle={{ opacity: 0.5 }}
-                            />
-                          }
-                          itemOne={
-                            <Image
-                            src="/images/fotobewerking/6e.jpg"
-                            alt="nabewerkte foto"
-                            width="524"
-                              height="363"
-                            />
-                          }
-                          itemTwo={
-                            <Image
-                            src="/images/fotobewerking/6.jpg"
-                              alt="onbewerkte foto"
-                              width="524"
-                              height="363"
-                            />
-                          }
-                        />
+                        <FadeInEffect
+                          effect="fade-in-effect-bottom"
+                          fade
+                          bottom
+                          offset={0}
+                        >
+                          <ReactCompareSlider
+                            handle={
+                              <ReactCompareSliderHandle
+                                buttonStyle={{
+                                  WebkitBackdropFilter: undefined,
+                                  backdropFilter: undefined,
+                                  backgroundColor: "rgba(255, 255, 255, 0.9)",
+                                  border: 0,
+                                  boxShadow: undefined,
+                                  color: "#777",
+                                  opacity: 0.9,
+                                  width: "50px",
+                                  height: "50px",
+                                }}
+                                linesStyle={{ opacity: 0.5 }}
+                              />
+                            }
+                            itemOne={
+                              <Image
+                                src="/images/fotobewerking/4e.jpg"
+                                alt="nabewerkte foto"
+                                width="524"
+                                height="363"
+                              />
+                            }
+                            itemTwo={
+                              <Image
+                                src="/images/fotobewerking/4.jpg"
+                                alt="onbewerkte foto"
+                                width="524"
+                                height="363"
+                              />
+                            }
+                          />
+                        </FadeInEffect>
+                        <FadeInEffect
+                          effect="fade-in-effect-bottom"
+                          fade
+                          bottom
+                          offset={0}
+                        >
+                          <ReactCompareSlider
+                            handle={
+                              <ReactCompareSliderHandle
+                                buttonStyle={{
+                                  WebkitBackdropFilter: undefined,
+                                  backdropFilter: undefined,
+                                  backgroundColor: "rgba(255, 255, 255, 0.9)",
+                                  border: 0,
+                                  boxShadow: undefined,
+                                  color: "#777",
+                                  opacity: 0.9,
+                                  width: "50px",
+                                  height: "50px",
+                                }}
+                                linesStyle={{ opacity: 0.5 }}
+                              />
+                            }
+                            itemOne={
+                              <Image
+                                src="/images/fotobewerking/5e.jpg"
+                                alt="nabewerkte foto"
+                                width="524"
+                                height="363"
+                              />
+                            }
+                            itemTwo={
+                              <Image
+                                src="/images/fotobewerking/5.jpg"
+                                alt="onbewerkte foto"
+                                width="524"
+                                height="363"
+                              />
+                            }
+                          />
+                        </FadeInEffect>
+                        <FadeInEffect
+                          effect="fade-in-effect-bottom"
+                          fade
+                          bottom
+                          offset={0}
+                        >
+                          <ReactCompareSlider
+                            handle={
+                              <ReactCompareSliderHandle
+                                buttonStyle={{
+                                  WebkitBackdropFilter: undefined,
+                                  backdropFilter: undefined,
+                                  backgroundColor: "rgba(255, 255, 255, 0.9)",
+                                  border: 0,
+                                  boxShadow: undefined,
+                                  color: "#777",
+                                  opacity: 0.9,
+                                  width: "50px",
+                                  height: "50px",
+                                }}
+                                linesStyle={{ opacity: 0.5 }}
+                              />
+                            }
+                            itemOne={
+                              <Image
+                                src="/images/fotobewerking/6e.jpg"
+                                alt="nabewerkte foto"
+                                width="524"
+                                height="363"
+                              />
+                            }
+                            itemTwo={
+                              <Image
+                                src="/images/fotobewerking/6.jpg"
+                                alt="onbewerkte foto"
+                                width="524"
+                                height="363"
+                              />
+                            }
+                          />
+                        </FadeInEffect>
                       </div>
                     </div>
                   </div>
@@ -383,40 +424,47 @@ function fotobewerkingservice() {
               </p>
               <div className="flex flex-col">
                 <div className="flex justify-center">
-                  <ReactCompareSlider
-                    handle={
-                      <ReactCompareSliderHandle
-                        buttonStyle={{
-                          WebkitBackdropFilter: undefined,
-                          backdropFilter: undefined,
-                          backgroundColor: "rgba(255, 255, 255, 0.9)",
-                          border: 0,
-                          boxShadow: undefined,
-                          color: "#777",
-                          opacity: 0.9,
-                          width: "50px",
-                          height: "50px",
-                        }}
-                        linesStyle={{ opacity: 0.5 }}
-                      />
-                    }
-                    itemOne={
-                      <Image
-                        src="/images/portretfotografie/sk1.jpg"
-                        alt="skin retouching"
-                        width="651"
-                        height="434"
-                      />
-                    }
-                    itemTwo={
-                      <Image
-                        src="/images/portretfotografie/sk2.jpg"
-                        alt="skin retouching result"
-                        width="651"
-                        height="434"
-                      />
-                    }
-                  />
+                  <FadeInEffect
+                    effect="fade-in-effect-bottom"
+                    fade
+                    bottom
+                    offset={0}
+                  >
+                    <ReactCompareSlider
+                      handle={
+                        <ReactCompareSliderHandle
+                          buttonStyle={{
+                            WebkitBackdropFilter: undefined,
+                            backdropFilter: undefined,
+                            backgroundColor: "rgba(255, 255, 255, 0.9)",
+                            border: 0,
+                            boxShadow: undefined,
+                            color: "#777",
+                            opacity: 0.9,
+                            width: "50px",
+                            height: "50px",
+                          }}
+                          linesStyle={{ opacity: 0.5 }}
+                        />
+                      }
+                      itemOne={
+                        <Image
+                          src="/images/portretfotografie/sk1.jpg"
+                          alt="skin retouching"
+                          width="651"
+                          height="434"
+                        />
+                      }
+                      itemTwo={
+                        <Image
+                          src="/images/portretfotografie/sk2.jpg"
+                          alt="skin retouching result"
+                          width="651"
+                          height="434"
+                        />
+                      }
+                    />
+                  </FadeInEffect>
                 </div>
               </div>
             </Section>
@@ -435,106 +483,115 @@ function fotobewerkingservice() {
                         WERKWIJZE FOTOBEWERKING
                       </h2>
                     </div>
-                    <div className="flex flex-col lg:grid lg:grid-cols-3 lg:justify-items-stretch gap-0 lg:gap-8 max-w-6xl mx-auto">
-                      <div className="border border-white grid grid-cols-1 justify-items-stretch my-5">
-                        <div className="bg-white m-1 p-4 bg-opacity-70">
-                          <div className="mb-4">
-                            <h4 className="border-b-2 border-brown-pale text-2xl xl:text-3xl uppercase text-brown-pale mb-1">
-                              WAT IK DOE MET DE FOTO’S
-                            </h4>
+                    <FadeInEffect
+                      effect="fade-in-effect-bottom"
+                      fade
+                      bottom
+                      offset={0}
+                    >
+                      <div className="flex flex-col lg:grid lg:grid-cols-3 lg:justify-items-stretch gap-0 lg:gap-8 max-w-6xl mx-auto">
+                        <div className="border border-white grid grid-cols-1 justify-items-stretch my-5">
+                          <div className="bg-white m-1 p-4 bg-opacity-70">
+                            <div className="mb-4">
+                              <h4 className="border-b-2 border-brown-pale text-2xl xl:text-3xl uppercase text-brown-pale mb-1">
+                                WAT IK DOE MET DE FOTO’S
+                              </h4>
+                            </div>
+                            <div>
+                              <div className="flex space-x-4 my-2">
+                                <CheckIcon className="flex-shrink-0 w-6 h-6 text-grey-brownish" />
+                                <p className="leading-snug">
+                                  Bijsnijden en roteren
+                                </p>
+                              </div>
+                              <div className="flex space-x-4 my-2">
+                                <CheckIcon className="flex-shrink-0 w-6 h-6 text-grey-brownish" />
+                                <p className="leading-snug">
+                                  Aanpassen van basis licht instellingen zoals
+                                  belichting, contrast en schaduwen.
+                                </p>
+                              </div>
+                              <div className="flex space-x-4 my-2">
+                                <CheckIcon className="flex-shrink-0 w-6 h-6 text-grey-brownish" />
+                                <p className="leading-snug">
+                                  Aanpassen van de totale kleur balans en
+                                  individuele kleuren
+                                </p>
+                              </div>
+                              <div className="flex space-x-4 my-2">
+                                <CheckIcon className="flex-shrink-0 w-6 h-6 text-grey-brownish" />
+                                <p className="leading-snug">
+                                  Overige nabewerking zodat de foto's nog mooier
+                                  worden of specifieke verzoeken op aanvraag.
+                                </p>
+                              </div>
+                            </div>
+                            <div className="mt-4">
+                              <p>
+                                Naast het bewerken van de totale foto is het op
+                                aanvraag ook nog mogelijk de huid te
+                                retoucheren. Dit houdt in dat oneffenheden van
+                                de huid worden weggewerkt en eventuele donkere
+                                kringen onder de ogen worden opgelicht. Deze
+                                retouch wordt nauwkeurig en zo natuurlijk
+                                mogelijk gedaan, je wilt natuurlijk geen baby
+                                face. Zo krijg je een gebalanceerd en fris
+                                resultaat!
+                              </p>
+                            </div>
                           </div>
-                          <div>
-                            <div className="flex space-x-4 my-2">
-                              <CheckIcon className="flex-shrink-0 w-6 h-6 text-grey-brownish" />
-                              <p className="leading-snug">
-                                Bijsnijden en roteren
-                              </p>
+                        </div>
+                        <div className="border border-white my-5 grid grid-cols-1 justify-items-stretch">
+                          <div className="bg-white m-1 p-4 bg-opacity-70">
+                            <div className="mb-4">
+                              <h4 className="border-b-2 border-brown-pale text-2xl xl:text-3xl uppercase text-brown-pale mb-1">
+                                VOORWAARDEN VAN DE FOTO’S
+                              </h4>
                             </div>
-                            <div className="flex space-x-4 my-2">
-                              <CheckIcon className="flex-shrink-0 w-6 h-6 text-grey-brownish" />
-                              <p className="leading-snug">
-                                Aanpassen van basis licht instellingen zoals
-                                belichting, contrast en schaduwen.
-                              </p>
-                            </div>
-                            <div className="flex space-x-4 my-2">
-                              <CheckIcon className="flex-shrink-0 w-6 h-6 text-grey-brownish" />
-                              <p className="leading-snug">
-                                Aanpassen van de totale kleur balans en
-                                individuele kleuren
-                              </p>
-                            </div>
-                            <div className="flex space-x-4 my-2">
-                              <CheckIcon className="flex-shrink-0 w-6 h-6 text-grey-brownish" />
-                              <p className="leading-snug">
-                                Overige nabewerking zodat de foto's nog mooier
-                                worden of specifieke verzoeken op aanvraag.
+                            <div>
+                              <p>
+                                De foto moet van voldoende kwaliteit zijn. Het
+                                heeft geen zin om lage kwaliteit foto’s te
+                                bewerken omdat er te weinig informatie is
+                                opgeslagen in de foto. Dit betekent over het
+                                algemeen dat foto’s van mobiele telefoons niet
+                                geschikt zijn om te laten bewerken. Er zijn
+                                natuurlijk uitzonderingen, stuur mij een
+                                berichtje en we bekijken samen of nabewerking
+                                mogelijk is.
                               </p>
                             </div>
                           </div>
-                          <div className="mt-4">
-                            <p>
-                              Naast het bewerken van de totale foto is het op
-                              aanvraag ook nog mogelijk de huid te retoucheren.
-                              Dit houdt in dat oneffenheden van de huid worden
-                              weggewerkt en eventuele donkere kringen onder de
-                              ogen worden opgelicht. Deze retouch wordt
-                              nauwkeurig en zo natuurlijk mogelijk gedaan, je
-                              wilt natuurlijk geen baby face. Zo krijg je een
-                              gebalanceerd en fris resultaat!
-                            </p>
+                        </div>
+                        <div className="border border-white my-5 grid grid-cols-1 justify-items-stretch">
+                          <div className="bg-white m-1 p-4 bg-opacity-70">
+                            <div className="mb-4">
+                              <h4 className="border-b-2 border-brown-pale text-2xl xl:text-3xl uppercase text-brown-pale mb-1">
+                                ADVIES BIJ HET MAKEN VAN FOTO’S
+                              </h4>
+                            </div>
+                            <div>
+                              <p>
+                                Maak je de foto’s met een fotocamera? Kies
+                                ervoor om de foto’s in RAW formaat op te slaan.
+                                Dit houdt in dat er meer informatie wordt
+                                opgeslagen waardoor er meer mogelijk is in de
+                                nabewerking (let op, hierdoor wordt het
+                                bestandsformaat ook groter). Je kunt dit
+                                aanpassen in de instellingen van je camera.
+                              </p>
+                            </div>
+                            <div className="mt-5">
+                              <p>
+                                Gooi donkere foto’s of te lichte foto’s niet
+                                meteen weg! Vaak zijn deze foto’s nog te redden
+                                in de nabewerking!
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div className="border border-white my-5 grid grid-cols-1 justify-items-stretch">
-                        <div className="bg-white m-1 p-4 bg-opacity-70">
-                          <div className="mb-4">
-                            <h4 className="border-b-2 border-brown-pale text-2xl xl:text-3xl uppercase text-brown-pale mb-1">
-                              VOORWAARDEN VAN DE FOTO’S
-                            </h4>
-                          </div>
-                          <div>
-                            <p>
-                              De foto moet van voldoende kwaliteit zijn. Het
-                              heeft geen zin om lage kwaliteit foto’s te
-                              bewerken omdat er te weinig informatie is
-                              opgeslagen in de foto. Dit betekent over het
-                              algemeen dat foto’s van mobiele telefoons niet
-                              geschikt zijn om te laten bewerken. Er zijn
-                              natuurlijk uitzonderingen, stuur mij een berichtje
-                              en we bekijken samen of nabewerking mogelijk is.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="border border-white my-5 grid grid-cols-1 justify-items-stretch">
-                        <div className="bg-white m-1 p-4 bg-opacity-70">
-                          <div className="mb-4">
-                            <h4 className="border-b-2 border-brown-pale text-2xl xl:text-3xl uppercase text-brown-pale mb-1">
-                              ADVIES BIJ HET MAKEN VAN FOTO’S
-                            </h4>
-                          </div>
-                          <div>
-                            <p>
-                              Maak je de foto’s met een fotocamera? Kies ervoor
-                              om de foto’s in RAW formaat op te slaan. Dit houdt
-                              in dat er meer informatie wordt opgeslagen
-                              waardoor er meer mogelijk is in de nabewerking
-                              (let op, hierdoor wordt het bestandsformaat ook
-                              groter). Je kunt dit aanpassen in de instellingen
-                              van je camera.
-                            </p>
-                          </div>
-                          <div className="mt-5">
-                            <p>
-                              Gooi donkere foto’s of te lichte foto’s niet
-                              meteen weg! Vaak zijn deze foto’s nog te redden in
-                              de nabewerking!
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    </FadeInEffect>
                   </Section>
                 </div>
               </div>
@@ -601,12 +658,19 @@ function fotobewerkingservice() {
                       </h3>
                       <div className="flex flex-col lg:flex-row gap-5 lg:gap-10 mx-auto text-center">
                         <div>
+                        <FadeInEffect
+                          effect="fade-in-effect-left"
+                          fade
+                          left
+                          offset={0}
+                        >
                           <Image
                             src="/images/fotobewerking/camera.png"
                             alt="Professionele fotograaf"
                             width={540}
                             height={361}
                           />
+                          </FadeInEffect>
                         </div>
                         <div className="px-2 max-w-lg xl:max-w-2xl mx-auto text-center lg:text-left text-white">
                           <p>

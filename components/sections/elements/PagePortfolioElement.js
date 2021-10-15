@@ -63,7 +63,7 @@ function PagePortfolioElement(props) {
             height="477"
             layout="responsive"
             quality={100}
-          />{" "}
+          />
           <Image
             src={props.images[2]}
             alt="Portretfoto"
