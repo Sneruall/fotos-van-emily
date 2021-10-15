@@ -36,7 +36,7 @@ function ContactFormElement(props) {
     })
       .then(() => {
         clearForm();
-        generateLead();
+        // generateLead();
         router.push("/bericht-verzonden");
       })
       .catch((err) => {
