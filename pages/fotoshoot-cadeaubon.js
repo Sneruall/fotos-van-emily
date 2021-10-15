@@ -5,7 +5,8 @@ import Image from "next/image";
 import { MailIcon, PhoneIcon } from "@heroicons/react/solid";
 import ContactFormElement from "../components/sections/elements/ContactFormElement";
 import { NextSeo } from "next-seo";
-
+import FadeInEffect from "../components/sections/elements/FadeInEffect";
+import { Controller } from "react-scrollmagic";
 
 function fotoshootCadeaubon() {
   return (
@@ -98,12 +99,21 @@ function fotoshootCadeaubon() {
                 </h2>
                 <div className="flex flex-col lg:flex-row gap-10 my-16 max-w-4xl mx-auto">
                   <div>
-                    <Image
-                      src="/images/cadeaubon/Business-A4-Mockup3.png"
-                      alt="Emily van Roomen"
-                      width={1800}
-                      height={1628}
-                    />
+                    <Controller>
+                      <FadeInEffect
+                        effect="fade-in-effect-left"
+                        fade
+                        left
+                        offset={-80}
+                      >
+                        <Image
+                          src="/images/cadeaubon/Business-A4-Mockup3.png"
+                          alt="Emily van Roomen"
+                          width={1800}
+                          height={1628}
+                        />
+                      </FadeInEffect>
+                    </Controller>
                   </div>
                   <div className="text-center lg:text-left">
                     <p>
