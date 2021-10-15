@@ -11,17 +11,17 @@ function IntroSection(props) {
         <div className="border border-white my-5">
           <div className="bg-white m-1 p-2 bg-opacity-70">
             <div className="p-2 sm:px-10 max-w-5xl mx-auto">
-              <ImageWithText
-                img={props.img1}
-                alt={props.alt1}
-                width={336}
-                height={502}
-                title={props.title1}
-                text={props.text1}
-                buttonText={props.buttonText1}
-                mirrored={props.mirrored1}
-                text2={props.text2}
-              />
+                <ImageWithText
+                  img={props.img1}
+                  alt={props.alt1}
+                  width={336}
+                  height={502}
+                  title={props.title1}
+                  text={props.text1}
+                  buttonText={props.buttonText1}
+                  mirrored={props.mirrored1}
+                  text2={props.text2}
+                />
               {props.text2 && (
                 <div>
                   <div className="inline-block my-5">
@@ -33,13 +33,12 @@ function IntroSection(props) {
                   <p className="text-charcoal">{props.text2}</p>
                   {props.buttonText1 && (
                     <div className="lg:hidden">
-                    <Button
-                      text={props.buttonText1}
-                      link="#contact"
-                      button="button-1 mt-8"
-                    />
-                      </div>
-
+                      <Button
+                        text={props.buttonText1}
+                        link="#contact"
+                        button="button-1 mt-8"
+                      />
+                    </div>
                   )}
                 </div>
               )}

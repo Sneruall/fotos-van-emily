@@ -17,7 +17,7 @@ function Footer() {
             info@fotosvanemily.nl
           </a>
           <p>
-            Tel:{" "}
+            Tel:
             <a href="tel:+31652331778" className="text-mocha hover:underline">
               06 52 33 17 78
             </a>

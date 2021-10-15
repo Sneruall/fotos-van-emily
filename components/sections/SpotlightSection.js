@@ -1,8 +1,9 @@
 import Section from "../layout/Section";
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import ReviewElementDesktop from "./elements/ReviewElementDesktop";
+import FadeInEffect from "./elements/FadeInEffect";
 
 function SpotlightSection(props) {
   return (
@@ -14,15 +15,18 @@ function SpotlightSection(props) {
         <div className="border-b-2 border-white w-full max-w-2xl mx-auto mb-3"></div>
         <div className="border-b-2 border-white w-3/5 max-w-lg mx-auto"></div>
 
-        <div className="my-5 lg:my-0 flex flex-col">
-          <div className="border border-white self-center my-5 lg:mb-24 p-1 pb-0">
-            <Image src={props.img} alt={props.alt} width="823" height="551" />
-          </div>
+        <FadeInEffect effect="fade-in-effect-top" fade top offset={0}>
+          <div className="my-5 lg:my-0 flex flex-col">
+            <div className="border border-white self-center my-5 lg:mb-24 p-1 pb-0">
+              <Image src={props.img} alt={props.alt} width="823" height="551" />
+            </div>
 
-          <div className="lg:order-first text-center text-charcoal lg:my-8 max-w-5xl mx-auto">
-            <p>{props.text}</p>
+            <div className="lg:order-first text-center text-charcoal lg:my-8 max-w-5xl mx-auto">
+              <p>{props.text}</p>
+            </div>
           </div>
-        </div>
+        </FadeInEffect>
+
         {/* reviews mobile */}
         <div className="lg:hidden">
           <h3 className="text-brown-pale uppercase font-display text-5xl text-center my-10">

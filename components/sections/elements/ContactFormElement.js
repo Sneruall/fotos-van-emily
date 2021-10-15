@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import { useRouter } from "next/router";
+import * as ga from "../../../lib/ga";
 
 function ContactFormElement(props) {
   const [name, setName] = useState("");
@@ -12,6 +13,12 @@ function ContactFormElement(props) {
   const myFormRef = useRef(null);
 
   const router = useRouter();
+
+  const generateLead = () => {
+    ga.event({
+      action: "generate_lead",
+    });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -29,6 +36,7 @@ function ContactFormElement(props) {
     })
       .then(() => {
         clearForm();
+        generateLead();
         router.push("/bericht-verzonden");
       })
       .catch((err) => {
@@ -94,7 +102,7 @@ function ContactFormElement(props) {
         {error && (
           <p className="my-5 text-red-600">
             Oeps, er gaat iets mis! Neem anders even contact op via mail of
-            telefoon:{" "}
+            telefoon:
             <a
               href="mailto:info@fotosvanemily.nl"
               className="hover:underline text-charcoal"

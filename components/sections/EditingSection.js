@@ -5,6 +5,7 @@ import {
   ReactCompareSlider,
   ReactCompareSliderHandle,
 } from "react-compare-slider";
+import FadeInEffect from "./elements/FadeInEffect";
 
 function EditingSection(props) {
   return (
@@ -19,50 +20,57 @@ function EditingSection(props) {
           warmte, kleur en een moderne look. Alle foto’s worden ook in zwart wit
           nabewerkt.
         </p>
+
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-14 mb-8 lg:mb-24 justify-items-center items-center">
-          <ReactCompareSlider
-            handle={
-              <ReactCompareSliderHandle
-                buttonStyle={{
-                  WebkitBackdropFilter: undefined,
-                  backdropFilter: undefined,
-                  backgroundColor: "rgba(255, 255, 255, 0.9)",
-                  border: 0,
-                  boxShadow: undefined,
-                  color: "#777",
-                  opacity: 0.9,
-                  width: "50px",
-                  height: "50px",
-                }}
-                linesStyle={{ opacity: 0.5 }}
-              />
-            }
-            itemOne={
-              <Image
-                src={props.imgE1}
-                alt="nabewerkte foto"
-                width="651"
-                height="434"
-              />
-            }
-            itemTwo={
-              <Image
-                src={props.imgE2}
-                alt="onbewerkte foto"
-                width="651"
-                height="434"
-              />
-            }
-          />
-          <div className="mb-2 lg:translate-y-1">
-            <Image
-              src={props.imgE4}
-              alt="zwart-wit foto"
-              width="651"
-              height="434"
+          <FadeInEffect effect="fade-in-effect-top" fade top offset={0}>
+            <ReactCompareSlider
+              handle={
+                <ReactCompareSliderHandle
+                  buttonStyle={{
+                    WebkitBackdropFilter: undefined,
+                    backdropFilter: undefined,
+                    backgroundColor: "rgba(255, 255, 255, 0.9)",
+                    border: 0,
+                    boxShadow: undefined,
+                    color: "#777",
+                    opacity: 0.9,
+                    width: "50px",
+                    height: "50px",
+                  }}
+                  linesStyle={{ opacity: 0.5 }}
+                />
+              }
+              itemOne={
+                <Image
+                  src={props.imgE1}
+                  alt="nabewerkte foto"
+                  width="651"
+                  height="434"
+                />
+              }
+              itemTwo={
+                <Image
+                  src={props.imgE2}
+                  alt="onbewerkte foto"
+                  width="651"
+                  height="434"
+                />
+              }
             />
-          </div>
+          </FadeInEffect>
+
+          <FadeInEffect effect="fade-in-effect-top" fade top offset={0}>
+            <div className="mb-2 lg:translate-y-1">
+              <Image
+                src={props.imgE4}
+                alt="zwart-wit foto"
+                width="651"
+                height="434"
+              />
+            </div>
+          </FadeInEffect>
         </div>
+
         {props.imgSk1 && (
           <div>
             <h2 className="text-white text-3xl lg:text-5xl text-center uppercase mb-5">
@@ -81,40 +89,42 @@ function EditingSection(props) {
             </p>
             <div className="flex flex-col">
               <div className="flex justify-center">
-                <ReactCompareSlider
-                  handle={
-                    <ReactCompareSliderHandle
-                      buttonStyle={{
-                        WebkitBackdropFilter: undefined,
-                        backdropFilter: undefined,
-                        backgroundColor: "rgba(255, 255, 255, 0.9)",
-                        border: 0,
-                        boxShadow: undefined,
-                        color: "#777",
-                        opacity: 0.9,
-                        width: "50px",
-                        height: "50px",
-                      }}
-                      linesStyle={{ opacity: 0.5 }}
-                    />
-                  }
-                  itemOne={
-                    <Image
-                      src={props.imgSk1}
-                      alt="skin retouching"
-                      width="651"
-                      height="434"
-                    />
-                  }
-                  itemTwo={
-                    <Image
-                      src={props.imgSk2}
-                      alt="skin retouching"
-                      width="651"
-                      height="434"
-                    />
-                  }
-                />
+                <FadeInEffect effect="fade-in-effect-top" fade top offset={0}>
+                  <ReactCompareSlider
+                    handle={
+                      <ReactCompareSliderHandle
+                        buttonStyle={{
+                          WebkitBackdropFilter: undefined,
+                          backdropFilter: undefined,
+                          backgroundColor: "rgba(255, 255, 255, 0.9)",
+                          border: 0,
+                          boxShadow: undefined,
+                          color: "#777",
+                          opacity: 0.9,
+                          width: "50px",
+                          height: "50px",
+                        }}
+                        linesStyle={{ opacity: 0.5 }}
+                      />
+                    }
+                    itemOne={
+                      <Image
+                        src={props.imgSk1}
+                        alt="skin retouching"
+                        width="651"
+                        height="434"
+                      />
+                    }
+                    itemTwo={
+                      <Image
+                        src={props.imgSk2}
+                        alt="skin retouching"
+                        width="651"
+                        height="434"
+                      />
+                    }
+                  />
+                </FadeInEffect>
               </div>
               <div className="mt-5 lg:mt-0 lg:mb-10 text-center lg:order-first">
                 <Button

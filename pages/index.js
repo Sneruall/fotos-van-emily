@@ -215,7 +215,7 @@ export default function Home() {
               <div>
                 <div id="section1" ref={section1Ref}>
                   <Werkwijze />
-                </div>{" "}
+                </div>
               </div>
             </Scene>
 
