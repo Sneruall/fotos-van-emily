@@ -34,10 +34,15 @@ function ContactFormElement(props) {
       method: "post",
       body: JSON.stringify(data),
     })
-      .then(() => {
+      .then((res) => {
         clearForm();
-        // generateLead();
-        router.push("/bericht-verzonden");
+        if (res.status == "200") {
+          // generateLead();
+          router.push("/bericht-verzonden");
+        } else {
+          console.log(res);
+          setError(true);
+        }
       })
       .catch((err) => {
         console.log(err);
