@@ -37,7 +37,7 @@ function ContactFormElement(props) {
       .then((res) => {
         clearForm();
         if (res.status == "200") {
-          // generateLead();
+          generateLead();
           router.push("/bericht-verzonden");
         } else {
           console.log(res);
