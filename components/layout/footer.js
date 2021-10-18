@@ -6,6 +6,12 @@ import * as ga from "../../lib/ga"
     });
   };
 
+  const emailAction = () => {
+    ga.event({
+      action: "click_email_address",
+    });
+  };
+
 function Footer() {
   return (
     <footer className="w-full bg-grey-light">
@@ -21,7 +27,7 @@ function Footer() {
           <h4 className="font-semibold uppercase text-clay mt-10 mb-5">
             Contact
           </h4>
-          <a href="mailto:info@fotosvanemily.nl" className="hover:underline text-mocha">
+          <a href="mailto:info@fotosvanemily.nl" className="hover:underline text-mocha" onClick={emailAction}>
             info@fotosvanemily.nl
           </a>
           <p>

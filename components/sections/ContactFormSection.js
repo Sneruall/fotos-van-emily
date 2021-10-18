@@ -9,6 +9,12 @@ const callAction = () => {
   });
 };
 
+const emailAction = () => {
+  ga.event({
+    action: "click_email_address",
+  });
+};
+
 function ContactFormSection(props) {
   return (
     <Section id="contact" bg={props.bg}>
@@ -23,7 +29,7 @@ function ContactFormSection(props) {
         <div className="flex flex-wrap gap-6 justify-center">
           <div className="flex gap-1 items-center">
             <MailIcon className="h-5 text-charcoal" />
-            <a className="hover:underline" href="mailto:info@fotosvanemily.nl">
+            <a className="hover:underline" href="mailto:info@fotosvanemily.nl" onClick={emailAction}>
               info@fotosvanemily.nl
             </a>
           </div>
