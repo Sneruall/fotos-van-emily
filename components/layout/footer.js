@@ -1,3 +1,11 @@
+import * as ga from "../../lib/ga"
+
+  const callAction = () => {
+    ga.event({
+      action: "click_phone_number",
+    });
+  };
+
 function Footer() {
   return (
     <footer className="w-full bg-grey-light">
@@ -18,7 +26,7 @@ function Footer() {
           </a>
           <p>
             Tel:
-            <a href="tel:+31652331778" className="text-mocha hover:underline">
+            <a href="tel:+31652331778" className="text-mocha hover:underline" onClick={callAction}>
               06 52 33 17 78
             </a>
           </p>
