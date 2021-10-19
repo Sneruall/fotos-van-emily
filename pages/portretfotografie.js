@@ -119,15 +119,15 @@ function portretfotografie() {
               alt1="zakelijk portret"
               title1="zakelijk"
               text1={[
-                "Jezelf professioneel (online) presenteren doe je met een goed portret. Of het nu gaat om sociale media zoals LinkedIn of je eigen website, er zijn talloze plekken waar een professionele foto een must is. Een goed portret zet jou krachtig neer en laat zien wie jij bent, zo laat jij een buitengewone indruk achter!",
-                "Het is ook mogelijk binnen foto’s te maken, in het bedrijfspand of in een hip cafe. Vaak raad ik aan om ook een paar foto’s buiten te maken om te zorgen voor genoeg diversiteit.",
+                "Jezelf professioneel (online) presenteren doe je met een goed portret. Of het nu gaat om sociale media zoals LinkedIn of je eigen website, er zijn talloze plekken waar een professionele foto een must is. Een goed zakelijk portret zet jou krachtig neer en laat zien wie jij bent, zo laat jij een buitengewone indruk achter!",
+                "Het is ook mogelijk binnen foto’s te maken, in het bedrijfspand of in een hip cafe. Vaak raad ik aan om ook een paar foto’s buiten te maken om te zorgen voor genoeg diversiteit. Zakelijke fotografie is al mogelijk vanaf €79, meer informatie over tarieven vind je verderop deze pagina.",
               ]}
               buttonText1="Boek een portretshoot!"
               img2="/images/portretfotografie/portret-2.png"
               alt2="Prive portret"
-              title2="Prive"
+              title2="Prive/familie"
               text2={[
-                "Eigenlijk alle shoots die niet behoren tot een specifieke categorie als loveshoot of zwangerschapsshoot vallen hieronder. Denk aan foto’s van je kinderen of samen met je familie bijvoorbeeld. Veel is mogelijk, laat mij even weten om wie en hoeveel mensen het gaat en we stellen samen een plan op.",
+                "Alle fotoshoots die niet behoren tot een specifieke categorie (zoals een loveshoot) vallen hieronder. Denk aan foto’s van het gezin of juist alleen een fotoshoot van je kinderen. Of misschien samen met je broers, zussen of vrienden op de foto, het kan allemaal. Laat mij even weten om hoeveel mensen het gaat en we stellen samen een plan op.",
               ]}
               mirrored2
               portfolioImages={[

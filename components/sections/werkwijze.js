@@ -30,17 +30,22 @@ export default function Werkwijze() {
         <p className="mt-5 md:mt-20 md:my-10 mx-0 md:mx-16 text-center text-white">
           Ik snap dat je misschien denkt “kan ik niet gewoon zelf foto’s maken
           met mijn telefoon”. Natuurlijk, de kwaliteit van telefoon camera’s
-          worden steeds beter en beter. Super leuk om herinneringen vast te
-          leggen on the fly. Maar een goede foto bestaat uit meer dan alleen
+          wordt steeds beter en beter, super leuk om herinneringen vast te
+          leggen on the fly! Maar een goede foto bestaat uit meer dan alleen
           technische kwaliteit. Iedereen is in staat een foto te maken, maar die
           spreken niet allemaal 1000 woorden. Juist dat extra’s, die laatste
           paar 100 woorden, zijn lastig zelf te realiseren. Hiervoor heb je de
-          expertise van een fotograaf nodig. Denk aan composite, lichtgebruik,
-          nabewerking etc. Dus voor het vastleggen van speciale gelegenheden kan
-          de mobiel niet tippen aan de fotograaf!
+          expertise van een fotograaf nodig (denk aan composite, lichtgebruik,
+          nabewerking etc). Dus voor het vastleggen van speciale gelegenheden
+          kan de mobiel niet tippen aan de fotograaf!
         </p>
         <div className="hidden md:flex justify-center relative">
-          <FadeInEffect effect="fade-in-effect-bottom" fade bottom offset={-100}>
+          <FadeInEffect
+            effect="fade-in-effect-bottom"
+            fade
+            bottom
+            offset={-100}
+          >
             <Image
               className="rounded"
               src="/images/fotograaf-met-camera.png"

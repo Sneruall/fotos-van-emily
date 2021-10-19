@@ -6,8 +6,8 @@ import Image from "next/image";
 
 export default function Diensten() {
   return (
-    <Section>
-      <div id="diensten" className="md:border border-white my-5 -mt-32 md:mx-auto md:max-w-6xl 3xl:max-w-full">
+    <Section id="diensten">
+      <div className="md:border border-white my-5 -mt-32 md:mx-auto md:max-w-6xl 3xl:max-w-full">
         <div className="md:bg-white md:bg-opacity-70 md:m-1">
           <h2 className="mt-40 md:mt-0 text-6xl text-center font-display uppercase text-clay leading-snug">
             Fotografie diensten
