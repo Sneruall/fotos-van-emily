@@ -10,6 +10,7 @@ import parse from "html-react-parser";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { Controller, Scene } from "react-scrollmagic";
+import { useRouter } from "next/router";
 
 export default function Home() {
   //index slider
@@ -40,6 +41,19 @@ export default function Home() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  //scroll to diensten seciton
+
+  const router = useRouter();
+
+  useEffect(() => {
+    if (router.asPath == "/#diensten"&& dienstenRef && dienstenRef.current) {
+      console.log("navigate to diensten");
+      dienstenRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, [router]);
+
+  const dienstenRef = useRef(null);
 
   return (
     <Fragment>
@@ -205,7 +219,9 @@ export default function Home() {
           <div id="page" className="transition ease-linear duration-1000">
             <Welcome />
 
-            <Diensten />
+            <div ref={dienstenRef}>
+              <Diensten />
+            </div>
 
             <Scene
               triggerElement="#section1"

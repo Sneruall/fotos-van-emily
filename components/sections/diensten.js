@@ -4,9 +4,9 @@ import Fotobewerking from "./elements/fotobewerking";
 import Button from "../ui/button";
 import Image from "next/image";
 
-export default function Diensten() {
+export default function Diensten(props) {
   return (
-    <Section id="diensten">
+    <Section>
       <div className="md:border border-white my-5 -mt-32 md:mx-auto md:max-w-6xl 3xl:max-w-full">
         <div className="md:bg-white md:bg-opacity-70 md:m-1">
           <h2 className="mt-40 md:mt-0 text-6xl text-center font-display uppercase text-clay leading-snug">
