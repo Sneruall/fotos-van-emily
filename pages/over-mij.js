@@ -1,27 +1,12 @@
-import { Fragment, useEffect, useRef } from "react";
+import { Fragment} from "react";
 import ScrollNavbar from "../components/layout/ScrollNavbar";
 import Image from "next/image";
 import ContactFormSection from "../components/sections/ContactFormSection";
 import { Controller, Scene } from "react-scrollmagic";
 import { NextSeo } from "next-seo";
-import { useRouter } from "next/router";
 
 
 function overmij() {
-
-  const router = useRouter();
-
-  useEffect(() => {
-    if (router.asPath.includes("#contact")  && contactRef && contactRef.current) {
-      contactRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-    return () => {
-    }
-  }, [router]);
-  
-
-  const contactRef = useRef(null);
-
   return (
     <Fragment>
       <NextSeo
@@ -133,7 +118,7 @@ function overmij() {
             >
               <div>
                 <div id="section1">
-                  <ContactFormSection refProp={contactRef}  />
+                  <ContactFormSection />
                 </div>
               </div>
             </Scene>

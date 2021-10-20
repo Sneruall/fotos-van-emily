@@ -2,6 +2,8 @@ import Section from "../layout/Section";
 import { MailIcon, PhoneIcon } from "@heroicons/react/solid";
 import ContactFormElement from "./elements/ContactFormElement";
 import * as ga from "../../lib/ga";
+import { useEffect, useRef } from "react";
+import { useRouter } from "next/router";
 
 const callAction = () => {
   ga.event({
@@ -16,8 +18,24 @@ const emailAction = () => {
 };
 
 function ContactFormSection(props) {
+  const router = useRouter();
+
+  useEffect(() => {
+    console.log(router.asPath);
+    if (
+      router.asPath.includes("#contact") &&
+      contactRef &&
+      contactRef.current
+    ) {
+      contactRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    return () => {};
+  }, [router]);
+
+  const contactRef = useRef(null);
+
   return (
-    <Section refProp={props.refProp} bg={props.bg}>
+    <Section refProp={contactRef} bg={props.bg}>
       <div className="mx-auto max-w-6xl">
         {/* intro text */}
         <h1 className="title-1">Neem contact op</h1>
@@ -29,7 +47,11 @@ function ContactFormSection(props) {
         <div className="flex flex-wrap gap-6 justify-center">
           <div className="flex gap-1 items-center">
             <MailIcon className="h-5 text-charcoal" />
-            <a className="hover:underline" href="mailto:info@fotosvanemily.nl" onClick={emailAction}>
+            <a
+              className="hover:underline"
+              href="mailto:info@fotosvanemily.nl"
+              onClick={emailAction}
+            >
               info@fotosvanemily.nl
             </a>
           </div>
