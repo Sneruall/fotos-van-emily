@@ -219,9 +219,7 @@ export default function Home() {
           <div id="page" className="transition ease-linear duration-1000">
             <Welcome />
 
-            <div ref={dienstenRef}>
-              <Diensten />
-            </div>
+              <Diensten refProp={dienstenRef} />
 
             <Scene
               triggerElement="#section1"
