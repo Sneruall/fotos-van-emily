@@ -17,7 +17,7 @@ const emailAction = () => {
 
 function ContactFormSection(props) {
   return (
-    <Section id="contact" bg={props.bg}>
+    <Section refProp={props.refProp} bg={props.bg}>
       <div className="mx-auto max-w-6xl">
         {/* intro text */}
         <h1 className="title-1">Neem contact op</h1>

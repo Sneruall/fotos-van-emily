@@ -30,6 +30,8 @@ export default function Home() {
 
   useEffect(() => {
     setSection1Height(section1Ref.current.clientHeight);
+    return () => {
+    }
   }, []);
 
   useEffect(() => {
@@ -48,8 +50,9 @@ export default function Home() {
 
   useEffect(() => {
     if (router.asPath == "/#diensten"&& dienstenRef && dienstenRef.current) {
-      console.log("navigate to diensten");
       dienstenRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    return () => {
     }
   }, [router]);
 
