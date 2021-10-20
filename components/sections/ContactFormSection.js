@@ -21,7 +21,6 @@ function ContactFormSection(props) {
   const router = useRouter();
 
   useEffect(() => {
-    console.log(router.asPath);
     if (
       router.asPath.includes("#contact") &&
       contactRef &&
