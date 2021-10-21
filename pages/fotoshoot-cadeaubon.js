@@ -59,6 +59,7 @@ function fotoshootCadeaubon() {
               layout="fill"
               objectFit="cover"
               priority
+              quality={50}
             />
           </div>
           <div className="sm:hidden">
@@ -107,7 +108,7 @@ function fotoshootCadeaubon() {
                       >
                         <Image
                           src="/images/cadeaubon/Business-A4-Mockup3.png"
-                          alt="Emily van Roomen"
+                          alt="Fotoshoot cadeaubon"
                           width={1800}
                           height={1628}
                         />

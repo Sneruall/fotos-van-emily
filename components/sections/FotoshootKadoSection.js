@@ -9,6 +9,7 @@ function FotoshootKadoSection() {
         alt="fotoshoot cadeaubon"
         layout="fill"
         objectFit="cover"
+        quality={50}
       />
       <div className="px-5 relative h-full max-w-6xl mx-auto flex items-center">
         <div className="max-w-sm">
