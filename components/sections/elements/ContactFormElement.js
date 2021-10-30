@@ -84,8 +84,9 @@ function ContactFormElement(props) {
           className="rounded-sm p-2 px-4 placeholder-charcoal placeholder-opacity-90 shadow-sm outline-none"
           id="onderwerp"
           type="text"
-          placeholder="Onderwerp"
+          placeholder="Onderwerp*"
           onChange={(e) => setOnderwerp(e.target.value)}
+          required
         />
         <textarea
           className="col-span-full rounded-sm p-2 px-4 placeholder-charcoal placeholder-opacity-90 shadow-sm outline-none"
@@ -97,6 +98,7 @@ function ContactFormElement(props) {
           required
         />
       </div>
+
       <div className="max-w-xl mx-auto">
         <button
           className="border-2 border-brown-pale bg-brown-pale hover:bg-transparent hover:text-brown-pale text-white font-semibold uppercase py-2 px-6 rounded-full"
@@ -123,6 +125,7 @@ function ContactFormElement(props) {
             </a>
           </p>
         )}
+                <p className="mt-5">*Verplichte velden</p>
       </div>
     </form>
   );
