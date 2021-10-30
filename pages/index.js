@@ -105,7 +105,7 @@ export default function Home() {
         <div className="-mt-14 lg:mt-0">
           <div className="hidden sm:block">
             <Image
-              src="/images/header/headerIndex.png"
+              src="/images/header/headerIndex.jpg"
               alt="Foto's van Emily"
               layout="fill"
               objectFit="cover"
