@@ -6,7 +6,6 @@ async function handler(req, res) {
   const body = JSON.parse(req.body);
 
   const message = `
-    Nieuw bericht ontvangen op Foto's van Emily!\r\n \r\n
     Naam: ${body.name}\r\n
     Email: ${body.email}\r\n
     Tel: ${body.tel}\r\n
