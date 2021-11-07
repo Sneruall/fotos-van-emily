@@ -1,5 +1,5 @@
 import Section from "../layout/Section";
-import { MailIcon, PhoneIcon } from "@heroicons/react/solid";
+import { MailIcon, PhoneIcon, LocationMarkerIcon } from "@heroicons/react/solid";
 import ContactFormElement from "./elements/ContactFormElement";
 import * as ga from "../../lib/ga";
 import { useEffect, useRef } from "react";
@@ -62,6 +62,16 @@ function ContactFormSection(props) {
               onClick={callAction}
             >
               06 52 33 17 78
+            </a>
+          </div>
+          <div className="flex gap-1 items-center">
+            <LocationMarkerIcon className="h-5 text-charcoal" />
+            <a
+              className="hover:underline"
+              href="https://goo.gl/maps/y3X547MeEdVqUisX6"
+              target="_blank"
+            >
+              Zeist (provincie Utrecht)
             </a>
           </div>
         </div>
