@@ -195,36 +195,47 @@ function portretfotografie() {
                     heading="WAT KRIJG JE ALS JE EEN PORTRET LAAT MAKEN DOOR MIJ?"
                     reiskosten={true}
                     prijsText="Vanaf:"
-                    pakketA={[
-                      "Pakket A",
-                      `<span classname="font-bold">~30 min</span> fotografie op locatie`,
-                      `<span classname="font-bold">10</span> digitale foto’s in hoge kwaliteit`,
-                      `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
+                    pakketA={{
+                      title: "Pakket A",
+                      features: [
+                        `<span classname="font-bold">~30 min</span> fotografie op locatie`,
+                        `<span classname="font-bold">10</span> digitale foto’s in hoge kwaliteit`,
+                        `<span classname="font-bold">Foto's zelf uit te kiezen</span> vanuit een online galerij​`,
+                        `<span classname="font-bold">Extra foto's</span> bij te bestellen (€7 p/st.)`,
+                        `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
             worden ook in zwart-wit geleverd)`,
-                      `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
-                      ,
-                      "79",
-                    ]}
-                    pakketB={[
-                      "Pakket B",
-                      `<span classname="font-bold">~45 min</span> fotografie op locatie`,
-                      `<span classname="font-bold">20</span> digitale foto’s in hoge kwaliteit`,
-                      `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
+                        `Binnen <span classname="font-bold">1,5 week</span> worden alle foto’s via WeTransfer geleverd`,
+                      ],
+                      price: "89",
+                    }}
+                    pakketB={{
+                      title: "Pakket B",
+                      features: [
+                        `<span classname="font-bold">~45 min</span> fotografie op locatie`,
+                        `<span classname="font-bold">20</span> digitale foto’s in hoge kwaliteit`,
+                        `<span classname="font-bold">Foto's zelf uit te kiezen</span> vanuit een online galerij
+                      ​`,
+                        `<span classname="font-bold">Extra foto's</span> bij te bestellen (€7 p/st.)`,
+                        `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
             worden ook in zwart-wit geleverd)`,
-                      `Binnen <span classname="font-bold">1,5 week</span> worden alle foto’s via WeTransfer geleverd`,
-                      `Online gallerij voor het bekijken en delen van de foto’s`,
-                      "149",
-                    ]}
-                    pakketC={[
-                      "Pakket C",
-                      `<span classname="font-bold">~1 uur</span> fotografie op locatie`,
-                      `<span classname="font-bold">30</span> digitale foto’s in hoge kwaliteit`,
-                      `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
+                        `Binnen <span classname="font-bold">1,5 week</span> worden alle foto’s via WeTransfer geleverd`,
+                      ],
+                      price: "149",
+                    }}
+                    pakketC={{
+                      title: "Pakket C",
+                      features: [
+                        `<span classname="font-bold">~1 uur</span> fotografie op locatie`,
+                        `<span classname="font-bold">30</span> digitale foto’s in hoge kwaliteit`,
+                        `<span classname="font-bold">Foto's zelf uit te kiezen</span> vanuit een online galerij
+                      ​`,
+                        `<span classname="font-bold">Extra foto's</span> bij te bestellen (€7 p/st.)`,
+                        `<span classname="font-bold">Zorgvuldige nabewerking</span> (alle foto’s
             worden ook in zwart-wit geleverd)`,
-                      `Binnen <span classname="font-bold">1,5 week</span> worden alle foto’s via WeTransfer geleverd`,
-                      `Online gallerij voor het bekijken en delen van de foto’s`,
-                      "219",
-                    ]}
+                        `Binnen <span classname="font-bold">1,5 week</span> worden alle foto’s via WeTransfer geleverd`,
+                      ],
+                      price: "199",
+                    }}
                     cta="Liever een offerte op maat?"
                   />
                 </div>

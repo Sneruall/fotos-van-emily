@@ -16,36 +16,24 @@ function CustomPricingSection(props) {
             }`}
           >
             <PricingPlan
-              title={props.pakketA[0]}
-              feature1={props.pakketA[1]}
-              feature2={props.pakketA[2]}
-              feature3={props.pakketA[3]}
-              feature4={props.pakketA[4]}
-              feature5={props.pakketA[5]}
-              prijs={props.pakketA[6]}
+              title={props.pakketA.title}
+              features={props.pakketA.features}
+              price={props.pakketA.price}
               reiskosten={props.reiskosten}
               prijsText={props.prijsText}
             />
             <PricingPlan
-              title={props.pakketB[0]}
-              feature1={props.pakketB[1]}
-              feature2={props.pakketB[2]}
-              feature3={props.pakketB[3]}
-              feature4={props.pakketB[4]}
-              feature5={props.pakketB[5]}
-              prijs={props.pakketB[6]}
+              title={props.pakketB.title}
+              features={props.pakketB.features}
+              price={props.pakketB.price}
               reiskosten={props.reiskosten}
               prijsText={props.prijsText}
             />
             {props.pakketC && (
               <PricingPlan
-                title={props.pakketC[0]}
-                feature1={props.pakketC[1]}
-                feature2={props.pakketC[2]}
-                feature3={props.pakketC[3]}
-                feature4={props.pakketC[4]}
-                feature5={props.pakketC[5]}
-                prijs={props.pakketC[6]}
+                title={props.pakketC.title}
+                features={props.pakketC.features}
+                price={props.pakketC.price}
                 reiskosten={props.reiskosten}
                 prijsText={props.prijsText}
               />

@@ -606,33 +606,34 @@ function fotobewerkingservice() {
                   <CustomPricingSection
                     heading="Tarieven fotobewerking"
                     prijsText="Per foto:"
-                    pakketA={[
-                      "Kleur Bewerking",
-                      `Zorgvuldige <span classname="font-bold">kleur</span> nabewerking`,
-                      "Overige nabewerking zoals rotatie en bijsnijden",
-                      `<span classname="font-bold">Zwart-wit</span> variant`,
-                      `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
-                      ,
-                      "1,99",
-                    ]}
-                    pakketB={[
-                      "Skin Retouching",
-                      `Oneffenheden van de huis nauwkeurig weggewerkt`,
-                      "Donkere kringen onder de ogen natuurlijk opgelicht",
-                      `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
-                      ,
-                      ,
-                      "3,99",
-                    ]}
-                    pakketC={[
-                      "Combi",
-                      `Kleur bewerking`,
-                      "Skin retouching",
-                      `Binnen <span classname="font-bold">1 week</span> worden alle foto’s via WeTransfer geleverd`,
-                      ,
-                      ,
-                      "5,50",
-                    ]}
+                    pakketA={{
+                      title: "Kleur Bewerking",
+                      features: [
+                        `Zorgvuldige <span classname="font-bold">kleur</span> nabewerking`,
+                        "Overige nabewerking zoals rotatie en bijsnijden",
+                        `<span classname="font-bold">Zwart-wit</span> variant`,
+                        `Binnen <span classname="font-bold">2 weken</span> worden alle foto’s via WeTransfer geleverd`,
+                      ],
+                      price: "1,99",
+                    }}
+                    pakketB={{
+                      title: "Skin Retouching",
+                      features: [
+                        `Oneffenheden van de huis nauwkeurig weggewerkt`,
+                        "Donkere kringen onder de ogen natuurlijk opgelicht",
+                        `Binnen <span classname="font-bold">2 weken</span> worden alle foto’s via WeTransfer geleverd`,
+                      ],
+                      price: "3,99",
+                    }}
+                    pakketC={{
+                      title: "Combi",
+                      features: [
+                        `Kleur bewerking`,
+                        "Skin retouching",
+                        `Binnen <span classname="font-bold">2 weken</span> worden alle foto’s via WeTransfer geleverd`,
+                      ],
+                      price: "5,50",
+                    }}
                     cta="Liever een offerte op maat?"
                   />
                 </div>
@@ -657,18 +658,18 @@ function fotobewerkingservice() {
                       </h3>
                       <div className="flex flex-col lg:flex-row gap-5 lg:gap-10 mx-auto text-center">
                         <div>
-                        <FadeInEffect
-                          effect="fade-in-effect-left"
-                          fade
-                          left
-                          offset={0}
-                        >
-                          <Image
-                            src="/images/fotobewerking/camera.png"
-                            alt="Professionele fotograaf"
-                            width={540}
-                            height={361}
-                          />
+                          <FadeInEffect
+                            effect="fade-in-effect-left"
+                            fade
+                            left
+                            offset={0}
+                          >
+                            <Image
+                              src="/images/fotobewerking/camera.png"
+                              alt="Professionele fotograaf"
+                              width={540}
+                              height={361}
+                            />
                           </FadeInEffect>
                         </div>
                         <div className="px-2 max-w-lg xl:max-w-2xl mx-auto text-center lg:text-left text-white">
