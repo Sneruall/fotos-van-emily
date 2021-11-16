@@ -237,7 +237,7 @@ function hondenfotografie() {
             >
               <div>
                 <div id="section4">
-                  <WerkwijzeSection text3="We meeten elkaar op de afgesproken locatie. We maken kennis en laten jouw hond aan mij en de camera wennen. Daarna gaan we op pad! We zijn ongeveer 1 tot 1,5 uur bezig, ik neem de tijd voor en zorg voor een diversiteit aan foto’s." />
+                  <WerkwijzeSection text3="We meeten elkaar op de afgesproken locatie. We maken kennis en laten jouw hond aan mij en de camera wennen. Daarna gaan we op pad! We zijn ongeveer 30 tot 60 minuten bezig, ik neem de tijd voor en zorg voor een diversiteit aan foto’s." />
                 </div>
               </div>
             </Scene>

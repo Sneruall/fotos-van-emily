@@ -28,7 +28,7 @@ function WerkwijzeSection(props) {
             <WerkwijzeStap
               number="4"
               title="NA DE FOTOSHOOT"
-              description="Ongeveer 1 week na de shoot kun je de foto’s verwachten, die worden via WeTransfer geleverd (via de mail krijg je een download link). Mocht je op de een of andere manier jouw foto’s kwijtraken, wees gerust, ik sla jouw foto’s een jaar lang veilig op."
+              description="Ongeveer 1,5 week na de shoot kun je de foto’s verwachten, via een online galerij kun je zelf de foto’s selecteren die je graag zou willen ontvangen. Vervolgens krijg je via de mail een download link van jouw selectie, inclusief de zwart-wit varianten. Mocht je op de een of andere manier jouw foto’s kwijtraken, wees gerust, ik sla jouw foto’s een jaar lang veilig op."
             />
           </div>
         </div>
